@@ -1,6 +1,7 @@
 ---
 id: overview
 title: ''
+slug: /
 hide_table_of_contents: false
 ---
 

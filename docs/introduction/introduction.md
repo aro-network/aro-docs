@@ -1,7 +1,6 @@
 ---
 id: introduction
 title: ''
-slug: /
 hide_table_of_contents: false
 ---
 
