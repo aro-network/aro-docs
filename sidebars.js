@@ -32,10 +32,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introduction',
-      link: {
-        type: 'doc',
-        id: 'introduction/introduction',
-      },
       collapsed: false,
       items: [
         {
@@ -58,10 +54,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'Technology',
-      link: {
-        type: 'doc',
-        id: 'technology/technology',
-      },
       collapsed: true,
       items: [
         {
