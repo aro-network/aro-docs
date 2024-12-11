@@ -10,8 +10,8 @@ Website: [https://enreach.network](https://enreach.network)
 
 Github: [https://github.com/EnReachNetwork](https://github.com/EnReachNetwork)
 
-Telegram: [https://t.me/+bwjcPLf_ZQ00YTBh](https://t.me/+bwjcPLf_ZQ00YTBh)
+Telegram: [https://t.me/EnReachNetwork](https://t.me/EnReachNetwork)
 
-Discord: [https://discord.gg/z3887JQP](https://discord.gg/z3887JQP)
+Discord: [https://discord.com/invite/Rc4BMUjbNB](https://discord.com/invite/Rc4BMUjbNB)
 
-Twitter: [https://x.com/EnReachAI](https://x.com/EnReachAI)
+Twitter: [https://x.com/EnReachNetwork](https://x.com/EnReachNetwork)
