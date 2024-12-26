@@ -95,6 +95,11 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'berry-season-1',
+      label: 'BERRY Season 1',
+    },
+    {
+      type: 'doc',
       id: 'official-links',
       label: 'Official Links',
     },
