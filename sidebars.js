@@ -31,79 +31,78 @@ const sidebars = {
   mySidebar: [
     {
       type: 'category',
-      label: 'Introduction',
+      label: 'Home',
       collapsed: false,
       items: [
-        {
-          type: 'doc',
-          id: 'introduction/overview',
-          label: 'Overview'
-        },
-        {
-          type: 'doc',
-          id: 'introduction/why-edge-cloud',
-          label: 'Why Edge Cloud'
-        },
-        {
-          type: 'doc',
-          id: 'introduction/open-layered-fabric',
-          label: 'Open-layered Fabric'
-        },
-      ]
+        { type: 'doc', id: 'home/overview', label: 'Overview' },
+        { type: 'doc', id: 'home/the-new-edge', label: 'The New Edge' },
+      ],
     },
     {
       type: 'category',
-      label: 'Technology',
+      label: 'Technologies',
       collapsed: true,
       items: [
-        {
-          type: 'doc',
-          id: 'technology/architecture',
-          label: 'Architecture'
-        },
-        {
-          type: 'doc',
-          id: 'technology/work-proof',
-          label: 'Work Proof'
-        },
-        {
-          type: 'doc',
-          id: 'technology/consensus',
-          label: 'Consensus'
-        },
-        {
-          type: 'doc',
-          id: 'technology/peeredge',
-          label: 'PeerEdge'
-        },
-      ]
+        { type: 'doc', id: 'technologies/architecture', label: 'Architecture' },
+        { type: 'doc', id: 'technologies/network', label: 'Network' },
+        { type: 'doc', id: 'technologies/work-proof', label: 'Work Proof' },
+        { type: 'doc', id: 'technologies/consensus', label: 'Consensus' },
+        { type: 'doc', id: 'technologies/peeredge', label: 'PeerEdge' },
+        { type: 'doc', id: 'technologies/ai-transformers', label: 'AI Transformers' },
+      ],
     },
     {
-      type: 'doc',
-      id: 'network',
-      label: 'Network',
+      type: 'category',
+      label: 'Edge Node',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'edge-node/introduction', label: 'Introduction' },
+        { type: 'doc', id: 'edge-node/rewards', label: 'Rewards' },
+        { type: 'doc', id: 'edge-node/types', label: 'Edge Node Types' },
+        { type: 'doc', id: 'edge-node/device-specs', label: 'Device Specs' },
+        { type: 'doc', id: 'edge-node/faq', label: 'FAQ' },
+      ],
     },
     {
-      type: 'doc',
-      id: 'user-guide',
-      label: 'User Guide',
+      type: 'category',
+      label: 'User Guides',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'user-guides/run-node', label: 'Run an Edge Node' },
+        { type: 'doc', id: 'user-guides/dashboard', label: 'User Dashboard' },
+        { type: 'doc', id: 'user-guides/device-setup', label: 'Device Setup' },
+        { type: 'doc', id: 'user-guides/software-setup', label: 'Software Setup' },
+        { type: 'doc', id: 'user-guides/node-console', label: 'Node Console' },
+      ],
     },
     {
-      type: 'doc',
-      id: 'rewards',
-      label: 'Rewards',
+      type: 'category',
+      label: 'Token',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'token/reach', label: '$REACH' },
+      ],
     },
     {
-      type: 'doc',
-      id: 'berry-season-1',
-      label: 'BERRY Season 1',
+      type: 'category',
+      label: 'Berry Testnet',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'berry-testnet/campaign', label: 'Berry Campaign' },
+        { type: 'doc', id: 'berry-testnet/referral', label: 'Referral Program' },
+      ],
     },
     {
-      type: 'doc',
-      id: 'official-links',
-      label: 'Official Links',
+      type: 'category',
+      label: 'Links',
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'links/useful', label: 'Useful Links' },
+        { type: 'doc', id: 'links/social', label: 'Social Media' },
+        { type: 'doc', id: 'links/contact', label: 'Contact EnReach' },
+      ],
     },
-   ]
+  ],
 };
 
 export default sidebars;
