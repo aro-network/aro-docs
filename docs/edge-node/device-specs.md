@@ -8,48 +8,48 @@ hide_table_of_contents: false
 
 ### Berry Box Specifications
 
-Model: Berry Box 2GB+64GB Version
+Model: **Berry Box 2GB+64GB Version**
 
-CPU: 4-cores ARM processors
+	CPU: 4-cores ARM processors
 
-Memory: 2GB
+	Memory: 2GB
 
-System Storage: 64GB eMMC
+	System Storage: 64GB eMMC
 
-Network Interface: Ethernet*1
+	Network Interface: Ethernet*1
 
-USB Interface: USB Type-C*1
+	USB Interface: USB Type-C*1
 
-Power: 5V/2A
+	Power: 5V/2A
 
-Size: 103\*103\*20mm
+	Size: 103\*103\*20mm
 
-Package: Manual\*1, Cable\*1
+	Package: Manual\*1, Cable\*1
 
 ### Berry Router Specifications
 
-Model: Berry Router
+Model: **Berry Router**
 
-Chip: MT7981BA+MT7976C+MT7531AE
+	Chip: MT7981BA+MT7976C+MT7531AE
 
-Storage/Memory: 1GB DDR4; 128GB eMMC
+	Storage/Memory: 1GB DDR4; 128GB eMMC
 
-Wireless Standard: 802.11a/b/g/n/ac/ax
+	Wireless Standard: 802.11a/b/g/n/ac/ax
 
-Wireless Rate: 574Mb/s 2402Mb/s
+	Wireless Rate: 574Mb/s 2402Mb/s
 
-Operating Frequency Band: 2.4GHz+5GHz
+	Operating Frequency Band: 2.4GHz+5GHz
 
-RJ45 Connector: 1WAN+4LAN*10/100/1000Mbps
+	RJ45 Connector: 1WAN+4LAN*10/100/1000Mbps
 
-Antenna: 6
+	Antenna: 6
 
-Operating System: OPENWRT
+	Operating System: OPENWRT
 
-Size: 278\*179.1\*33mm
+	Size: 278\*179.1\*33mm
 
 ### Suggested Requirements for Running Software Clients
-The general requirements for all Software Clients:
+The **general requirements** for all Software Clients:
 
 - Public IP
 
