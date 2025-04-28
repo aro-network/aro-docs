@@ -2,6 +2,7 @@
 id: campaign
 title: Campaign
 ---
+import Link from '@docusaurus/Link';
 
 # Campaign
 
