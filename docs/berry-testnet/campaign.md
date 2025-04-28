@@ -25,7 +25,7 @@ Installing the Edge Node means you are connecting your device to the EnReach Net
 Steps to follow:
 
 1. Get your EnReach Account on the [EnReach Dashboard](https://dashboard.enreach.network). The registration is super easy and don't forget to input the Referral Code for extra benefits. 
-2. If you run the Hardware Node, please follow the <Link to="/docs/user-guide/device-setup">Device Setup</Link> guide. If you run the Software Node, please follow the <Link to="/docs/user-guide/software-setup">Software Setup</Link> guide.
+2. If you run the Hardware Node, please follow the <Link to="/docs/user-guides/device-setup">Device Setup</Link> guide. If you run the Software Node, please follow the <Link to="/docs/user-guides/software-setup">Software Setup</Link> guide.
 
 ### Start Earning
 Great! Now you are ready to earn rewards in the EnReach Testnet!
