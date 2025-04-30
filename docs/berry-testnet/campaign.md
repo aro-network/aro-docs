@@ -5,14 +5,12 @@ title: Campaign
 
 import Link from '@docusaurus/Link';
 
-# Campaign
+# Testnet Campaign
 
-Welcome to the Berry Testnet Campaign!
+Welcome to the Berry Testnet Campaign! Click to see a [**quick video guide**](https://drive.google.com/file/d/1b8gzM-c3v4-w8aq81gUenuyU6aFzLrmk/view?usp=drive_link)!
 
 ![testnet poster](/img/testnet/testnet_poster.png)
 
-### A Quick Video Guide
-We provide a quick video guide in this [link](https://drive.google.com/file/d/1b8gzM-c3v4-w8aq81gUenuyU6aFzLrmk/view?usp=drive_link). Check it out!
 
 ### 1. Plug It
 In the Berry Testnet, you can test out how the Edge Node works in the EnReach Edge Cloud. 
