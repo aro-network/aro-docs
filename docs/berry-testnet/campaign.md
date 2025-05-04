@@ -7,7 +7,7 @@ import Link from '@docusaurus/Link';
 
 # Berry Testnet Campaign
 
-Welcome to the Berry Testnet Campaign! Click to see a [**quick video guide**](https://drive.google.com/file/d/1b8gzM-c3v4-w8aq81gUenuyU6aFzLrmk/view?usp=drive_link)!
+Welcome to the Berry Testnet Campaign! Click to see a [**quick video guide**](https://youtu.be/YtjHVk2KA9w)!
 
 ![testnet poster](/img/testnet/testnet_poster.png)
 
