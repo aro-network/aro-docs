@@ -70,8 +70,6 @@ const sidebars = {
       collapsed: true,
       items: [
         { type: 'doc', id: 'links/useful', label: 'Useful Links' },
-        { type: 'doc', id: 'links/social', label: 'Social Media' },
-        { type: 'doc', id: 'links/contact', label: 'Contact EnReach' },
       ],
     },
   ],
