@@ -57,11 +57,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Berry Testnet',
+      label: 'Campaigns',
       collapsed: true,
       items: [
-        { type: 'doc', id: 'berry-testnet/campaign', label: 'Berry Campaign' },
-        { type: 'doc', id: 'berry-testnet/referral', label: 'Referral Program' },
+        { type: 'doc', id: 'campaigns/devnet', label: 'Devnet' },
+        { type: 'doc', id: 'campaigns/pioneer', label: 'Pioneer Program' },
       ],
     },
     {
