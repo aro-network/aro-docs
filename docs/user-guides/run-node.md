@@ -2,6 +2,7 @@
 id: run-node
 title: Run Node
 ---
+import Link from '@docusaurus/Link';
 
 # Run an Edge Node - the General Guide
 
