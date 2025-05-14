@@ -3,7 +3,7 @@ id: faq
 title: Faq
 ---
 
-# Faq
+# FAQ About Edge Nodes
 
 **Q: Hardware Node or Software Node, which one is better/stronger/superior?**
 
@@ -11,4 +11,14 @@ A: All Edge Nodes are equal. Hardware Nodes have higher level of integration so 
 
 **Q: Can I run an Edge Node anywhere in the world?**
 
-A: This is a good question. Technically you can run an Edge Node anywhere in this world. But remember: you need to be physically close to the end users -- this is how the Edge Cloud works. Practically, we suggest you to run an Edge Node in the region that has existing EnReach services so that you can benefit from the real revenue generated in that area.  
+A:  Technically you can run an Edge Node anywhere in this world. But remember: you need to be physically close to the end users -- this is how the Edge Cloud works. Practically, we suggest you to run an Edge Node in the region that has existing EnReach services so that you can benefit from the real revenue generated in that area.  
+
+**Q: Does the device compromise user privacy?**
+
+A: No. EnReach will NEVER collect any personal data from your daily operation. The only resource EnReach wants from you is your idle bandwidth — and nothing else. 
+
+**Q: Does joining the EnReach network affect my internet usage?**
+
+A: No. EnReach only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
+
+EnReach Hardware Nodes (Berry Boxes and Berry Routers) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
