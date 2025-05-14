@@ -20,7 +20,6 @@ const sidebars = {
         { type: 'doc', id: 'technologies/work-proof', label: 'Work Proof' },
         { type: 'doc', id: 'technologies/consensus', label: 'Consensus' },
         { type: 'doc', id: 'technologies/peeredge', label: 'PeerEdge' },
-        { type: 'doc', id: 'technologies/ai-transformers', label: 'AI Transformers' },
       ],
     },
     {
