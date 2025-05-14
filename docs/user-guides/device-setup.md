@@ -34,7 +34,7 @@ Make sure you have already created you EnReach Account (EnReach ID) and log in t
 
 > Refer to <Link to="/user-guides/dashboard">**this guide**</Link> for account creation process. 
 
-![Dashboard Add](/image/user-guides/dashboard_add.png)
+![Dashboard Add](/img/user-guides/dashboard_add.png)
 
 In the **Edge Node** page of your Dashboard, you will find **"Add Your Edge Node"** button (or the small buttom which is always on the top right area). 
 
@@ -42,7 +42,7 @@ Click on the button and select Node Type (Hardware Node for our case) to initiat
 
 > Notice: The new device **MUST** be online (powered on and have internet connection) during the Add process. 
 
-![Dashboard SN](/image/user-guides/dashboard_SN.png)
+![Dashboard SN](/img/user-guides/dashboard_SN.png)
 
 In this page you will be asked to manually input the **SN (Serial Number)** of your device. You can find the SN on the device label. Be careful, don't make typos!
 
@@ -51,7 +51,7 @@ If everything goes well, the Dashboard will recognize your device, and then you 
 
 ### Step 3: Ready To Go!
 
-![Dashboard Add Successful](/image/user-guides/dashboard_add_successful.png)
+![Dashboard Add Successful](/img/user-guides/dashboard_add_successful.png)
 
 When the device is successfully added to your Dashboard, you will see the **device card** appeared on the **Edge Node** page. Now you are ready to go with your first EnReach Edge Node!
 
