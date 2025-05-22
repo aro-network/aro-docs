@@ -3,13 +3,12 @@ id: reach
 title: Reach
 ---
 
-# `$REACH` 
+# `$ARO` 
 
-\$REACH is the native token in the EnReach Network ecosystem (Mainnet). 
+\$ARO is the native token in the Aro Network ecosystem (Mainnet). 
 
-- \$REACH is the incentive token for the Edge Node runners. 
-- \$REACH is the incentive token for the Keeper Node runners.
-- \$REACH is the token of payment for the EnReach Edge Cloud services. 
+- \$ARO is the incentive token for the Edge Node runners. 
+- \$ARO is the incentive token for the Keeper Node runners.
+- \$ARO is the token of payment for the Aro Edge Cloud services. 
 
-\$REACH is an ERC-20 token on Ethereum. 
 

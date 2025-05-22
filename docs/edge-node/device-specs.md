@@ -41,7 +41,7 @@ The **general requirements** for all Software Clients:
 - Data Disk RND4k Read IOPS ≥ 30000
 - System Disk Read/Write IOPS ≥ 15000/10000
 
-We provide suggested hardware requirements for running EnReach Software Nodes based on your **upstream bandwidth** (general requirements shall be met first!). If your bandwidth falls between, you can estimate the requirements based on the suggested requirements on a linear scale. 
+We provide suggested hardware requirements for running Aro Software Nodes based on your **upstream bandwidth** (general requirements shall be met first!). If your bandwidth falls between, you can estimate the requirements based on the suggested requirements on a linear scale. 
 
 - For **400Mbps**:
 	- CPU threads: ≥12

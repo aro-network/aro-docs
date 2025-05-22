@@ -8,7 +8,7 @@ title: Useful
 It is always a good idea to find all links update-to-date here: https://linktr.ee/enreachnetwork
 
 ### Official Links & Entries
-**EnReach Website**: https://enreach.network
+**Offcial Website**: https://enreach.network
 
 **User Dashboard (for Devnet)**: https://devnet.dashboard.enreach.network/
 

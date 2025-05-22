@@ -5,9 +5,9 @@ title: Pioneer
 
 # Pioneer Program
 
-### EnReach "100 Pioneers" Program
+### Aro "100 Pioneers" Program
 
-We’re inviting 100 early participants to join our **Pioneers Program** — a select group of experienced DePIN miners, KOLs, and Web3 enthusiasts. Together, we’ll refine the Enreach Edge Node with real-world feedback, build a strong community of advocates, and prepare for the Next Phase of our decentralized network launch.
+We’re inviting 100 early participants to join our **Pioneers Program** — a select group of experienced DePIN miners, KOLs, and Web3 enthusiasts. Together, we’ll refine the Aro Edge Node with real-world feedback, build a strong community of advocates, and prepare for the Next Phase of our decentralized network launch.
 
 ### Who Are We Looking For?
 
@@ -34,7 +34,7 @@ For all applicants:
 
 For selected Pioneers (100 total):
 
-- Receive a **FREE Enreach Edge Node device** shipped to your door.
+- Receive a **FREE Aro Edge Node device** shipped to your door.
 Start earning Testnet Rewards "Berry Points" (convertible fo $REACH at TGE) as soon as possible when Testnet starts.
 - Get access to our **Boosted Referral Program** — invite friends, earn even more.
 - Gain access to community round investment opportunities.
@@ -49,9 +49,9 @@ Start earning Testnet Rewards "Berry Points" (convertible fo $REACH at TGE) as s
 - **Plug it, Run it, Start Earning** -- the Edge Node installation is as easy as 1,2,3. Check out [this demo video](https://youtu.be/YtjHVk2KA9w).
 
 ### How to Join
-1. Apply via our [Pioneers Program form](https://enreach.fillout.com/Pioneers)
+1. Apply via our [Pioneers Program form](https://Aro.fillout.com/Pioneers)
  and fill out a short form for us to get to know you better.
-2. Join our [community](https://linktr.ee/enreachnetwork),
+2. Join our [community](https://linktr.ee/Aronetwork),
 stay updated, connect with other pioneers, and reach out directly if you have ideas or proposals.
 3. Wait for our announcement — we'll reach out to selected individuals and announce on our social media channels. 
 

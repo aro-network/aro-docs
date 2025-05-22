@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Edge Node
 
-**Edge Node** is the fundamental unit of the network. They are typically clients from home devices such as “EnReach Boxes”, laptops, mobile phones, NAS, etc..
+**Edge Node** is the fundamental unit of the network. They are typically clients from home devices such as “Aro Boxes”, laptops, mobile phones, NAS, etc..
 
 Edge Nodes run in segmented regions based on their geo-locations and provide resources to end users close to them in distance.
 
@@ -22,7 +22,7 @@ Edge Nodes connect with each other via **PeerDTS Protocol**. This is essential t
 
 The detailed explanation of how Edge Nodes work:
 
-1. Edge Nodes provide resources (network, computing, and storage) to the EnReach Edge Cloud. This is especially rewarding for those who contributes their idle devices and network resources.
+1. Edge Nodes provide resources (network, computing, and storage) to the Aro Edge Cloud. This is especially rewarding for those who contributes their idle devices and network resources.
 2. When Edge Nodes join the network, they are subject to implicit constraints, that is, they are asked to provide stable resources and service capabilities for the network.
 3. Edge Nodes generate **Work Reports** on a time basis (the “report epoch”) that reflect their workloads. Edge Nodes cannot profit by simply forging Work Reports because multiple Keeper Nodes will later make final decisions through cross-validation from multiple sources, i.e. heartbeats, network traffic tracks, and random challenges.
 4. Edge Nodes will be connecting to a randomly-assigned set of Keeper Nodes refreshed by every epoch. Edge Nodes cannot predict the exact set of Keeper Nodes assigned to them for the next epoch.
@@ -54,16 +54,16 @@ The blockchain (EVM) works as a public ledger that maintains key states of the n
 
 ### Geo-Regions
 
-The EnReach Network operates by **segmenting regions geographically**. This regional approach ensures that edge cloud resources are as physically close to end-users as possible, which is essential for maintaining high service quality and competitive costs. Consequently, EnReach nodes are “localized” by nature.
+The Aro Network operates by **segmenting regions geographically**. This regional approach ensures that edge cloud resources are as physically close to end-users as possible, which is essential for maintaining high service quality and competitive costs. Consequently, Aro nodes are “localized” by nature.
 
-Within the EnReach Network, all nodes—including Edge Nodes and Keeper Nodes—must register their regional information before starting service and establish connections with other nodes in the same region.
+Within the Aro Network, all nodes—including Edge Nodes and Keeper Nodes—must register their regional information before starting service and establish connections with other nodes in the same region.
 
-As a decentralized, blockchain-based protocol, EnReach maintains global states managed by the consensus layer (Keeper Nodes), which are recorded on-chain.
+As a decentralized, blockchain-based protocol, Aro maintains global states managed by the consensus layer (Keeper Nodes), which are recorded on-chain.
 
-To balance geographic segmentation with security and trustlessness, EnReach introduces a **hybrid verification system** on node workloads, with validation mechanisms both within and across regions.
+To balance geographic segmentation with security and trustlessness, Aro introduces a **hybrid verification system** on node workloads, with validation mechanisms both within and across regions.
 
 Within a region, each Edge Node must maintain long-lasting websocket connections with multiple Keeper Nodes, periodically rotating connections based on an on-chain random function, making collusion difficult.
 
-Given the challenges and costs of inter-regional communication, EnReach uses a randomized challenge mechanism between regions. This mechanism utilizes small data packets to distribute randomly assigned challenges, cross-verifying that Edge Nodes provide genuine resources.
+Given the challenges and costs of inter-regional communication, Aro uses a randomized challenge mechanism between regions. This mechanism utilizes small data packets to distribute randomly assigned challenges, cross-verifying that Edge Nodes provide genuine resources.
 
-Lastly, all Keeper Nodes are fully interconnected to support global consensus.
+Lastly, all Keeper Nodes are fully interconnected to support global consensus.Aro
