@@ -51,7 +51,7 @@ const sidebars = {
       label: 'Token',
       collapsed: true,
       items: [
-        { type: 'doc', id: 'token/reach', label: '$REACH' },
+        { type: 'doc', id: 'token/reach', label: '$ARO' },
       ],
     },
     {
