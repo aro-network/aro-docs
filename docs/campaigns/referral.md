@@ -2,6 +2,7 @@
 id: referral
 title: Referral Program
 ---
+import Link from '@docusaurus/Link';
 
 # Referral Program
 
