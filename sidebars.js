@@ -60,6 +60,7 @@ const sidebars = {
       collapsed: true,
       items: [
         { type: 'doc', id: 'campaigns/devnet', label: 'Devnet' },
+        { type: 'doc', id: 'campaigns/referral', label: 'Referral Program' },
         { type: 'doc', id: 'campaigns/pioneer', label: 'Pioneer Program' },
       ],
     },
