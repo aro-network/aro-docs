@@ -33,7 +33,7 @@ For **pro users**, you can have a wide range to choose between running the Hardw
 
 ### How Do I Manage My Edge Nodes?
 
-The [Dashboard](https://devnet.dashboard.Aro.network/?mode=devnet&tab=nodes) (currently for the Devnet) is the all-in-one entry for you to manage your Edge Nodes as well as manage your rewards. 
+The [Dashboard](https://devnet.dashboard.aro.network/?mode=devnet&tab=nodes) (currently for the Devnet) is the all-in-one entry for you to manage your Edge Nodes as well as manage your rewards. 
 
 Just create an **Aro Account** and you will be able to log in to this account and manage all the Edge Node stuff anytime, anywhere.  
 

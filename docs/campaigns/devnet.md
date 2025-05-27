@@ -24,7 +24,7 @@ Installing the Edge Node means you are connecting your device to the Aro Network
 
 Steps to follow:
 
-1. Get your Aro Account on the [Aro Devnet Dashboard](https://devnet.dashboard.Aro.network). The registration is super easy and don't forget to input the Referral Code for extra benefits. 
+1. Get your Aro Account on the [Aro Devnet Dashboard](https://devnet.dashboard.aro.network). The registration is super easy and don't forget to input the Referral Code for extra benefits. 
 2. You can choose to run **Berry Box** or **Berry Router** as the hardware nodes. Software nodes will follow later. 
 
 ### 3. Start Your Aro Journey

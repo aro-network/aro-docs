@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 
 ### General Guide
 
-The [Dashboard](https://devnet.dashboard.Aro.network/) is an all-in-one entry for users to manage their Edge Nodes and rewards. 
+The [Dashboard](https://devnet.dashboard.aro.network/) is an all-in-one entry for users to manage their Edge Nodes and rewards. 
 
 In the Dashboard, you will be able to: 
 
