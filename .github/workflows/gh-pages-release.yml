@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'EnReachNetwork/enreach-docs'
+    if: github.repository == 'aro-network/aro-docs'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
