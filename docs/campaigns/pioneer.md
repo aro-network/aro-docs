@@ -49,9 +49,9 @@ Start earning Testnet Rewards "Berry Points" (convertible fo $REACH at TGE) as s
 - **Plug it, Run it, Start Earning** -- the Edge Node installation is as easy as 1,2,3. Check out [this demo video](https://youtu.be/YtjHVk2KA9w).
 
 ### How to Join
-1. Apply via our [Pioneers Program form](https://Aro.fillout.com/Pioneers)
+1. Apply via our [Pioneers Program form](https://enreach.fillout.com/Pioneers)
  and fill out a short form for us to get to know you better.
-2. Join our [community](https://linktr.ee/Aronetwork),
+2. Join our [community](https://linktr.ee/enreachnetwork),
 stay updated, connect with other pioneers, and reach out directly if you have ideas or proposals.
 3. Wait for our announcement — we'll reach out to selected individuals and announce on our social media channels. 
 
