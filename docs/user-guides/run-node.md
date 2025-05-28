@@ -18,7 +18,7 @@ Here are the important things you need to know before you start running an Edge 
 
 ### What Type Of Edge Node Is Better For Me?
 
-The ARO Edge Node Client can theoretically be operated on a huge variaty of devices, from the plug-and-play Berry Boxes to the professional data centers. 
+The ARO Edge Node Client can theoretically be operated on a huge variaty of devices, from the plug-and-play ARO Pod to the professional data centers. 
 
 Generally, we classify Edge Nodes into two major types: **Hardware Nodes** and **Software Nodes**. 
 

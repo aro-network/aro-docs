@@ -12,7 +12,7 @@ The ARO **PeerEdge** middleware comprises three core components: **PeerHVM**, **
 
 ### ARO PeerHVM
 
-In ARO network, coordinating and managing distributed heterogeneous resources is crucial. We face the challenge of efficiently scheduling and adapting a variety of resources such as compute, storage, and bandwidth across diverse hardware and operating systems.&#x20;
+In ARO Network, coordinating and managing distributed heterogeneous resources is crucial. We face the challenge of efficiently scheduling and adapting a variety of resources such as compute, storage, and bandwidth across diverse hardware and operating systems.&#x20;
 
 ARO’s **PeerHVM (Peer Heterogeneous VM)** technology is designed to meet this need by virtualizing and standardizing various hardware and system resources, creating flexible, high-efficiency resource provisioning for various contents.
 
