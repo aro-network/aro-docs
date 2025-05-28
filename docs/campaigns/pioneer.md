@@ -5,9 +5,9 @@ title: Pioneer
 
 # Pioneer Program
 
-### Aro "100 Pioneers" Program
+### ARO "100 Pioneers" Program
 
-We’re inviting 100 early participants to join our **Pioneers Program** — a select group of experienced DePIN miners, KOLs, and Web3 enthusiasts. Together, we’ll refine the Aro Edge Node with real-world feedback, build a strong community of advocates, and prepare for the Next Phase of our decentralized network launch.
+We’re inviting 100 early participants to join our **Pioneers Program** — a select group of experienced DePIN miners, KOLs, and Web3 enthusiasts. Together, we’ll refine the ARO Edge Node with real-world feedback, build a strong community of advocates, and prepare for the Next Phase of our decentralized network launch.
 
 ### Who Are We Looking For?
 
@@ -34,8 +34,8 @@ For all applicants:
 
 For selected Pioneers (100 total):
 
-- Receive a **FREE Aro Edge Node device** shipped to your door.
-Start earning Testnet Rewards "Berry Points" (convertible fo $REACH at TGE) as soon as possible when Testnet starts.
+- Receive a **FREE ARO Edge Node device** shipped to your door.
+Start earning Testnet Rewards "Jade Shards" (convertible fo $ARO at TGE) as soon as possible when Testnet starts.
 - Get access to our **Boosted Referral Program** — invite friends, earn even more.
 - Gain access to community round investment opportunities.
 - Participate in early governance discussions and shape our journey. 

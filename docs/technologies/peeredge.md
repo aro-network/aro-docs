@@ -8,13 +8,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # PeerEdge
 
-The Aro **PeerEdge** middleware comprises three core components: **PeerHVM**, **PeerDTS**, **PeerRouting**.
+The ARO **PeerEdge** middleware comprises three core components: **PeerHVM**, **PeerDTS**, **PeerRouting**.
 
-### Aro PeerHVM
+### ARO PeerHVM
 
-In Aro network, coordinating and managing distributed heterogeneous resources is crucial. We face the challenge of efficiently scheduling and adapting a variety of resources such as compute, storage, and bandwidth across diverse hardware and operating systems.&#x20;
+In ARO network, coordinating and managing distributed heterogeneous resources is crucial. We face the challenge of efficiently scheduling and adapting a variety of resources such as compute, storage, and bandwidth across diverse hardware and operating systems.&#x20;
 
-Aro’s **PeerHVM (Peer Heterogeneous VM)** technology is designed to meet this need by virtualizing and standardizing various hardware and system resources, creating flexible, high-efficiency resource provisioning for various contents.
+ARO’s **PeerHVM (Peer Heterogeneous VM)** technology is designed to meet this need by virtualizing and standardizing various hardware and system resources, creating flexible, high-efficiency resource provisioning for various contents.
 
 <div style={{textAlign: 'center'}}>
   <img src={useBaseUrl('/img/technology/hvm.png')} style={{maxWidth: '800'}} />
@@ -34,37 +34,37 @@ The **Scheduling Layer** is responsible for dynamically matching resources to us
 
 Focused on maintaining resource reliability, the **Monitoring Layer** continuously monitors and identifies the status of hardware and performance across nodes. It includes robust tracking of resource usage, preventing attacks and false reporting.
 
-#### **What’s More: Aro’s Custom Containers**
+#### **What’s More: ARO’s Custom Containers**
 
-PeerHVM’s virtualization goes beyond resource abstraction by implementing deep optimization of resources. Custom containers developed by Aro enable efficient operation across various environments, particularly in small and edge devices, where PeerHVM achieves low-power operation. Custom virtualized technologies enable different hardware architectures to maximize their computational advantages, thereby enhancing overall network resource utilization and reducing the cost of edge cloud.
+PeerHVM’s virtualization goes beyond resource abstraction by implementing deep optimization of resources. Custom containers developed by ARO enable efficient operation across various environments, particularly in small and edge devices, where PeerHVM achieves low-power operation. Custom virtualized technologies enable different hardware architectures to maximize their computational advantages, thereby enhancing overall network resource utilization and reducing the cost of edge cloud.
 
-### Aro PeerDTS Protocol
+### ARO PeerDTS Protocol
 
-To build a distributed edge cloud that meets the demands of large-scale P2P data transmission across varied nodes, Aro developed a proprietary P2P transmission protocol, **PeerDTS**. Tailored specifically for edge environments and optimized for high-speed, reliable data transfer, this protocol surpasses conventional open-source alternatives through advanced **multi-channel transmission** capabilities, **custom erasure encoding** techniques and **Stateful-to-Stateless** transmission solutions.
+To build a distributed edge cloud that meets the demands of large-scale P2P data transmission across varied nodes, ARO developed a proprietary P2P transmission protocol, **PeerDTS**. Tailored specifically for edge environments and optimized for high-speed, reliable data transfer, this protocol surpasses conventional open-source alternatives through advanced **multi-channel transmission** capabilities, **custom erasure encoding** techniques and **Stateful-to-Stateless** transmission solutions.
 
 #### Edge-Side Optimized
 
-Unlike standard protocols, which are primarily designed for centralized content delivery networks (CDNs), Aro’s protocol is fine-tuned for distributed, small-scale P2P and edge environments. Standard P2P protocols often struggle in such scenarios, performing similarly to CDNs due to lack of specific edge optimizations. PeerDTS overcomes these limitations by implementing a multi-channel, adaptive transmission mechanism, enabling data to move more efficiently across edge nodes. This customization allows smaller nodes and edge devices to achieve performance on par with traditional CDNs, leveraging the benefits of decentralized architecture.
+Unlike standard protocols, which are primarily designed for centralized content delivery networks (CDNs), ARO’s protocol is fine-tuned for distributed, small-scale P2P and edge environments. Standard P2P protocols often struggle in such scenarios, performing similarly to CDNs due to lack of specific edge optimizations. PeerDTS overcomes these limitations by implementing a multi-channel, adaptive transmission mechanism, enabling data to move more efficiently across edge nodes. This customization allows smaller nodes and edge devices to achieve performance on par with traditional CDNs, leveraging the benefits of decentralized architecture.
 
 #### Static Content, Dynamic Encoding
 
-To meet the demands of high-volume data transmission over distributed networks, Aro dynamically re-encodes static content during transmission. Rather than simply sending static data, Aro’s protocol breaks data into chunks, each embedded with unique characteristic markers that support error correction and recovery. PeerDTS achieves a low-complexity erasure encoding (simplified to **O(N)** from typically **O(N^2)**) directly on edge devices, enabling robust fault tolerance and efficiency without requiring specific chips.
+To meet the demands of high-volume data transmission over distributed networks, ARO dynamically re-encodes static content during transmission. Rather than simply sending static data, ARO’s protocol breaks data into chunks, each embedded with unique characteristic markers that support error correction and recovery. PeerDTS achieves a low-complexity erasure encoding (simplified to **O(N)** from typically **O(N^2)**) directly on edge devices, enabling robust fault tolerance and efficiency without requiring specific chips.
 
-### Aro PeerRouting Engine
+### ARO PeerRouting Engine
 
 #### Matching Algorithm is the Holy Grail
 
-The **Aro PeerRouting Engine** is a critical component of the Aro network, enabling both high availability and economic efficiency.
+The **ARO PeerRouting Engine** is a critical component of the ARO network, enabling both high availability and economic efficiency.
 
 Why is the Matching Algorithm so important? Users have varying levels of willingness to pay for their needs, distinguishing demand into high-value and low-value categories. Simultaneously, the cost of network resources fluctuates constantly. These changes are unpredictable and do not automatically align with demand. The efficiency of matching directly impacts the network operator’s ROI, which is a life-or-death issue.
 
-From a resource scheduling perspective, matching high-value demand with low-cost nodes is key to success. This is the Aro PeerRouting Engine’s killer capability, achieved through nearly a decade of practical service experience.
+From a resource scheduling perspective, matching high-value demand with low-cost nodes is key to success. This is the ARO PeerRouting Engine’s killer capability, achieved through nearly a decade of practical service experience.
 
 #### Perceive, Before It Happens
 
-The Aro PeerRouting Engine achieves effective matching through a set of mature technologies by the Aro team:
+The ARO PeerRouting Engine achieves effective matching through a set of mature technologies by the ARO team:
 
 * **High-speed Content Transmission within P2P Networks**: This capability has been covered in detail in the previous chapter.
-* **Transmission Channel Scheduling**: The Aro PeerRouting Engine is adept at managing and optimizing transmission channels, as previously described.
-* **Channel Perception based on Partial Information**: A core challenge in P2P networks is the ability to infer overall channel width from limited data (e.g., estimating channel capacity based on data fragments over a set period). The Aro PeerRouting Engine incorporates a **Full-chain Perception Algorithm**, which adjusts content transmission strategies based on real-time perception results. This enhancement significantly boosts handshake efficiency while reducing transmission loss and latency.
+* **Transmission Channel Scheduling**: The ARO PeerRouting Engine is adept at managing and optimizing transmission channels, as previously described.
+* **Channel Perception based on Partial Information**: A core challenge in P2P networks is the ability to infer overall channel width from limited data (e.g., estimating channel capacity based on data fragments over a set period). The ARO PeerRouting Engine incorporates a **Full-chain Perception Algorithm**, which adjusts content transmission strategies based on real-time perception results. This enhancement significantly boosts handshake efficiency while reducing transmission loss and latency.
 * **Pre-emptive Deployment**: Beyond “fragmental perception”, the PeerRouting Engine’s advanced capability lies in **Pre-emptive Deployment**. Traditional network solutions generally process demand before matching resources, while the PeerRouting Engine leverages a **Packing Algorithm** that pre-deploys resources, improving utilization by over 50%. This strategic foresight enables optimal resource allocation well in advance of demand spikes.

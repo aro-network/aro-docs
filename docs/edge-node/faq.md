@@ -7,7 +7,7 @@ title: Faq
 
 **Q: Hardware Node or Software Node, which one is better/stronger/superior?**
 
-A: All Edge Nodes are equal. Hardware Nodes have higher level of integration so they will be easier to install, configure and maintain compared with the Software Nodes.  
+A: All Edge Nodes are equal. Hardware Nodes (**ARO Pod** and **ARO Link**) have higher level of integration so they will be easier to install, configure and maintain compared with the Software Nodes (**ARO Client**).  
 
 **Q: Can I run an Edge Node anywhere in the world?**
 
@@ -15,10 +15,10 @@ A:  Technically you can run an Edge Node anywhere in this world. But remember: y
 
 **Q: Does the device compromise user privacy?**
 
-A: No. Aro will NEVER collect any personal data from your daily operation. The only resource Aro wants from you is your idle bandwidth — and nothing else. 
+A: No. ARO will NEVER collect any personal data from your daily operation. The only resource ARO wants from you is your idle bandwidth — and nothing else. 
 
-**Q: Does joining the Aro network affect my internet usage?**
+**Q: Does joining the ARO network affect my internet usage?**
 
-A: No. Aro only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
+A: No. ARO only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
 
-Aro Hardware Nodes (Berry Boxes and Berry Routers) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
+ARO Hardware Nodes (**ARO Pod** and **ARO Link**) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.

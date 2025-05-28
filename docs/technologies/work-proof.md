@@ -7,17 +7,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Work Proof
 
-Aro introduces a novel protocol to provide trusted workload proofs for heterogeneous edge nodes, named **GPoW**(**Guarantee Proof of Work**).
+ARO introduces a novel protocol to provide trusted workload proofs for heterogeneous edge nodes, named **GPoW**(**Guarantee Proof of Work**).
 
 ### Overview
 
-The **GPoW** (**Guarantee Proof of Work**) protocol is a core feature of the Aro network, designed to provide trusted resource and workload proofs for heterogeneous edge nodes, including network bandwidth, storage, computing power, etc.&#x20;
+The **GPoW** (**Guarantee Proof of Work**) protocol is a core feature of the ARO network, designed to provide trusted resource and workload proofs for heterogeneous edge nodes, including network bandwidth, storage, computing power, etc.&#x20;
 
 Unlike traditional systems which focuses only on one type of resource like storage verification, GPoW extends its capabilities to support various types of workloads such as CDN traffic and GPU computing tasks, making it a versatile proof mechanism for DePIN networks.
 
 ### Resource Virtualization and Integration
 
-In the first phase, Aro utilizes virtualization and containerization technologies to standardize the integration of diverse hardware resources. This allows the network to incorporate a wide range of devices, including enterprise servers, personal PCs, mobile devices, and even WASM environments within browser plugins. Using technologies like Docker and Kubernetes, these resources are virtualized to create a standardized execution environment, enabling them to perform various tasks efficiently.
+In the first phase, ARO utilizes virtualization and containerization technologies to standardize the integration of diverse hardware resources. This allows the network to incorporate a wide range of devices, including enterprise servers, personal PCs, mobile devices, and even WASM environments within browser plugins. Using technologies like Docker and Kubernetes, these resources are virtualized to create a standardized execution environment, enabling them to perform various tasks efficiently.
 
 ### Work Proof Generation
 
@@ -41,6 +41,6 @@ To safeguard against potential security threats like sybil attacks or proof forg
 
 ### Conclusion
 
-GPoW (Guarantee Proof of Work) is an innovative proof mechanism designed in the Aro network that leverages TEE, zkVM, and random challenge techniques to validate the workloads of heterogeneous resource nodes.&#x20;
+GPoW (Guarantee Proof of Work) is an innovative proof mechanism designed in the ARO network that leverages TEE, zkVM, and random challenge techniques to validate the workloads of heterogeneous resource nodes.&#x20;
 
-By providing end-to-end solutions from resource virtualization to on-chain verification, GPoW ensures the integrity, transparency, and security of the Aro network, enabling efficient and trustworthy decentralized service delivery.
+By providing end-to-end solutions from resource virtualization to on-chain verification, GPoW ensures the integrity, transparency, and security of the ARO network, enabling efficient and trustworthy decentralized service delivery.

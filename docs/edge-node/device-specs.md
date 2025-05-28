@@ -6,9 +6,9 @@ hide_table_of_contents: false
 
 # Device Specs
 
-### Berry Box Specifications
+### ARO Pod Specifications
 
-- Model: **Berry Box 2GB+64GB Version**
+- Model: **ARO Pod 2GB+64GB Version** Home-run Box
 	- CPU: 4-cores ARM processors
 	- Memory: 2GB
 	- System Storage: 64GB eMMC
@@ -18,9 +18,9 @@ hide_table_of_contents: false
 	- Size: 103\*103\*20mm
 	- Package: Manual\*1, Cable\*1
 
-### Berry Router Specifications
+### ARO Link Specifications
 
-- Model: **Berry Router**
+- Model: **ARO Link** Router
 	- Chip: MT7981BA+MT7976C+MT7531AE
 	- Storage/Memory: 1GB DDR4; 128GB eMMC
 	- Wireless Standard: 802.11a/b/g/n/ac/ax
@@ -32,7 +32,7 @@ hide_table_of_contents: false
 	- Size: 278\*179.1\*33mm
 
 ### Suggested Requirements for Running Software Clients
-The **general requirements** for all Software Clients:
+The **general requirements** for all Software Clients (**ARO Clinet**):
 
 - Public IP
 - Full Cone NAT or above (NAT0, DMZ NAT1, UPnP NAT1)
@@ -41,7 +41,7 @@ The **general requirements** for all Software Clients:
 - Data Disk RND4k Read IOPS ≥ 30000
 - System Disk Read/Write IOPS ≥ 15000/10000
 
-We provide suggested hardware requirements for running Aro Software Nodes based on your **upstream bandwidth** (general requirements shall be met first!). If your bandwidth falls between, you can estimate the requirements based on the suggested requirements on a linear scale. 
+We provide suggested hardware requirements for running **ARO Client** based on your **upstream bandwidth** (general requirements shall be met first!). If your bandwidth falls between, you can estimate the requirements based on the suggested requirements on a linear scale. 
 
 - For **400Mbps**:
 	- CPU threads: ≥12

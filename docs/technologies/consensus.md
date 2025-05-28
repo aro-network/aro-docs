@@ -6,7 +6,7 @@ hide_table_of_contents: false
 
 # Consensus
 
-Aro introduces a novel protocol to provide guarantee consensus and staking mechanism, named **GPoS**(**Guarantee Proof of Stake**) .
+ARO introduces a novel protocol to provide guarantee consensus and staking mechanism, named **GPoS**(**Guarantee Proof of Stake**) .
 
 ### Overview
 
@@ -51,6 +51,6 @@ The GPoS mechanism addresses scalability and security concerns through its struc
 
 ### Conclusion
 
-GPoS (Guarantee Proof of Stake) forms the trust and incentive layer of the Aro network, enabling transparent, secure, and efficient validation of decentralized resources. It offers an advanced consensus and staking model that aligns the stake of Keeper nodes with their validation capacity.&#x20;
+GPoS (Guarantee Proof of Stake) forms the trust and incentive layer of the ARO network, enabling transparent, secure, and efficient validation of decentralized resources. It offers an advanced consensus and staking model that aligns the stake of Keeper nodes with their validation capacity.&#x20;
 
-By linking staking limits to workload handling capacity and implementing a strong slashing mechanism, GPoS ensures that the Aro network maintains high standards of security, reliability, and decentralization. This innovative approach sets a new benchmark for staking mechanisms in DePIN networks, facilitating efficient and trustworthy decentralized service delivery.
+By linking staking limits to workload handling capacity and implementing a strong slashing mechanism, GPoS ensures that the ARO network maintains high standards of security, reliability, and decentralization. This innovative approach sets a new benchmark for staking mechanisms in DePIN networks, facilitating efficient and trustworthy decentralized service delivery.

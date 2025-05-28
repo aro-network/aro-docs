@@ -17,18 +17,18 @@ Edge Cloud is an integral component of modern digital infrastructure, seamlessly
 
 For instance, in the case of YouTube, video content is not always served directly from centralized data centers. Instead, YouTube strategically caches high-demand videos on regional edge servers located closer to end users. Edge Cloud is the hero in today's super-rich-content internet. 
 
-### Aro Defines the New Edge
+### ARO Defines the New Edge
 
-Today, major Web2 players have edge cloud solutions. Aro Network, however, is nothing like any existing species. 
+Today, major Web2 players have edge cloud solutions. ARO Network, however, is nothing like any existing species. 
 
-Aro is an Edge Cloud that **brings content faster and closer to us**.
+ARO is an Edge Cloud that **brings content faster and closer to us**.
 
-By leveraging a decentralized network, Aro reduces latency and speeds up delivery, ensuring seamless access to content anytime, anywhere.
+By leveraging a decentralized network, ARO reduces latency and speeds up delivery, ensuring seamless access to content anytime, anywhere.
 
-Aro is an Edge Cloud that **understands content and how we want it**.
+ARO is an Edge Cloud that **understands content and how we want it**.
 
-With various AI Transformers hosted at the edge, Aro tailors content based on user request or behavior, delivering a smarter, more personalized experience.
+With various AI Transformers hosted at the edge, ARO tailors content based on user request or behavior, delivering a smarter, more personalized experience.
 
-Aro is an Edge Cloud that **transforms our digital experience in the AI era**.
+ARO is an Edge Cloud that **transforms our digital experience in the AI era**.
 
-By powering real-time content delivery with smart features backed by AI Transformers, Aro makes digital interactions faster, smoother, and more intelligent than today.
+By powering real-time content delivery with smart features backed by AI Transformers, ARO makes digital interactions faster, smoother, and more intelligent than today.

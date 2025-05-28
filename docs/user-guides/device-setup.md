@@ -30,7 +30,7 @@ Just **unbox**, **power on**, and **connect to the internet with the cable**. It
 
 ### Step 2: Add Device To Your Dashboard
 
-Make sure you have already created you Aro Account (Aro ID) and log in to your Dashboard. 
+Make sure you have already created you ARO Account (ARO ID) and log in to your Dashboard. 
 
 > Refer to <Link to="/user-guides/dashboard">**this guide**</Link> for account creation process. 
 
@@ -53,7 +53,7 @@ If everything goes well, the Dashboard will recognize your device, and then you 
 
 ![Dashboard Add Successful](/img/user-guides/dashboard_add_successful.png)
 
-When the device is successfully added to your Dashboard, you will see the **device card** appeared on the **Edge Node** page. Now you are ready to go with your first Aro Edge Node!
+When the device is successfully added to your Dashboard, you will see the **device card** appeared on the **Edge Node** page. Now you are ready to go with your first ARO Edge Node!
 
 
 

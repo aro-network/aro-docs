@@ -8,25 +8,25 @@ import Link from '@docusaurus/Link';
 
 ### About Referral Program
 
-The **Referral Program** works as a long term mechanism for growing Aro's community and user base. 
+The **Referral Program** works as a long term mechanism for growing ARO's community and user base. 
 
-This is the program for everyone and benefits everyone. You will enjoy extra benefits by referring your friends to join Aro Network, or being referred. 
+This is the program for everyone and benefits everyone. You will enjoy extra benefits by referring your friends to join ARO Network, or being referred. 
 
 ### What's for the Referrer
 
-The **Referrer** (the person who refers/invites another person to join Aro Network) enjoys extra **Referral Bonus** rewards which are added into the total rewards.  
+The **Referrer** (the person who refers/invites another person to join ARO Network) enjoys extra **Referral Bonus** rewards which are added into the total rewards.  
 
 The **Referral Bonus** is calculated based on the total Edge Node Rewards earned by the referees. This bonus works basically like a commission -- the Referrer get a fixed % (currently set to `15%`) based on the Referees' rewards.  
 
 > Note: the Commission Rate % can be adjusted when there is a policy change. Please find the up-to-date policy in the 'Referral' area on your Dashboard. 
 
-Normally the commission is calculated based on the Edge Node Rewards earned by the **first-tier** referees. This mean only the person who is **directly referred** by you will contribute to your Referral Bonus. However, we apply special policies which allow certain users (i.e. KoLs, big distributor, pioneers in new business regions, etc.) to earn an extra **second-tier** commission as Referral Bonus. This extra benefits are not granted for certain -- you need to contact the team and prove to us that you have the capabilities to make special contributions to Aro's community growth.  
+Normally the commission is calculated based on the Edge Node Rewards earned by the **first-tier** referees. This mean only the person who is **directly referred** by you will contribute to your Referral Bonus. However, we apply special policies which allow certain users (i.e. KoLs, big distributor, pioneers in new business regions, etc.) to earn an extra **second-tier** commission as Referral Bonus. This extra benefits are not granted for certain -- you need to contact the team and prove to us that you have the capabilities to make special contributions to ARO's community growth.  
 
 ### What's for the Referee
 
-The **Referee** (the person who is referred/invited to join Aro Network by the Referrer) enjoys extra **boost on the Edge Node Rewards**. 
+The **Referee** (the person who is referred/invited to join ARO Network by the Referrer) enjoys extra **boost on the Edge Node Rewards**. 
 
-This boost will give you an extra % when calculating your Edge Node Rewards (the rewards you earn from running Edge Nodes in Aro Network). 
+This boost will give you an extra % when calculating your Edge Node Rewards (the rewards you earn from running Edge Nodes in ARO Network). 
 
 Currently, you will get `20%` extra boost for the first `14 days` on a successful referral. 
 
