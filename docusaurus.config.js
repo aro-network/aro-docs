@@ -10,20 +10,20 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'EnReach Network Docs',
-  tagline: 'EnReach: The Genesis of Open Edge',
+  title: 'ARO Network Docs',
+  tagline: 'ARO: The Genesis of Open Edge',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: process.env.SITE_URL || 'https://docs.enreach.network',
+  url: process.env.SITE_URL || 'https://docs.aro.network',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'EnReachNetwork', // Usually your GitHub org/user name.
-  projectName: 'enreach-docs', // Usually your repo name.
+  organizationName: 'aro-network', // Usually your GitHub org/user name.
+  projectName: 'aro-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -81,9 +81,9 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'EnReach Network',
+        title: 'ARO Network',
         logo: {
-          alt: 'EnReach Logo',
+          alt: 'ARO Logo',
           src: 'img/logo.png',
         },
         // items: [
