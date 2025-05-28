@@ -10,7 +10,7 @@ It is always a good idea to find all links update-to-date here: https://linktr.e
 ### Official Links & Entries
 **Offcial Website**: https://aro.network
 
-**User Dashboard (for Devnet)**: https://devnet.dashboard.aro.network/
+**User Dashboard (for Devnet)**: https://devnet-dashboard.aro.network/
 
 **Github**: https://github.com/aro-network
 
