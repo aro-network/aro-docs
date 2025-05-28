@@ -23,7 +23,7 @@ Here is a [**quick video guide**](https://www.youtube.com/watch?v=YtjHVk2KA9w) t
 
 ### Step 1: Plug In
 
-It is extremely easy and intuitive to "plug-and-play" the Hardware Nodes, i.e. the **Berry Box** and the **Berry Router**.  
+It is extremely easy and intuitive to "plug-and-play" the Hardware Nodes, i.e. the **ARO Pod** and the **ARO Link**.  
 
 Just **unbox**, **power on**, and **connect to the internet with the cable**. It will be done in one minute. Make sure you have internet connection and you can proceed to Step 2. 
 
