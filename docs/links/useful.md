@@ -24,7 +24,7 @@ Comming Soon.
 
 **Discord**: https://discord.com/invite/Rc4BMUjbNB
 
-**Twitter/X**: https://x.com/EnReachNetwork
+**Twitter/X**: https://x.com/AroNetwork
 
 
 
