@@ -7,8 +7,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Rewards
 
-ARO incentivizes resource providers, known as **Edge Nodes**, to contribute internet resources such as storage, compute, and bandwidth, by rewarding them with native tokens. 
+ARO incentivizes resource providers, known as **Edge Nodes**, to contribute internet resources—such as storage, compute, and bandwidth—by rewarding them with native tokens.
 
-Rewards are based on verified contributions using mechanisms like workload validation and randomized challenges, ensuring fairness and trust.
+These rewards are distributed based on verified contributions, using mechanisms like workload validation and randomized challenges to ensure fairness and trust.
 
-Participation is **permissionless**—any hardware can join the network and turn idle resources into revenue. To support early growth, ARO subsidizes contributions until application revenue sustains the ecosystem, creating a self-reinforcing loop of growth and incentives.
+**Participation is permissionless**—any hardware can join the network and convert idle resources into revenue. To support early-stage growth, ARO subsidizes contributions until application-level revenue can sustain the ecosystem, creating a self-reinforcing cycle of growth and incentives.

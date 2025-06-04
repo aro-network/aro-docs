@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Edge Node
 
-**Edge Node** is the fundamental unit of the network. They are typically clients from home devices such as “ARO Boxes”, laptops, mobile phones, NAS, etc..
+**Edge Node** is the fundamental unit of the network. They are typically clients from home devices such as ARO Pods, ARO Links, laptops, NAS, etc..
 
 Edge Nodes run in segmented regions based on their geo-locations and provide resources to end users close to them in distance.
 

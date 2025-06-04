@@ -1,60 +1,61 @@
 ---
 id: device-specs
-title: Device Specs
+title: Device Specifications
 hide_table_of_contents: false
 ---
 
-# Device Specs
+# Device Specifications
 
 ### ARO Pod Specifications
 
-- Model: **ARO Pod 2GB+64GB Version** Home-run Box
-	- CPU: 4-cores ARM processors
-	- Memory: 2GB
-	- System Storage: 64GB eMMC
-	- Network Interface: Ethernet*1
-	- USB Interface: USB Type-C*1
-	- Power: 5V/2A
-	- Size: 103\*103\*20mm
-	- Package: Manual\*1, Cable\*1
+- Device: **ARO Pod 2GB+64GB Version** Home Gateway
+  - CPU: Quad-core ARM processor
+  - Memory: 2GB
+  - System Storage: 64GB eMMC
+  - Network Interface: 1 × Ethernet
+  - USB Interface: 1 × USB Type-C
+  - Power: 5V/2A
+  - Dimensions: 103 × 103 × 20 mm
+  - Package Contents: 1 × Manual, 1 × Cable
 
 ### ARO Link Specifications
 
-- Model: **ARO Link** Router
-	- Chip: MT7981BA+MT7976C+MT7531AE
-	- Storage/Memory: 1GB DDR4; 128GB eMMC
-	- Wireless Standard: 802.11a/b/g/n/ac/ax
-	- Wireless Rate: 574Mb/s 2402Mb/s
-	- Operating Frequency Band: 2.4GHz+5GHz
-	- RJ45 Connector: 1WAN+4LAN*10/100/1000Mbps
-	- Antenna: 6
-	- Operating System: OPENWRT
-	- Size: 278\*179.1\*33mm
+- Device: **ARO Link** Router
+  - Chipset: MT7981BA + MT7976C + MT7531AE
+  - Memory/Storage: 1GB DDR4; 128GB eMMC
+  - Wireless Standard: 802.11a/b/g/n/ac/ax
+  - Wireless Speed: 2.4GHz: 574 Mbps; 5GHz: 2402 Mbps
+  - Operating Frequency: 2.4GHz + 5GHz
+  - RJ45 Ports: 1 × WAN + 4 × LAN (10/100/1000 Mbps)
+  - Antennas: 6
+  - Operating System: OpenWRT
+  - Dimensions: 278 × 179.1 × 33 mm
 
-### Suggested Requirements for Running Software Clients
-The **general requirements** for all Software Clients (**ARO Clinet**):
+### Recommended Requirements for Software Clients
 
-- Public IP
-- Full Cone NAT or above (NAT0, DMZ NAT1, UPnP NAT1)
+**General Requirements** for all **ARO Client** Software:
+
+- Public IP address
+- NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)
 - IPv6 Support
-- CPU Clock Speed ≥ 2Ghz
-- Data Disk RND4k Read IOPS ≥ 30000
-- System Disk Read/Write IOPS ≥ 15000/10000
+- CPU Clock Speed: ≥ 2 GHz
+- Data Disk Random 4K Read IOPS: ≥ 30,000
+- System Disk Read/Write IOPS: ≥ 15,000 / 10,000
 
-We provide suggested hardware requirements for running **ARO Client** based on your **upstream bandwidth** (general requirements shall be met first!). If your bandwidth falls between, you can estimate the requirements based on the suggested requirements on a linear scale. 
+We provide recommended hardware specifications for running **ARO Client** based on your **upstream bandwidth** (general requirements must be met first). If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
-- For **400Mbps**:
-	- CPU threads: ≥12
-	- RAM: 12GB
-	- System Disk: ≥ 50GB
-	- Data Disk: ≥ 600GB SSD
-- For **1Gbps**:
-	- CPU threads: ≥ 24
-	- RAM: 32-48GB
-	- System Disk: ≥ 240GB SSD
-	- Data Disk: ≥ 2TB SSD
-- For **5Gbps**:
-	- CPU threads: ≥ 48
-	- RAM: 128-192GB
-	- System Disk: ≥ 240GB SSD
-	- Data Disk: ≥ 10TB SSD
+- For **400 Mbps**:
+  - CPU Threads: ≥ 12
+  - RAM: 12 GB
+  - System Disk: ≥ 50 GB SSD
+  - Data Disk: ≥ 600 GB SSD
+- For **1 Gbps**:
+  - CPU Threads: ≥ 24
+  - RAM: 32–48 GB
+  - System Disk: ≥ 240 GB SSD
+  - Data Disk: ≥ 2 TB SSD
+- For **5 Gbps**:
+  - CPU Threads: ≥ 48
+  - RAM: 128–192 GB
+  - System Disk: ≥ 240 GB SSD
+  - Data Disk: ≥ 10 TB SSD

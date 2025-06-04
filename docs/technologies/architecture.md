@@ -29,9 +29,9 @@ At this layer, we focus on solving two fundamental challenges:
 
 This is where ARO actively orchestrates network resources to optimize the match between supply and user demand.
 
-At the base of this layer lies a trust mechanism for verifying node workloads. On top of this, we introduce a capability abstraction engine known as **ARO Middleware**.
+At the base of this layer lies a trust mechanism for verifying node workloads. On top of this, we introduce a capability abstraction engine known as the **PeerEdge** Middleware.
 
-ARO Middleware consists of three core components:
+**PeerEdge** consists of three core components:
 
 1. **PeerHVM (Peer Heterogeneous Virtual Machine)**  
    Abstracts P2P network resources to provide standardized capability outputs. With PeerHVM, ARO can deploy capabilities across distributed nodes to form a unified and interoperable network structure.

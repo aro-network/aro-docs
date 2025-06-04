@@ -1,22 +1,22 @@
 ---
 id: types
-title: Types
+title: Edge Node Types
 ---
 
 # Types
 
-Now you might have some basic idea of how Edge Node works, but what kind of Edge Nodes best work for you?  
+Now that you have a basic understanding of how Edge Nodes work, you might be wondering: what type of Edge Node is best for you?
 
 ### Hardware Nodes
 
-ARO is owned by the crowd, not the cloud. Rest assured: we guarantee that, even if you have no idea at all of the tech-savvy concepts, you will be able to run an Edge Node, just at your home. 
+ARO is owned by the crowd, not the cloud. And the good news is—you don’t need to be tech-savvy to participate. You can easily run an Edge Node right from your home.
 
-Install the device, register an account in the [dashboard](https://devnet-dashboard.aro.network), and you will be starting to earn from your contributed idle internet resources. That's so easy. 
+Simply install the device, register an account through the [dashboard](https://devnet-dashboard.aro.network), and start earning rewards by contributing your idle internet resources. It’s that simple.
 
-Currently two specific models of hardware are supported to run ARO clients: the **ARO Pod** and the **ARO Link**.  
+Currently, two specific hardware models support ARO clients: the **ARO Pod** and the **ARO Link**.
 
 ### Software Nodes
 
-ARO is a permissionless Edge Cloud network. That is, ARO makes use of heterogeneous resources. ARO provides a **software image** (**ARO Client**) that you can run on all kinds of devices you have: PC, Workstation, or even Data Center. 
+ARO is a permissionless Edge Cloud network designed to utilize heterogeneous resources. To support this, ARO offers a **software image** (the **ARO Client**) that can be run on a wide range of devices—PCs, workstations, or even data centers.
 
-Bear in mind that the software image is more like "the solution for **Pro Users**". Running the software image requires higher capabilities both for the device and the owner.
+Keep in mind that the software image is intended more for **Pro Users**. Running it requires higher technical capabilities from both the device and the user.
