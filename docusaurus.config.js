@@ -81,7 +81,7 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'ARO Network',
+        title: 'Documentations',
         logo: {
           alt: 'ARO Logo',
           src: 'img/logo.png',
