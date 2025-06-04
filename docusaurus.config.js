@@ -83,8 +83,11 @@ const config = {
       navbar: {
         title: 'Documentations',
         logo: {
-          alt: 'ARO Logo',
-          src: 'img/logo.png',
+        alt: 'My Project Logo',
+        src: 'img/logo-light.png', // Light mode logo
+        srcDark: 'img/logo-dark.png', // Night mode logo
+        href: '/',
+        target: '_self',
         },
         // items: [
         //   {
