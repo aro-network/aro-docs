@@ -7,42 +7,46 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Architecture
 
-ARO Network builds the edge cloud infrastructure network based on this three-layer model:
+ARO Network constructs its edge cloud infrastructure using a three-layer architecture model:
 
 <div style={{textAlign: 'center'}}>
   <img src={useBaseUrl('/img/technology/arch_stack.png')} style={{maxWidth: '800'}} />
 </div>
 
-### Resource Layer (Resource)
+### Resource Layer
 
-This is the foundation of ARO, composed of massive, distributed, and permissionless hardware resources. These resources provide the bandwidth, storage, and computing power that form the basis of edge cloud.
+This is the foundational layer of ARO, consisting of a vast, distributed, and permissionless network of hardware resources. These resources provide the bandwidth, storage, and computing power that underpin the edge cloud.
 
-In the Resource Layer, we focus on solving two fundamental issues.
+At this layer, we focus on solving two fundamental challenges:
 
-*   **Trust**:
+- **Trust**:  
+  How can large-scale distributed nodes verify one another and trust the results of such verification?
 
-    how to ensure that the large-scale distributed nodes can verify each other and trust verification results.
-*   **Functionality**:
+- **Functionality**:  
+  In a network with high node heterogeneity, how can we effectively virtualize and containerize these nodes while establishing a P2P transmission network that can penetrate firewalls and local networks?
 
-    In a network with high node heterogeneity, we need to effectively virtualize and containerize these nodes and establish a P2P transmission network capable of penetrating gateways and local networks.
+### Open Layer
 
-### Open Layer (Ability)
+This is where ARO actively orchestrates network resources to optimize the match between supply and user demand.
 
-This is where ARO takes action, serving as the entity focused on “orchestrate” network resources while optimizing the match between network resources and user demands.
+At the base of this layer lies a trust mechanism for verifying node workloads. On top of this, we introduce a capability abstraction engine known as **ARO Middleware**.
 
-At the base of this layer, we first need a trust mechanism to verify the workloads of nodes within the network. Building on this, we create a capability abstraction engine, known as **ARO Middleware**.
+ARO Middleware consists of three core components:
 
-The ARO Middleware comprises three core components:
+1. **PeerHVM (Peer Heterogeneous Virtual Machine)**  
+   Abstracts P2P network resources to provide standardized capability outputs. With PeerHVM, ARO can deploy capabilities across distributed nodes to form a unified and interoperable network structure.
 
-1. ARO introduces **PeerHVM (Peer Heterogeneous Virtual Machine)** to abstract P2P network resources, providing a standardized capability output. With the support of PeerHVM, the capabilities of the ARO network can be “deployed” across dispersed nodes, forming a unified, interoperable structure.
-2. ARO introduces **PeerDTS**, an enhanced large-scale P2P network transmission protocol, that enables massive content transfer within the capability layer abstracted by PeerHVM.
-3. ARO introduces **PeerRouting**, a dynamic, pre-emptive response engine, that precisely matches resources to the constantly changing user demand.
+2. **PeerDTS**  
+   A high-performance P2P transmission protocol that enables large-scale content delivery across the capability layer abstracted by PeerHVM.
 
-### Application Layer (Service)
+3. **PeerRouting**  
+   A dynamic, preemptive response engine that intelligently matches resources to continuously changing user demand.
 
-Based on the capability abstraction provided by the engine and its corresponding on-chain interfaces, we have built user interaction interfaces, service components, and application APIs for CDN services, cloud storage services, AI models, runtime transmission services, and compute routing services from third parties.
+### Application Layer
 
-As outlined in the three-phase approach described earlier, this layer is **open** to the developer community in creating various applications, fulfilling the vision of Universal Acceleration.
+Leveraging the capabilities provided by the middleware and the corresponding on-chain interfaces, this layer offers user-facing interfaces, service components, and application APIs for CDN, cloud storage, AI inference, runtime transmission, and compute routing services provided by third parties.
+
+As part of our phased approach, this layer is **open** to the developer community to foster a wide range of applications—fulfilling ARO’s vision of **Universal Acceleration**.
 
 ### Resource, Trust, and Service
 
@@ -50,12 +54,12 @@ As outlined in the three-phase approach described earlier, this layer is **open*
   <img src={useBaseUrl('/img/technology/resource_trust_service.png')} style={{maxWidth: '800'}} />
 </div>
 
-This **Resource-Trust-Service** model is a simple, clear abstraction that outlines how ARO organizes edge hardware resources into an edge cloud network and highlights the core technologies involved.
+The **Resource–Trust–Service** model provides a clear, modular abstraction for how ARO organizes edge hardware into a robust edge cloud network, highlighting the key technologies involved.
 
-The **Resource** layer focuses on virtualizing and standardizing the large-scale heterogeneous **PeerNode** resources to provide decentralized compute capabilities, and use **GPoW**(Guarantee Proof of Work) protocol to provide trusted verifiable work proofs.
+- The **Resource** layer focuses on virtualizing and standardizing the large-scale, heterogeneous **PeerNode** resources to provide decentralized computing capabilities. It uses the **GPoW** (Guarantee Proof of Work) protocol to offer trustworthy, verifiable work proofs.
 
-The **Trust** layer utilizes the **GPoS**(Guarantee Proof of Stake) protocol to provide trusted on-chain work proof verification, settlement, and governance.
+- The **Trust** layer employs the **GPoS** (Guarantee Proof of Stake) protocol to ensure trusted on-chain verification, settlement, and governance of these work proofs.
 
-The **Service** layer utilizes the **PeerHVM**, **PeerDTS**, and **PeerRouting** middleware to provide services like CDN, AiDN, Routing, etc based on the trusted verifiable **PeerNodes**.
+- The **Service** layer leverages the **PeerHVM**, **PeerDTS**, and **PeerRouting** middleware to deliver services such as CDN, AiDN, and routing based on these verifiable **PeerNodes**.
 
-ARO combines these capabilities to build a reliable AI acceleration network, leveraging industry-best practices to maximize performance and cost efficiency.
+By integrating these technologies, ARO creates a high-performance, cost-efficient AI acceleration network grounded in industry best practices.
