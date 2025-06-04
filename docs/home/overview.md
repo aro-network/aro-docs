@@ -6,12 +6,12 @@ slug: /
 
 # Overview
 
-**ARO Network** is building **a decentralized, intelligent Edge Cloud**, redefining human's digital experience.
+The **ARO Network** is building a **decentralized, faster, smarter Edge Cloud for the AI era** to redefine the human digital experience.
 
-Content powers the internet. ARO Network delivers fast, intelligent, AI-powered content.
+Content drives the internet. The ARO Network delivers fast, intelligent, AI-powered content.
 
-ARO Network is not pitching the future - ARO is a network scaled from a proven foundation. It's now open to the crowd. 
+The ARO Network isn’t just a vision for the future—it’s a scalable platform built on a proven foundation, now open to everyone.
 
-Join ARO Network. **Don't pay for the internet. Get paid by the internet.**
+Join the ARO Network. **Don’t pay for the internet. Get paid by the internet.**
 
 

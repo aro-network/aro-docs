@@ -3,20 +3,31 @@ id: types
 title: Edge Node Types
 ---
 
-# Types
+# Edge Node Types
 
-Now that you have a basic understanding of how Edge Nodes work, you might be wondering: what type of Edge Node is best for you?
+Wondering which Edge Node is best for you? Here’s an overview of the available options to help you decide.
 
-### Hardware Nodes
+### Hardware Nodes (ARO Pod & ARO Link)
 
-ARO is owned by the crowd, not the cloud. And the good news is—you don’t need to be tech-savvy to participate. You can easily run an Edge Node right from your home.
+The ARO Network is community-driven, not cloud-controlled. Best of all, you don’t need to be tech-savvy to participate—you can run an Edge Node right from your home.
 
-Simply install the device, register an account through the [dashboard](https://devnet-dashboard.aro.network), and start earning rewards by contributing your idle internet resources. It’s that simple.
+Hardware Nodes are ideal for **beginners**, offering pre-configured, user-friendly devices optimized for efficient operation. They simplify setup by eliminating the need to configure Node Clients or adapt to your internet environment.
 
-Currently, two specific hardware models support ARO clients: the **ARO Pod** and the **ARO Link**.
+Two Hardware Node models are currently available: **ARO Pod** and **ARO Link**.
 
-### Software Nodes
+- The **ARO Pod** is a compact, plug-and-play device designed for 24/7 operation with exceptional uptime, perfect for home use.
+- The **ARO Link** doubles as a standard router while generating revenue from your idle internet resources, making it ideal for business scenarios with dual functionality.
 
-ARO is a permissionless Edge Cloud network designed to utilize heterogeneous resources. To support this, ARO offers a **software image** (the **ARO Client**) that can be run on a wide range of devices—PCs, workstations, or even data centers.
+### Software Nodes (ARO Client)
 
-Keep in mind that the software image is intended more for **Pro Users**. Running it requires higher technical capabilities from both the device and the user.
+The ARO Network is a permissionless Edge Cloud designed to leverage diverse resources. To support this, ARO provides a **software image** (the **ARO Client**) that can be installed on various devices, including PCs, workstations, or data centers.
+
+Note that the **ARO Client** is geared toward **advanced users**, requiring greater technical expertise from both the device and the operator.
+
+### Lite Nodes (ARO Lite)
+
+For those seeking an accessible entry point, **ARO Lite** nodes operate as lightweight **browser extensions**, such as a **Chrome extension**. These nodes enable anyone to join the ARO Network with minimal cost and effort.
+
+By deploying **ARO Lite**, ARO facilitates exploratory resource building in new markets, establishing the supply needed for robust Edge Cloud services. This makes **ARO Lite** an ideal way to expand the network’s user base.
+
+While **ARO Lite** nodes generate rewards like other Edge Nodes, their lower service capacity results in smaller rewards compared to Hardware or Software Nodes. 
