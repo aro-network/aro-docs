@@ -8,26 +8,26 @@ import Link from '@docusaurus/Link';
 
 ### Web Console for Hardware Nodes
 
-The Dashboard provides the entry to the **Web Console** for your devices. 
+The Dashboard provides access to the **Web Console** for managing your devices.
 
-![Dashboard Add](/img/user-guides/dashboard_console.png)
+![Web Console Button](/img/user-guides/dashboard_console.png)
 
-On the top right corner on the Edge Node page you will find a **"Web Console"** button. 
+On the **Edge Node** page, locate the **"Web Console"** button in the top-right corner.
 
-> You can only access the Web Console of your device when and only when you are in the same LAN as the device is. 
+> **Note**: You can only access the Web Console when your device and the accessing system are on the same local area network (LAN).
 
-![Dashboard Add](/img/user-guides/console_1.png)
+![Device Information](/img/user-guides/console_1.png)
 
-Check the device information in this tab. 
+View device information in this tab.
 
-![Dashboard Add](/img/user-guides/console_2.png)
+![IP Configuration](/img/user-guides/console_2.png)
 
-Set IP configuration in this tab. 
+Configure IP settings in this tab.
 
-![Dashboard Add](/img/user-guides/console_3.png)
+![Network Status](/img/user-guides/console_3.png)
 
-Check network status in this tab. 
+Monitor network status in this tab.
 
-![Dashboard Add](/img/user-guides/console_4.png)
+![Device Restart](/img/user-guides/console_4.png)
 
-You can directly restart your device in this tab. 
+Restart your device directly from this tab.

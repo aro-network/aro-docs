@@ -6,40 +6,32 @@ import Link from '@docusaurus/Link';
 
 # Referral Program
 
-### About Referral Program
+### About the Referral Program
 
-The **Referral Program** works as a long term mechanism for growing ARO's community and user base. 
+The **Referral Program** is a long-term initiative designed to grow the ARO community and user base.
 
-This is the program for everyone and benefits everyone. You will enjoy extra benefits by referring your friends to join ARO Network, or being referred. 
+This program benefits everyone. Both referrers and referees enjoy additional rewards by inviting friends to join the ARO Network or by being referred.
 
-### What's for the Referrer
+### Benefits for the Referrer
 
-The **Referrer** (the person who refers/invites another person to join ARO Network) enjoys extra **Referral Bonus** rewards which are added into the total rewards.  
+The **Referrer** (the person who invites others to join the ARO Network) earns an additional **Referral Bonus** added to their total rewards.
 
-The **Referral Bonus** is calculated based on the total Edge Node Rewards earned by the referees. This bonus works basically like a commission -- the Referrer get a fixed % (currently set to `15%`) based on the Referees' rewards.  
+The **Referral Bonus** is calculated as a percentage of the Edge Node Rewards earned by referees. Currently, referrers receive a **15% commission** based on their referees’ rewards.
 
-> Note: the Commission Rate % can be adjusted when there is a policy change. Please find the up-to-date policy in the 'Referral' area on your Dashboard. 
+> **Note**: The commission rate may change with policy updates. Check the latest policy in the **Referral** section of your Dashboard.
 
-Normally the commission is calculated based on the Edge Node Rewards earned by the **first-tier** referees. This mean only the person who is **directly referred** by you will contribute to your Referral Bonus. However, we apply special policies which allow certain users (i.e. KoLs, big distributor, pioneers in new business regions, etc.) to earn an extra **second-tier** commission as Referral Bonus. This extra benefits are not granted for certain -- you need to contact the team and prove to us that you have the capabilities to make special contributions to ARO's community growth.  
+The bonus typically applies to **first-tier referees** (those directly referred by you). However, special policies may allow certain users (e.g., KOLs, major distributors, or pioneers in new regions) to earn an additional **second-tier commission**. These extra benefits are not guaranteed and require contacting the ARO team to demonstrate your ability to significantly contribute to community growth.
 
-### What's for the Referee
+### Benefits for the Referee
 
-The **Referee** (the person who is referred/invited to join ARO Network by the Referrer) enjoys extra **boost on the Edge Node Rewards**. 
+The **Referee** (the person invited to join the ARO Network) receives an **Edge Node Rewards boost**.
 
-This boost will give you an extra % when calculating your Edge Node Rewards (the rewards you earn from running Edge Nodes in ARO Network). 
+This boost increases your Edge Node Rewards (earned from running Edge Nodes) by an additional percentage. Currently, referees enjoy a **20% boost** for the first **14 days** after a successful referral.
 
-Currently, you will get `20%` extra boost for the first `14 days` on a successful referral. 
+> **Note**: The boost parameters may change with policy updates. Check the latest policy in the **Stats** section of your Dashboard.
 
-> Note: the parameters of the boost can be adjusted when there is a policy change. Please find the up-to-date policy in the 'Stats' area on your Dashboard. 
-
-The boost will apply right after you have filled in the Referral Code on initial account setup. That said, it is allowed to fill in the Referral Code **anytime later**, and the boost will follow. 
+The boost applies immediately after entering a Referral Code during initial account setup. You can also enter a Referral Code later, and the boost will be applied accordingly.
 
 ### User Guides
 
-If you want to learn about: how to check Referral information, how to input Referral Code, or how to share my Referral Code/Link to my friends, please see <Link to="/user-guides/dashboard">**this guide**</Link>. 
-
-
-
- 
-
-
+To learn how to check referral information, enter a Referral Code, or share your Referral Code/Link with friends, refer to <Link to="/user-guides/dashboard">this guide</Link>.

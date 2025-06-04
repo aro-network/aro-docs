@@ -1,37 +1,33 @@
 ---
 id: devnet
-title: Devnet
+title: ARO Devnet
 ---
-
 import Link from '@docusaurus/Link';
 
-# Devnet
+# ARO Devnet
 
-Welcome to the ARO Devnet! Click to see a [**quick video guide**](https://youtu.be/YtjHVk2KA9w)!
+Welcome to the ARO Devnet! Watch this [**quick video guide**](https://youtu.be/YtjHVk2KA9w) to get started.
 
+### 1. Plug It In
+In the Devnet, you can explore how Edge Nodes operate within the ARO Edge Cloud.
 
-### 1. Plug It
-In the Devnet, you can test out how the Edge Node works in the ARO Edge Cloud. 
-
-Hardware or Software, your choice:
-
-1. **ARO Pod** is the dedicated plug-and-play device that can run in your home. It is specially optimized for high uptime and rewards efficiency. 
-2. **ARO Link** is the WiFi router with built-in ARO client. Get the router and earn while you browse!
-3. **ARO Client (coming soon)** has the ARO Software Image intalled on your own device: PC, Workstation, or even a data center. It is the choice if you are a real Pro User.  
+Choose your preferred option:
+- **ARO Pod**: A dedicated plug-and-play device optimized for home use, offering high uptime and efficient reward generation.
+- **ARO Link**: A Wi-Fi router with a built-in ARO client, allowing you to earn rewards while browsing.
+- **ARO Client** (coming soon): Install the ARO Software Image on your own device, such as a PC, workstation, or data center. Ideal for advanced users.
 
 ### 2. Install It
-Installing the Edge Node means you are connecting your device to the ARO Network (the Edge Cloud). You need several step to get the setup and configuration ready. 
+Installing an Edge Node connects your device to the ARO Network (Edge Cloud). Follow these steps to set up and configure your node:
 
-Steps to follow:
+1. Create an **ARO Account** on the [ARO Devnet Dashboard](https://devnet-dashboard.ARO.network). Registration is straightforward, and entering a Referral Code provides extra benefits.
+2. Choose to run a **Hardware Node** (**ARO Pod** or **ARO Link**). Software Nodes will be available later.
 
-1. Get your ARO Account on the [ARO Devnet Dashboard](https://devnet-dashboard.ARO.network). The registration is super easy and don't forget to input the Referral Code for extra benefits. 
-2. You can choose to run **ARO Pod** or **ARO Link** as the hardware nodes. Software nodes will follow later. 
+> For detailed setup instructions, refer to <Link to="/user-guides/device-setup">this guide</Link>.
 
 ### 3. Start Your ARO Journey
-Great! Now you are ready to start your ARO journey as an Edge Node runner!
+Congratulations! You’re ready to begin your journey as an Edge Node operator in the ARO Devnet.
 
-What you can get from Devnet:
-
-1. The Devnet is not Testnet. The Devnet will not be fully open to community for large-scale open testing. Join Devnet early helps you to get familiar with how ARO works and get ready for the later stages such as Testnet and Mainnet. 
-2. Your feedback is important and helps us to improve particularly at this early stage. 
-3. Remember, you will not be earning real mining rewards on Devnet, but your participation and effort will be acknowledged and you will get certain rewards when Devnet is ended.  
+What you gain from the Devnet:
+- **Early Access**: The Devnet is distinct from the Testnet and is not fully open for large-scale community testing. Joining early helps you become familiar with ARO’s functionality and prepares you for Testnet and Mainnet phases.
+- **Feedback Matters**: Your input is invaluable in improving the ARO Network, especially at this early stage.
+- **Rewards**: While real mining rewards are not available on Devnet, your participation will be recognized, and you’ll receive rewards when the Devnet phase concludes.

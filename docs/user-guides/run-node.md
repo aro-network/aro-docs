@@ -1,46 +1,45 @@
 ---
 id: run-node
-title: Run Node
+title: Run an Edge Node
 ---
 import Link from '@docusaurus/Link';
 
-# Run an Edge Node - the General Guide
+# Running an Edge Node - General Guide
 
-### Things To Know Before You Start 
-Here are the important things you need to know before you start running an Edge Node in ARO Network. 
+### Things to Know Before You Start
+Here are key points to understand before running an Edge Node on the ARO Network:
 
-1. ARO is a **permissionless** network, which means you do not need to get any permission or qualification before you are able to join the network. 
-2. Internet connection is necessary. Better internet resources and internet quality (particularly concerning **bandwidth and connection stability**) really helps to increase your rewards from running the Edge Node. 
-3. The **region** where you run the Edge Node matters as well as your internet resources and quality. The closer you are to the end users, the more you can help them access to internet contents (and the more reward accordingly). 
-4. You can quit the network anytime as you want and take the rewards. 
-5. Most of the time, the Edge Node that you are running utilizes your **idle and unused internet resources** to serve the ARO Edge Network. Running an Edge Node will not hinder your user experiences in surfing the internet that much. It's always your choice.    
-6. You can either run a **Hardware Node** or a **Software Node** (Software solutions will be delivered soon). You can refer to the following chapter if you have question in how to choose the best option for you. 
+1. ARO is a **permissionless** network, meaning no prior permission or qualification is required to join.
+2. A stable internet connection is essential. Higher bandwidth and connection stability significantly increase your rewards from running an Edge Node.
+3. The **region** where you run your Edge Node matters. Being closer to end users enhances their access to internet content, resulting in higher rewards.
+4. You can exit the network and claim your rewards at any time.
+5. Edge Nodes primarily utilize your **idle internet resources** to serve the ARO Edge Network, with minimal impact on your regular internet experience. The choice is always yours.
+6. You can run either a **Hardware Node** or a **Software Node** (software solutions will be available soon). Refer to the next section for guidance on choosing the best option.
 
-### What Type Of Edge Node Is Better For Me?
+### Which Type of Edge Node Is Right for Me?
 
-The ARO Edge Node Client can theoretically be operated on a huge variaty of devices, from the plug-and-play ARO Pod to the professional data centers. 
+The ARO Edge Node Client can theoretically run on a wide range of devices, from the plug-and-play ARO Pod to professional data centers.
 
-Generally, we classify Edge Nodes into two major types: **Hardware Nodes** and **Software Nodes**. 
+Edge Nodes are divided into two main types: **Hardware Nodes** and **Software Nodes**.
 
-**Hardware Nodes** is **the best choice for starters** because the devices are specially customized and optimized for running the Edge Node Clients to user-friendly, highly-efficient operating environment for the Edge Nodes. No need to bother with the mess and complexity of configurating the Node Clients and match them with your internet environment. 
+**Hardware Nodes** are **ideal for beginners**, as they are pre-configured and optimized for user-friendly, efficient operation. They eliminate the complexity of setting up Node Clients and adapting them to your internet environment.
 
-Currently there are two models of Hardware Nodes supported by ARO: **ARO Pod** and **ARO Link**. 
+ARO currently supports two Hardware Node models: **ARO Pod** and **ARO Link**.
 
-1. The **ARO Pod** is a small, home-run, plug-and-play box that can run 24/7 for extreme uptime performance. This is your choice if you want to run something at home. You can refer to <Link to="/edge-node/device-specs">Hardware Specs</Link> to learn more details about the specifications. 
-2. The **ARO Link** works just like a normal router, but keeps earning you real money from utilizing your idle internet resources. One device, two benefits! Best for business scenarios. You can refer to <Link to="/edge-node/device-specs">Hardware Specs</Link> to learn more details about the specifications. 
+1. The **ARO Pod** is a compact, plug-and-play home device designed for 24/7 operation with exceptional uptime. It’s perfect for home use. See <Link to="/edge-node/device-specs">Hardware Specifications</Link> for more details.
+2. The **ARO Link** functions as a standard router while earning revenue from your idle internet resources. It’s ideal for business scenarios, offering dual functionality. See <Link to="/edge-node/device-specs">Hardware Specifications</Link> for more details.
 
-For **pro users**, you can have a wide range to choose between running the Hardware Nodes and implementing the software image (**ARO Client**) on your preferred devices. Gudies will be availble soon, following the release of the Edge Node software images. 
+For **advanced users**, you can choose between Hardware Nodes or deploying the **ARO Client** software on your preferred devices. Guides will be available soon, following the release of the Edge Node software images.
 
 ### How Do I Manage My Edge Nodes?
 
-The [Dashboard](https://devnet-dashboard.ARO.network/?mode=devnet&tab=nodes) (currently for the Devnet) is the all-in-one entry for you to manage your Edge Nodes as well as manage your rewards. 
+The [Dashboard](https://devnet-dashboard.ARO.network/?mode=devnet&tab=nodes) (currently for Devnet) is your all-in-one platform for managing Edge Nodes and tracking rewards.
 
-Just create an **ARO Account** and you will be able to log in to this account and manage all the Edge Node stuff anytime, anywhere.  
+By creating an **ARO Account**, you can log in anytime, anywhere to manage your Edge Nodes and rewards.
 
-Please find the **Dashboard User Guide** on <Link to="/user-guides/dashboard">this page</Link> about the following topics: 
-
-- Where to enter the Dashboard.
-- How to create an ARO Account. 
-- How to refer my friends to join ARO. 
-- How to manage my Edge Nodes in the Dashbaord.
-- How to get my rewards. 
+For detailed instructions, refer to the **Dashboard User Guide** on <Link to="/user-guides/dashboard">this page</Link>, which covers:
+- Accessing the Dashboard
+- Creating an ARO Account
+- Referring friends to join ARO
+- Managing Edge Nodes in the Dashboard
+- Claiming your rewards

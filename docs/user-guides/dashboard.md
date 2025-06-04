@@ -8,45 +8,41 @@ import Link from '@docusaurus/Link';
 
 ### General Guide
 
-The [Dashboard](https://devnet-dashboard.ARO.network/) is an all-in-one entry for users to manage their Edge Nodes and rewards. 
+The [Dashboard](https://devnet-dashboard.ARO.network/) is your all-in-one platform for managing Edge Nodes and rewards.
 
-In the Dashboard, you will be able to: 
-
+With the Dashboard, you can:
 - Create an ARO Account
-- Find your Referral Code, refer your friends to join ARO, and get Referral Rewards
+- Access your Referral Code, invite friends to join ARO, and earn Referral Rewards
 - Manage all your Edge Nodes
-- Manage your rewards 
+- Track and manage your rewards
 - Manage your funds
 
-### ARO Account 
+### ARO Account
 
-For the first time user, you need to register an **ARO Account** (sign up for ARO). After successful registration, you will be able to sign in to your ARO Account anytime and anywhere to manage your Edge Nodes and everything else. 
+New users must register an **ARO Account** to get started. Once registered, you can sign in anytime, anywhere to manage your Edge Nodes and related activities.
 
-![Sign in Page](/img/user-guides/sign_in_page.png)
+![Sign In Page](/img/user-guides/sign_in_page.png)
 
-This is the **Sign In** Page. If you are new to ARO, click on the **'Sign Up'** in the bottom area to register your new ARO Account. Either email or Google Account is accepted. For email registration, you need to set up the password and have your email verified. 
+This is the **Sign In** page. If you're new to ARO, click **Sign Up** at the bottom to create your ARO Account. You can register using an email address or a Google Account. For email registration, you’ll need to set a password and verify your email.
 
 ![Input Referral Code](/img/user-guides/input_referral_code.png)
 
-You will be asked to input a **Referral Code** in the next step. The Referral Code will give you extra boost of 20% for a certain period after your registration. If you don't have a Referral Code, you can just **skip** at this stage and input your Referral Code later. 
+During registration, you’ll be prompted to enter a **Referral Code**. Using a Referral Code grants a 20% reward boost for a limited period after signing up. If you don’t have a code, you can skip this step and add one later.
 
-### What's In The Dashboard?
+### What’s in the Dashboard?
 
 ![Dashboard Topbar](/img/user-guides/dashboard_topbar.png)
 
-You will find a **topbar** that shows all the tabs to the pages that you have access to:
+The **topbar** provides access to all available pages:
 
-- **Edge Node**: This page displays all the Edge Nodes under your ARO Account's control. You can add new Edge Nodes or delete existing ones from this page. Click on the device card and you will get into a page for more detailed information about this device. 
+- **Edge Node**: View and manage all Edge Nodes linked to your ARO Account. You can add new nodes or remove existing ones. Clicking a device card displays detailed information about that node.
 
-> If you want to learn detailed steps to add your new device (Edge Node) to the dashboard, please refer to <Link to="/user-guides/device-setup">**this guide**</Link>.
+  > To learn how to add a new Edge Node to the Dashboard, refer to <Link to="/user-guides/device-setup">this guide</Link>.
 
-- **Stats**: This page gives you an overall view of how many Edge Nodes you are running (and how many of them are online), and how much rewards you have gained from running these Edge Nodes. 
-- **Funds**: This page the place that you can manage your funds, such as claiming token rewards with your wallets. 
+- **Stats**: Monitor the number of Edge Nodes you’re running, their online status, and the total rewards earned from operating them.
+- **Funds**: Manage your funds, including claiming token rewards to your wallet.
 
-> **Wallet binding** and **token claim** will be available on later stage. 
+  > **Wallet binding** and **token claiming** features will be available at a later stage.
 
-- **Referral**: This is where you can manage everything about your Referrals. You can find your Referral Code, copy Referral Links, and learn how much bonus you have earned from the Referral. 
-- **ARO ID**: This is where you can manage basic operations on your ARO Account. 
-
-
-
+- **Referral**: Access your Referral Code, copy Referral Links, and track bonuses earned through referrals.
+- **ARO ID**: Manage basic account settings and operations for your ARO Account.

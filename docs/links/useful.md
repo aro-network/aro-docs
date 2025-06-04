@@ -5,7 +5,7 @@ title: Useful
 
 # Useful Links
 ### Our Linktree 
-It is always a good idea to find all links update-to-date here: https://linktr.ee/enreachnetwork
+It is always a good idea to find all links update-to-date here: https://linktr.ee/AroNetwork
 
 ### Official Links & Entries
 **Offcial Website**: https://aro.network
@@ -25,7 +25,6 @@ Comming Soon.
 **Discord**: https://discord.com/invite/Rc4BMUjbNB
 
 **Twitter/X**: https://x.com/AroNetwork
-
 
 
 
