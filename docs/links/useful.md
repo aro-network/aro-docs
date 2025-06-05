@@ -20,7 +20,7 @@ It is always a good idea to find all links update-to-date here: https://linktr.e
 Comming Soon.
 
 ### Social Media
-**Telegram**: https://t.me/EnReachNetwork
+**Telegram**: https://t.me/ARO_Network
 
 **Discord**: https://discord.com/invite/Rc4BMUjbNB
 
