@@ -33,6 +33,12 @@ hide_table_of_contents: false
 
 ### Recommended Requirements for Software Clients
 
+**The ARO Software Client is currently available only as an x86 virtual machine (VM) image.**
+
+To use the client, users must deploy the VM image on bare-metal servers or desktop computers equipped with an x86 architecture CPU, using any virtualization solution of their choice.
+
+For detailed installation and usage instructions, refer to the [x86 Image Installation Guide](/docs/user-guides/node-console.md).
+
 **General Requirements** for all **ARO Client** Software:
 
 - Public IP address
@@ -41,6 +47,11 @@ hide_table_of_contents: false
 - CPU Clock Speed: ≥ 2 GHz
 - Data Disk Random 4K Read IOPS: ≥ 30,000
 - System Disk Read/Write IOPS: ≥ 15,000 / 10,000
+
+**Port  Requirements** for all **ARO Client** Software:
+
+- TCP: 80, 443, 9500-9700
+- UDP: All ports
 
 We provide recommended hardware specifications for running **ARO Client** based on your **upstream bandwidth** (general requirements must be met first). If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
