@@ -18,7 +18,7 @@ Here are key points to understand before running an Edge Node on the ARO Network
 
 ### Which Type of Edge Node Is Right For Me?
 
-The ARO Edge Node Client can theoretically run on a wide range of devices, from the plug-and-play ARO Pod to professional data centers.
+Here is a simple guide to quickly locate the best node type for you: 
 
 **ARO Pod**
 
