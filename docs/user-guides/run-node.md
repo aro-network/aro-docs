@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 
 # Running an Edge Node - General Guide
 
-### Things to Know Before You Start
+### Things To Know Before You Start
 Here are key points to understand before running an Edge Node on the ARO Network:
 
 1. ARO is a **permissionless** network, meaning no prior permission or qualification is required to join.
@@ -16,20 +16,28 @@ Here are key points to understand before running an Edge Node on the ARO Network
 5. Edge Nodes primarily utilize your **idle internet resources** to serve the ARO Edge Network, with minimal impact on your regular internet experience. The choice is always yours.
 6. You can run either a **Hardware Node** or a **Software Node** (software solutions will be available soon). Refer to the next section for guidance on choosing the best option.
 
-### Which Type of Edge Node Is Right for Me?
+### Which Type of Edge Node Is Right For Me?
 
 The ARO Edge Node Client can theoretically run on a wide range of devices, from the plug-and-play ARO Pod to professional data centers.
 
-Edge Nodes are divided into two main types: **Hardware Nodes** and **Software Nodes**.
+**ARO Pod**
 
-**Hardware Nodes** are **ideal for beginners**, as they are pre-configured and optimized for user-friendly, efficient operation. They eliminate the complexity of setting up Node Clients and adapting them to your internet environment.
+Dedicated plug-and-play device. Optimized for high uptime and rewards. 
 
-ARO currently supports two Hardware Node models: **ARO Pod** and **ARO Link**.
+**ARO Lite**
+ 
+Lightweight browser extension. Join with minimal cost and effort. 
 
-1. The **ARO Pod** is a compact, plug-and-play home device designed for 24/7 operation with exceptional uptime. It’s perfect for home use. See <Link to="/edge-node/device-specs">Hardware Specifications</Link> for more details.
-2. The **ARO Link** functions as a standard router while earning revenue from your idle internet resources. It’s ideal for business scenarios, offering dual functionality. See <Link to="/edge-node/device-specs">Hardware Specifications</Link> for more details.
+**ARO Client**
 
-For **advanced users**, you can choose between Hardware Nodes or deploying the **ARO Client** software on your preferred devices. Guides will be available soon, following the release of the Edge Node software images.
+Install on your own device to unlock more capabilities. 
+
+**ARO Link**
+
+WiFi router with built-in ARO node. The choice for business scenarios. 
+
+>To learn more about Edge Node types, please refer to <Link to="/edge-node/types">this page</Link>
+
 
 ### How Do I Manage My Edge Nodes?
 
