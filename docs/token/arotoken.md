@@ -1,6 +1,6 @@
 ---
-id: reach
-title: Reach
+id: arotoken
+title: ARO Token
 ---
 
 # `$ARO` 
