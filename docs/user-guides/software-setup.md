@@ -79,7 +79,7 @@ This section describes how to run the ARO Client image and configure the Edge No
    Review the **Terms of Service** and **Privacy Policy**. Select **Agree and Continue** to proceed.  
    ![Virtual Serial Number](/img/user-guides/cmd_SN.png)  
    The 19-digit **Virtual Serial Number** for this Edge Node will appear on the screen. Record this number, as it is critical for activation.  
-   ![Add New Node](/img/user-guides/cmd_inputSN.png)  
+   ![Add New Node](/img/user-guides/cmd_inputsn.png)  
    Open the **ARO Dashboard** (accessible via the ARO project website or designated interface). Navigate to **Edge Nodes** > **Add New Node** > **Software Node**, and enter the 19-digit Virtual Serial Number.  
    ![Device Recognition](/img/user-guides/cmd_finddevice.png)  
    The dashboard will recognize the software image instance and display its information. Confirm to continue.  
