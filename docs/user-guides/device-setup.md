@@ -1,12 +1,12 @@
 ---
 id: device-setup
-title: Device Setup
+title: Hardware Device Tutorial
 ---
 import Link from '@docusaurus/Link'; 
 
-# Device Setup
+# Hardware Device Tutorial
 
-### Get Started with Your New Device!
+### Get Started with Your New Hardware Device!
 
 This guide is for you if:
 - You’ve received your new Hardware Node (e.g., **ARO Pod** or **ARO Link**) and want to set it up.

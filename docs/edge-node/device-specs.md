@@ -31,13 +31,13 @@ hide_table_of_contents: false
   - Operating System: OpenWRT
   - Dimensions: 278 × 179.1 × 33 mm
 
-### Recommended Requirements for Software Clients
+### Recommended Requirements for Software Clients (ARO Client)
 
-**The ARO Software Client is currently available only as an x86 virtual machine (VM) image.**
+**The ARO Client is currently available only as an x86 virtual machine (VM) image.**
 
 To use the client, users must deploy the VM image on bare-metal servers or desktop computers equipped with an x86 architecture CPU, using any virtualization solution of their choice.
 
-For detailed installation and usage instructions, refer to the [x86 Image Installation Guide](/docs/user-guides/node-console.md).
+For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
 
 **General Requirements** for all **ARO Client** Software:
 
