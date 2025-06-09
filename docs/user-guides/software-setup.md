@@ -48,7 +48,7 @@ After preparing the virtual machine environment, you need to select the ARO Clie
 1. **Create the Virtual Machine**  
    In your virtualization platform, create a new virtual machine and select the ARO Client `.iso` file as the boot medium.
 2. **Resource Allocation Recommendations**  
-   To ensure smooth operation of ARO Client, allocate the resources according to [this recommendation](/docs/user-guides/device-specs.md).
+   To ensure smooth operation of ARO Client, allocate the resources according to [this recommendation](/docs/edge-node/device-specs.md).
 3. **Save Configuration**  
    Confirm the virtual machine settings and save them before starting.
 
