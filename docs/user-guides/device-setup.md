@@ -1,10 +1,10 @@
 ---
 id: device-setup
-title: Hardware Device Tutorial
+title: Hardware Node
 ---
 import Link from '@docusaurus/Link'; 
 
-# Hardware Device Tutorial
+# ARO Pod & ARO Link Tutorial
 
 ### Get Started with Your New Hardware Device!
 

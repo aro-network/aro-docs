@@ -40,10 +40,10 @@ const sidebars = {
       collapsed: true,
       items: [
         { type: 'doc', id: 'user-guides/run-node', label: 'Run an Edge Node' },
-        { type: 'doc', id: 'user-guides/dashboard', label: 'Dashboard' },
-        { type: 'doc', id: 'user-guides/device-setup', label: 'Device Setup' },
-        { type: 'doc', id: 'user-guides/software-setup', label: 'Software Setup' },
-        { type: 'doc', id: 'user-guides/node-console', label: 'Node Console' },
+        { type: 'doc', id: 'user-guides/dashboard', label: 'ARO Dashboard' },
+        { type: 'doc', id: 'user-guides/device-setup', label: 'Hardware Node' },
+        { type: 'doc', id: 'user-guides/software-setup', label: 'Software Node' },
+        { type: 'doc', id: 'user-guides/node-console', label: 'Web Console' },
       ],
     },
     {

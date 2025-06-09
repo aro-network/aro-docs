@@ -4,7 +4,7 @@ title: Node Console
 ---
 import Link from '@docusaurus/Link';
 
-# Node Console
+# Web Console For Edge Node
 
 ### Web Console for Hardware Nodes
 

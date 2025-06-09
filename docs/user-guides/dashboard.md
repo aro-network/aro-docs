@@ -1,16 +1,16 @@
 ---
 id: dashboard
-title: Dashboard
+title: ARO Dashboard
 ---
 import Link from '@docusaurus/Link';
 
-# Dashboard
+# ARO Dashboard
 
 ### General Guide
 
-The [Dashboard](https://devnet-dashboard.ARO.network/) is your all-in-one platform for managing Edge Nodes and rewards.
+The [ARO Dashboard](https://devnet-dashboard.ARO.network/) is your all-in-one platform for managing Edge Nodes and rewards.
 
-With the Dashboard, you can:
+With the ARO Dashboard, you can:
 - Create an ARO Account
 - Access your Referral Code, invite friends to join ARO, and earn Referral Rewards
 - Manage all your Edge Nodes
