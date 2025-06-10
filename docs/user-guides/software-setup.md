@@ -6,7 +6,9 @@ import Link from '@docusaurus/Link';
 
 # ARO Client Installation and Initialization Tutorial
 
-This tutorial guides you through the process of installing and initializing the [**ARO Client software image**](https://download.aro.network/images/aro-client-latest.iso) in a virtual machine environment. ARO Client is a software image designed for X86 architectures, and this tutorial focuses on a Linux environment.
+This tutorial guides you through the process of installing and initializing the [**ARO Client software image**](https://download.aro.network/images/aro-client-latest.iso) in a virtual machine environment. **ARO Client** is a software image designed for **X86 architectures**, and this tutorial focuses on a Linux environment.
+
+Before preparing the virtual machine environment, review the recommended system requirements for running the ARO Client image on [**this page**](/docs/edge-node/device-specs.md#recommended-requirements-for-software-clients-aro-client).
 
 ## Part 1: Preparing the Virtual Machine Environment
 
@@ -36,7 +38,7 @@ After preparing the virtual machine environment, you need to select the ARO Clie
 
 ### Step 1: Obtain and Select the ARO Client Image
 1. **Download the Image**  
-   Download the latest [ARO Client image](https://download.aro.network/images/aro-client-latest.iso) (in `.iso` format).
+   Download the latest [**ARO Client image**](https://download.aro.network/images/aro-client-latest.iso) (in `.iso` format).
 2. **Select the Image**  
    - **Proxmox VE**: Log in to the Proxmox web interface, navigate to storage (e.g., `local`), and upload the `.iso` file.
    - **VirtualBox**: Create a new virtual machine, select “Use an existing virtual hard disk file,” and point to the ARO Client `.iso` file.
@@ -48,7 +50,7 @@ After preparing the virtual machine environment, you need to select the ARO Clie
 1. **Create the Virtual Machine**  
    In your virtualization platform, create a new virtual machine and select the ARO Client `.iso` file as the boot medium.
 2. **Resource Allocation Recommendations**  
-   To ensure smooth operation of ARO Client, allocate the resources according to [this recommendation](/docs/edge-node/device-specs.md).
+   To ensure smooth operation of ARO Client, allocate the resources according to [**this recommendation**](/docs/edge-node/device-specs.md#recommended-requirements-for-software-clients-aro-client).
 3. **Save Configuration**  
    Confirm the virtual machine settings and save them before starting.
 
