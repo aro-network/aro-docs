@@ -14,7 +14,7 @@ The Dashboard provides access to the **Web Console** for managing your devices.
 
 On the **Edge Node** page, locate the **"Web Console"** button in the top-right corner.
 
-> **Note**: You can only access the Web Console when your device and the accessing system are on the same local area network (LAN).
+> **Note**: You can only access the Web Console when your device and your ARO Dashboard are on the same local area network (LAN).
 
 ![Device Information](/img/user-guides/console_1.png)
 
@@ -30,4 +30,4 @@ Monitor network status in this tab.
 
 ![Device Restart](/img/user-guides/console_4.png)
 
-Restart your device directly from this tab.
+Restart your device directly in this tab.
