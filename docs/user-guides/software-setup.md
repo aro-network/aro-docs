@@ -36,7 +36,7 @@ After preparing the virtual machine environment, you need to select the ARO Clie
 
 ### Step 1: Obtain and Select the ARO Client Image
 1. **Download the Image**  
-   Download the latest ARO Client image file (in `.iso` format) from the official source (e.g., the ARO project website or designated repository).
+   Download the latest [ARO Client image](https://download.aro.network/images/aro-client-latest.iso) (in `.iso` format).
 2. **Select the Image**  
    - **Proxmox VE**: Log in to the Proxmox web interface, navigate to storage (e.g., `local`), and upload the `.iso` file.
    - **VirtualBox**: Create a new virtual machine, select “Use an existing virtual hard disk file,” and point to the ARO Client `.iso` file.
