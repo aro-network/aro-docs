@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 
 # ARO Client Installation and Initialization Tutorial
 
-This tutorial guides you through the process of installing and initializing the **ARO Client** software image in a virtual machine environment. ARO Client is a software image designed for X86 architectures, and this tutorial focuses on a Linux environment.
+This tutorial guides you through the process of installing and initializing the [**ARO Client software image**](https://download.aro.network/images/aro-client-latest.iso) in a virtual machine environment. ARO Client is a software image designed for X86 architectures, and this tutorial focuses on a Linux environment.
 
 ## Part 1: Preparing the Virtual Machine Environment
 
