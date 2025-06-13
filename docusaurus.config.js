@@ -85,7 +85,7 @@ const config = {
         logo: {
         alt: 'My Project Logo',
         src: 'https://aro.network/aro-logo.svg', // Light mode logo
-        srcDark: 'https://aro.network/aro-logo-dark.svg', // Night mode logo
+        srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
         href: '/',
         target: '_self',
         },
