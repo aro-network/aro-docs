@@ -39,23 +39,15 @@ To use the client, users must deploy the VM image on bare-metal servers or deskt
 
 For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
 
-**General Requirements** for all **ARO Client** Software:
+#### Recommended Requirements Based on the Bandwidth
 
-- Public IP address
-- NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)
-- IPv6 Support
-- CPU Clock Speed: ≥ 2 GHz
-- Data Disk Random 4K Read IOPS: ≥ 30,000
-- System Disk Read/Write IOPS: ≥ 15,000 / 10,000
+We provide recommended hardware specifications for running **ARO Client** based on your **bandwidth**. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
-**Port  Requirements** for all **ARO Client** Software:
-
-- TCP: 80, 443, 9500-9700
-- UDP: All ports
-
-We provide recommended hardware specifications for running **ARO Client** based on your **upstream bandwidth** (general requirements must be met first). If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
-
-- For **400 Mbps**:
+- For **100 Mbps or lower**:
+  - CPU Threads: ≥ 2
+  - RAM: 2 GB
+  - Disk: ≥ 50 GB SSD
+- For **500 Mbps**:
   - CPU Threads: ≥ 12
   - RAM: 12 GB
   - System Disk: ≥ 50 GB SSD
@@ -70,3 +62,19 @@ We provide recommended hardware specifications for running **ARO Client** based 
   - RAM: 128–192 GB
   - System Disk: ≥ 240 GB SSD
   - Data Disk: ≥ 10 TB SSD
+
+#### Recommendations For Further Performance Improvement
+  
+**General Recommendations** for all **ARO Client** Software (especially for operators with business-level bandwidth):
+
+- Public IP address
+- NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)
+- IPv6 Support
+- CPU Clock Speed: ≥ 2 GHz
+- Data Disk Random 4K Read IOPS: ≥ 30,000
+- System Disk Read/Write IOPS: ≥ 15,000 / 10,000
+
+**Port Requirements** for all **ARO Client** Software:
+
+- TCP: 80, 443, 9500-9700
+- UDP: All ports  
