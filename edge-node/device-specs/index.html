@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">Device Specifications | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/edge-node/device-specs"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Device Specifications | ARO Network Docs"><meta data-rh="true" name="description" content="ARO Pod Specifications"><meta data-rh="true" property="og:description" content="ARO Pod Specifications"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/edge-node/device-specs"><link data-rh="true" rel="alternate" href="https://docs.aro.network/edge-node/device-specs" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/edge-node/device-specs" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.d7e3d293.css">
-<script src="/assets/js/runtime~main.ba4a86f9.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.b48b236d.js" defer="defer"></script>
 <script src="/assets/js/main.dcc56834.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -44,23 +44,17 @@
 <p><strong>The ARO Client is currently available only as an x86 virtual machine (VM) image.</strong></p>
 <p>To use the client, users must deploy the VM image on bare-metal servers or desktop computers equipped with an x86 architecture CPU, using any virtualization solution of their choice.</p>
 <p>For detailed installation and usage instructions, refer to the <a href="/user-guides/software-setup">ARO Client Image Installation Guide</a>.</p>
-<p><strong>General Requirements</strong> for all <strong>ARO Client</strong> Software:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommended-requirements-based-on-the-bandwidth">Recommended Requirements Based on the Bandwidth<a href="#recommended-requirements-based-on-the-bandwidth" class="hash-link" aria-label="Direct link to Recommended Requirements Based on the Bandwidth" title="Direct link to Recommended Requirements Based on the Bandwidth">​</a></h4>
+<p>We provide recommended hardware specifications for running <strong>ARO Client</strong> based on your <strong>bandwidth</strong>. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.</p>
 <ul>
-<li>Public IP address</li>
-<li>NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)</li>
-<li>IPv6 Support</li>
-<li>CPU Clock Speed: ≥ 2 GHz</li>
-<li>Data Disk Random 4K Read IOPS: ≥ 30,000</li>
-<li>System Disk Read/Write IOPS: ≥ 15,000 / 10,000</li>
+<li>For <strong>100 Mbps or lower</strong>:<!-- -->
+<ul>
+<li>CPU Threads: ≥ 2</li>
+<li>RAM: 2 GB</li>
+<li>Disk: ≥ 50 GB SSD</li>
 </ul>
-<p><strong>Port  Requirements</strong> for all <strong>ARO Client</strong> Software:</p>
-<ul>
-<li>TCP: 80, 443, 9500-9700</li>
-<li>UDP: All ports</li>
-</ul>
-<p>We provide recommended hardware specifications for running <strong>ARO Client</strong> based on your <strong>upstream bandwidth</strong> (general requirements must be met first). If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.</p>
-<ul>
-<li>For <strong>400 Mbps</strong>:<!-- -->
+</li>
+<li>For <strong>500 Mbps</strong>:<!-- -->
 <ul>
 <li>CPU Threads: ≥ 12</li>
 <li>RAM: 12 GB</li>
@@ -84,6 +78,21 @@
 <li>Data Disk: ≥ 10 TB SSD</li>
 </ul>
 </li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommendations-for-further-performance-improvement">Recommendations For Further Performance Improvement<a href="#recommendations-for-further-performance-improvement" class="hash-link" aria-label="Direct link to Recommendations For Further Performance Improvement" title="Direct link to Recommendations For Further Performance Improvement">​</a></h4>
+<p><strong>General Recommendations</strong> for all <strong>ARO Client</strong> Software (especially for operators with business-level bandwidth):</p>
+<ul>
+<li>Public IP address</li>
+<li>NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)</li>
+<li>IPv6 Support</li>
+<li>CPU Clock Speed: ≥ 2 GHz</li>
+<li>Data Disk Random 4K Read IOPS: ≥ 30,000</li>
+<li>System Disk Read/Write IOPS: ≥ 15,000 / 10,000</li>
+</ul>
+<p><strong>Port Requirements</strong> for all <strong>ARO Client</strong> Software:</p>
+<ul>
+<li>TCP: 80, 443, 9500-9700</li>
+<li>UDP: All ports</li>
 </ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/edge-node/types"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Edge Node Types</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/edge-node/faq"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">FAQ</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#aro-pod-specifications" class="table-of-contents__link toc-highlight">ARO Pod Specifications</a></li><li><a href="#aro-link-specifications" class="table-of-contents__link toc-highlight">ARO Link Specifications</a></li><li><a href="#recommended-requirements-for-software-clients-aro-client" class="table-of-contents__link toc-highlight">Recommended Requirements for Software Clients (ARO Client)</a></li></ul></div></div></div></div></main></div></div></div></div>
 </body>
 </html>
