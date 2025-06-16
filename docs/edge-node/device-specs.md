@@ -6,7 +6,7 @@ hide_table_of_contents: false
 
 # Device Specifications
 
-### ARO Pod Specifications
+## ARO Pod Specifications
 
 - Device: **ARO Pod 2GB+64GB Version** Home Gateway
   - CPU: Quad-core ARM processor
@@ -18,7 +18,7 @@ hide_table_of_contents: false
   - Dimensions: 103 × 103 × 20 mm
   - Package Contents: 1 × Manual, 1 × Cable
 
-### ARO Link Specifications
+## ARO Link Specifications
 
 - Device: **ARO Link** Router
   - Chipset: MT7981BA + MT7976C + MT7531AE
@@ -31,7 +31,7 @@ hide_table_of_contents: false
   - Operating System: OpenWRT
   - Dimensions: 278 × 179.1 × 33 mm
 
-### Recommended Requirements for Software Clients (ARO Client)
+## Recommended Requirements for Software Clients (ARO Client)
 
 **The ARO Client is currently available only as an x86 virtual machine (VM) image.**
 
@@ -39,7 +39,7 @@ To use the client, users must deploy the VM image on bare-metal servers or deskt
 
 For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
 
-#### Recommended Requirements Based on the Bandwidth
+### Recommended Requirements Based on the Bandwidth
 
 We provide recommended hardware specifications for running **ARO Client** based on your **bandwidth**. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
@@ -63,7 +63,7 @@ We provide recommended hardware specifications for running **ARO Client** based 
   - System Disk: ≥ 240 GB SSD
   - Data Disk: ≥ 10 TB SSD
 
-#### Recommendations For Further Performance Improvement
+### Recommendations For Further Performance Improvement
   
 **General Recommendations** for all **ARO Client** Software (especially for operators with business-level bandwidth):
 
