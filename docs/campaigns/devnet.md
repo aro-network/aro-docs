@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 
 # ARO Devnet
 
-Welcome to the ARO Devnet! Watch this [**quick video guide**](https://youtu.be/YtjHVk2KA9w) to get started.
+Welcome to the ARO Devnet! Watch this [**quick video guide**](https://youtu.be/ok8RW8hhYAw) to get started.
 
 ### 1. Plug It In
 In the Devnet, you can explore how Edge Nodes operate within the ARO Edge Cloud.

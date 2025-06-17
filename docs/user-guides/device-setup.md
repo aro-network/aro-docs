@@ -15,7 +15,7 @@ This guide is for you if:
 > To learn more about Hardware Nodes, refer to <Link to="/edge-node/types">this introduction</Link>.  
 > To choose the best Edge Node for your needs, see <Link to="/user-guides/run-node">this guide</Link>.
 
-Watch this [**quick video guide**](https://www.youtube.com/watch?v=YtjHVk2KA9w) for an easy onboarding experience.
+Watch this [**quick video guide**](https://youtu.be/ok8RW8hhYAw) for an easy onboarding experience.
 
 ### Step 1: Plug In
 
