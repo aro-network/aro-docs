@@ -8,19 +8,21 @@ hide_table_of_contents: false
 
 ## ARO Pod Specifications
 
-- Device: **ARO Pod 2GB+64GB Version** Home Gateway
+- Device: **ARO Pod** Home Gateway
+  - Model: AROP-01	 	
   - CPU: Quad-core ARM processor
   - Memory: 2GB
   - System Storage: 64GB eMMC
   - Network Interface: 1 × Ethernet
   - USB Interface: 1 × USB Type-C
-  - Power: 5V/2A
+  - Power: 12V/1A
   - Dimensions: 103 × 103 × 20 mm
-  - Package Contents: 1 × Manual, 1 × Cable
+  - Package Contents: 1 × Manual, 1 × Ethernet Cable, 1 × Power Cable 
 
 ## ARO Link Specifications
 
 - Device: **ARO Link** Router
+  - Model: AROL-01	 	
   - Chipset: MT7981BA + MT7976C + MT7531AE
   - Memory/Storage: 1GB DDR4; 128GB eMMC
   - Wireless Standard: 802.11a/b/g/n/ac/ax
