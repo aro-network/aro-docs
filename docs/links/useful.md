@@ -14,7 +14,7 @@ It is always a good idea to find all links update-to-date here: https://linktr.e
 
 **Github**: https://github.com/aro-network
 
-**Official Blog**: https://aro.network/blog
+**Official Blog**: https://medium.com/@AroNetwork
 
 ### Hardware Sales Page
 Comming Soon.
