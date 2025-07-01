@@ -15,7 +15,7 @@ hide_table_of_contents: false
   - System Storage: 64GB eMMC
   - Network Interface: 1 × Ethernet
   - USB Interface: 1 × USB Type-C
-  - Power: 12V/1A
+  - Power: 5V/2A
   - Dimensions: 103 × 103 × 20 mm
   - Package Contents: 1 × Manual, 1 × Ethernet Cable, 1 × Power Cable 
 
