@@ -1,6 +1,6 @@
 ---
 id: software-setup
-title: ARO Client Tutorial
+title: ARO Client
 ---
 import Link from '@docusaurus/Link'; 
 

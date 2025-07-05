@@ -1,6 +1,6 @@
 ---
 id: device-setup
-title: Hardware Node
+title: ARO Pod & ARO Link
 ---
 import Link from '@docusaurus/Link'; 
 

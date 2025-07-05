@@ -1,10 +1,10 @@
 ---
 id: run-node
-title: Run an Edge Node
+title: Choose Your Node
 ---
 import Link from '@docusaurus/Link';
 
-# Running an Edge Node - General Guide
+# Choose Your Node
 
 ### Things To Know Before You Start
 Here are key points to understand before running an Edge Node on the ARO Network:
@@ -16,7 +16,7 @@ Here are key points to understand before running an Edge Node on the ARO Network
 5. Edge Nodes primarily utilize your **idle internet resources** to serve the ARO Edge Network, with minimal impact on your regular internet experience. The choice is always yours.
 6. You can run either a **Hardware Node** or a **Software Node** (software solutions will be available soon). Refer to the next section for guidance on choosing the best option.
 
-### Which Type of Edge Node Is Right For Me?
+### Which Type of ARO Node Is Right For Me?
 
 Here is a simple guide to quickly locate the best node type for you: 
 
@@ -39,7 +39,7 @@ WiFi router with built-in ARO node. The choice for business scenarios.
 >To learn more about Edge Node types, please refer to <Link to="/edge-node/types">this page</Link>
 
 
-### How Do I Manage My Edge Nodes?
+### How Do I Manage My ARO Nodes?
 
 The [Dashboard](https://devnet-dashboard.ARO.network/?mode=devnet&tab=nodes) (currently for Devnet) is your all-in-one platform for managing Edge Nodes and tracking rewards.
 
