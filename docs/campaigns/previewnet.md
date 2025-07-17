@@ -1,10 +1,10 @@
 ---
-id: devnet
-title: ARO Devnet
+id: previewnet
+title: ARO Previewnet
 ---
 import Link from '@docusaurus/Link';
 
-# ARO Devnet
+# ARO Previewnet
 
 Welcome to the ARO Devnet! Watch this [**quick video guide**](https://youtu.be/ok8RW8hhYAw) to get started.
 
