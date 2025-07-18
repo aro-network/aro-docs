@@ -6,7 +6,9 @@ import Link from '@docusaurus/Link';
 
 # Referral Program
 
-### About the Referral Program
+## Referral Program Rules
+
+### Overview
 
 The **Referral Program** is a long-term initiative designed to grow the ARO community and user base.
 
@@ -16,22 +18,29 @@ This program benefits everyone. Both referrers and referees enjoy additional rew
 
 The **Referrer** (the person who invites others to join the ARO Network) earns an additional **Referral Bonus** added to their total rewards.
 
-The **Referral Bonus** is calculated as a percentage of the Edge Node Rewards earned by referees. Currently, referrers receive a **15% commission** based on their referees’ rewards.
+The **Referral Bonus** is calculated as a percentage of the Rewards earned by referees (the commission rate). 
 
 > **Note**: The commission rate may change with policy updates. Check the latest policy in the **Referral** section of your Dashboard.
 
-The bonus typically applies to **first-tier referees** (those directly referred by you). However, special policies may allow certain users (e.g., KOLs, major distributors, or pioneers in new regions) to earn an additional **second-tier commission**. These extra benefits are not guaranteed and require contacting the ARO team to demonstrate your ability to significantly contribute to community growth.
+The bonus currently applies to **first-tier referees** with `15%` commission rate, plus **second-tier referees** with `2%` commission rate. 
+
+>Example: If A (you) refers B, and B refers C, then B is your first-tier referee, and C is your second-tier referee. You can earn 15% of what B has earned, and 2% of what C has earned. B and C still earn 100% of their rewards. 
 
 ### Benefits for the Referee
 
-The **Referee** (the person invited to join the ARO Network) receives an **Edge Node Rewards boost**.
+In Previewnet, the **Referee** (the person being invited) receives an immediate amd instant 200 Jade reward. 
 
-This boost increases your Edge Node Rewards (earned from running Edge Nodes) by an additional percentage. Currently, referees enjoy a **20% boost** for the first **14 days** after a successful referral.
+The reward applies instantly after entering a Referral Code during initial account setup. The user may also enter a Referral Code later, and the reward will be applied accordingly.
 
-> **Note**: The boost parameters may change with policy updates. Check the latest policy in the **Stats** section of your Dashboard.
+## Referral Leaderboard Campaign
 
-The boost applies immediately after entering a Referral Code during initial account setup. You can also enter a Referral Code later, and the boost will be applied accordingly.
+Referral leaderboard Campaign is a special campaign designed to incentivize top-tier referrers. 
 
-### User Guides
+A total sum of **$30,000** will be allocated to top referrer (by Referral Bonus earned):
 
-To learn how to check referral information, enter a Referral Code, or share your Referral Code/Link with friends, refer to <Link to="/user-guides/dashboard">this guide</Link>.
+- #1 gets $10,000 
+- #2-4 gets $3,000 each
+- #5-54 gets $200 each
+- The earlist 20 users who complete at least one successful referral and connects a twitter account with more than 5000 followers, gets $50 each
+
+ 
