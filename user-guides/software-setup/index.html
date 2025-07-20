@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">ARO Client | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/user-guides/software-setup"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ARO Client | ARO Network Docs"><meta data-rh="true" name="description" content="This tutorial guides you through the process of installing and initializing the ARO Client software image in a virtual machine environment. ARO Client is a software image designed for X86 architectures, and this tutorial focuses on a Linux environment."><meta data-rh="true" property="og:description" content="This tutorial guides you through the process of installing and initializing the ARO Client software image in a virtual machine environment. ARO Client is a software image designed for X86 architectures, and this tutorial focuses on a Linux environment."><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/user-guides/software-setup"><link data-rh="true" rel="alternate" href="https://docs.aro.network/user-guides/software-setup" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/user-guides/software-setup" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.d7e3d293.css">
-<script src="/assets/js/runtime~main.0257f345.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e581d9ad.js" defer="defer"></script>
 <script src="/assets/js/main.c71a18e1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,17 +18,19 @@
 <p><strong>Choose a Virtualization Platform</strong><br>
 <!-- -->Select one of the following virtualization platforms (or other Linux-compatible solutions):</p>
 <ul>
-<li><strong>Proxmox VE</strong>: An open-source virtualization management platform suitable for enterprise and individual users.</li>
-<li><strong>VMware Workstation/Player</strong>: Ideal for local testing and development.</li>
-<li><strong>VirtualBox</strong>: A free and user-friendly virtualization tool.</li>
+<li><strong>Proxmox VE</strong>: <strong>Free</strong>, <strong>open-source</strong> and flexible, suitable for budget-conscious users or those preferring open-source solutions, supports containers and broad hardware based on <strong>Debian Linux</strong>.</li>
+<li><strong>Hyper-V</strong>: A native hypervisor developed by Microsoft that allows users to create and run virtual machines on x86-64 systems running Windows. Hyper-V is best for <strong>Windows ecosystems</strong>, ideal for enterprises or users with existing Windows Server licenses, but management tools are <strong>Windows-dependent</strong>.</li>
+<li><strong>VMware</strong>: <strong>Enterprise-grade</strong>, preferred for large-scale, complex, or high-availability environments, but <strong>costly</strong>.</li>
+<li><strong>VirtualBox</strong>: Lightweight, ideal for <strong>individual developers</strong>, testing environments, or <strong>cross-platform (Windows, Linux, MacOS, Solaris, etc.)</strong> needs, but less robust than enterprise solutions, yet easy to use.</li>
 </ul>
 </li>
 <li>
 <p><strong>Install the Virtualization Platform</strong><br>
 <!-- -->Follow the official documentation for your chosen platform to complete the installation. For example:</p>
 <ul>
-<li>Proxmox VE: Download the ISO image from the <a href="https://www.proxmox.com/en/proxmox-ve" target="_blank" rel="noopener noreferrer">Proxmox website</a> and install.</li>
-<li>VirtualBox: Download and install from the <a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer">VirtualBox website</a>.
+<li><strong>Proxmox VE</strong>: Download the ISO image from the <a href="https://www.proxmox.com/en/proxmox-ve" target="_blank" rel="noopener noreferrer">Proxmox website</a> and install.</li>
+<li><strong>Hyper-V</strong>: View userguide from official <a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v?tabs=powershell&amp;pivots=windows-server" target="_blank" rel="noopener noreferrer">Window Learn website</a>.</li>
+<li><strong>VirtualBox</strong>: Download and install from the <a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer">VirtualBox website</a>.
 Ensure your hardware supports virtualization (VT-x/AMD-V enabled).</li>
 </ul>
 </li>
