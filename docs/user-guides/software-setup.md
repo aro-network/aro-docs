@@ -16,14 +16,16 @@ To run the ARO Client image, you need a virtualization environment. Below are th
 
 1. **Choose a Virtualization Platform**  
    Select one of the following virtualization platforms (or other Linux-compatible solutions):
-   - **Proxmox VE**: An open-source virtualization management platform suitable for enterprise and individual users.
-   - **VMware Workstation/Player**: Ideal for local testing and development.
-   - **VirtualBox**: A free and user-friendly virtualization tool.
+   - **Proxmox VE**: **Free**, **open-source** and flexible, suitable for budget-conscious users or those preferring open-source solutions, supports containers and broad hardware based on **Debian Linux**.
+   - **Hyper-V**: A native hypervisor developed by Microsoft that allows users to create and run virtual machines on x86-64 systems running Windows. Hyper-V is best for **Windows ecosystems**, ideal for enterprises or users with existing Windows Server licenses, but management tools are **Windows-dependent**.
+   - **VMware**: **Enterprise-grade**, preferred for large-scale, complex, or high-availability environments, but **costly**.
+   - **VirtualBox**: Lightweight, ideal for **individual developers**, testing environments, or **cross-platform (Windows, Linux, MacOS, Solaris, etc.)** needs, but less robust than enterprise solutions, yet easy to use.
 
 2. **Install the Virtualization Platform**  
    Follow the official documentation for your chosen platform to complete the installation. For example:
-   - Proxmox VE: Download the ISO image from the [Proxmox website](https://www.proxmox.com/en/proxmox-ve) and install.
-   - VirtualBox: Download and install from the [VirtualBox website](https://www.virtualbox.org/).
+   - **Proxmox VE**: Download the ISO image from the [Proxmox website](https://www.proxmox.com/en/proxmox-ve) and install.
+   - **Hyper-V**: View userguide from official [Window Learn website](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v?tabs=powershell&pivots=windows-server).
+   - **VirtualBox**: Download and install from the [VirtualBox website](https://www.virtualbox.org/).
    Ensure your hardware supports virtualization (VT-x/AMD-V enabled).
 
 3. **Verify the Environment**  
