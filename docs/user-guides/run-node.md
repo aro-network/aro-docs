@@ -22,19 +22,26 @@ Here is a simple guide to quickly locate the best node type for you:
 
 **ARO Pod**
 
-Dedicated plug-and-play device. Optimized for high uptime and rewards. 
+- Dedicated plug-and-play device 
+- Optimized for high uptime and rewards
+- For < 100 Mbps upstream bandwidth
 
 **ARO Lite**
  
-Lightweight browser extension. Join with minimal cost and effort. 
+- Lightweight browser extension
+- Join with minimal cost and effort
+- Very limited impact on your internet experiences
 
 **ARO Client**
 
-Install on your own device to unlock more capabilities. 
+- Install on your own device, flexible, cross-platform
+- Runs in Virtual Machines (some efforts to install and run) 
+- Unlock higher rewards with > 100 Mbps upstream bandwidth
 
 **ARO Link**
 
-WiFi router with built-in ARO node. The choice for business scenarios. 
+- WiFi router with built-in ARO node 
+- The choice for business scenarios
 
 >To learn more about Edge Node types, please refer to <Link to="/edge-node/types">this page</Link>
 
