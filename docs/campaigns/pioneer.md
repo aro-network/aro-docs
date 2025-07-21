@@ -27,7 +27,7 @@ ARO Network supports **three types of node participation**, and selected Pioneer
 🔹**Hardware Node** Group (**100 spots** reserved for **Southeast Asia**)
 
 - Apply for Pioneers Program for a chance to win an ARO Edge Node device, shipped directly to your door (Currently available only in Thailand, Vietnam, Indonesia)
-- Plug it, Run it, Start Earning -- the Edge Node installation is as easy as 1, 2, 3. Check out [this demo video](https://youtu.be/YtjHVk2KA9w).
+- Plug it, Run it, Start Earning -- the Edge Node installation is as easy as 1, 2, 3. Check out [this demo video](https://www.youtube.com/watch?v=ok8RW8hhYAw).
 
 🔹 **ARO Client** (Software, currently for Advanced Users)
 
