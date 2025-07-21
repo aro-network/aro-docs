@@ -38,7 +38,7 @@ Here is a simple guide to quickly locate the best node type for you:
 - Runs in Virtual Machines (some efforts to install and run) 
 - Unlock higher rewards with > 100 Mbps upstream bandwidth
 
-**ARO Link**
+**ARO Link (Coming Soon)**
 
 - WiFi router with built-in ARO node 
 - The choice for business scenarios
