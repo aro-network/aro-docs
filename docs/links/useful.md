@@ -10,14 +10,14 @@ It is always a good idea to find all links update-to-date here: https://linktr.e
 ### Official Links & Entries
 **Offcial Website**: https://aro.network
 
-**User Dashboard (for Devnet)**: https://devnet-dashboard.aro.network/
+**ARO Dashboard**: https://dashboard.aro.network/
 
 **Github**: https://github.com/aro-network
 
-**Official Blog**: https://medium.com/@AroNetwork
+**Official Blog**: https://medium.com/aronetwork
 
 ### Hardware Sales Page
-Comming Soon.
+**ARO Store**: https://order.aro.network/aro-pod
 
 ### Social Media
 **Telegram**: https://t.me/ARO_Network
