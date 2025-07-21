@@ -35,7 +35,7 @@ Here is a simple guide to quickly locate the best node type for you:
 **ARO Client**
 
 - Install on your own device, flexible, cross-platform
-- Runs in Virtual Machines (some efforts to install and run) 
+- Runs in Virtual Machines (takes some efforts to install and run) 
 - Unlock higher rewards with > 100 Mbps upstream bandwidth
 
 **ARO Link (Coming Soon)**
