@@ -48,7 +48,7 @@ Here is a simple guide to quickly locate the best node type for you:
 
 ### How Do I Manage My ARO Nodes?
 
-The [Dashboard](https://devnet-dashboard.ARO.network/?mode=devnet&tab=nodes) (currently for Devnet) is your all-in-one platform for managing Edge Nodes and tracking rewards.
+The [Dashboard](https://dashboard.ARO.network) (currently for Previewnet phase) is your all-in-one platform for managing Edge Nodes and tracking rewards.
 
 By creating an **ARO Account**, you can log in anytime, anywhere to manage your Edge Nodes and rewards.
 
