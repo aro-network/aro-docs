@@ -41,6 +41,6 @@ A total sum of **$30,000** will be allocated to top referrer (by Referral Bonus 
 - #1 gets $10,000 
 - #2-4 gets $3,000 each
 - #5-54 gets $200 each
-- The earlist 20 users who complete at least one successful referral and connects a twitter account with more than 5000 followers, gets $50 each
+- The earlist 20 users who complete at least 10 successful referrals gets $50 each
 
  
