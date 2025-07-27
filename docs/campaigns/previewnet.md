@@ -20,13 +20,11 @@ ARO’s journey unfolds across three stages: Previewnet (where we are now), Test
 
 ## Earn Jade in ARO Previewnet
 
-During Previewnet and Testnet, `Jade` serve as your primary quantifiable reward, redeemable for ARO Network’s native token (`$ARO`) upon Mainnet launch. In Previewnet, earn Jades by completing specific tasks or meeting criteria—we encourage your actions like joining our community, spreading the word, inviting friends, or testing nodes, with rewards varying by effort.
+During Previewnet and Testnet, `Jade` serve as your primary quantifiable reward, redeemable for ARO Network’s native token (`$ARO`) upon Mainnet launch. In Previewnet, earn Jades by completing specific tasks or meeting criteria—we encourage your actions like joining our community, spreading the word, inviting friends, or purchasing/running nodes, with rewards varying by effort.
 
 For detailed specifics on how Jade works, check the <Link to="/campaigns/jade">**Jade Rewards Page**</Link>.
 
->**Special Note**: Running nodes in Previewnet only yield **simulation mining rewards** which are referred as `Preview Jade` on the **Node Details** page in your ARO Dashboard. These Preview Jades serves as a simulation of how much you will earn by running nodes. In Testnet, running nodes will yield real Jade rewards for you.  
->
->Why we use simulation rewards in Previewnet phase? We want you to explore ARO with ease and low risk in this beginning stage, gearing up for Testnet’s fierce mining competition where bigger Jade incentives await!
+>**Special Note**: Running nodes in Previewnet does not yield real rewards for you. We want you to explore ARO with ease and low risk in this beginning stage, gearing up for Testnet’s fierce mining competition where bigger Jade incentives await!
 
 ## Things You Can Do in Previewnet
 

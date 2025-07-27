@@ -18,16 +18,10 @@ In Previewnet, you can easily earn Jade by completing simple tasks or meeting sp
 ### Jade in Lock
 Some Previewnet tasks, like redeeming Gift Codes or running/purchasing ARO Nodes, grant **Jade in Lock**—rewards temporarily held for later. These Jades unlock during Testnet when you run nodes, turning your early efforts into real value.
 
-### Preview Jade
-Running nodes in Previewnet generates **Preview Jade**, shown as simulation mining rewards on the **Node Details** page of your ARO Dashboard. This simulates your potential earnings, preparing you for Testnet’s real Jade rewards—Preview Jade itself isn’t a true reward.
-
-> **Why Simulation Rewards?** We designed Previewnet for low-risk exploration, letting you test ARO products comfortably while gearing up for Testnet’s intense mining competition with bigger Jade incentives!
-
 ### Redeem More Jade
-Boost your Jade with redeemable options using **Gift Codes** or **Order Numbers**:
+Boost your Jade with redeemable options using **Gift Codes**:
 
 - **Gift Codes**: Snag these from offline events, community campaigns, or giveaways. The more you engage, the better your chances!
-- **ARO Pod Order Number**: Redeem 4500 Jade per ARO Pod purchase using the Order Number from your confirmation email.
 
 > **Note**: All redeemed Jades start as **Jade in Lock**, awaiting Testnet unlocking.
 
@@ -37,7 +31,7 @@ Boost your Jade with redeemable options using **Gift Codes** or **Order Numbers*
 In Testnet, earn Jade by running ARO Nodes and competing with other resource providers (miners). Expect significantly higher rewards than Previewnet.
 
 ### Unlocking Jade in Lock
-During Testnet, activate your **Jade in Lock** from Previewnet by running nodes and collecting mining yields. The more you mine, the faster you unlock these rewards. Full details will be shared before Testnet launches.
+During Testnet, activate your **Jade in Lock** by running nodes and collecting mining yields. The more you mine, the faster you unlock these rewards. Full details will be shared before Testnet launches.
 
 ## Jade in Mainnet
 
