@@ -3,7 +3,9 @@ id: overview
 title: Overview
 slug: /
 ---
-import CardGroup from '../src/components/CardGroup';
+import CardGroup from '../../src/components/CardGroup';
+
+
 
 # ARO Network - The Decentralized Edge Cloud for the AI Era 
 

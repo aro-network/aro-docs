@@ -6,19 +6,19 @@ import styles from './CardGroup.module.css';
 export default function CardGroup() {
   return (
     <div className={styles.cardGroup}>
-      <Link className={styles.card} to="/docs/technologies">
+      <Link className={styles.card} to="/docs/technologies/architecture">
         <h3>Learn</h3>
-        <p>Discover the fundamentals of ARO Network and its decentralized cloud.</p>
+        <p>Discover the fundamentals of ARO Network and its underlying technologies.</p>
       </Link>
       <Link className={styles.card} to="https://dashboard.aro.network/signup" target="_blank" rel="noopener noreferrer">
         <h3>Start Earning</h3>
         <p>Get paid by contributing to the ARO Network ecosystem.</p>
       </Link>
-      <Link className={styles.card} to="/docs/user-guides">
+      <Link className={styles.card} to="/docs/user-guides/run-node">
         <h3>User Guides</h3>
-        <p>Step-by-step guides to set up and use ARO Network.</p>
+        <p>Step-by-step guides to set up and run ARO Nodes.</p>
       </Link>
-      <Link className={styles.card} to="/docs/campaigns">
+      <Link className={styles.card} to="/docs/campaigns/previewnet">
         <h3>Campaigns</h3>
         <p>Join exciting initiatives and campaigns on ARO Network.</p>
       </Link>
