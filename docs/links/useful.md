@@ -17,7 +17,7 @@ It is always a good idea to find all links update-to-date here: https://linktr.e
 **Official Blog**: https://medium.com/aronetwork
 
 ### Hardware Sales Page
-**ARO Store**: https://order.aro.network/aro-pod
+**ARO Store**: https://shop.aro.network
 
 ### Social Media
 **Telegram**: https://t.me/ARO_Network
