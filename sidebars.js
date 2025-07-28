@@ -7,7 +7,7 @@ const sidebars = {
       collapsed: false,
       items: [
         { type: 'doc', id: 'home/overview', label: 'Overview' },
-        { type: 'doc', id: 'home/the-new-edge', label: 'The New Edge' },
+        { type: 'doc', id: 'home/why-aro', label: 'Why ARO Network' },
       ],
     },
     {

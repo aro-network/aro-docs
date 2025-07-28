@@ -69,7 +69,7 @@ Follow Instructions and User Guides to start your ARO journey!
 
 - **When does Previewnet end?**  
   Follow our official announcements for the exact end date.
-- **Are Previewnet Jades real rewards?**  
-  No, they’re simulation points for practice—real Jade rewards begin in Testnet.
+- **Do I get real rewards from mining in Previewnet?**  
+  No, you DO NOT get real rewards (in Jade) from mining. Run and test ARO Nodes, get ready for the Testnet mining competition!
 - **What is "Jade in Lock" and how do I unlock it?**  
   Some Jade rewards will be given in a locked form, which are referred as "Jade in Lock" in your Dashboard. You can unlock these Jades in Testnet by running nodes. You can refer to <Link to="/campaigns/jade">**Jade Rewards Page**</Link> for more explanations. 

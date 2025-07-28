@@ -1,9 +1,9 @@
 ---
-id: the-new-edge
-title: The New Edge
+id: why-aro
+title: Why ARO Network
 ---
 
-# The New Edge
+# Why ARO Network
 
 ### Edge Cloud: A Closer Cloud
 
