@@ -1,0 +1,51 @@
+/* src/components/CardGroup.module.css */
+.cardGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff; /*Day mode*/
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #00cc99; /* ARO Network Color */
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  color: #666666;
+  font-size: 1rem;
+}
+
+/* Night Mode */
+[data-theme='dark'] .card {
+  background-color: #2a2a2a;
+  border-color: #444444;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .card p {
+  color: #cccccc;
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
