@@ -85,15 +85,15 @@ This section describes how to run the ARO Client image and configure the Edge No
    The 19-digit **Virtual Serial Number** for this Edge Node will appear on the screen. Record this number, as it is critical for activation.  
    ![Add New Node](/img/user-guides/cmd_adding.png)  
    ![Add New Node_SN](/img/user-guides/cmd_inputsn.png)  
-   Open the **ARO Dashboard** (accessible via the ARO project website or designated interface). Navigate to **ARO Nodes** > **Add an ARO Client**, follow steps and enter the 19-digit Virtual Serial Number.  
+   Open the [**ARO Dashboard**](https://dashboard.aro.network). Navigate to **ARO Nodes** > **Add an ARO Client**, follow steps and enter the 19-digit Virtual Serial Number.  
    ![Device Recognition](/img/user-guides/cmd_finddevice.png)  
    The dashboard will recognize the software image instance and display its information. Confirm to continue.  
    > **Important**: Ensure the software image is online during activation. If it is offline, the activation or node addition process may fail.  
 
    ![Region Selection](/img/user-guides/cmd_region.png)  
-   Select the appropriate region and assign a name to your new Edge Node.
+   Select the appropriate region and assign a name to your new node.
 
 4. **Verify Running Status**  
    ![Activation Complete](/img/user-guides/cmd_activate.png)  
-   Congratulations! You have successfully set up your new **Edge Node**. The CMD console will return to the main menu, displaying real-time network and activation status. If both statuses appear in green, your Edge Node is running successfully.
+   Congratulations! You have successfully set up your new **ARO Client**. The CMD console will return to the main menu, displaying real-time network status and activation status. If both statuses appear in green, your ARO Client is running successfully.
 
