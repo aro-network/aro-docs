@@ -44,5 +44,5 @@ With Mainnet launch, `$ARO` becomes ARO Network’s native token, replacing Jade
   No, Jade is not a token and cannot be transferred at this stage.
 - **Will Previewnet Jade carry over to Testnet?**  
   Yes, your Previewnet Jade will seamlessly migrate to your Testnet account upon launch. 
-- **How much $ARO token is reserved for redemption with Jade? **  
-  There is up to `5%` of the total `$ARO` supply be specifically reserved for community incentives, which will be dropped to the ARO Community in the future. Remember: Build ARO = Earn $ARO. 
+- **How much ARO token is reserved for the redemption with Jade?**  
+  Up to `5%` of the total ARO token supply will be specifically reserved for community incentives, which will be dropped to the ARO Community in the future.
