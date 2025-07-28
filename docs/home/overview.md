@@ -6,7 +6,6 @@ slug: /
 import CardGroup from '../../src/components/CardGroup';
 
 
-
 # ARO Network - The Decentralized Edge Cloud for the AI Era 
 
 ## What Is ARO Network 
