@@ -45,6 +45,6 @@ If successful, the Dashboard will recognize your device, and you can complete th
 
 ### Step 3: Ready to Go!
 
-![Dashboard Add Successful](/img/user-guides/dashboard_add_successful.png)
-
 Once the device is added, a **device card** will appear on the **Edge Node** page. Your first ARO Edge Node is now ready to operate!
+
+Click on the card to check running details of your node. 
