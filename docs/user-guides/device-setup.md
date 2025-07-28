@@ -31,11 +31,9 @@ Ensure you’ve created an **ARO Account** (ARO ID) and are logged in to the Das
 
 ![Dashboard Add](/img/user-guides/dashboard_add.png)
 
-On the **Edge Node** page in your Dashboard, locate the **"Add Your Edge Node"** button (or the small button in the top-right corner).
+On the **Edge Node** page in your Dashboard, locate the **"Add an ARO Node"** button and click to initiate adding process.
 
-Click the button and select **Hardware Node** to start the setup process.
-
-> **Note**: The device **must** be online (powered on and connected to the internet) during this process.
+> **Note**: Please do ensure **the device is online** (powered on and connected to the internet) during this process.
 
 ![Dashboard SN](/img/user-guides/dashboard_SN.png)
 
