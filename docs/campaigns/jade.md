@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 
 ## What Is Jade?
 
-During the **Previewnet** and **Testnet** phases, Jade serves as your primary reward currency, redeemable for ARO Network’s native token (`$ARO`) during community drops upon **Mainnet** launch. Think of Jade as points you earn based on your contributions—a stepping stone to future benefits!
+During the **Previewnet** and **Testnet** phases, **`Jade`** serves as your primary reward currency, redeemable for ARO Network’s native token (`$ARO`) during community drops upon **Mainnet** launch. Think of Jade as points you earn based on your contributions—a stepping stone to future benefits!
 
 ## Jade in Previewnet
 
@@ -45,4 +45,4 @@ With Mainnet launch, `$ARO` becomes ARO Network’s native token, replacing Jade
 - **Will Previewnet Jade carry over to Testnet?**  
   Yes, your Previewnet Jade will seamlessly migrate to your Testnet account upon launch. 
 - **How much $ARO token is reserved for redemption with Jade? **  
-  There is up to 5% of the total $ARO supply be reserved for community incentives, which will be dropped to the ARO Community in the future. Remember: Build ARO = Earn $ARO. 
+  There is up to `5%` of the total `$ARO` supply be specifically reserved for community incentives, which will be dropped to the ARO Community in the future. Remember: Build ARO = Earn $ARO. 
