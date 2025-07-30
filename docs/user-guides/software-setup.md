@@ -95,5 +95,5 @@ This section describes how to run the ARO Client image and configure the Edge No
 
 4. **Verify Running Status**  
    ![Activation Complete](/img/user-guides/cmd_activate.png)  
-   Congratulations! You have successfully set up your new **ARO Client**. The CMD console will return to the main menu, displaying real-time network status and activation status. If both statuses appear in green, your ARO Client is running successfully.
+   Congratulations! You have successfully set up your new **ARO Client**. The CMD console will return to the main menu, displaying real-time network status and activation status. If activation status shows 'Activated' together with your bound account in green, and network status shows 'Connected', then your ARO Client is running successfully.
 
