@@ -49,3 +49,14 @@ At the same time, your ARO Lite extension will display a working panel showing y
 **Step 4**: Enjoy running your ARO Lite!  
 
 > The network quality status and Jade rewards may take a few minutes to sync. Reward details will be visible both on your Dashboard and in the ARO Lite extension.
+
+## FAQ
+
+- **What network ports should be open?**  
+  To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
+
+  ✅ **Inbound Ports**
+   - None
+
+  🚀 **Outbound Ports**
+   - **TCP:** `443`

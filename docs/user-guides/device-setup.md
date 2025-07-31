@@ -46,3 +46,16 @@ If successful, the Dashboard will recognize your device, and you can complete th
 Once the device is added, a **device card** will appear on the **Edge Node** page. Your first ARO Edge Node is now ready to operate!
 
 Click on the card to check running details of your node. 
+
+## FAQ
+
+- **What network ports should be open?**  
+  To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
+
+  ✅ **Inbound Ports**
+   - **UDP:** All ports  
+   - **TCP:** `80`, `443`, `9500–9700`
+
+  🚀 **Outbound Ports**
+   - **UDP:** `40001–40100`  
+   - **TCP:** `443`, `30002`, `40001–40100`

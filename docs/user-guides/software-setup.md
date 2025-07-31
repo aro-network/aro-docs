@@ -97,3 +97,15 @@ This section describes how to run the ARO Client image and configure the Edge No
    ![Activation Complete](/img/user-guides/cmd_activate.png)  
    Congratulations! You have successfully set up your new **ARO Client**. The CMD console will return to the main menu, displaying real-time network status and activation status. If activation status shows 'Activated' together with your bound account in green, and network status shows 'Connected', then your ARO Client is running successfully.
 
+## FAQ
+
+- **What network ports should be open?**  
+  To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
+
+  ✅ **Inbound Ports**
+   - **UDP:** All ports  
+   - **TCP:** `80`, `443`, `9500–9700`
+
+  🚀 **Outbound Ports**
+   - **UDP:** `40001–40100`  
+   - **TCP:** `443`, `30002`, `40001–40100`
