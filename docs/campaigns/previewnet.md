@@ -73,5 +73,5 @@ Follow Instructions and User Guides to start your ARO journey!
   No, you DO NOT get real rewards (in Jade) from mining. Run and test ARO Nodes, get ready for the Testnet mining competition!
 - **What is "Jade in Lock" and how do I unlock it?**  
   Some Jade rewards will be given in a locked form, which are referred as "Jade in Lock" in your Dashboard. You can unlock these Jades in Testnet by running nodes. You can refer to <Link to="/campaigns/jade">**Jade Rewards Page**</Link> for more explanations. 
-- **When will the Previewnet mining rewards be updated in Dashboard after I run an ARO Node?**
+- **When will the Previewnet mining rewards be updated in Dashboard after I run an ARO Node?**  
   The mining rewards will be calculated every hour. If the network connection is stable, rewards are typically generated within 1–2 hours. However, if the user's network is unstable — such as frequent network disconnections or frequent IP changes — it may take longer to receive rewards.
