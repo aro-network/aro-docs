@@ -15,6 +15,8 @@ During the **Previewnet** and **Testnet** phases, **`Jade`** serves as your prim
 ### How to Earn Jade in Previewnet
 In Previewnet, you can easily earn Jade by completing simple tasks or meeting specific criteria. Whether you’re a casual participant or an active contributor, there’s a Jade reward for everyone—check your progress on the [ARO Dashboard](https://dashboard.aro.network)!
 
+>Note: Running ARO nodes in Previewnet phase does **NOT** yield real mining rewards. Mining competition will start from Testnet launch. 
+
 ### Jade in Lock
 Some Previewnet tasks, like redeeming Gift Codes or running/purchasing ARO Nodes, grant **Jade in Lock**—rewards temporarily held for later. These Jades unlock during Testnet when you run nodes, turning your early efforts into real value.
 
@@ -42,7 +44,5 @@ With Mainnet launch, `$ARO` becomes ARO Network’s native token, replacing Jade
 
 - **Can I transfer Jade?**  
   No, Jade is not a token and cannot be transferred at this stage.
-- **Will Previewnet Jade carry over to Testnet?**  
-  Yes, your Previewnet Jade will seamlessly migrate to your Testnet account upon launch. 
 - **How much ARO token is reserved for the redemption with Jade?**  
   Up to `5%` of the total ARO token supply will be specifically reserved for community incentives, which will be dropped to the ARO Community in the future.
