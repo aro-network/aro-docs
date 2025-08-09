@@ -43,5 +43,5 @@ The **topbar** provides access to all available pages:
 
 - **Mining Stats**: Monitor the number of ARO Nodes you’re running, their online status, and the total rewards earned from operating them. 
 
-  > Special Remind: In **Previewnet** phase, you will be mining Preview Jade, a simulation of mining rewards, instead of real Jade rewards. Please refer to <Link to="/campaigns/previewnet">**ARO Previewnet**</Link> page for details. 
+  > Special Remind: In **Previewnet** phase, running ARO Nodes will **NOT** yield any real rewards. Please refer to <Link to="/campaigns/previewnet">**ARO Previewnet**</Link> page for details. 
 - **ARO Account**: Manage basic account settings and operations for your ARO Account.

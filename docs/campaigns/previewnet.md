@@ -24,7 +24,7 @@ During Previewnet and Testnet, `Jade` serve as your primary quantifiable reward,
 
 For detailed specifics on how Jade works, check the <Link to="/campaigns/jade">**Jade Rewards Page**</Link>.
 
->**Special Note**: Running nodes in Previewnet does not yield real rewards for you. We want you to explore ARO with ease and low risk in this beginning stage, gearing up for Testnet’s fierce mining competition where bigger Jade incentives await!
+>**Special Note**: Running nodes in Previewnet does **NOT** yield real rewards for you. We want you to explore ARO with ease and low risk in this beginning stage, gearing up for Testnet’s fierce mining competition where bigger Jade incentives await!
 
 ## Things You Can Do in Previewnet
 
@@ -73,5 +73,6 @@ Follow Instructions and User Guides to start your ARO journey!
   No, you DO NOT get real rewards (in Jade) from mining. Run and test ARO Nodes, get ready for the Testnet mining competition!
 - **What is "Jade in Lock" and how do I unlock it?**  
   Some Jade rewards will be given in a locked form, which are referred as "Jade in Lock" in your Dashboard. You can unlock these Jades in Testnet by running nodes. You can refer to <Link to="/campaigns/jade">**Jade Rewards Page**</Link> for more explanations. 
-- **When will the Previewnet mining rewards be updated in Dashboard after I run an ARO Node?**  
-  The mining rewards will be calculated every hour. If the network connection is stable, rewards are typically generated within 1–2 hours. However, if the user's network is unstable — such as frequent network disconnections or frequent IP changes — it may take longer to receive rewards.
+- **What is "Mining Efficiency"**  
+	In the **Previewnet** phase, running ARO nodes does **NOT** yield real rewards. Instead, we aim to provide clear insights into your node performance and mining potential to help you understand your nodes before Testnet begins. **Mining Efficiency** indicates your potential earnings compared to the network’s median, offering a reliable simulation of your nodes’ real mining performance. If your nodes are underperforming, there’s room to optimize!
+
