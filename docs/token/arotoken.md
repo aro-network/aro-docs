@@ -33,4 +33,4 @@ ARO Network adopts a **GPoS (Guarantee Proof of Stake)** consensus mechanism. `K
 
 ### Diverse Use Cases
 
-As the ARO ecosystem evolves, the scope of `$ARO` will continue to expand. It will become a critical medium of value exchange across an increasingly diverse set of use cases, laying a strong foundation for the network’s future scalability and adoption.
+As the ARO ecosystem evolves, the scope of `$ARO` will continue to expand. It will become a critical medium of value exchange across an increasingly diverse set of use cases, laying a strong foundation for the network’s future scalability and 3 adoption.
