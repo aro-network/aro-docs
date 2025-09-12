@@ -36,34 +36,126 @@ const config = {
     locales: ['en'],
   },
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          routeBasePath: '/',
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
+presets: [
+  [
+    'classic',
+    /** @type {import('@docusaurus/preset-classic').Options} */
+    ({
+      docs: false,  // 禁用默认 docs，使用多 content-docs
+      blog: {
+        showReadingTime: true,
+        // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+      theme: {
+        customCss: './src/css/custom.css',
+      },
+    }),
   ],
+  // Introduction
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'introduction',
+      path: 'introduction',
+      routeBasePath: 'introduction',
+      sidebarPath: require.resolve('./sidebars-introduction.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // ARO Network
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'aro-network',
+      path: 'aro-network',
+      routeBasePath: 'aro-network',
+      sidebarPath: require.resolve('./sidebars-aro-network.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // Node Operator Guide: Run ARO Nodes
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'node-operator-guide',
+      path: 'node-operator-guide',
+      routeBasePath: 'node-operator-guide',
+      sidebarPath: require.resolve('./sidebars-node-operator-guide.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // Developer Guide: Build on ARO
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'developer-guide',
+      path: 'developer-guide',
+      routeBasePath: 'developer-guide',
+      sidebarPath: require.resolve('./sidebars-developer-guide.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // Edge Cloud Guide: Explore Edge Solutions
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'edge-cloud-guide',
+      path: 'edge-cloud-guide',
+      routeBasePath: 'edge-cloud-guide',
+      sidebarPath: require.resolve('./sidebars-edge-cloud-guide.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // Campaign Hub
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'campaign-hub',
+      path: 'campaign-hub',
+      routeBasePath: 'campaign-hub',
+      sidebarPath: require.resolve('./sidebars-campaign-hub.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // $ARO Tokenomics
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'aro-tokenomics',
+      path: 'aro-tokenomics',
+      routeBasePath: 'aro-tokenomics',
+      sidebarPath: require.resolve('./sidebars-aro-tokenomics.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+  // Appendix
+  [
+    'content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    {
+      id: 'appendix',
+      path: 'appendix',
+      routeBasePath: 'appendix',
+      sidebarPath: require.resolve('./sidebars-appendix.js'),
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    },
+  ],
+],
 
   stylesheets: [
     {
@@ -81,34 +173,34 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'ARO Network Docs',  // 更新为匹配你的站点标题
+        title: 'ARO Network Docs', 
         logo: {
           alt: 'ARO Logo',
-          src: 'img/logo-light.svg',  // 本地光模式 logo（确保 static/img/logo-light.svg 存在）
-          srcDark: 'img/logo-dark.svg',  // 本地暗模式 logo（确保 static/img/logo-dark.svg 存在）
-          href: '/',  // 保持 /，但现在通过首页修复
+          src: 'img/logo-light.svg',  
+          srcDark: 'img/logo-dark.svg',  
+          href: '/',  
           target: '_self',
         },
-        items: [  // 取消注释，并添加基本导航项（避免默认 broken links）
+        items: [  
           {
             type: 'docSidebar',
-            sidebarId: 'docs',  // 链接到你的侧边栏（docs 类别）
+            sidebarId: 'docs',  
             position: 'left',
             label: 'Docs',
           },
           {
-            href: 'https://github.com/aro-network/aro-docs',  // 替换为你的 GitHub 仓库
+            href: 'https://github.com/aro-network/aro-docs',  
             label: 'GitHub',
             position: 'right',
           },
           {
-            href: 'https://aro.network',  // 你的主站点链接
+            href: 'https://aro.network',  
             label: 'ARO Network',
             position: 'right',
           },
         ],
       },
-      footer: {  // 取消注释，并添加基本 footer 链接（避免默认 / 链接）
+      footer: {  
         style: 'dark',
         links: [
           {
@@ -116,7 +208,7 @@ const config = {
             items: [
               {
                 label: 'Get Started',
-                to: '/introduction/get-started',  // 链接到你的第一个页面
+                to: '/introduction/get-started',  
               },
               {
                 label: 'Node Operator Guide',
@@ -129,11 +221,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/your-discord',  // 替换为你的 Discord
+                href: 'https://discord.com/invite/your-discord',  
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/aro_network',  // 替换为你的 Twitter
+                href: 'https://twitter.com/aro_network',  
               },
             ],
           },
@@ -147,7 +239,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ARO Network. Built with Docusaurus.`,  // 更新为你的项目
+        copyright: `Copyright © ${new Date().getFullYear()} ARO Network. Built with Docusaurus.`,  
       },
       prism: {
         theme: prismThemes.github,
