@@ -45,8 +45,8 @@ module.exports = {
           collapsed: true,
           items: [
             'node-operator-guide/aro-pod/get-aro-pod',
-            'node-operator-guide/aro-pod/installation-guide',
-            'node-operator-guide/aro-pod/faq-troubleshooting',
+            'node-operator-guide/aro-pod/aro-pod-installation-guide',
+            'node-operator-guide/aro-pod/aro-pod-faq-troubleshooting',
           ],
         },
         'node-operator-guide/aro-link',
@@ -57,10 +57,10 @@ module.exports = {
           collapsed: true,
           items: [
             'node-operator-guide/aro-client/choose-installation-method',
-            'node-operator-guide/aro-client/installation-guide-bare-metal',
-            'node-operator-guide/aro-client/installation-guide-vm',
-            'node-operator-guide/aro-client/installation-guide-installer-package',
-            'node-operator-guide/aro-client/faq-troubleshooting',
+            'node-operator-guide/aro-client/aro-client-installation-guide-bare-metal',
+            'node-operator-guide/aro-client/aro-client-installation-guide-vm',
+            'node-operator-guide/aro-client/aro-client-installation-guide-installer-package',
+            'node-operator-guide/aro-client/aro-client-faq-troubleshooting',
           ],
         },
         {
@@ -70,8 +70,8 @@ module.exports = {
           collapsed: true,
           items: [
             'node-operator-guide/aro-lite/get-aro-lite',
-            'node-operator-guide/aro-lite/installation-guide',
-            'node-operator-guide/aro-lite/faq-troubleshooting',
+            'node-operator-guide/aro-lite/aro-lite-installation-guide',
+            'node-operator-guide/aro-lite/aro-lite-faq-troubleshooting',
           ],
         },
         {
