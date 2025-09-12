@@ -1,7 +1,7 @@
 ---
 id: choose-node
-title: Choose Your ARO Node
-sidebar_label: Choose Your ARO Node
+title: "Choose Your ARO Node"
+sidebar_label: "Choose Your ARO Node"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

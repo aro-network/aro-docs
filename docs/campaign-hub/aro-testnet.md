@@ -1,7 +1,7 @@
 ---
 id: aro-testnet
-title: ARO Testnet
-sidebar_label: ARO Testnet
+title: "ARO Testnet"
+sidebar_label: "ARO Testnet"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

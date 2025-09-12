@@ -1,7 +1,7 @@
 ---
 id: network
-title: Network
-sidebar_label: Network
+title: "Network"
+sidebar_label: "Network"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
