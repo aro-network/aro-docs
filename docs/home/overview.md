@@ -16,4 +16,6 @@ Backed by a team with over $140M in annual revenue and 1.5M+ edge nodes deployed
 
 ## Getting Started
 
+--t
+
 <CardGroup />
