@@ -1,7 +1,7 @@
 ---
 id: aro-client-installation-guide-bare-metal
-title: Installation Guide - Bare-metal
-sidebar_label: Installation Guide - Bare-metal
+title: "Installation Guide - Bare-metal"
+sidebar_label: "Installation Guide - Bare-metal"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

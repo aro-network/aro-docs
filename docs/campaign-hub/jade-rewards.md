@@ -1,7 +1,7 @@
 ---
 id: jade-rewards
-title: Jade Rewards
-sidebar_label: Jade Rewards
+title: "Jade Rewards"
+sidebar_label: "Jade Rewards"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

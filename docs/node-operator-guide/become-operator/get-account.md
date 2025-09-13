@@ -1,7 +1,7 @@
 ---
 id: get-account
-title: Get Your Account
-sidebar_label: Get Your Account
+title: "Get Your Account"
+sidebar_label: "Get Your Account"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

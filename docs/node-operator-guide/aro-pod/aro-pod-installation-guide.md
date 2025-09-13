@@ -1,7 +1,7 @@
 ---
 id: aro-pod-installation-guide
-title: Installation Guide
-sidebar_label: Installation Guide
+title: "Installation Guide"
+sidebar_label: "Installation Guide"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
