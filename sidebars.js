@@ -4,14 +4,14 @@ module.exports = {
       type: 'category',
       label: 'Introduction',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true，默认收起
       items: ['introduction/get-started'],
     },
     {
       type: 'category',
       label: 'ARO Network',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: [
         'aro-network/architecture',
         'aro-network/network',
@@ -24,13 +24,13 @@ module.exports = {
       type: 'category',
       label: 'Node Operator Guide: Run ARO Nodes',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: [
         {
           type: 'category',
           label: 'Become an ARO Node Operator',
           collapsible: true,
-          collapsed: true,
+          collapsed: true,  // 子类别保持 true
           items: [
             'node-operator-guide/become-operator/idle-bandwidth',
             'node-operator-guide/become-operator/get-account',
@@ -90,21 +90,21 @@ module.exports = {
       type: 'category',
       label: 'Developer Guide: Build on ARO',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: ['developer-guide/overview'],
     },
     {
       type: 'category',
       label: 'Edge Cloud Guide: Explore Edge Solutions',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: ['edge-cloud-guide/edge-cloud-solutions'],
     },
     {
       type: 'category',
       label: 'Campaign Hub',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: [
         'campaign-hub/aro-testnet',
         'campaign-hub/jade-rewards',
@@ -115,14 +115,14 @@ module.exports = {
       type: 'category',
       label: '$ARO Tokenomics',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: ['aro-tokenomics/tokenomics'],
     },
     {
       type: 'category',
       label: 'Appendix',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,  // 改为 true
       items: [
         'appendix/useful-links',
         'appendix/terms-of-use',
