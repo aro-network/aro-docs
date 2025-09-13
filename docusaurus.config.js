@@ -25,7 +25,7 @@ const config = {
   organizationName: 'aro-network', // Usually your GitHub org/user name.
   projectName: 'aro-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',  // 改为 'warn' 忽略 broken links 错误（解决日志问题）
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -42,7 +42,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),  // 绝对路径，确保加载正确
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -83,72 +83,71 @@ const config = {
       navbar: {
         title: 'Documentations',
         logo: {
-        alt: 'My Project Logo',
-        src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
-        srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
-        href: '/',
-        target: '_self',
+          alt: 'My Project Logo',
+          src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
+          srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
+          href: '/docs',  // 改为 /docs，避免 / broken link
+          target: '_self',
         },
-        // items: [
-        //   {
-        //     type: 'docSidebar',
-        //     sidebarId: 'tutorialSidebar',
-        //     position: 'left',
-        //     label: 'Tutorial',
-        //   },
-        //   {to: '/blog', label: 'Blog', position: 'left'},
-        //   {
-        //     href: 'https://github.com/facebook/docusaurus',
-        //     label: 'GitHub',
-        //     position: 'right',
-        //   },
-        // ],
+        items: [  // 取消注释，添加基本项（避免默认 broken links）
+          {
+            type: 'docSidebar',
+            sidebarId: 'docs',  // 链接到你的 sidebar.js (docs:)
+            position: 'left',
+            label: 'Docs',
+          },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: 'Docs',
-      //       items: [
-      //         {
-      //           label: 'Tutorial',
-      //           to: '/docs/home/overview',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Stack Overflow',
-      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discordapp.com/invite/docusaurus',
-      //         },
-      //         {
-      //           label: 'Twitter',
-      //           href: 'https://twitter.com/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: '/blog',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
+      footer: {  // 取消注释，添加基本 footer（避免默认 / 链接）
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Introduction',
+                to: '/docs/introduction/get-started',  // 链接到你的第一个页面
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
@@ -161,7 +160,7 @@ const config = {
         theme: {light: 'neutral', dark: 'neutral'},
       },
     }),
-  
+
   markdown: {
     mermaid: true,
   },

@@ -2,6 +2,7 @@
 id: get-started
 title: "ARO Network: Get Started"
 sidebar_label: "Get Started"
+slug: /
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
