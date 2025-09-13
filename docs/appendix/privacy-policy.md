@@ -1,7 +1,7 @@
 ---
 id: privacy-policy
-title: "Privacy Policy"
-sidebar_label: "Privacy Policy"
+title: Privacy Policy
+sidebar_label: Privacy Policy
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

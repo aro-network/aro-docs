@@ -1,7 +1,7 @@
 ---
 id: idle-bandwidth
-title: "Your Idle Bandwidth Matters"
-sidebar_label: "Your Idle Bandwidth Matters"
+title: Your Idle Bandwidth Matters
+sidebar_label: Your Idle Bandwidth Matters
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

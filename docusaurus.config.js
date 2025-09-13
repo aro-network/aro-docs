@@ -25,7 +25,7 @@ const config = {
   organizationName: 'aro-network', // Usually your GitHub org/user name.
   projectName: 'aro-docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',  // 改为 'warn' 以忽略 broken links，让 build 通过
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -36,126 +36,34 @@ const config = {
     locales: ['en'],
   },
 
-presets: [
-  [
-    'classic',
-    /** @type {import('@docusaurus/preset-classic').Options} */
-    ({
-      docs: false,  // 禁用默认 docs，使用多 content-docs
-      blog: {
-        showReadingTime: true,
-        // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-      },
-      theme: {
-        customCss: './src/css/custom.css',
-      },
-    }),
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          routeBasePath: '/',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
   ],
-  // Introduction
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'introduction',
-      path: 'introduction',
-      routeBasePath: 'introduction',
-      sidebarPath: require.resolve('./sidebars-introduction.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // ARO Network
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'aro-network',
-      path: 'aro-network',
-      routeBasePath: 'aro-network',
-      sidebarPath: require.resolve('./sidebars-aro-network.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // Node Operator Guide: Run ARO Nodes
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'node-operator-guide',
-      path: 'node-operator-guide',
-      routeBasePath: 'node-operator-guide',
-      sidebarPath: require.resolve('./sidebars-node-operator-guide.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // Developer Guide: Build on ARO
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'developer-guide',
-      path: 'developer-guide',
-      routeBasePath: 'developer-guide',
-      sidebarPath: require.resolve('./sidebars-developer-guide.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // Edge Cloud Guide: Explore Edge Solutions
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'edge-cloud-guide',
-      path: 'edge-cloud-guide',
-      routeBasePath: 'edge-cloud-guide',
-      sidebarPath: require.resolve('./sidebars-edge-cloud-guide.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // Campaign Hub
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'campaign-hub',
-      path: 'campaign-hub',
-      routeBasePath: 'campaign-hub',
-      sidebarPath: require.resolve('./sidebars-campaign-hub.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // $ARO Tokenomics
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'aro-tokenomics',
-      path: 'aro-tokenomics',
-      routeBasePath: 'aro-tokenomics',
-      sidebarPath: require.resolve('./sidebars-aro-tokenomics.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-  // Appendix
-  [
-    'content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    {
-      id: 'appendix',
-      path: 'appendix',
-      routeBasePath: 'appendix',
-      sidebarPath: require.resolve('./sidebars-appendix.js'),
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    },
-  ],
-],
 
   stylesheets: [
     {
@@ -173,74 +81,74 @@ presets: [
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'ARO Network Docs', 
+        title: 'Documentations',
         logo: {
-          alt: 'ARO Logo',
-          src: 'img/logo-light.svg',  
-          srcDark: 'img/logo-dark.svg',  
-          href: '/',  
-          target: '_self',
+        alt: 'My Project Logo',
+        src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
+        srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
+        href: '/',
+        target: '_self',
         },
-        items: [  
-          {
-            type: 'docSidebar',
-            sidebarId: 'docs',  
-            position: 'left',
-            label: 'Docs',
-          },
-          {
-            href: 'https://github.com/aro-network/aro-docs',  
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://aro.network',  
-            label: 'ARO Network',
-            position: 'right',
-          },
-        ],
+        // items: [
+        //   {
+        //     type: 'docSidebar',
+        //     sidebarId: 'tutorialSidebar',
+        //     position: 'left',
+        //     label: 'Tutorial',
+        //   },
+        //   {to: '/blog', label: 'Blog', position: 'left'},
+        //   {
+        //     href: 'https://github.com/facebook/docusaurus',
+        //     label: 'GitHub',
+        //     position: 'right',
+        //   },
+        // ],
       },
-      footer: {  
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Get Started',
-                to: '/introduction/get-started',  
-              },
-              {
-                label: 'Node Operator Guide',
-                to: '/node-operator-guide/become-operator/idle-bandwidth',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.com/invite/your-discord',  
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/aro_network',  
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/aro-network/aro-docs',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} ARO Network. Built with Docusaurus.`,  
-      },
+      // footer: {
+      //   style: 'dark',
+      //   links: [
+      //     {
+      //       title: 'Docs',
+      //       items: [
+      //         {
+      //           label: 'Tutorial',
+      //           to: '/docs/home/overview',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'Community',
+      //       items: [
+      //         {
+      //           label: 'Stack Overflow',
+      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //         },
+      //         {
+      //           label: 'Discord',
+      //           href: 'https://discordapp.com/invite/docusaurus',
+      //         },
+      //         {
+      //           label: 'Twitter',
+      //           href: 'https://twitter.com/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'More',
+      //       items: [
+      //         {
+      //           label: 'Blog',
+      //           to: '/blog',
+      //         },
+      //         {
+      //           label: 'GitHub',
+      //           href: 'https://github.com/facebook/docusaurus',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

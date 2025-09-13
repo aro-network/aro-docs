@@ -1,7 +1,7 @@
 ---
 id: aro-client-installation-guide-vm
-title: "Installation Guide - VM"
-sidebar_label: "Installation Guide - VM"
+title: Installation Guide - VM
+sidebar_label: Installation Guide - VM
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

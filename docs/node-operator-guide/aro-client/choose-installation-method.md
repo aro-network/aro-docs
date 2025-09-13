@@ -1,7 +1,7 @@
 ---
 id: choose-installation-method
-title: "Choose Installation Method"
-sidebar_label: "Choose Installation Method"
+title: Choose Installation Method
+sidebar_label: Choose Installation Method
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

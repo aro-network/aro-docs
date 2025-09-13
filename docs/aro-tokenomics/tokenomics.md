@@ -1,7 +1,7 @@
 ---
 id: tokenomics
-title: "ARO Tokenomics"
-sidebar_label: "Tokenomics"
+title: $ARO Tokenomics
+sidebar_label: $ARO Tokenomics
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

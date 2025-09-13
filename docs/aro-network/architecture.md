@@ -1,7 +1,7 @@
 ---
 id: architecture
-title: "Architecture"
-sidebar_label: "Architecture"
+title: Architecture
+sidebar_label: Architecture
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

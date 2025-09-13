@@ -1,7 +1,7 @@
 ---
 id: useful-links
-title: "Useful Links"
-sidebar_label: "Useful Links"
+title: Useful Links
+sidebar_label: Useful Links
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

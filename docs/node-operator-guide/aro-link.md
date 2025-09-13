@@ -1,7 +1,7 @@
 ---
 id: aro-link
-title: "ARO Link"
-sidebar_label: "ARO Link"
+title: ARO Link
+sidebar_label: ARO Link
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

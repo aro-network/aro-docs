@@ -1,7 +1,7 @@
 ---
 id: aro-dashboard
-title: "ARO Dashboard"
-sidebar_label: "ARO Dashboard"
+title: ARO Dashboard
+sidebar_label: ARO Dashboard
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

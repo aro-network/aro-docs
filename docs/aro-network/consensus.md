@@ -1,7 +1,7 @@
 ---
 id: consensus
-title: "Consensus"
-sidebar_label: "Consensus"
+title: Consensus
+sidebar_label: Consensus
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
