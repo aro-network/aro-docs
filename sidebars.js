@@ -22,7 +22,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Node Operator Guide: Run ARO Nodes',
+      label: 'Node Operator Guide',
       collapsible: true,
       collapsed: true,  // 改为 true
       items: [
@@ -88,14 +88,14 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Developer Guide: Build on ARO',
+      label: 'Developer Guide',
       collapsible: true,
       collapsed: true,  // 改为 true
       items: ['developer-guide/overview'],
     },
     {
       type: 'category',
-      label: 'Edge Cloud Guide: Explore Edge Solutions',
+      label: 'Edge Cloud Solutions',
       collapsible: true,
       collapsed: true,  // 改为 true
       items: ['edge-cloud-guide/edge-cloud-solutions'],
