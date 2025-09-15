@@ -36,7 +36,7 @@ During registration, you’ll be prompted to enter a **Referral Code**. Using a 
 
 The **topbar** provides access to all available pages:
 
-- **Campaign**: This is your page for the main campaign in <Link to="/campaigns/previewnet">**ARO Previewnet**</Link>.
+- **Campaign**: This is your page for the main campaign in the **ARO Previewnet**.
 
 - **ARO Node**: View and manage all ARO Nodes linked to your ARO Account. You can add new nodes or remove existing ones. Clicking a device card displays detailed information about the node.
 
@@ -44,5 +44,4 @@ The **topbar** provides access to all available pages:
 
 - **Mining Stats**: Monitor the number of ARO Nodes you’re running, their online status, and the total rewards earned from operating them. 
 
-  > Special Remind: In **Previewnet** phase, running ARO Nodes will **NOT** yield any real rewards. Please refer to <Link to="/campaigns/previewnet">**ARO Previewnet**</Link> page for details. 
 - **ARO Account**: Manage basic account settings and operations for your ARO Account.
