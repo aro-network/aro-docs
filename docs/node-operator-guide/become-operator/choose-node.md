@@ -51,7 +51,7 @@ The [Dashboard](https://dashboard.ARO.network) (currently for Previewnet phase) 
 
 By creating an **ARO Account**, you can log in anytime, anywhere to manage your Edge Nodes and rewards.
 
-For detailed instructions, refer to the **Dashboard User Guide** on <Link to="/node-runner-guide/become-operator/aro-dashboard">this page</Link>, which covers:
+For detailed instructions, refer to the **Dashboard User Guide** on <Link to="/node-operator-guide/become-operator/aro-dashboard">this page</Link>, which covers:
 - Accessing the Dashboard
 - Creating an ARO Account
 - Referring friends to join ARO
