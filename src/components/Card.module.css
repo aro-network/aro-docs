@@ -1,0 +1,61 @@
+.cardContainer {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 网格 */
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-card-background-color); /* 继承 #f8f9fa */
+  text-decoration: none;
+  color: var(--ifm-color-content);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(46, 133, 85, 0.2); /* 绿色阴影 */
+  transform: translateY(-2px);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary); /* #2e8555 */
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* 暗模式 */
+[data-theme='dark'] .card {
+  background: var(--ifm-card-background-color-dark); /* #2d3748 */
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 0 4px 12px rgba(37, 194, 160, 0.3); /* 青绿色 #25c2a0 */
+}
+
+[data-theme='dark'] .cardTitle {
+  color: var(--ifm-color-primary); /* #25c2a0 */
+}
+
+/* 移动端单列 */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
