@@ -13,6 +13,7 @@ module.exports = {
       collapsible: true,
       collapsed: true,  // 改为 true
       items: [
+        'aro-network/aro-overview',
         'aro-network/architecture',
         'aro-network/network',
         'aro-network/work-proof',
