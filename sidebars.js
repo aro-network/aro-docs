@@ -29,7 +29,7 @@ module.exports = {
       items: [
         {
           type: 'category',
-          label: 'Become an ARO Node Operator',
+          label: 'Become a Node Operator',
           collapsible: true,
           collapsed: true,  // 子类别保持 true
           items: [
