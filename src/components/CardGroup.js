@@ -1,8 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import styles from '../components/Card.module.css';
+import styles from './Card.module.css';
 
 const CardList = [
   {
@@ -36,16 +35,14 @@ function Card({ title, description, to }) {
   );
 }
 
-export default function Home() {
+export default function CardGroup() {
   return (
-    <Layout title="ARO Network Docs" description="Documentation for ARO Network">
-      <main className={styles.cardContainer}>
-        <div className={styles.cardGrid}>
-          {CardList.map((props, idx) => (
-            <Card key={idx} {...props} />
-          ))}
-        </div>
-      </main>
-    </Layout>
+    <div className={styles.cardContainer}>
+      <div className={styles.cardGrid}>
+        {CardList.map((props, idx) => (
+          <Card key={idx} {...props} />
+        ))}
+      </div>
+    </div>
   );
 }
