@@ -1,11 +1,11 @@
 ---
 id: network
-title: "Network"
-sidebar_label: "Network"
+title: "Network Topology"
+sidebar_label: "Network Topology"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Network
+# Network Topology
 
 <div style={{textAlign: 'center'}}>
   <img src={useBaseUrl('/img/aro-network/topology.png')} style={{maxWidth: '800'}} />
@@ -32,9 +32,12 @@ The detailed explanation of how Edge Nodes work:
 
 Keeper Nodes work in segmented regions based on their geo-locations. Every Keeper Node should be assigned to a region where it is physically located to ensure high availability and service quality in that specific region.
 
-Keeper Nodes typically run on rather stable, capable network environment, e.g. server rooms. Keeper Nodes need to ensure very high performance and availability to the network.
+There are two types of Keeper Nodes:
 
-The key responsibility of a Keeper Node is:
+- The first type consists of large, high-performance, stable `Monitoring Nodes`. They typically run on rather capable network environment, perform comprehensie validation tasks and serve as the "ultimate arbiters" in maintaining the honest and orderly operation of the entire network.
+- The second type consists of small, distributed, and numerous `Checker Nodes`. They flexibly and randomly "test" the behavior and resource capabilities of surrounding Edge Nodes, providing highly valuable assistance to large monitoring nodes and forming an organic complement in the network topology.
+
+Generally, the key responsibility of a Keeper Node is:
 
 1. Maintaining the public ledger on blockchain;
 2. Ensuring the correctness of contract execution;
@@ -47,7 +50,7 @@ The blockchain (EVM) works as a public ledger that maintains key states of the n
 
 * Workload quantification
 * Reward calculation & distribution
-* $REACH token functions
+* $ARO token functions
 * On-chain governance
 * Orders & payments
 
