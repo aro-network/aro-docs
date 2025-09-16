@@ -19,7 +19,7 @@ By deploying ARO Lite, ARO facilitates exploratory resource building in new mark
 We offer two methods for downloading and installing ARO Lite. You can select either option from the Dashboard under **ARO Nodes > Add New Node > ARO Lite**.
 
 ![pic](/img/node-operator-guide/aro_lite_add_new_node.png)
-![pic](/img/node-operator-guides/aro_lite_add_page.png)
+![pic](/img/node-operator-guide/aro_lite_add_page.png)
 
 ### 1. Google Web Store (Recommended)
 
