@@ -6,4 +6,5 @@ sidebar_label: "Installation Guide - Installer Package"
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Installation Guide - Installer Package
-Instructions for installer package...
+
+Installer Package will be suppored shortly. Stay updated!
