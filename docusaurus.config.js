@@ -101,41 +101,53 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentations',
             items: [
               {
-                label: 'Introduction',
+                label: 'Get Started',
                 to: '/docs/introduction/get-started',  
+              },
+              {
+                label: 'Guides for Node Operators',
+                to: '/node-operator-guide/become-operator/idle-bandwidth',  
+              },
+              {
+                label: 'Guides for ARO Testnet',
+                to: '/campaign-hub/aro-testnet',  
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Join Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Twitter',
+                href: 'https://x.com/AroNetwork',
+              },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/ARO_Network',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discord.com/invite/Rc4BMUjbNB',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Useful Links',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Official Site',
+                to: 'https://aro.network',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Blog',
+                href: 'https://medium.com/aronetwork',
+              },
+              {
+                label: 'Linktree',
+                href: 'https://linktr.ee/AroNetwork',
               },
             ],
           },
