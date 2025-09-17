@@ -25,7 +25,7 @@ const config = {
   organizationName: 'aro-network', // Usually your GitHub org/user name.
   projectName: 'aro-docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',  // 改为 'warn' 忽略 broken links 错误（解决日志问题）
+  onBrokenLinks: 'warn',  
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -42,21 +42,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),  // 绝对路径，确保加载正确
+          sidebarPath: require.resolve('./sidebars.js'),  
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -91,8 +83,8 @@ const config = {
         },
         items: [     
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://aro.network',
+            label: 'Official Site',
             position: 'right',
           },
         ],
@@ -152,7 +144,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ARO Network. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
