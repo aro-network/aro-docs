@@ -81,21 +81,15 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Documentations',
+        title: null,
         logo: {
           alt: 'My Project Logo',
           src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
           srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
-          href: '/docs',  // 改为 /docs，避免 / broken link
+          href: '/docs',  
           target: '_self',
         },
-        items: [  // 取消注释，添加基本项（避免默认 broken links）
-          {
-            type: 'docSidebar',
-            sidebarId: 'docs',  // 链接到你的 sidebar.js (docs:)
-            position: 'left',
-            label: 'Docs',
-          },
+        items: [     
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -103,7 +97,7 @@ const config = {
           },
         ],
       },
-      footer: {  // 取消注释，添加基本 footer（避免默认 / 链接）
+      footer: {  
         style: 'dark',
         links: [
           {
@@ -111,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/introduction/get-started',  // 链接到你的第一个页面
+                to: '/docs/introduction/get-started',  
               },
             ],
           },
