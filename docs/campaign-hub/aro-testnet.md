@@ -34,11 +34,11 @@ The mining competition ensures a fair opportunity for all ARO Nodes from the fir
 
 ### Badges for Community Growth
 
-The Testnet also features a Badge System, which awards `Badges` to users who contribute to the network, community, and broader ARO ecosystem.
+The Testnet also features a **Badge System**, which awards `Badges` to users who contribute to the network, community, and broader ARO ecosystem.
 
 Eligible contributions for earning Badges are diverse, ensuring that exceptional efforts beyond providing edge resources are recognized and rewarded through ARO’s comprehensive incentive system.
 
-Check your Badge collection on the Dashboard->Campaign page.
+Check your Badge collection on the **Dashboard->Campaign** page.
 
 Badges are non-transferable.
 
@@ -52,7 +52,7 @@ Badges are non-transferable.
 
 For users who joined the ARO Network during the Previewnet phase: your user accounts, referrals, Jade rewards (including Jade in lock), connected social accounts, and completed tasks will seamlessly carry over to the Testnet environment.
 
-Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters.
+Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet and account for `7.61%` of the total Jade supply.  
 
 For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 30 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 30 days will unlock all those Jades.
 
@@ -76,7 +76,7 @@ Boost your Jade and Badge rewards through engaging activities:
 
 ### Sign Up
 
-[Sign Up for an ARO Account](https://dashboard.aro.network) is all you need to get started.
+[**Sign Up for an ARO Account**](https://dashboard.aro.network) is all you need to get started.
 
 If you have any questions, please follow <Link to="/node-operator-guide/become-operator/aro-dashboard">**ARO Dashboard User Guide**</Link>.
 
