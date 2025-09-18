@@ -10,13 +10,14 @@ This tutorial guides you through the process of installing and initializing the 
 
 Before preparing the machine, review the recommended system requirements for running the ARO Client image on [**this page**](/edge-node/device-specs#recommended-requirements-for-software-clients-aro-client).
 
-<span style={{color: 'red'}}>Special Note for Previewnet Node Operators:</span>
-
-<span style={{color: 'red'}}>The VM-based installation method is deprecated and no longer supported in the coming Testnet due to performance limitations, particularly for edge services like PCDN.</span>
-
-<span style={{color: 'red'}}>If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we strongly recommend migrating to the bare-metal installation method (See tutorials below) as soon as possible.</span>
-
 Please follow the tutorials below (Part 1, 2, & 3) to get your ARO Client ready for the coming Testnet.
+
+<p style={{color: 'red'}}>Special Note for Previewnet Node Operators:</p>
+
+<p style={{color: 'red'}}>The VM-based installation method is deprecated and no longer supported in the coming Testnet due to performance limitations, particularly for edge services like PCDN.</p>
+
+<p style={{color: 'red'}}>If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we strongly recommend migrating to the bare-metal installation method (See tutorials below) as soon as possible.</p>
+
 
 ## Part 1: Install ARO Client Software Image On Bare-metal Machine
 
