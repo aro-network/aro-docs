@@ -33,14 +33,7 @@ Refer to [this tutorial document](https://download.aro.network/files/docs/ARO_Cl
 
 When you are ready on the ARO Client Software Image installation, continue to the Part 2.
 
-## Part 2: Install PCDN Client
-
-Refer to [this tutorial document](https://download.aro.network/files/docs/PCDN_Client_Installation_Guide.pdf) for PCDN Client installation. Make sure that you have already installed ARO Client Software Image on your bare-metal machine (the Part 1).
-
-When you are ready on the PCDN Client installation, continue to the Part 3.
-
-
-## Part 3: ARO Client Node Initialization & Configuration
+## Part 2: ARO Client Node Initialization & Configuration
 
 This section describes how to register, configure and complete all initial setup needed for a functioning status for your ARO Client node. 
 
