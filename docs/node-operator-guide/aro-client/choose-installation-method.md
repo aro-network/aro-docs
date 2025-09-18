@@ -23,20 +23,20 @@ We provide recommended hardware specifications for running ARO Client based on y
   - RAM: 2 GB
   - Disk: ≥ 50 GB SSD
 - For **500 Mbps**:
-  - CPU Threads: 12-16
+  - CPU Threads: ≥12
   - RAM: 8 GB
-  - System Disk: ≥ 100 GB SSD
-  - Data Disk: 500 GB - 1 TB SSD
+  - System Disk: ≥ 200 GB SSD
+  - Data Disk: ≥500 GB SSD
 - For **1 Gbps**:
-  - CPU Threads: 16-24
+  - CPU Threads: ≥16
   - RAM: ≥16 GB
   - System Disk: ≥ 240 GB SSD
-  - Data Disk: 1-2 TB SSD
+  - Data Disk: ≥1 TB SSD
 - For **5 Gbps**:
-  - CPU Threads: 32-64
+  - CPU Threads: ≥32
   - RAM: ≥64 GB
   - System Disk: ≥ 240 GB SSD
-  - Data Disk: ≥ 10 TB SSD
+  - Data Disk: ≥ 5 TB SSD
 - For **10 Gbps**:
   - CPU Threads: ≥64
   - RAM: 128–192 GB
