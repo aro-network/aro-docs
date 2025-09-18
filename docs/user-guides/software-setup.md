@@ -6,64 +6,45 @@ import Link from '@docusaurus/Link';
 
 # ARO Client Installation and Initialization Tutorial
 
-This tutorial guides you through the process of installing and initializing the [**ARO Client software image**](https://download.aro.network/images/aro-client-latest.iso) in a virtual machine environment. **ARO Client** is a software image designed for **X86 architectures**, and this tutorial focuses on a Linux environment.
+This tutorial guides you through the process of installing and initializing the **ARO Client Software Image** on the Bare-metal machine, and the process of installing the **PCDN Client** on the Bare-metal machine.
 
-Before preparing the virtual machine environment, review the recommended system requirements for running the ARO Client image on [**this page**](/docs/edge-node/device-specs.md#recommended-requirements-for-software-clients-aro-client).
+Before preparing the machine, review the recommended system requirements for running the ARO Client image on [**this page**](/docs/edge-node/device-specs.md#recommended-requirements-for-software-clients-aro-client).
 
-## Part 1: Preparing the Virtual Machine Environment
+<span style="color:red">Special Note for Previewnet Node Operators:</span>
 
-To run the ARO Client image, you need a virtualization environment. Below are the recommended preparation steps:
+<span style="color:red">The VM-based installation method is deprecated and no longer supported in the coming Testnet due to performance limitations, particularly for edge services like PCDN.</span>
 
-1. **Choose a Virtualization Platform**  
-   Select one of the following virtualization platforms (or other Linux-compatible solutions):
-   - **Proxmox VE**: **Free**, **open-source** and flexible, suitable for budget-conscious users or those preferring open-source solutions, supports containers and broad hardware based on **Debian Linux**.
-   - **Hyper-V**: A native hypervisor developed by Microsoft that allows users to create and run virtual machines on x86-64 systems running Windows. Hyper-V is best for **Windows ecosystems**, ideal for enterprises or users with existing Windows Server licenses, but management tools are **Windows-dependent**.
-   - **VMware**: **Enterprise-grade**, preferred for large-scale, complex, or high-availability environments, but **costly**.
-   - **VirtualBox**: Lightweight, ideal for **individual developers**, testing environments, or **cross-platform (Windows, Linux, MacOS, Solaris, etc.)** needs, but less robust than enterprise solutions, yet easy to use.
+<span style="color:red">If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we strongly recommend migrating to the bare-metal installation method (See tutorials below) as soon as possible.</span>
 
-2. **Install the Virtualization Platform**  
-   Follow the official documentation for your chosen platform to complete the installation. For example:
-   - **Proxmox VE**: Download the ISO image from the [Proxmox website](https://www.proxmox.com/en/proxmox-ve) and install.
-   - **Hyper-V**: View userguide from official [Window Learn website](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v?tabs=powershell&pivots=windows-server).
-   - **VirtualBox**: Download and install from the [VirtualBox website](https://www.virtualbox.org/).
-   Ensure your hardware supports virtualization (VT-x/AMD-V enabled).
+Please follow the tutorials below (Part 1, 2, & 3) to get your ARO Client ready for the coming Testnet.
 
-3. **Verify the Environment**  
-   - Ensure sufficient disk space (at least 50GB recommended).
-   - Verify network connectivity to allow the virtual machine to access external networks (required for initialization).
+## Part 1: Install ARO Client Software Image On Bare-metal Machine
 
-**Note**: This tutorial assumes you are familiar with installing and configuring your chosen virtualization platform. Refer to the platform’s official documentation for detailed guidance if needed.
+### Download the Latest ARO Client Software Image
 
-## Part 2: Selecting the Image and Allocating Resources
+Download Link: https://download.aro.network/files/images/aro-client-host-1.0.0.iso
 
-After preparing the virtual machine environment, you need to select the ARO Client image and allocate appropriate resources.
+`MD5` checksum: ad2e01689cada0000272b64279dc8ecb
 
-### Step 1: Obtain and Select the ARO Client Image
-1. **Download the Image**  
-   Download the latest [**ARO Client image**](https://download.aro.network/images/aro-client-latest.iso) (in `.iso` format).
-2. **Select the Image**  
-   - **Proxmox VE**: Log in to the Proxmox web interface, navigate to storage (e.g., `local`), and upload the `.iso` file.
-   - **VirtualBox**: Create a new virtual machine, select “Use an existing virtual hard disk file,” and point to the ARO Client `.iso` file.
-   - **VMware Workstation/Player**: Create a new virtual machine, select “Use ISO image file,” and specify the ARO Client `.iso` file.
-3. **Verify the Image**  
-   Ensure the image file is not corrupted by verifying its checksum (e.g., MD5 or SHA256).
+### Install the ARO Client Software Image On Bare-metal Machine
 
-### Step 2: Create the Virtual Machine and Allocate Resources
-1. **Create the Virtual Machine**  
-   In your virtualization platform, create a new virtual machine and select the ARO Client `.iso` file as the boot medium.
-2. **Resource Allocation Recommendations**  
-   To ensure smooth operation of ARO Client, allocate the resources according to [**this recommendation**](/docs/edge-node/device-specs.md#recommended-requirements-for-software-clients-aro-client).
-3. **Save Configuration**  
-   Confirm the virtual machine settings and save them before starting.
+Refer to [this tutorial document](https://download.aro.network/files/docs/PCDN_Client_Installation_Guide.pdf) for bare-metal installation.
 
-**Note**: Adjust resource allocation based on your hardware capabilities and ARO Client’s requirements. For complex tasks, consider increasing CPU and memory.
+When you are ready on the ARO Client Software Image installation, continue to the Part 2.
 
-## Part 3: Running the Image and Performing Initial Edge Node Setup
+## Part 2: Install PCDN Client
 
-This section describes how to run the ARO Client image and configure the Edge Node for initial use.
+Refer to [this tutorial document](https://download.aro.network/files/docs/ARO_Client_Bare-metal_Installation_Guide.pdf) for PCDN Client installation. Make sure that you have already installed ARO Client Software Image on your bare-metal machine (the Part 1).
+
+When you are ready on the PCDN Client installation, continue to the Part 3.
+
+
+## Part 3: ARO Client Node Initialization & Configuration
+
+This section describes how to register, configure and complete all initial setup needed for a functioning status for your ARO Client node. 
 
 1. **Start the Software Image**  
-   After setting up the virtual machine, launch it to start the **ARO Client** software image.  
+   After setting up the machine, launch it to start the **ARO Client** software image.  
    ![Loading Screen](/img/user-guides/cmd_loading.png)  
    The loading process will begin automatically and may take a few minutes. Do not interrupt this process.
 
@@ -76,7 +57,7 @@ This section describes how to run the ARO Client image and configure the Edge No
    - Select **1** for DHCP to automatically assign an IP address.  
    - Select **2** for a static IP if you need to manually configure the network.  
   
-   After successful network and IP configuration, the system will perform an automatic ping test. If the test succeeds, you will proceed to the Edge Node activation process.
+   After successful network and IP configuration, the system will perform an automatic ping test. If the test succeeds, you will proceed to the Edge Node activation process. 
 
 3. **Initialize the Activation Process**  
    ![Terms of Service](/img/user-guides/cmd_terms.png)  
@@ -109,3 +90,6 @@ This section describes how to run the ARO Client image and configure the Edge No
   🚀 **Outbound Ports**
    - **UDP:** `40001–40100`  
    - **TCP:** `443`, `30002`, `40001–40100`
+
+- **My CMD Console and Dashboard Node Detail page show different status.**  
+  This could happen in some case due to the latency of status update in the CMD Console. If this happens, please refer to the Dashboard for an update-to-date status, and refresh the CMD Console manually (Press `Enter` on the main menu and refresh the page).
