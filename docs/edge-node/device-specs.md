@@ -35,9 +35,9 @@ hide_table_of_contents: false
 
 ## Recommended Requirements for Software Clients (ARO Client)
 
-**The ARO Client is currently available only as an x86 virtual machine (VM) image.**
+**The ARO Client is currently available only as an x86 bare-metal software image.**
 
-To use the client, users must deploy the VM image on bare-metal servers or desktop computers equipped with an x86 architecture CPU, using any virtualization solution of their choice.
+To use the client, users must deploy the image on bare-metal servers or desktop computers equipped with an x86 architecture CPU.
 
 For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
 
