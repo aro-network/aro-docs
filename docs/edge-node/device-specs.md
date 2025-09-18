@@ -41,26 +41,31 @@ To use the client, users must deploy the VM image on bare-metal servers or deskt
 
 For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
 
-### Recommended Requirements Based on the Bandwidth
+### Recommended Requirements for Software Clients (ARO Client)
 
-We provide recommended hardware specifications for running **ARO Client** based on your **bandwidth**. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
+We provide recommended hardware specifications for running ARO Client based on your bandwidth. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
-- For **100 Mbps or lower**:
-  - CPU Threads: ≥ 2
+- For **100 Mbps**:
+  - CPU Threads: ≥ 4
   - RAM: 2 GB
   - Disk: ≥ 50 GB SSD
 - For **500 Mbps**:
-  - CPU Threads: ≥ 12
-  - RAM: 12 GB
-  - System Disk: ≥ 50 GB SSD
-  - Data Disk: ≥ 600 GB SSD
+  - CPU Threads: ≥12
+  - RAM: 8 GB
+  - System Disk: ≥ 200 GB SSD
+  - Data Disk: ≥500 GB SSD
 - For **1 Gbps**:
-  - CPU Threads: ≥ 24
-  - RAM: 32–48 GB
+  - CPU Threads: ≥16
+  - RAM: ≥16 GB
   - System Disk: ≥ 240 GB SSD
-  - Data Disk: ≥ 2 TB SSD
+  - Data Disk: ≥1 TB SSD
 - For **5 Gbps**:
-  - CPU Threads: ≥ 48
+  - CPU Threads: ≥32
+  - RAM: ≥64 GB
+  - System Disk: ≥ 240 GB SSD
+  - Data Disk: ≥ 5 TB SSD
+- For **10 Gbps**:
+  - CPU Threads: ≥64
   - RAM: 128–192 GB
   - System Disk: ≥ 240 GB SSD
   - Data Disk: ≥ 10 TB SSD
