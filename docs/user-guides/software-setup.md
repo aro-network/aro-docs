@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 
 This tutorial guides you through the process of installing and initializing the **ARO Client Software Image** on the Bare-metal machine, and the process of installing the **PCDN Client** on the Bare-metal machine.
 
-Before preparing the machine, review the recommended system requirements for running the ARO Client image on [**this page**](/docs/edge-node/device-specs#recommended-requirements-for-software-clients-aro-client).
+Before preparing the machine, review the recommended system requirements for running the ARO Client image on [**this page**](/edge-node/device-specs#recommended-requirements-for-software-clients-aro-client).
 
 <span style={{color: 'red'}}>Special Note for Previewnet Node Operators:</span>
 
