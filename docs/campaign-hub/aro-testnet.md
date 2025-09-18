@@ -46,7 +46,7 @@ Badges are non-transferable.
 
 **Both Jades and Badges are key metrics for determining eligibility for future drops after the Testnet ends**.
 
-`5%` of the total supply of `$ARO` tokens will be allocated to all pre-Mainnet (including Previewnet and Testnet) users for their valuable support and contributions to the development of the ARO Network.
+`5%` of the total supply of `$ARO` tokens will be allocated to all pre-TGE (before `$ARO` token can be utilized as an incentives to edge resource providers) users for their valuable support and contributions to the development of the ARO Network.
 
 ### For Users from Previewnet
 
