@@ -29,13 +29,13 @@ Download Link: https://download.aro.network/files/images/aro-client-host-1.0.0.i
 
 ### Install the ARO Client Software Image On Bare-metal Machine
 
-Refer to [this tutorial document](https://download.aro.network/files/docs/PCDN_Client_Installation_Guide.pdf) for bare-metal installation.
+Refer to [this tutorial document](https://download.aro.network/files/docs/ARO_Client_Bare-metal_Installation_Guide.pdf) for bare-metal installation.
 
 When you are ready on the ARO Client Software Image installation, continue to the Part 2.
 
 ## Part 2: Install PCDN Client
 
-Refer to [this tutorial document](https://download.aro.network/files/docs/ARO_Client_Bare-metal_Installation_Guide.pdf) for PCDN Client installation. Make sure that you have already installed ARO Client Software Image on your bare-metal machine (the Part 1).
+Refer to [this tutorial document](https://download.aro.network/files/docs/PCDN_Client_Installation_Guide.pdf) for PCDN Client installation. Make sure that you have already installed ARO Client Software Image on your bare-metal machine (the Part 1).
 
 When you are ready on the PCDN Client installation, continue to the Part 3.
 
