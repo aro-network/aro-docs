@@ -28,7 +28,7 @@ The ARO Network is a decentralized Edge Cloud, and our goal is to onboard as man
 
 The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance.
 
-The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which accounts for `83.15%` of the total Jade supply. Meanwhile, all `Checker Nodes` (`ARO Lite`) compete for a separate rewards pool, representing `9.24%` of the total Jade supply.
+The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which accounts for `83.15%` of the total Jade pool. Meanwhile, all `Checker Nodes` (`ARO Lite`) compete for a separate rewards pool, representing `9.24%` of the total Jade pool.
 
 The mining competition ensures a fair opportunity for all ARO Nodes from the first day to the final day of the Testnet phase.
 
@@ -52,7 +52,7 @@ Badges are non-transferable.
 
 For users who joined the ARO Network during the Previewnet phase: your user accounts, referrals, Jade rewards (including Jade in lock), connected social accounts, and completed tasks will seamlessly carry over to the Testnet environment.
 
-Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet and account for `7.61%` of the total Jade supply.  
+Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet and account for `7.61%` of the total Jade pool.  
 
 For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 30 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 30 days will unlock all those Jades.
 
