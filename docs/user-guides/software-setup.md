@@ -12,7 +12,7 @@ Before preparing the machine, review the recommended system requirements for run
 
 Please follow the tutorials below (Part 1, 2, & 3) to get your ARO Client ready for the coming Testnet.
 
-<p style={{color: 'red'}}>Special Note for Previewnet Node Operators:</p>
+<p style={{color: 'red'}}>**Special Note for Previewnet Node Operators:**</p>
 
 <p style={{color: 'red'}}>The VM-based installation method is deprecated and no longer supported in the coming Testnet due to performance limitations, particularly for edge services like PCDN.</p>
 
