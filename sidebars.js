@@ -45,6 +45,7 @@ const sidebars = {
         { type: 'doc', id: 'user-guides/software-setup', label: 'ARO Client' },
         { type: 'doc', id: 'user-guides/aro-lite', label: 'ARO Lite' },
         { type: 'doc', id: 'user-guides/node-console', label: 'Web Console' },
+       { type: 'doc', id: 'user-guides/network-optimization', label: 'Network Optimization Guide' },
       ],
     },
     {
