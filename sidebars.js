@@ -81,8 +81,7 @@ module.exports = {
           collapsible: true,
           collapsed: true,
           items: [
-            'node-operator-guide/improve-performance/network-nat-optimization',
-            'node-operator-guide/improve-performance/router-nat-upnp-dmz-setup',
+            'node-operator-guide/improve-performance/network-optimization',
           ],
         },
       ],
