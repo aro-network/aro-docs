@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 
 # ARO Client Installation and Initialization Tutorial
 
-This tutorial guides you through the process of installing and initializing the **ARO Client Software Image** on the Bare-metal machine, and the process of installing the **PCDN Client** on the Bare-metal machine.
+This tutorial guides you through the process of installing and initializing the **ARO Client Software Image** on the Bare-metal machine.
 
 Before preparing the machine, review the recommended system requirements for running the ARO Client image on [**this page**](/edge-node/device-specs#recommended-requirements-for-software-clients-aro-client).
 
