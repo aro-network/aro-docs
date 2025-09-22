@@ -16,14 +16,22 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 ### Recommended Requirements for Software Clients (ARO Client)
 
-**General Recommendations** for all **ARO Client** Software (especially for operators with business-level bandwidth):
+**General Requirements** that are strongly recommended for all **ARO Client** Software (especially for operators with business-level bandwidth):
 
-- Public IP address
-- NAT Type: Full Cone NAT or higher (e.g., NAT0, DMZ NAT1, UPnP NAT1)
-- IPv6 Support
+- **Static IP & Public IP**
+- NAT Type: `Full Cone NAT` or higher (e.g., `NAT0`, `DMZ NAT1`, `UPnP NAT1`)
+- Ethernet Cable Connection: Signle cable to Network Interface Card `ETH0`
+- **10 Gigabit Ethernet** (`10GE`, `10GbE`, or `10 GigE`) for Network Interface Card
+- `IPv6` Support
+- Do **NOT** install software image in VM
 - CPU Clock Speed: ≥ 2 GHz
-- Data Disk Random 4K Read IOPS: ≥ 30,000
-- System Disk Read/Write IOPS: ≥ 15,000 / 10,000
+- Disk:
+	- SSD or HDD
+	- HDD single drive ≥ 4 TB (We recommend 8 TB for single drive)
+	- Data Disk: Random 4K Read IOPS ≥ 60,000
+	- We recommend to use `NVMe` for the Data Disks 
+	- Do **NOT** mix `Sata` SSD and `NVMe` SSD if you are using SSD for your Data Disks
+	- System Disk: Read/Write IOPS ≥ 30,000
 
 **Port Requirements** for all **ARO Client** Software:
 
@@ -32,30 +40,15 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 **Hardware Specifications Requirements** for running ARO Client based on your bandwidth. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
-- For **100 Mbps**:
-  - CPU Threads: ≥ 4
-  - RAM: 2 GB
-  - Disk: ≥ 50 GB SSD
-- For **500 Mbps**:
-  - CPU Threads: ≥12
-  - RAM: 8 GB
-  - System Disk: ≥ 200 GB SSD
-  - Data Disk: ≥500 GB SSD
-- For **1 Gbps**:
-  - CPU Threads: ≥16
-  - RAM: ≥16 GB
-  - System Disk: ≥ 240 GB SSD
-  - Data Disk: ≥1 TB SSD
-- For **5 Gbps**:
-  - CPU Threads: ≥32
-  - RAM: ≥64 GB
-  - System Disk: ≥ 240 GB SSD
-  - Data Disk: ≥ 5 TB SSD
-- For **10 Gbps**:
-  - CPU Threads: ≥64
-  - RAM: 128–192 GB
-  - System Disk: ≥ 240 GB SSD
-  - Data Disk: ≥ 10 TB SSD
+
+| Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |
+|------------|----------|--------------|------------------|------------------|
+| 100 Mbps   | ≥ 4      | 2 GB         | ≥ 50 GB SSD      | ≥ 150 GB SSD      |
+| 500 Mbps   | ≥ 12     | 8 GB         | ≥ 200 GB SSD     | ≥ 500 GB SSD     |
+| 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 240 GB SSD     | ≥ 1 TB SSD       |
+| 5 Gbps     | ≥ 32     | ≥ 64 GB      | ≥ 240 GB SSD     | ≥ 5 TB SSD       |
+| 10 Gbps    | ≥ 64     | ≥ 128 GB     | ≥ 240 GB SSD     | ≥ 10 TB SSD      |
+
 
 ### Choose Your Installation Method
 
