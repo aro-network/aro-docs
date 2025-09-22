@@ -28,7 +28,7 @@ The ARO Network is a decentralized Edge Cloud, and our goal is to onboard as man
 
 The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance.
 
-The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which accounts for `83.15%` of the total Jade pool. Meanwhile, all `Checker Nodes` (`ARO Lite`) compete for a separate rewards pool, representing `9.24%` of the total Jade pool.
+The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which emits `90000000` Jades daily. Meanwhile, all `Checker Nodes` (`ARO Lite`) share a separate rewards pool, representing `10000000` Jades daily emission.
 
 The mining competition ensures a fair opportunity for all ARO Nodes from the first day to the final day of the Testnet phase.
 
@@ -44,17 +44,17 @@ Badges are non-transferable.
 
 ### Future Rewards
 
-**Both Jades and Badges are key metrics for determining eligibility for future drops after the Testnet ends**.
+**Both Jades and Badges** are key metrics for determining eligibility for future drops after the Testnet ends.
 
 `5%` of the total supply of `$ARO` tokens will be allocated to all pre-TGE (before `$ARO` token can be utilized as an incentives to edge resource providers) users for their valuable support and contributions to the development of the ARO Network.
 
 ### For Users from Previewnet
 
-For users who joined the ARO Network during the Previewnet phase: your user accounts, referrals, Jade rewards (including Jade in lock), connected social accounts, and completed tasks will seamlessly carry over to the Testnet environment.
+For users who joined the ARO Network during the Previewnet phase: your user accounts, referrals, Jade rewards (including `Jade in lock`), connected social accounts, and completed tasks will seamlessly carry over to the Testnet environment.
 
-Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet and account for `7.61%` of the total Jade pool.  
+Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet, including `Jade in Lock`.
 
-For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 30 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 30 days will unlock all those Jades.
+For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 90 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 90 days will unlock all those Jades. When the Referees unlock their `Jade in Lock`, the corresponding Referral Bonus (`15%` for direct referrals and `2%` for 2-tier referrals) will be released to the Referrer. 
 
 ## Things You Can Do in the Testnet
 
@@ -67,7 +67,7 @@ Boost your Jade and Badge rewards through engaging activities:
    The Testnet is the ultimate stage for your ARO Nodes, regardless of type. Set up and optimize your ARO Nodes to compete for daily Jade reward emissions!
 
 3. **Get Extra Bonus from the Referral Program**  
-   Invite friends through the **Referral Program** to earn commissions: 15% from direct referrals and 2% from second-level invites in Jades. High-quality referrals may also earn you exclusive Badges.
+   Invite friends through the **Referral Program** to earn commissions: `15%` from direct referrals and `2%` from second-tier invites in Jades. High-quality referrals may also earn you exclusive Badges.
 
 4. **Contribute More to the ARO Community**  
    Beyond Jades, unlock exclusive rewards like Badges, NFTs, and other surprise perks by staying active—contribute through community management, writing articles, creating tutorials, and more. Your outstanding efforts will be recognized!
