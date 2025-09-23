@@ -25,7 +25,7 @@ Please follow the tutorials below (Part 1, 2, & 3) to get your ARO Client ready 
 
 Download Link: https://download.aro.network/files/images/aro-client-host-1.0.0.iso
 
-`MD5` checksum: ad2e01689cada0000272b64279dc8ecb
+`MD5` checksum: `0f17a7d0b4321f8453a2b98a5ec9849d`
 
 ### Install the ARO Client Software Image On Bare-metal Machine
 
