@@ -21,7 +21,7 @@ The **Referrer** (the person who invites others to join the ARO Network) earns a
 
 The **Referral Bonus** is calculated as a percentage of the Rewards earned by referees (the commission rate). 
 
-> **Note**: The commission rate may change with policy updates. Check the latest policy in the **Referral** section of your Dashboard.
+> **Note**: The commission rate may change with policy updates. 
 
 The bonus currently applies to **first-tier referees** with `15%` commission rate, plus **second-tier referees** with `2%` commission rate. 
 
@@ -29,17 +29,8 @@ The bonus currently applies to **first-tier referees** with `15%` commission rat
 
 ### Benefits for the Referee
 
-In Previewnet, the **Referee** (the person being invited) receives an immediate amd instant 200 Jade reward. 
+In the Testnet, the **Referee** (the person being invited) enjoys a `20%` extra boost on daily mining rewards (from running ARO Nodes) for `14` days from the referral date.  
 
-The reward applies instantly after entering a Referral Code during initial account setup. The user may also enter a Referral Code later, and the reward will be applied accordingly.
+The reward applies instantly after entering a **Referral Code** during initial account setup. The user may also enter a **Referral Code** later, and the reward will be applied accordingly.
 
-## Referral Leaderboard Campaign
-
-Referral leaderboard Campaign is a special campaign designed to incentivize top-tier referrers. 
-
-A total sum of **$30,000** will be allocated to top referrer (by Referral Bonus earned):
-
-- #1 gets $10,000 
-- #2-4 gets $3,000 each
-- #5-54 gets $200 each
-- The earlist 20 users who complete at least 10 successful referrals gets $50 each
+For all old users migrated from the Previewnet, the Referees will enjoy the extra boost as if they were referred on the first day of the Testnet.

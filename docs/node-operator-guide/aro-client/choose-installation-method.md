@@ -28,7 +28,7 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 - Disk:
 	- SSD or HDD
 	- HDD single drive ≥ 4 TB (We recommend 8 TB for single drive)
-	- Data Disk: Random 4K Read IOPS ≥ 60,000
+	- Data Disk: Random 4K Read IOPS ≥ 30,000
 	- We recommend to use `NVMe` for the Data Disks 
 	- Do **NOT** mix `Sata` SSD and `NVMe` SSD if you are using SSD for your Data Disks
 	- System Disk: Read/Write IOPS ≥ 30,000
