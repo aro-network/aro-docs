@@ -32,5 +32,3 @@ The bonus currently applies to **first-tier referees** with `15%` commission rat
 In the Testnet, the **Referee** (the person being invited) enjoys a `20%` extra boost on daily mining rewards (from running ARO Nodes) for `14` days from the referral date.  
 
 The reward applies instantly after entering a **Referral Code** during initial account setup. The user may also enter a **Referral Code** later, and the reward will be applied accordingly.
-
-For all old users migrated from the Previewnet, the Referees will enjoy the extra boost as if they were referred on the first day of the Testnet.
