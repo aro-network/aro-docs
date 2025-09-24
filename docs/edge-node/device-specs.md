@@ -47,7 +47,7 @@ hide_table_of_contents: false
 
 **Port Requirements** for all **ARO Client** Software:
 
-- TCP: 80, 443, 9500-9700
+- TCP: `80`, `443`, `9500`-`9700`
 - UDP: All ports  
 
 **Hardware Specifications Requirements** for running ARO Client based on your bandwidth. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
@@ -55,8 +55,8 @@ hide_table_of_contents: false
 
 | Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |  Network Card |
 |------------|----------|--------------|------------------|------------------|---------------|
-| 100 Mbps   | ≥ 4      | 4 GB         | ≥ 50 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
-| 500 Mbps   | ≥ 8     | 12 GB         | ≥ 100 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
+| 100 Mbps   | ≥ 4      | ≥ 4 GB         | ≥ 50 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
+| 500 Mbps   | ≥ 8     | ≥ 12 GB         | ≥ 100 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
 | 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 200 GB SSD     | ≥ 1 TB SSD       |   10 Gbps   |
 | 5 Gbps     | ≥ 64     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
 | 10 Gbps    | ≥ 128     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
