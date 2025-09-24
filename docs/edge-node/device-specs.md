@@ -35,44 +35,32 @@ hide_table_of_contents: false
 
 ## Recommended Requirements for Software Clients (ARO Client)
 
-**The ARO Client is currently available only as an x86 bare-metal software image.**
-
-To use the client, users must deploy the image on bare-metal servers or desktop computers equipped with an `x86` architecture CPU.
-
-For detailed installation and usage instructions, refer to the [ARO Client Image Installation Guide](/docs/user-guides/software-setup.md).
-
-### **General Requirements** that are strongly recommended for all **ARO Client** Software (especially for operators with business-level bandwidth):
+**General Requirements** that are strongly recommended for all **ARO Client** Software (especially for operators with business-level bandwidth):
 
 - **Static IP & Public IP**
 - NAT Type: `Full Cone NAT` or higher (e.g., `NAT0`, `DMZ NAT1`, `UPnP NAT1`)
-- Ethernet Cable Connection: Signle cable to Network Interface Card `ETH0`
-- **10 Gigabit Ethernet** (`10GE`, `10GbE`, or `10 GigE`) for Network Interface Card
-- `IPv6` Support
 - Do **NOT** install software image in VM
 - CPU Clock Speed: ≥ 2 GHz
 - Disk:
-	- SSD or HDD
-	- HDD single drive ≥ 4 TB (We recommend 8 TB for single drive)
-	- Data Disk: Random 4K Read IOPS ≥ 60,000
-	- We recommend to use `NVMe` for the Data Disks 
-	- Do **NOT** mix `Sata` SSD and `NVMe` SSD if you are using SSD for your Data Disks
-	- System Disk: Read/Write IOPS ≥ 30,000
+	- SSD with `NVMe` protocol
+	- Random 4K Read IOPS ≥ 30,000
 
-### **Port Requirements** for all **ARO Client** Software:
+**Port Requirements** for all **ARO Client** Software:
 
 - TCP: 80, 443, 9500-9700
 - UDP: All ports  
 
-### **Hardware Specifications Requirements** for running ARO Client based on your bandwidth. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
+**Hardware Specifications Requirements** for running ARO Client based on your bandwidth. If your bandwidth falls between the listed values, you can estimate the requirements by interpolating linearly.
 
 
-| Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |
-|------------|----------|--------------|------------------|------------------|
-| 100 Mbps   | ≥ 4      | 2 GB         | ≥ 50 GB SSD      | ≥ 150 GB SSD      |
-| 500 Mbps   | ≥ 12     | 8 GB         | ≥ 200 GB SSD     | ≥ 500 GB SSD     |
-| 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 240 GB SSD     | ≥ 1 TB SSD       |
-| 5 Gbps     | ≥ 32     | ≥ 64 GB      | ≥ 240 GB SSD     | ≥ 5 TB SSD       |
-| 10 Gbps    | ≥ 64     | ≥ 128 GB     | ≥ 240 GB SSD     | ≥ 10 TB SSD      |
+| Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |  Network Card |
+|------------|----------|--------------|------------------|------------------|---------------|
+| 100 Mbps   | ≥ 4      | 4 GB         | ≥ 50 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
+| 500 Mbps   | ≥ 8     | 12 GB         | ≥ 100 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
+| 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 200 GB SSD     | ≥ 1 TB SSD       |   10 Gbps   |
+| 5 Gbps     | ≥ 64     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
+| 10 Gbps    | ≥ 128     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
+| 20 Gbps    | ≥ 256     | ≥ 256 GB     | ≥ 200 GB SSD     | ≥ 20 TB SSD      | 10 Gbps * 2   |
 
 
 
