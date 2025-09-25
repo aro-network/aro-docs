@@ -1,7 +1,7 @@
 ---
 id: webconsole
 title: "Web Console"
-sidebar_label: "ARO Dashboard"
+sidebar_label: "Web Console"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
