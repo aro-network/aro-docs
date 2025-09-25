@@ -37,6 +37,7 @@ module.exports = {
             'node-operator-guide/become-operator/get-account',
             'node-operator-guide/become-operator/choose-node',
             'node-operator-guide/become-operator/aro-dashboard',
+            'node-operator-guide/become-operator/webconsole',
           ],
         },
         {
