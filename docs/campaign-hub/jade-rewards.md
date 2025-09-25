@@ -50,8 +50,7 @@ In the Testnet stage, locked Jade can be unlocked based on your performance in o
 
 - Running multiple nodes can accelerate the unlocking process.
 - Any Jade remaining in `locked` status will expire (you lose them!) when the Testnet concludes.
-- If you earn locked Jade as a Referral Bonus, it will be and **ONLY** be unlocked in sync with your referees' unlocking progress. In other words, when your referees unlock their Jade, your corresponding Referral Bonus will also be unlocked. 
-- If you earn locked Jade by completing designated tasks (like *"Run an ARO Node"* during the Previewent Campaign), it will be and **ONLY** be unlocked by yourself (running ARO Nodes during the Testnet).
+- If you earn locked Jade as a Referral Bonus, it will be and be unlocked in sync with your referees' unlocking progress. In other words, when your referees unlock their Jade, your corresponding Referral Bonus will also be unlocked. 
 
 
 ## FAQ
