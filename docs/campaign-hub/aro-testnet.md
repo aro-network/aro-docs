@@ -24,13 +24,16 @@ The ARO Testnet introduces two parallel incentive systems—the **Jade System** 
 
 ### Jade System for Resource Growth
 
-The ARO Network is a decentralized Edge Cloud, and our goal is to onboard as many edge resources (such as unused internet bandwidth) as possible to validate our business model. During the Testnet, `Jade` serves as the primary quantifiable reward for running ARO Nodes of any type and contributing edge resources.
+The ARO Network is a decentralized Edge Cloud, and the final goal of the Testnet is to onboard as many edge resources (such as unused internet bandwidth) as possible to validate the business model. During the Testnet, `Jade` serves as the primary quantifiable reward for running ARO Nodes of any type and contributing edge resources.
 
 The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance.
 
 The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which emits `90000000` Jades daily. Meanwhile, all `Checker Nodes` (`ARO Lite`) share a separate rewards pool, representing `10000000` Jades daily emission.
 
 The mining competition ensures a fair opportunity for all ARO Nodes from the first day to the final day of the Testnet phase.
+
+> The Mining Pool and its rules, as outlined above, are established for Testnet Sprint One. Rules may vary for subsequent Sprints during the Testnet phase. Please consult the official documentation or announcements for the most up-to-date information.
+
 
 ### Badges for Community Growth
 
@@ -93,3 +96,5 @@ Follow our instructions and user guides to begin your ARO journey!
 
 - **When does the Testnet end?**  
   The ARO Testnet is expected to last approximately 180 days. The actual schedule may vary due to various factors. Follow our official announcements for the latest updates.
+  
+  
