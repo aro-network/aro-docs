@@ -58,9 +58,9 @@ hide_table_of_contents: false
 | 100 Mbps   | ≥ 4      | ≥ 4 GB         | ≥ 50 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
 | 500 Mbps   | ≥ 8     | ≥ 12 GB         | ≥ 100 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
 | 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 200 GB SSD     | ≥ 1 TB SSD       |   10 Gbps   |
-| 5 Gbps     | ≥ 64     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
-| 10 Gbps    | ≥ 128     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
-| 20 Gbps    | ≥ 256     | ≥ 256 GB     | ≥ 200 GB SSD     | ≥ 20 TB SSD      | 10 Gbps * 2   |
+| 5 Gbps     | ≥ 48     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
+| 10 Gbps    | ≥ 96     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
+| 20 Gbps    | ≥ 192     | ≥ 256 GB     | ≥ 200 GB SSD     | ≥ 20 TB SSD      | 10 Gbps * 2   |
 
 
 
