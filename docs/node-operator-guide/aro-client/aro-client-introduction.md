@@ -48,22 +48,21 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 <p style={{color: 'red'}}>**IMPORTANT - Read Before Installation:**</p>
 
-<p style={{color: 'red'}}>The ARO Client software image supports `X86` architecture only at current stage. Do not run ARO Client on `ARM` or other alternatives.</p>
+- The ARO Client software image currently supports only `x86` architecture. Do **NOT** attempt to run the ARO Client on `ARM` or other alternative architectures.
+- Running the ARO Client in a virtual machine (VM) environment is **NOT** supported.
+- To install the ARO Client, a bare-metal machine running a `Debian` operating system (Version `11` or higher) is required as a prerequisite.
 
-<p style={{color: 'red'}}>Do not run ARO Client in a VM environment.</p>
-
-<p style={{color: 'red'}}>To install ARO Client, you need a `Debian` operating system (Version 11 and above) running on a bare-metal machine as a prerequisite.</p>
 
 **General steps to follow:**
 
-- If you do not have `Debian` installed, refer to this <Link to="/node-operator-guide/aro-client/aro-client-debian">Operating System Tutorial guide</Link>. 
-- If you are ready with the operating system, refer to this <Link to="/node-operator-guide/aro-client/aro-client-installation">Installation & Initialization Tutorial for ARO Client</Link>.
+- If you do not have `Debian` installed, refer to this <Link to="/node-operator-guide/aro-client/aro-client-debian">**Operating System Tutorial guide**</Link>. 
+- If you are ready with the operating system, refer to this <Link to="/node-operator-guide/aro-client/aro-client-installation">**Installation & Initialization Tutorial for ARO Client**</Link>.
 
 
 ### Special Notes for VM Installations (Legacy)
 
 <p style={{color: 'red'}}>**IMPORTANT - If you are running a VM-based installation of ARO Client, please notify:**</p>
 
-The VM-based installation method is **deprecated** and no longer supported due to performance limitations, particularly for edge services like PCDN.
+- The VM-based installation method is **deprecated** and no longer supported due to performance limitations, particularly for commercial edge services.
 
-If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we **strongly recommend** migrating to the new installation method as soon as possible.
+- If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we **strongly recommend** migrating to the new installation method as soon as possible.
