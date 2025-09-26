@@ -1,12 +1,12 @@
 ---
-id: aro-client-installation-guide-bare-metal
-title: "Installation Guide - Bare-metal"
-sidebar_label: "Installation Guide - Bare-metal"
+id: aro-client-debian
+title: "Debian Installation Tutorial"
+sidebar_label: "Debian Installation Tutorial"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link'; 
 
-# ARO Client Installation and Initialization Tutorial - Bare-metal Installation
+# Debian Installation Tutorial
 
 This tutorial guides you through the process of installing and initializing the **ARO Client Software Image** on the Bare-metal machine.
 

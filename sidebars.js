@@ -58,10 +58,9 @@ module.exports = {
           collapsible: true,
           collapsed: true,
           items: [
-            'node-operator-guide/aro-client/choose-installation-method',
-            'node-operator-guide/aro-client/aro-client-installation-guide-bare-metal',
-            'node-operator-guide/aro-client/aro-client-installation-guide-vm',
-            'node-operator-guide/aro-client/aro-client-installation-guide-installer-package',
+            'node-operator-guide/aro-client/aro-client-introduction',
+            'node-operator-guide/aro-client/aro-client-debian',
+            'node-operator-guide/aro-client/aro-client-installation',
             'node-operator-guide/aro-client/aro-client-faq-troubleshooting',
           ],
         },

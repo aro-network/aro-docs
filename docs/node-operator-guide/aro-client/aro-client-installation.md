@@ -1,12 +1,12 @@
 ---
-id: aro-client-installation-guide-vm
-title: "Installation Guide - VM"
-sidebar_label: "Installation Guide - VM"
+id: aro-client-installation
+title: "Installation Tutorial"
+sidebar_label: "Installation & Initialization"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
-# Installation Guide - VM
+# Installation & Initialization Tutorial for ARO Client
 
 ### Special Notes for the Existing VM Installations
 

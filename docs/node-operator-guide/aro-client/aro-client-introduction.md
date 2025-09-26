@@ -1,12 +1,12 @@
 ---
-id: choose-installation-method
-title: "Choose Installation Method"
-sidebar_label: "Choose Installation Method"
+id: aro-client-introduction
+title: "ARO Client Introduction"
+sidebar_label: "General Introduction & Requirements"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
-# Choose Installation Method for ARO Client
+# General Introduction & Requirements for Installing ARO Client
 
 ### ARO Client Introduction
 
