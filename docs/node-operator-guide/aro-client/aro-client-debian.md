@@ -1,7 +1,7 @@
 ---
 id: aro-client-debian
 title: "Debian Installation Tutorial"
-sidebar_label: "Debian Installation Tutorial"
+sidebar_label: "Operating System Tutorial"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link'; 
