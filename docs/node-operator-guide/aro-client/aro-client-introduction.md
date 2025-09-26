@@ -44,17 +44,26 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 | 20 Gbps    | ≥ 256     | ≥ 256 GB     | ≥ 200 GB SSD     | ≥ 20 TB SSD      | 10 Gbps * 2   |
 
 
-### Choose Your Installation Method
+### ARO Client Installation - General Guide & Important Notes
 
-The ARO Client software image currently supports only the `x86` architecture.
+<p style={{color: 'red'}}>**{IMPORTANT} Read Before Installation:**</p>
 
-There are two methods available for installing the ARO Client software:
+<p style={{color: 'red'}}>The ARO Client software image supports `X86` architecture only at current stage. Do not run ARO Client on `ARM` or other alternatives.</p>
 
-- **Bare-Metal**: This method involves running the ARO Client directly on physical hardware without an intervening operating system. A bare-metal server is a single-tenant physical server leased to one customer, offering maximum control, consistent performance, and enhanced security. For detailed instructions, refer to <Link to="/node-operator-guide/aro-client/aro-client-installation-guide-bare-metal">**this guide**</Link>.
-- **Installer Package**: A `Debian`-based installer package will be available soon. For more information, see <Link to="/node-operator-guide/aro-client/aro-client-installation-guide-installer-package">**this guide**</Link>.
+<p style={{color: 'red'}}>Do not run ARO Client in a VM environment.</p>
 
-### Special Notes for VM Installations
+<p style={{color: 'red'}}>To install ARO Client, you need a `Debian` operating system (Version 11 and above) running on a bare-metal machine as a prerequisite.</p>
 
-The VM-based installation method is deprecated and no longer supported due to performance limitations, particularly for edge services like PCDN.
+**General steps to follow:**
 
-If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we strongly recommend migrating to a supported installation method as soon as possible.
+- If you do not have `Debian` installed, refer to this <Link to="/node-operator-guide/aro-client/aro-client-debian">Operating System Tutorial guide</Link>. 
+- If you are ready with the operating system, refer to this <Link to="/node-operator-guide/aro-client/aro-client-installation">Installation & Initialization Tutorial for ARO Client</Link>.
+
+
+### Special Notes for VM Installations (Legacy)
+
+<p style={{color: 'red'}}>**{IMPORTANT} If you are running a VM-based installation of ARO Client, please notify:**</p>
+
+The VM-based installation method is **deprecated** and no longer supported due to performance limitations, particularly for edge services like PCDN.
+
+If you are currently using a VM-based installation of the ARO Client (e.g., from the Previewnet phase when VM installations were supported), we **strongly recommend** migrating to the new installation method as soon as possible.
