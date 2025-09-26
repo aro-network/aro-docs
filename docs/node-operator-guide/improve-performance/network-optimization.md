@@ -28,10 +28,10 @@ To optimize effectively, understanding key concepts is essential. Below are expl
 - **NAT Layers**: These are the number of devices (e.g., routers or modems) performing NAT between your node and the internet. One layer is better than two or more, as additional layers add complexity and potential bottlenecks.
 
 - **NAT Types**: These describe how restrictive NAT is for incoming connections. Common types include:
-  - `**Full Cone NAT**`: Allows any external host to connect to an open port, like an open door for invited guests.
-  - `**Restricted Cone NAT**`: Limits connections to specific external IPs.
-  - `**Port Restricted NAT**`: Adds port-specific restrictions on top of IP limits.
-  - `**Symmetric NAT**`: The most restrictive, where mappings change for each external connection, complicating consistent communication.
+  - `Full Cone NAT`: Allows any external host to connect to an open port, like an open door for invited guests.
+  - `Restricted Cone NAT`: Limits connections to specific external IPs.
+  - `Port Restricted NAT`: Adds port-specific restrictions on top of IP limits.
+  - `Symmetric NAT`: The most restrictive, where mappings change for each external connection, complicating consistent communication.
   Friendlier types (e.g., full cone) improve node performance by enabling easier peer-to-peer connections.
 
 - **Optical Modem**: A device that converts optical fiber signals into electrical signals for your home network. It’s the entry point from your internet provider and can affect NAT based on its mode.

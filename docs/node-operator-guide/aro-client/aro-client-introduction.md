@@ -46,7 +46,7 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 ### ARO Client Installation - General Guide & Important Notes
 
-<p style={{color: 'red'}}>**{IMPORTANT} Read Before Installation:**</p>
+<p style={{color: 'red'}}>**IMPORTANT - Read Before Installation:**</p>
 
 <p style={{color: 'red'}}>The ARO Client software image supports `X86` architecture only at current stage. Do not run ARO Client on `ARM` or other alternatives.</p>
 
@@ -62,7 +62,7 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 ### Special Notes for VM Installations (Legacy)
 
-<p style={{color: 'red'}}>**{IMPORTANT} If you are running a VM-based installation of ARO Client, please notify:**</p>
+<p style={{color: 'red'}}>**IMPORTANT - If you are running a VM-based installation of ARO Client, please notify:**</p>
 
 The VM-based installation method is **deprecated** and no longer supported due to performance limitations, particularly for edge services like PCDN.
 
