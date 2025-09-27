@@ -53,7 +53,7 @@ In the "Device" dropdown, select the USB drive to be used for the system install
 
 ![Rufus Configuration](/img/aro-client/image-20250926143406115.png)
 
-<p style={{color: 'red'}}Warning: The imaging process will erase all data on the USB drive. If the USB contains important data, please back it up before proceeding.</p>
+<p style={{color: 'red'}}>Warning: The imaging process will erase all data on the USB drive. If the USB contains important data, please back it up before proceeding.</p>
 
 Select "Write in ISO Image mode" and click "OK" to start the imaging process.
 
@@ -67,7 +67,7 @@ After the imaging process is complete, safely eject the USB drive.
 
 ## 3. Debian System Installation
 
-<p style={{color: 'red'}}Warning: The physical host for the installation must be connected to the internet via an Ethernet cable.</p>
+<p style={{color: 'red'}}>Warning: The physical host for the installation must be connected to the internet via an Ethernet cable.</p>
 
 ### 3.1 Configure USB Boot and Boot Mode
 
@@ -185,7 +185,7 @@ After rebooting, the system will display the login screen.
 
 ## 4. Multiple Data Disk Configuration
 
-> Note: ```You can choose either the LVM approach or the Raid approach. 
+> Note: You can choose either the LVM approach or the Raid approach. 
 
 ### 4.1 Approach 1 - LVM Configuration
 
