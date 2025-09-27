@@ -72,12 +72,12 @@ This section describes how to register, configure and complete all initial setup
    For example, if your IP is `17.12.205.193`, go to `17.12.205.193:40001` and you will access to the Web Console page. 
    Find the 19-digit **Serial Number** (SN) on top area of the Web Console.
    
-   ![aro-client-webconsole-01] (/img/aro-client/aro-client-webconsole-01.png)
+   ![aro-client-webconsole-01](/img/aro-client/aro-client-webconsole-01.png)
 
 2. **Configure Your Network**  
    You can configure your network connection in the Web Console (if needed). 
-      ![aro-client-webconsole-02] (/img/aro-client/aro-client-webconsole-02.png)
-         ![aro-client-webconsole-03] (/img/aro-client/aro-client-webconsole-03.png)
+      ![aro-client-webconsole-02](/img/aro-client/aro-client-webconsole-02.png)
+      ![aro-client-webconsole-03](/img/aro-client/aro-client-webconsole-03.png)
 
 3. **Initialize the Activation Process**   
    Open the [**ARO Dashboard**](https://dashboard.aro.network). Navigate to **ARO Nodes** > **Add an ARO Client**, follow steps and enter the 19-digit **Serial Number** found in your Web Console.  
