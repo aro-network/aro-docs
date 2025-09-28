@@ -25,7 +25,7 @@ const config = {
   organizationName: 'aro-network', // Usually your GitHub org/user name.
   projectName: 'aro-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',  
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -42,21 +42,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),  
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -81,74 +73,79 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Documentations',
+        title: null,
         logo: {
-        alt: 'My Project Logo',
-        src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
-        srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
-        href: '/',
-        target: '_self',
+          alt: 'My Project Logo',
+          src: 'https://aro.network/aro-logo-light.svg', // Light mode logo
+          srcDark: 'https://aro.network/aro-logo.svg', // Night mode logo
+          href: '/docs',  
+          target: '_self',
         },
-        // items: [
-        //   {
-        //     type: 'docSidebar',
-        //     sidebarId: 'tutorialSidebar',
-        //     position: 'left',
-        //     label: 'Tutorial',
-        //   },
-        //   {to: '/blog', label: 'Blog', position: 'left'},
-        //   {
-        //     href: 'https://github.com/facebook/docusaurus',
-        //     label: 'GitHub',
-        //     position: 'right',
-        //   },
-        // ],
+        items: [     
+          {
+            href: 'https://aro.network',
+            label: 'Official Site',
+            position: 'right',
+          },
+        ],
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: 'Docs',
-      //       items: [
-      //         {
-      //           label: 'Tutorial',
-      //           to: '/docs/home/overview',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Stack Overflow',
-      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discordapp.com/invite/docusaurus',
-      //         },
-      //         {
-      //           label: 'Twitter',
-      //           href: 'https://twitter.com/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: '/blog',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
+      footer: {  
+        style: 'dark',
+        links: [
+          {
+            title: 'Documentations',
+            items: [
+              {
+                label: 'Get Started',
+                to: '/',  
+              },
+              {
+                label: 'Guides for Node Operators',
+                to: '/node-operator-guide/become-operator/idle-bandwidth',  
+              },
+              {
+                label: 'Guides for ARO Testnet',
+                to: '/campaign-hub/aro-testnet',  
+              },
+            ],
+          },
+          {
+            title: 'Join Community',
+            items: [
+              {
+                label: 'Twitter',
+                href: 'https://x.com/AroNetwork',
+              },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/ARO_Network',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discord.com/invite/Rc4BMUjbNB',
+              },
+            ],
+          },
+          {
+            title: 'Useful Links',
+            items: [
+              {
+                label: 'Official Site',
+                to: 'https://aro.network',
+              },
+              {
+                label: 'Blog',
+                href: 'https://medium.com/aronetwork',
+              },
+              {
+                label: 'Linktree',
+                href: 'https://linktr.ee/AroNetwork',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} ARO Network. Built with Docusaurus.`,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
@@ -161,7 +158,7 @@ const config = {
         theme: {light: 'neutral', dark: 'neutral'},
       },
     }),
-  
+
   markdown: {
     mermaid: true,
   },

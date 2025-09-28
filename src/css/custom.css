@@ -52,3 +52,24 @@
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+
+
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link {
+  font-weight: 700; 
+}
+
+
+.theme-doc-sidebar-container .menu__list-item-collapsible .menu__link--sublist,
+.theme-doc-sidebar-container .menu__link {
+  font-weight: 400;
+}
+
+
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link {
+  font-weight: 700;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible .menu__link--sublist,
+[data-theme='dark'] .theme-doc-sidebar-container .menu__link {
+  font-weight: 400;
+}
