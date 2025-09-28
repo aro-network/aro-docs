@@ -97,7 +97,7 @@ const config = {
             items: [
               {
                 label: 'Get Started',
-                to: '/introduction/get-started',  
+                to: '/',  
               },
               {
                 label: 'Guides for Node Operators',
