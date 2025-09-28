@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">ARO Testnet | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/campaign-hub/aro-testnet"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ARO Testnet | ARO Network Docs"><meta data-rh="true" name="description" content="What is ARO Testnet"><meta data-rh="true" property="og:description" content="What is ARO Testnet"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/campaign-hub/aro-testnet"><link data-rh="true" rel="alternate" href="https://docs.aro.network/campaign-hub/aro-testnet" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/campaign-hub/aro-testnet" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.9edbe007.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c9769731.js" defer="defer"></script>
 <script src="/assets/js/main.634b5dc7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -41,17 +41,25 @@
 <p>For <code>Jade in Lock</code> carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 90 days. For example, if you earned <code>Jade in Lock</code> by ordering ARO Pods in the Previewnet, running an ARO Pod for about 90 days will unlock all those Jades. When the Referees unlock their <code>Jade in Lock</code>, the corresponding Referral Bonus (<code>15%</code> for direct referrals and <code>2%</code> for 2-tier referrals) will be released to the Referrer.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-nodes-are-quantified-for-mining-rewards">How Nodes Are Quantified for Mining Rewards<a href="#how-nodes-are-quantified-for-mining-rewards" class="hash-link" aria-label="Direct link to How Nodes Are Quantified for Mining Rewards" title="Direct link to How Nodes Are Quantified for Mining Rewards">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-edge-nodes-aro-pod-aro-link-aro-client">For Edge Nodes (ARO Pod, ARO Link, ARO Client):<a href="#for-edge-nodes-aro-pod-aro-link-aro-client" class="hash-link" aria-label="Direct link to For Edge Nodes (ARO Pod, ARO Link, ARO Client):" title="Direct link to For Edge Nodes (ARO Pod, ARO Link, ARO Client):">​</a></h3>
-<p><strong>The Principle:</strong> Edge Node performance is evaluated primarily by <code>daily peak traffic</code>, reflecting their maximum network contribution during high-demand periods.</p>
-<p><strong>Traffic Allocation Mechanism:</strong> Edge Services are in strong favor of Edge Nodes that display <strong>substantial bandwidth</strong> (for strong content delivery capability), <strong>favorable NAT configurations</strong> (for high-quality internet access), and <strong>consistent performance</strong> (for stable &amp; reliable service). These factors determine the traffic allocated by Edge Service Schedulers, directly affecting node rewards.</p>
-<p><strong>Goal of &quot;Sprint 1&quot; (the first stage of Testnet):</strong> We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize <strong>Bandwidth</strong>, <strong>NAT types</strong>, and <strong>Performance Consistency</strong> as key metrics in this stage for traffic allocation and reward determination.</p>
-<p><code>traffic_allocation_rate</code> = <code>max_bandwidth</code> * <code>NAT_type_factor</code> * <code>consistency_factor</code> * <code>demand_factor</code> * <code>adjustment_factor</code></p>
+<p><strong>The Principle:</strong> Edge Nodes are evaluated primarily by the traffic allocated to them, reflecting their edge resources contribution to Edge Services on ARO Network.</p>
+<p><strong>Traffic Scheduling Mechanism:</strong> Edge Services are in strong favor of Edge Nodes that display <strong>substantial bandwidth</strong> (for strong content delivery capability), <strong>favorable NAT configurations</strong> (for high-quality internet access), and <strong>consistent performance</strong> (for stable &amp; reliable service). These factors determine the traffic schedules by Edge Service Schedulers, directly affecting node rewards.</p>
+<p><strong>Goal of &quot;Sprint 1&quot; (the first stage of Testnet):</strong> We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize <strong>Bandwidth</strong>, <strong>NAT types</strong>, and <strong>Performance Consistency</strong> as key metrics in this stage for traffic scheduling and reward determination.</p>
+<p><code>traffic_scheduling_rate</code> = <code>max_bandwidth</code> * <code>NAT_type_factor</code> * <code>consistency_factor</code> * <code>edge_service_factor</code></p>
 <ul>
-<li><code>traffic_allocation_rate</code>: The rate of traffic allocated (scheduled) to the Edge Node from the Edge Service Schedulers.</li>
+<li><code>traffic_scheduling_rate</code>: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.</li>
 <li><code>max_bandwidth</code>: The maximum of bandwidth available provided by the Edge Node, based on the time-averaged measurements during a certain period of time.</li>
-<li><code>NAT_type_factor</code>: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.</li>
+<li><code>NAT_type_factor</code>: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.<!-- -->
+<ul>
+<li>Factor range: <code>1~2</code>.</li>
+</ul>
+</li>
 <li><code>consistency_factor</code>: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.</li>
-<li><code>demand_factor</code>: A factor determined by the actual business demand from Edge Services on your region. This factor may vary from regions to regions. This factor may change dynamically based on the demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.</li>
-<li><code>adjustment_factor</code>: A global parameter that applies to all users. Currently set to <code>10%</code>.</li>
+<li><code>edge_service_factor</code>: A factor determined by the actual business demand from Edge Services on your Edge Node. This factor may vary from regions to regions. This factor may change dynamically based on the real-world demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.<!-- -->
+<ul>
+<li>For the Testnet Sprint 1 (as we focus on recruiting edge resources for real-world business readiness), the <code>edge_service_factor</code> is set to <code>0.1</code>.</li>
+<li>In the future, real-world edge services apply higher <code>edge_service_factor</code>.</li>
+</ul>
+</li>
 </ul>
 <blockquote>
 <p>For more details on Edge Node performance improvement, please refer to  <a href="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</a>.</p>
