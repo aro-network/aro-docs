@@ -3,12 +3,14 @@ id: choose-node
 title: "Choose Your ARO Node"
 sidebar_label: "Choose Your ARO Node"
 ---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 # Choose Your Node
 
 ### Things To Know Before You Start
+
 Here are key points to understand before running an Edge Node on the ARO Network:
 
 1. ARO is a **permissionless** network, meaning no prior permission or qualification is required to join.
@@ -20,16 +22,16 @@ Here are key points to understand before running an Edge Node on the ARO Network
 
 ### Which Type of ARO Node Is Right For Me?
 
-Here is a simple guide to quickly locate the best node type for you: 
+Here is a simple guide to quickly locate the best node type for you:
 
 **ARO Pod**
 
-- Dedicated plug-and-play device 
+- Dedicated plug-and-play device
 - Optimized for high uptime and rewards
 - For residential bandwidth / < 100 Mbps upstream bandwidth
 
 **ARO Lite**
- 
+
 - Lightweight browser extension
 - Join with minimal cost and effort
 - Very limited impact on your internet experiences
@@ -37,18 +39,14 @@ Here is a simple guide to quickly locate the best node type for you:
 **ARO Client**
 
 - Install on your own device, flexible, cross-platform
-<<<<<<< HEAD:docs/user-guides/run-node.md
-- Runs on bare-metal (takes some efforts to install and run) 
-=======
-- Runs on `Debian` with your machines/servers (takes some efforts to install and run) 
->>>>>>> beta:docs/node-operator-guide/become-operator/choose-node.md
+
+- Runs on `Debian` with your machines/servers (takes some efforts to install and run)
 - Unlock higher rewards with > 100 Mbps upstream bandwidth
 
 **ARO Link (Coming Soon)**
 
-- WiFi router with built-in ARO node 
+- WiFi router with built-in ARO node
 - The choice for business scenarios
-
 
 ### How Do I Manage My ARO Nodes?
 
@@ -57,6 +55,7 @@ The [Dashboard](https://dashboard.ARO.network) (currently for Previewnet phase) 
 By creating an **ARO Account**, you can log in anytime, anywhere to manage your Edge Nodes and rewards.
 
 For detailed instructions, refer to the **Dashboard User Guide** on <Link to="/node-operator-guide/become-operator/aro-dashboard">this page</Link>, which covers:
+
 - Accessing the Dashboard
 - Creating an ARO Account
 - Referring friends to join ARO
