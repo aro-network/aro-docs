@@ -122,7 +122,7 @@ Follow our instructions and user guides to begin your ARO journey!
 
 - <Link to="/node-operator-guide/become-operator/choose-node">Learn about **ARO Node types and choose which type is best for you**</Link>
 - <Link to="/node-operator-guide/aro-pod/get-aro-pod">Get an **ARO Pod** and make it ready for mining</Link>
-- <Link to="/node-operator-guide/aro-client/choose-installation-method">Deploy an **ARO Client** on your machine or server</Link>
+- <Link to="/node-operator-guide/aro-client/aro-client-introduction">Deploy an **ARO Client** on your machine or server</Link>
 - <Link to="/node-operator-guide/aro-lite/get-aro-lite">Run an **ARO Lite** extension on your Chrome browser</Link>
 
 ## FAQ
