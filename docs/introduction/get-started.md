@@ -9,7 +9,7 @@ import CardGroup from '../../src/components/CardGroup';
 
 # ARO Network - The Decentralized Edge Cloud for the AI Era
 
-> **Every day, your unused internet goes to waste. With ARO Network, you can turn it into income.**
+![Landing](/img/introduction/docs-landing)
 
 **ARO Network** is building a decentralized, intelligent edge cloud for real-time content delivery and future AI workloads.
 
