@@ -63,20 +63,22 @@ For `Jade in Lock` carried over from the Previewnet: Unlock these by running any
 
 ### For Edge Nodes (ARO Pod, ARO Link, ARO Client):
 
-**The Principle:** Edge Node performance is evaluated primarily by `daily peak traffic`, reflecting their maximum network contribution during high-demand periods.
+**The Principle:** Edge Nodes are evaluated primarily by the traffic allocated to them, reflecting their edge resources contribution to Edge Services on ARO Network.
 
-**Traffic Allocation Mechanism:** Edge Services are in strong favor of Edge Nodes that display **substantial bandwidth** (for strong content delivery capability), **favorable NAT configurations** (for high-quality internet access), and **consistent performance** (for stable & reliable service). These factors determine the traffic allocated by Edge Service Schedulers, directly affecting node rewards.
+**Traffic Scheduling Mechanism:** Edge Services are in strong favor of Edge Nodes that display **substantial bandwidth** (for strong content delivery capability), **favorable NAT configurations** (for high-quality internet access), and **consistent performance** (for stable & reliable service). These factors determine the traffic schedules by Edge Service Schedulers, directly affecting node rewards.
 
-**Goal of "Sprint 1" (the first stage of Testnet):** We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize **Bandwidth**, **NAT types**, and **Performance Consistency** as key metrics in this stage for traffic allocation and reward determination.
+**Goal of "Sprint 1" (the first stage of Testnet):** We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize **Bandwidth**, **NAT types**, and **Performance Consistency** as key metrics in this stage for traffic scheduling and reward determination.
 
-`traffic_allocation_rate` = `max_bandwidth` * `NAT_type_factor` * `consistency_factor` * `demand_factor` * `adjustment_factor`
+`traffic_scheduling_rate` = `max_bandwidth` * `NAT_type_factor` * `consistency_factor` * `edge_service_factor`
 
-- `traffic_allocation_rate`: The rate of traffic allocated (scheduled) to the Edge Node from the Edge Service Schedulers.
+- `traffic_scheduling_rate`: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.
 - `max_bandwidth`: The maximum of bandwidth available provided by the Edge Node, based on the time-averaged measurements during a certain period of time.
-- `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
+- `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor. 
+	- Factor range: `1~2`. 
 - `consistency_factor`: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.
-- `demand_factor`: A factor determined by the actual business demand from Edge Services on your region. This factor may vary from regions to regions. This factor may change dynamically based on the demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.  
-- `adjustment_factor`: A global parameter that applies to all users. Currently set to `10%`.
+- `edge_service_factor`: A factor determined by the actual business demand from Edge Services on your Edge Node. This factor may vary from regions to regions. This factor may change dynamically based on the real-world demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.   
+	- For the Testnet Sprint 1 (as we focus on recruiting edge resources for real-world business readiness), the `edge_service_factor` is set to `0.1`.
+	- In the future, real-world edge services apply higher `edge_service_factor`.
 
 
 > For more details on Edge Node performance improvement, please refer to  <Link to="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</Link>.
