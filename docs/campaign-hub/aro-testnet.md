@@ -75,7 +75,7 @@ For `Jade in Lock` carried over from the Previewnet: Unlock these by running any
 - `max_bandwidth`: The maximum of bandwidth available provided by the Edge Node, based on the time-averaged measurements during a certain period of time.
 - `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
 - `consistency_factor`: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.
-- `business_factor`: A factor determined by the actual business demand from Edge Services on your region. This factor may vary from regions to regions. This factor may change dynamically based on the demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.  
+- `demand_factor`: A factor determined by the actual business demand from Edge Services on your region. This factor may vary from regions to regions. This factor may change dynamically based on the demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.  
 - `adjustment_factor`: A global parameter that applies to all users. Currently set to `10%`.
 
 
