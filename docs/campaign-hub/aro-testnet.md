@@ -59,6 +59,37 @@ Jades earned in the Previewnet will be migrated to the Testnet, with an amplific
 
 For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 90 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 90 days will unlock all those Jades. When the Referees unlock their `Jade in Lock`, the corresponding Referral Bonus (`15%` for direct referrals and `2%` for 2-tier referrals) will be released to the Referrer. 
 
+## How Nodes Are Quantified for Mining Rewards
+
+### For Edge Nodes (ARO Pod, ARO Link, ARO Client):
+
+**The Principle:** Edge Node performance is evaluated primarily by `daily peak traffic`, reflecting their maximum network contribution during high-demand periods.
+
+**Traffic Allocation Mechanism:** Edge Services are in strong favor of Edge Nodes that display **substantial bandwidth** (for strong content delivery capability), **favorable NAT configurations** (for high-quality internet access), and **consistent performance** (for stable & reliable service). These factors determine the traffic allocated by Edge Service Schedulers, directly affecting node rewards.
+
+**Goal of "Sprint 1" (the first stage of Testnet):** We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize **Bandwidth**, **NAT types**, and **Performance Consistency** as key metrics in this stage for traffic allocation and reward determination.
+
+`traffic_allocation_rate` = `max_bandwidth` * `NAT_type_factor` * `consistency_factor` * `demand_factor` * `adjustment_factor`
+
+- `traffic_allocation_rate`: The rate of traffic allocated (scheduled) to the Edge Node from the Edge Service Schedulers.
+- `max_bandwidth`: The maximum of bandwidth available provided by the Edge Node, based on the time-averaged measurements during a certain period of time.
+- `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
+- `consistency_factor`: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.
+- `business_factor`: A factor determined by the actual business demand from Edge Services on your region. This factor may vary from regions to regions. This factor may change dynamically based on the demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.  
+- `adjustment_factor`: A global parameter that applies to all users. Currently set to `10%`.
+
+
+> For more details on Edge Node performance improvement, please refer to  <Link to="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</Link>.
+
+
+### For ARO Lites:
+
+ARO Lites operate distinctly from Edge Nodes and do not compete directly with Edge Nodes. Their rewards are based on factors such as `uptime`, network stability (measured by metrics like `latency` and `packet loss rate`), and exclusivity of their `IP address` resources. 
+
+In the future, ARO Lites are expected to take on expanded roles beyond Checker Nodes, complementing Edge Nodes and uniquely contributing to the maintenance and growth of the ARO Network’s edge infrastructure.
+
+
+
 ## Things You Can Do in the Testnet
 
 Boost your Jade and Badge rewards through engaging activities:
