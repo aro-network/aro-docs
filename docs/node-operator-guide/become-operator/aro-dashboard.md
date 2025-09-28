@@ -4,6 +4,7 @@ title: "ARO Dashboard"
 sidebar_label: "ARO Dashboard"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 # ARO Dashboard
 
@@ -26,22 +27,24 @@ New users must register an **ARO Account** to get started. Once registered, you 
 
 You can register using an **email address** or a **Google Account**. For email registration, you’ll need to set a password and verify your email.
 
-![Input Referral Code](/img/node-operator-guide/input_referral_code.png)
+![dashboard-account](/img/node-operator-guide/aro-dashboard-account.png)
 
-During registration, you’ll be prompted to enter a **Referral Code**. Using a Referral Code grants a instant Jade reward. If you don’t have a code, you can skip this step and add one later in the Dashboard.
+During registration, you’ll be prompted to enter a **Referral Code**. Using a Referral Code grants a boost on the mining rewards (For Referral rewards please refer to <Link to="/campaign-hub/referral-program">Referral Program Rules</Link>). If you don’t have a code, you can skip this step and add one later in the Dashboard.
 
 ### What’s in the Dashboard?
 
-![Dashboard Topbar](/img/node-operator-guide/dashboard_topbar.png)
+The **topbar** of the Dashboard provides access to all available pages:
 
-The **topbar** provides access to all available pages:
+![dashboard-rewards](/img/node-operator-guide/aro-dashboard-rewards.png)
+1. **My Rewards**: Shows your Jade rewards and earning trends for the Testnet phase. 
 
-- **Campaign**: This is your page for the main campaign in the **ARO Previewnet**.
+![dashboard-Nodes](/img/node-operator-guide/aro-dashboard-nodes.png)
+2. **ARO Node**: For monitoring and managing all ARO Nodes linked to your ARO Account. You can add new nodes, remove existing ones. Each node linked to your ARO Account will be displayed as a card on this page. Clicked on the card to check details of the node. 
 
-- **ARO Node**: View and manage all ARO Nodes linked to your ARO Account. You can add new nodes or remove existing ones. Clicking a device card displays detailed information about the node.
+![dashboard-Explorer](/img/node-operator-guide/aro-dashboard-explorer.png) 
+3. **Network Explorer**: Monitors the metrics and stats of the global network. Regional information is available on this page. 
 
-  > To learn how to add a new node to the Dashboard, refer to the **User Guides** in this Docs based on your selected node types.
+![dashboard-Campaign](/img/node-operator-guide/aro-dashboard-campaigns.png) 
+4. **Campaigns**: Shows your Badge collection and all available campaign tasks and relevant links. 
 
-- **Mining Stats**: Monitor the number of ARO Nodes you’re running, their online status, and the total rewards earned from operating them. 
-
-- **ARO Account**: Manage basic account settings and operations for your ARO Account.
+5. **ARO Account**: Shows you account information and settings. 
