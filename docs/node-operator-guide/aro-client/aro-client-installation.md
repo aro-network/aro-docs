@@ -23,9 +23,9 @@ Log in to the terminal, switch to the root user, and execute the following comma
 ```bash
 apt update
 
-wget -O /tmp/aro_0.0.1-1_all.deb https://download.aro.network/files/deb/aro_0.0.1-1_all.deb
+wget -O /tmp/aro-client-1.0.0.deb https://download.aro.network/files/deb/aro-client-1.0.0.deb
 
-apt install -f /tmp/aro_0.0.1-1_all.deb
+apt install -f /tmp/aro-client-1.0.0.deb
 ```
 
 ![Confirm Installation](/img/aro-client/image-20250926171314772.png)
