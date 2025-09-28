@@ -30,13 +30,13 @@ Ensure you’ve created an **ARO Account** (ARO ID) and are logged in to the Das
 
 > For account creation instructions, refer to <Link to="/node-operator-guide/become-operator/aro-dashboard">this guide</Link>.
 
-![Dashboard Add](/img/node-operator-guide/dashboard_add.png)
+![Dashboard Add](/img/node-operator-guide/aro-pod-add.png)
 
 On the **Edge Node** page in your Dashboard, locate the **"Add an ARO Node"** button and click to initiate adding process.
 
 > **Note**: Please do ensure **the device is online** (powered on and connected to the internet) during this process.
 
-![Dashboard SN](/img/node-operator-guide/dashboard_SN.png)
+![Dashboard SN](/img/node-operator-guide/aro-pod-sn.png)
 
 You’ll be prompted to enter the **Serial Number (SN)** of your device, which is printed on the device label. Enter it carefully to avoid errors.
 
