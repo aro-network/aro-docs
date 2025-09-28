@@ -18,17 +18,16 @@ This guide is for you if:
 
 ### Step 1: Plug In
 
-<p style={{color: 'red'}}>**Please make sure you have followed the suggested network setup. Alternative ways may fail.**</p>
+<p style={{color: 'red'}}>**We strongly recommend that you complete the device's connection and setup as described in the Step 1 tutorial. Otherwise, the device's performance may be significantly compromised.**</p>
 ![01](/img/node-operator-guide/aro-pod-networking-1.png)
 
-#### Step 1.1: Explanations on the suggested networksetup
+#### Step 1.1: Connect ARO Pod to the Internet
 - **Optical Networking Terminal (ONT)** is the device at the end of a fiber optic network that converts the light signals from the fiber optic cable into signals that your devices can read, like routers and ARO Pod.
 - Directly connect your ARO Pod to the ONT via Ethernet cable, as showed in the diagram above.  
-- <p style={{color: 'red'}}>**DO NOT connect your ARO Pod to the Wi-Fi router!**</p>
+- **DO NOT connect your ARO Pod to the Wi-Fi router!**
 - If you have a Wi-Fi router, connect it to the ONT from another Ethernet port so you can keep using it. If your ONT device only has one Ethernet port, you may use an extra Layer 2 Switch to extend the Ethernet port. 
 
-#### Enable UPnP on your ONT
-<p style={{color: 'red'}}>It is important to enable your UPnP on the ONT.</p>
+#### Step 1.2: Enable UPnP on your ONT
 
 1. Connect to Your ONT: Connect a computer to the ONT using an Ethernet cable or connect to its Wi-Fi network.
 2. Look for a sticker on the ONT itself or in your network documentation to find its default IP address.
