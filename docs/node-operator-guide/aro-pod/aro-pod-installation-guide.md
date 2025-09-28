@@ -18,22 +18,16 @@ This guide is for you if:
 
 ### Step 1: Plug In
 
-Setting up an **ARO Pod** is simple and intuitive with their plug-and-play design.
-
-**Unbox** your device, **power it on**, and **connect it to the internet using the provided cable**. 
-
-Here is the **strongly suggested** connecting setup:
+<p style={{color: 'red'}}>**Please make sure you have followed the suggested network setup. Alternative ways may fail.**</p>
 ![01](/img/node-operator-guide/aro-pod-networking-1.png)
 
-<p style={{color: 'red'}}>Please make sure you have followed the suggested setup. Alternative ways may fail.</p>
-
-**Explanations on the suggested setup**
+#### Step 1.1: Explanations on the suggested networksetup
 - **Optical Networking Terminal (ONT)** is the device at the end of a fiber optic network that converts the light signals from the fiber optic cable into signals that your devices can read, like routers and ARO Pod.
 - Directly connect your ARO Pod to the ONT via Ethernet cable, as showed in the diagram above.  
-- **DO NOT** connect your ARO Pod to the Wi-Fi router!
+- <p style={{color: 'red'}}>**DO NOT connect your ARO Pod to the Wi-Fi router!**</p>
 - If you have a Wi-Fi router, connect it to the ONT from another Ethernet port so you can keep using it. If your ONT device only has one Ethernet port, you may use an extra Layer 2 Switch to extend the Ethernet port. 
 
-**Enable UPnP on your ONT**
+#### Enable UPnP on your ONT
 <p style={{color: 'red'}}>It is important to enable your UPnP on the ONT.</p>
 
 1. Connect to Your ONT: Connect a computer to the ONT using an Ethernet cable or connect to its Wi-Fi network.
@@ -46,6 +40,7 @@ Here is the **strongly suggested** connecting setup:
 	- Tools > Misc. > UPnP Settings
 5. Select or check the option to turn UPnP on. Click the "Save" or "Apply" button to confirm your changes. For some devices, you may need to restart your ONT to apply the new settings. 
 
+> For more information on the general concepts and approaches of optimizing your network, please refer to <Link to="/node-operator-guide/improve-performance/network-optimization">this guide</Link>
 
 ### Step 2: Add Device to Your Dashboard
 
