@@ -16,8 +16,6 @@ This guide is for you if:
 
 > To choose the best Edge Node for your needs, see <Link to="/node-operator-guide/become-operator/choose-node">this guide</Link>.
 
-Watch this [**quick video guide**](https://youtu.be/ok8RW8hhYAw) for an easy onboarding experience.
-
 ### Step 1: Plug In
 
 Setting up an **ARO Pod** is simple and intuitive with their plug-and-play design.
