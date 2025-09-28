@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## What is ARO Testnet
 
-**ARO Previewnet** is now live! 
+**ARO Testnet** is now live! 
 
 ARO’s decentralized Edge Cloud journey unfolds across three stages: `Previewnet`, `Testnet` **(where we are now)**, and `Mainnet`, each with a unique mission.
 
