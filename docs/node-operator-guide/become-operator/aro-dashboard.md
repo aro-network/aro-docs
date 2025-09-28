@@ -10,16 +10,15 @@ import Link from '@docusaurus/Link';
 
 ### General Guide
 
-The [ARO Dashboard](https://dashboard.ARO.network/) is your all-in-one platform for managing ARO Nodes, campaigns and rewards.
+The [**ARO Dashboard**](https://dashboard.ARO.network/) is your all-in-one platform for managing ARO Nodes, campaigns and rewards.
 
 With the ARO Dashboard, you can:
 
 - Create an ARO Account
-- Access to your Previewnet Campaign page
+- Track your Jade Rewards
 - Access your Referral Code, invite friends to join ARO, and earn Referral Rewards
-- Manage all your ARO Nodes
-- Track and manage your rewards
-- Manage your funds (Coming soon)
+- Monitor and manage all your ARO Nodes
+- Check your Badge collections
 
 ### ARO Account
 
@@ -35,16 +34,15 @@ During registration, you’ll be prompted to enter a **Referral Code**. Using a 
 
 The **topbar** of the Dashboard provides access to all available pages:
 
-![dashboard-rewards](/img/node-operator-guide/aro-dashboard-rewards.png)
+
 1. **My Rewards**: Shows your Jade rewards and earning trends for the Testnet phase. 
+![dashboard-rewards](/img/node-operator-guide/aro-dashboard-rewards.png)
 
-![dashboard-Nodes](/img/node-operator-guide/aro-dashboard-nodes.png)
 2. **ARO Node**: For monitoring and managing all ARO Nodes linked to your ARO Account. You can add new nodes, remove existing ones. Each node linked to your ARO Account will be displayed as a card on this page. Clicked on the card to check details of the node. 
+![dashboard-Nodes](/img/node-operator-guide/aro-dashboard-nodes.png)
 
-![dashboard-Explorer](/img/node-operator-guide/aro-dashboard-explorer.png) 
 3. **Network Explorer**: Monitors the metrics and stats of the global network. Regional information is available on this page. 
+![dashboard-Explorer](/img/node-operator-guide/aro-dashboard-explorer.png) 
 
-![dashboard-Campaign](/img/node-operator-guide/aro-dashboard-campaigns.png) 
 4. **Campaigns**: Shows your Badge collection and all available campaign tasks and relevant links. 
-
-5. **ARO Account**: Shows you account information and settings. 
+![dashboard-Campaign](/img/node-operator-guide/aro-dashboard-campaigns.png) 
