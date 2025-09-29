@@ -53,10 +53,11 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 - To install the ARO Client, a bare-metal machine running a `Debian` operating system (Version `11` or higher) is required as a prerequisite.
 
 
-**General steps to follow:**
+**General Steps to Follow:**
 
-- If you do not have `Debian` installed, refer to this <Link to="/node-operator-guide/aro-client/aro-client-debian">**Operating System Tutorial guide**</Link>. 
-- If you are ready with the operating system, refer to this <Link to="/node-operator-guide/aro-client/aro-client-installation">**Installation & Initialization Tutorial for ARO Client**</Link>.
+1. If you do not have `Debian` installed, refer to <Link to="/node-operator-guide/aro-client/aro-client-debian">**Operating System Tutorial guide**</Link>. 
+2. If you are ready with the operating system, refer to <Link to="/node-operator-guide/aro-client/aro-client-installation">**Installation & Initialization Tutorial for ARO Client**</Link>.
+3. Install `PCDN Client` (refer to <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker">**PCDN Worker Installation Tutorial**</Link>) to enable edge service capabilities for your ARO Client. 
 
 
 ### Special Notes for VM Installations (Legacy)
