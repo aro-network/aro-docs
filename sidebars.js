@@ -61,6 +61,7 @@ module.exports = {
             'node-operator-guide/aro-client/aro-client-introduction',
             'node-operator-guide/aro-client/aro-client-debian',
             'node-operator-guide/aro-client/aro-client-installation',
+	    'node-operator-guide/aro-client/aro-client-pcdn-worker',
             'node-operator-guide/aro-client/aro-client-faq-troubleshooting',
           ],
         },
