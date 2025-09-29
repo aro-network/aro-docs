@@ -1,7 +1,7 @@
 ---
 id: aro-client-installation
 title: "Installation Tutorial"
-sidebar_label: "Installation & Initialization Tutorial"
+sidebar_label: "ARO Client Installation & Initialization"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';

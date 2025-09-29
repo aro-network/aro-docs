@@ -15,7 +15,7 @@ A **Peer-to-Peer Content Delivery Network** (P2P CDN or PCDN) is a decentralized
 
 By enabling peers to act as both clients and servers, PCDNs distribute the content delivery load across a network of users, which can improve efficiency and scalability, especially for bandwidth-intensive applications like live streaming and software updates. 
 
-The `PCDN Worker` is a Edge Cloud Worker on ARO Network that enables ARO Client with high-performance PCDN edge service capabilities. 
+The `PCDN Worker` is an Edge Cloud Worker deployed on ARO Network's open application infrastructure for Edge Services (supports third-party application). The `PCDN Worker` enables ARO Client with high-performance PCDN Edge Service capabilities. 
 
 Follow this tutorial to intall PCDN Worker software image on your **ARO Client**.  
 
