@@ -30,25 +30,19 @@ You need a physical machine with ARO Client already installed (refer to the <Lin
 
 ### 1.2 Obtain the LAN IP Address of ARO Client
 
-#### 1.2.1 Obtain via Router
+Find your LAN IP Address of ARO Client. 
 
-Log in to the router's admin interface and check the LAN IP address of the device.
+For example, get the LAN IP Address from the `Debian` system:
 
-#### 1.2.2 Obtain via ARO Console
-
-After the device boots normally, select option 1 to list all network interfaces and check the IP address of the network interface in the “UP” state.
-
-![image-20250917171602699](/img/aro-client/image-20250917171602699.png)
-
-![image-20250917171751224](/img/aro-client/image-20250917171751224.png)
-
-For this example, we use 192.168.5.2 as the IP address.
+```bash
+ip addr
+```
 
 ## 2. Install PCDN Worker
 
 ### 2.1 Log in to the Web Interface
 
-On another machine within the same LAN, open a browser and navigate to https://192.168.5.2:9090, replacing the IP with your actual IP address.
+On another machine within the same LAN, open a browser and navigate to `https://Your LAN IP:9090`, replacing `Your LAN IP` with your actual IP address.
 
 ![image-20250917173213136](/img/aro-client/image-20250917173213136.png)
 
@@ -171,7 +165,7 @@ The system enters the installation phase.
 ![image-20250917195431015](/img/aro-client/image-20250917195431015.png)
 
 Select the system disk.
-
+> In the screenshot, the console prompts the user to select the system disk. Button on the left side: **Comfirm**. Buttom on the right side: **Cancel**.  
 ![image-20250917200118418](/img/aro-client/image-20250917200118418.png)
 
 After installation completes, enter the console and press Enter.
