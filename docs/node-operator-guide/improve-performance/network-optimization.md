@@ -32,7 +32,7 @@ A simple principle is: **minimize the number of NAT layers between the device an
 ### Two Suggested Modes
 
 #### Mode 1 (optimal)
-![mode 1](/img/node-operator-guide/optimize-mode1)
+![mode 1](/img/node-operator-guide/optimize-mode1.png)
 
 - **PPPoE on ARO Device**
 	- `PPPoE`, or `Point-to-Point Protocol over Ethernet`, is a networking protocol that provides authentication and a secure, managed connection to the internet. On a router (or an ONT), the PPPoE setting is the login information provided by your ISP, including a username and password, which the router uses to authenticate and get a public IP address. 
@@ -43,7 +43,7 @@ A simple principle is: **minimize the number of NAT layers between the device an
 The **Mode 1** is optimal for Edge Services because the ARO Node is allocated with a `Public IP` and there is no extra NAT layer introduced. 
 
 #### Mode 2 (suboptimal)
-![mode 2](/img/node-operator-guide/optimize-mode2)
+![mode 2](/img/node-operator-guide/optimize-mode2.png)
 
 - **PPPoE on the ONT**
 - **Set UPnP or DMZ on the ONT**
