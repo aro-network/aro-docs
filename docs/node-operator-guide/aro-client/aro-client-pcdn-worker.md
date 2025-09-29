@@ -182,7 +182,7 @@ After installation completes, enter the console and press Enter.
 
 Once the installation is complete, shut down the `PCDN Worker` client and eject the CDROM.
 
-![image-20250917220356611](/img/aro-client/image-20250917220356611.png)
+![image-20250918113209128](/img/aro-client/image-20250917220356611.png)
 
 **After shutting down the PCDN Worker client, eject and delete the CDROM.**
 
