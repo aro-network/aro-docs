@@ -140,6 +140,65 @@ The **Mode 2** is suboptimal for Edge Services because only one more NAT layer i
    - Enter the IP address of the device to place in the DMZ.
    - Enable DMZ and save changes (device may reboot).
 
+### Tutorial - Set Up PPPoE on a Debian System
+
+#### Requirements
+- Debian installed on a physical machine (e.g., Debian 11 or later).
+- Admin (root) access to the system.
+- Ethernet connection to a modem/ONT (configured in bridge mode if needed).
+- ISP-provided PPPoE credentials.
+- Network interface name (e.g., `eth0`, find using `ip link`).
+
+#### Steps
+
+1. **Install PPPoE Software**
+   - Open a terminal and update the package list:
+     ```bash
+     sudo apt update
+     ```
+   - Install the PPPoE client:
+     ```bash
+     sudo apt install pppoe pppoeconf
+     ```
+
+2. **Configure PPPoE**
+   - Run the PPPoE configuration tool:
+     ```bash
+     sudo pppoeconf
+     ```
+   - Follow the prompts:
+     - Select your network interface (e.g., `eth0`).
+     - Enter your ISP-provided username and password.
+     - Accept defaults for MTU, MSS, and other settings unless specified by your ISP.
+     - Choose to start the connection on boot (recommended).
+   - Save the configuration.
+
+3. **Start the PPPoE Connection**
+   - Activate the connection:
+     ```bash
+     sudo pon dsl-provider
+     ```
+   - Verify the connection:
+     ```bash
+     ip addr show ppp0
+     ```
+     Look for an assigned IP address on the `ppp0` interface.
+
+4. **Test and Troubleshoot**
+   - Test internet access:
+     ```bash
+     ping 8.8.8.8
+     ```
+   - Check your public IP at `whatismyipaddress.com`.
+   - **Issues?**
+     - Verify credentials in `/etc/ppp/pap-secrets` or `/etc/ppp/chap-secrets`.
+     - Ensure the modem/ONT is in bridge mode (see related guides).
+     - Restart the connection: `sudo poff dsl-provider && sudo pon dsl-provider`.
+     - Check logs: `sudo journalctl -u pppd`.
+
+#### Warnings & Tips
+- If using an ONT or a router, ensure it’s not also running PPPoE to avoid conflicts.
+- For model-specific issues (e.g., specific ISPs or hardware), search “[ISP] Debian PPPoE setup” or provide details for tailored steps.
 
 
 
