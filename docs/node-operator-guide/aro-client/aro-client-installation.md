@@ -23,7 +23,7 @@ import Link from '@docusaurus/Link';
 
 We recommend **manual set up PPPoE dial-up for Internet connection** on your **physical machine** (that runs `Debian` operating system and hosts your ARO Client): 
 
-1. PPPoE dial-up on `Debian` system: Tutorial
+1. PPPoE dial-up on `Debian` system: <Link to="/node-operator-guide/improve-performance/network-optimization/#tutorial---set-up-pppoe-on-a-debian-system">**Tutorial**</Link>
 2. Set Bridge Mode on the ONT / Router device: <Link to="/node-operator-guide/improve-performance/network-optimization/#tutorial---how-to-set-bridge-mode-on-an-ont--router">**Tutorial**</Link>
 
 > Why PPPoE dial-up on the physical machine is recommended? Refer to the explanations on "Mode 1" and "Mode 2" in the <Link to="/node-operator-guide/improve-performance/network-optimization/#network-optimization---best-practices">**Best Practices of Network Optimization**</Link>.
