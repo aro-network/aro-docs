@@ -162,19 +162,24 @@ Available `Interface Type` options:
 
 Follow steps below if you fit into `Bridge to LAN` type: 
 
-1. Select `Bridge to LAN` in the `Interface Type` field
-2. Select the Bridge that you have set up in the Step #2.2
-3. Save and return
+**1 Select `Bridge to LAN` in the `Interface Type` field**
+
+**2 Select the Bridge that you have set up in the Step #2.2**
+
+**3 Save and return**
 
 ##### 2.5.2.3 `Virtual Network` Configurations
 
 Follow steps below if you fit into `Virtual Network` type: 
 
-1. Select `Virtual Network` in the `Interface Type` field
-2. Select`default` in the `source` field
-3. Save and return
-4. Configure `iptables.rules` on the host (Follow steps **4.1~4.3** below)
+**1 Select `Virtual Network` in the `Interface Type` field**  
 
+**2 Select`default` in the `source` field**  
+
+**3 Save and return**  
+
+**4 Configure `iptables.rules` on the host machine**  
+(Follow steps **4.1~4.3** below)
 
 **4.1 Back up `iptables.rules`**
 ```
