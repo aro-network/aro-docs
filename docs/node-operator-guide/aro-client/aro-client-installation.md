@@ -8,16 +8,7 @@ import Link from '@docusaurus/Link';
 
 # Installation & Initialization Tutorial for ARO Client
 
-## Part 1: ARO Client Deb Package Installation
-
-> Before starting this tutorial, ensure that:  
->   
-> - You have installed `Debian` version 11 or higher on a physical machine (not a virtual machine).  
-> - You have Admin (root) user access to the system.
-
-> If you haven’t set up the `Debian` operating system yet, please refer to the [**Operating System Tutorial**](/node-operator-guide/aro-client/aro-client-debian).
-
-### 1. Network Preparation & Optimization
+## Part 1: Network Setup & Optimization
 
 > This is a critical step before you start setting up an ARO Client node. An "undesirable" network connection setup may **significantly compromise your node's performance** and count against your mining rewards.  
 
@@ -27,6 +18,17 @@ We recommend **manual set up PPPoE dial-up for Internet connection** on your **p
 2. Set Bridge Mode on the ONT / Router device: <Link to="/node-operator-guide/improve-performance/network-optimization/#tutorial---how-to-set-bridge-mode-on-an-ont--router">**Tutorial**</Link>
 
 > Why PPPoE dial-up on the physical machine is recommended? Refer to the explanations on "Mode 1" and "Mode 2" in the <Link to="/node-operator-guide/improve-performance/network-optimization/#network-optimization---best-practices">**Best Practices of Network Optimization**</Link>.
+
+## Part 2: ARO Client Deb Package Installation
+
+### 1. Preparation 
+
+Before starting this tutorial, ensure that:  
+
+- You have installed `Debian` version 11 or higher on a physical machine (not a virtual machine).  
+- You have Admin (root) user access to the system.
+
+> If you haven’t set up the `Debian` operating system yet, please refer to the [**Operating System Tutorial**](/node-operator-guide/aro-client/aro-client-debian).
 
 
 
@@ -75,7 +77,7 @@ dpkg -P aro
 ```
 
 
-## Part 2: ARO Client Node Initialization & Configuration
+## Part 3: ARO Client Node Initialization & Configuration
 
 This section describes how to register, configure and complete all initial setup needed for a functioning status for your ARO Client node. 
 
