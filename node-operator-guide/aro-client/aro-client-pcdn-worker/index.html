@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">PCDN Worker | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PCDN Worker | ARO Network Docs"><meta data-rh="true" name="description" content="About PCDN Worker"><meta data-rh="true" property="og:description" content="About PCDN Worker"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.50af955f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5a79da6b.js" defer="defer"></script>
 <script src="/assets/js/main.5e4484f7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -100,19 +100,16 @@
 </ul>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="2522-bridge-to-lan-configurations">2.5.2.2 <code>Bridge to LAN</code> Configurations<a href="#2522-bridge-to-lan-configurations" class="hash-link" aria-label="Direct link to 2522-bridge-to-lan-configurations" title="Direct link to 2522-bridge-to-lan-configurations">​</a></h5>
 <p>Follow steps below if you fit into <code>Bridge to LAN</code> type:</p>
-<ol>
-<li>Select <code>Bridge to LAN</code> in the <code>Interface Type</code> field</li>
-<li>Select the Bridge that you have set up in the Step #2.2</li>
-<li>Save and return</li>
-</ol>
+<p><strong>1 Select <code>Bridge to LAN</code> in the <code>Interface Type</code> field</strong></p>
+<p><strong>2 Select the Bridge that you have set up in the Step #2.2</strong></p>
+<p><strong>3 Save and return</strong></p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="2523-virtual-network-configurations">2.5.2.3 <code>Virtual Network</code> Configurations<a href="#2523-virtual-network-configurations" class="hash-link" aria-label="Direct link to 2523-virtual-network-configurations" title="Direct link to 2523-virtual-network-configurations">​</a></h5>
 <p>Follow steps below if you fit into <code>Virtual Network</code> type:</p>
-<ol>
-<li>Select <code>Virtual Network</code> in the <code>Interface Type</code> field</li>
-<li>Select<code>default</code> in the <code>source</code> field</li>
-<li>Save and return</li>
-<li>Configure <code>iptables.rules</code> on the host (Follow steps <strong>4.1~4.3</strong> below)</li>
-</ol>
+<p><strong>1 Select <code>Virtual Network</code> in the <code>Interface Type</code> field</strong></p>
+<p><strong>2 Select<code>default</code> in the <code>source</code> field</strong></p>
+<p><strong>3 Save and return</strong></p>
+<p><strong>4 Configure <code>iptables.rules</code> on the host machine</strong><br>
+<!-- -->(Follow steps <strong>4.1~4.3</strong> below)</p>
 <p><strong>4.1 Back up <code>iptables.rules</code></strong></p>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">iptables-save &gt; ~/iptables.rules</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>In case something is wrong, you can restore the <code>iptables.rules</code> with the following commands. (Skip this process if you have successfully set up the <code>iptable.rules</code>)</p>
