@@ -4,12 +4,15 @@ title: "Network Optimization"
 sidebar_label: "Edge Node Network Optimization"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 # Network Optimization for Your Edge Nodes
 
 ## General Introduction
 
 Optimizing the network for Edge Nodes (`ARO Pod`, `ARO Link`, and `ARO Client`) can greatly enhance performance and rewards. This tutorial explains the fundamental principles and concepts of network optimization, with suggested approaches of constructing your network connection for your Edge Nodes. 
+
+> For performance optimization for `ARO Lite`, refer to <Link to="/aro-lite/aro-lite-faq-troubleshooting">this page</Link> 
 
 ## Basic Principles of Network Optimization for Edge Nodes
 
@@ -34,6 +37,7 @@ A simple principle is: **minimize the number of NAT layers between the device an
 #### Mode 1 (optimal)
 ![mode 1](/img/node-operator-guide/optimize-mode1.png)
 
+- `Optical Networking Terminal` (`ONT`) is the device at the end of a fiber optic network that converts the light signals from the fiber optic cable into signals that your devices can read, like routers and ARO Devices.
 - **PPPoE on ARO Device**
 	- `PPPoE`, or `Point-to-Point Protocol over Ethernet`, is a networking protocol that provides authentication and a secure, managed connection to the internet. On a router (or an ONT), the PPPoE setting is the login information provided by your ISP, including a username and password, which the router uses to authenticate and get a public IP address. 
 	- PPPoE allocates Public IP directly to the ARO Device, hence reducing NAT layers and benefiting ARO Device's performance. 
