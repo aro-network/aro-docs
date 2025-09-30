@@ -38,7 +38,7 @@ For example, get the LAN IP Address from the `Debian` system:
 ip addr
 ```
 
-## 2. Install PCDN Worker
+## 2. PCDN Worker Installation
 
 ### 2.1 Log in to the Web Interface
 
@@ -112,9 +112,9 @@ sudo mv /home/client/aro-pcdn-client-latest.iso /var/lib/libvirt/images/
 sudo chown libvirt-qemu:libvirt-qemu /var/lib/libvirt/images/aro-pcdn-client-latest.iso
 ```
 
-### 2.5 Create a Virtual Machine
+## 3. PCDN Worker Configuration
 
-#### 2.5.1 Configure Basic Information
+### 3.1 Configure Basic Information
 
 ![image-20250917184137001](/img/aro-client/image-20250917184137001.png)
 
@@ -141,47 +141,46 @@ Enable **Autostart** and edit the **vCPUs**.
 
 Set the vCPUs to 80% of the available CPU cores.
 
-#### 2.5.2 Configure Network for the PCDN Worker Client
+### 3.2 Configure Network Interface
 
-##### 2.5.2.1 Choose Your Network Interface Type
+#### 3.2.1 Choose Your Network Interface Type
 
 Click on `edit` button for the `Network interfaces` settings:  
 ![image-20250917193042591](/img/aro-client/image-20250917193042591.png)
 ![d3f985e3411b96abafb88306b200595b](/img/aro-client/d3f985e3411b96abafb88306b200595b.png)
 
-Available `Interface Type` options:
+<p style={{color: 'red'}}>Choose the right `Interface Type` that fits into your network setup and follow steps accordingly.</p>
 
 -  **`Bridge to LAN`**:
 	- Choose this type if you have **PPPoE dial-up on the ONT** and **physical machine directly connected to the ONT**.
-	- Follow 2.5.2.2 steps for further configurations (and skip 2.5.2.3).
+	- Follow 3.2.2 steps for further configurations (and skip 3.2.3).
 -  **`Virtual Network`**:
 	- Choose this type if you have **PPPoE dial-up on the physical machine (that runs ARO Client)** and **ONT set to Bridge Mode**.
-	- Follow 2.5.2.3 steps for further configurations (and skip 2.5.2.2).
+	- Follow 3.2.3 steps for further configurations (and skip 3.2.2).
 
-##### 2.5.2.2 `Bridge to LAN` Configurations
+#### 3.2.2 If You Choose `Bridge to LAN`:
 
-Follow steps below if you fit into `Bridge to LAN` type: 
+Follow steps below if you choose `Bridge to LAN` type: 
 
-**1 Select `Bridge to LAN` in the `Interface Type` field**
+**Step 1.**  Select `Bridge to LAN` in the `Interface Type` field
 
-**2 Select the Bridge that you have set up in the Step #2.2**
+**Step 2.** Select the Bridge that you have set up in the Step #2.2
 
-**3 Save and return**
+**Step 3.** Save and return
 
-##### 2.5.2.3 `Virtual Network` Configurations
+#### 3.2.3 If You Choose `Virtual Network`: 
 
-Follow steps below if you fit into `Virtual Network` type: 
+Follow steps below if you choose `Virtual Network` type: 
 
-**1 Select `Virtual Network` in the `Interface Type` field**  
+**Step 1.** Select `Virtual Network` in the `Interface Type` field  
 
-**2 Select`default` in the `source` field**  
+**Step 2.** Select `default` in the `source` field  
 
-**3 Save and return**  
+**Step 3.** Save and return  
 
-**4 Configure `iptables.rules` on the host machine**  
-(Follow steps **4.1~4.3** below)
+**Step 4.** Configure `iptables.rules` on the host machine (Follow detailed steps **4.a~4.c** below)
 
-**4.1 Back up `iptables.rules`**
+**4.a** Back up `iptables.rules`
 ```
 iptables-save > ~/iptables.rules
 ```
@@ -198,7 +197,7 @@ In case something is wrong, you can restore the `iptables.rules` with the follow
  iptables-restore < ~/iptables.rules
 ```
 
-**4.2 Set `iptables.rules`:**
+**4.b** Set `iptables.rules`:
 
 + Replace the VM_IP with the actual local IP of your PCDN Worker client on VM.
 + Confirm that the network card for dial-up is `ppp0`. If not, change to the name of the actual one. 
@@ -234,7 +233,7 @@ iptables -I FORWARD 1 -o $WAN_IF -i $LAN_IF -s $VM_IP -p udp -j ACCEPT
 
 ```
 
-**4.3 Test if the settings come into effect:**
+**4.c** Test if the settings come into effect:
 
 Use another device and try visiting links below with a browser (Replace Your IP with the actual IP of your PCDN Worker client after successful dial-up):
 
@@ -242,7 +241,7 @@ Use another device and try visiting links below with a browser (Replace Your IP 
 + `https://Your IP:9090`
 
 
-#### 2.5.3 Install PCDN Worker
+### 3.3 Complete Image Installation
 
 ![image-20250917193337924](/img/aro-client/image-20250917193337924.png)
 
