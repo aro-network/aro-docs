@@ -167,7 +167,7 @@ Click on `edit` button for the `Network interfaces` settings:
 iptables-save > ~/iptables.rules
 ```
 
-**Set `iptables.rules`:**
+**2. Set `iptables.rules`:**
 
 + Replace the VM_IP with the actual local IP of your PCDN Worker client on VM.
 + Confirm that the network card for dial-up is `ppp0`. If not, change to the name of the actual one. 
@@ -203,7 +203,7 @@ iptables -I FORWARD 1 -o $WAN_IF -i $LAN_IF -s $VM_IP -p udp -j ACCEPT
 
 ```
 
-**Test if the settings come into effect:**
+**3. Test if the settings come into effect:**
 
 Use another device and try visiting links below with a browser (Replace Your IP with the actual IP of your PCDN Worker client after successful dial-up):
 
