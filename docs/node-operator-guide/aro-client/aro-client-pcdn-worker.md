@@ -149,25 +149,51 @@ Click on `edit` button for the `Network interfaces` settings:
 ![image-20250917193042591](/img/aro-client/image-20250917193042591.png)
 ![d3f985e3411b96abafb88306b200595b](/img/aro-client/d3f985e3411b96abafb88306b200595b.png)
 
-`Interface Type` options:
+Available `Interface Type` options:
 
--  `Virtual Network`:
-	- Choose this type if you have **PPPoE dial-up on the physical machine (that runs ARO Client)** and **ONT set to Bridge Mode**.
-	- Select`default` in the `source` field.
-	- Configure `iptables.rules` for parsing traffic from ONT to the virtual client. Check tutorials in Section 2.5.2.2 below. 
--  `Bridge to LAN`:
+-  **`Bridge to LAN`**:
 	- Choose this type if you have **PPPoE dial-up on the ONT** and **physical machine directly connected to the ONT**.
-	- No need to set `iptables.rules` (You can skip 2.5.2.2)
+	- Follow 2.5.2.2 steps for further configurations (and skip 2.5.2.3).
+-  **`Virtual Network`**:
+	- Choose this type if you have **PPPoE dial-up on the physical machine (that runs ARO Client)** and **ONT set to Bridge Mode**.
+	- Follow 2.5.2.3 steps for further configurations (and skip 2.5.2.2).
 
-##### 2.5.2.2 Configure `iptables.rules` 
+##### 2.5.2.2 `Bridge to LAN` Configurations
 
-**1. Back up `iptables.rules`:**
+Follow steps below if you fit into `Bridge to LAN` type: 
 
+1. Select `Bridge to LAN` in the `Interface Type` field
+2. Select the Bridge that you have set up in the Step #2.2
+3. Save and return
+
+##### 2.5.2.3 `Virtual Network` Configurations
+
+Follow steps below if you fit into `Virtual Network` type: 
+
+1. Select `Virtual Network` in the `Interface Type` field
+2. Select`default` in the `source` field
+3. Save and return
+4. Configure `iptables.rules` on the host (Follow steps **4.1~4.3** below)
+
+
+**4.1 Back up `iptables.rules`**
 ```
 iptables-save > ~/iptables.rules
 ```
+In case something is wrong, you can restore the `iptables.rules` with the following commands. (Skip this process if you have successfully set up the `iptable.rules`)
 
-**2. Set `iptables.rules`:**
+```
+ iptables -F
+ iptables -t nat -F
+ iptables -t mangle -F
+ iptables -X
+ iptables -t nat -X
+ iptables -t mangle -X
+ 
+ iptables-restore < ~/iptables.rules
+```
+
+**4.2 Set `iptables.rules`:**
 
 + Replace the VM_IP with the actual local IP of your PCDN Worker client on VM.
 + Confirm that the network card for dial-up is `ppp0`. If not, change to the name of the actual one. 
@@ -203,27 +229,13 @@ iptables -I FORWARD 1 -o $WAN_IF -i $LAN_IF -s $VM_IP -p udp -j ACCEPT
 
 ```
 
-**3. Test if the settings come into effect:**
+**4.3 Test if the settings come into effect:**
 
 Use another device and try visiting links below with a browser (Replace Your IP with the actual IP of your PCDN Worker client after successful dial-up):
 
 + `http://Your IP:40001`
 + `https://Your IP:9090`
 
-**Restore `iptables.rules`:**
-
-In case something is wrong, you can restore the `iptables.rules`. (Skip this process if you have successfully set up the `iptable.rules`)
-
-```
- iptables -F
- iptables -t nat -F
- iptables -t mangle -F
- iptables -X
- iptables -t nat -X
- iptables -t mangle -X
- 
- iptables-restore < ~/iptables.rules
-```
 
 #### 2.5.3 Install PCDN Worker
 
