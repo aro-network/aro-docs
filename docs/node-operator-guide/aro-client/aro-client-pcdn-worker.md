@@ -143,16 +143,87 @@ Set the vCPUs to 80% of the available CPU cores.
 
 #### 2.5.2 Configure Network for the PCDN Worker Client
 
+##### 2.5.2.1 Choose Your Network Interface Type
+
+Click on `edit` button for the `Network interfaces` settings:  
 ![image-20250917193042591](/img/aro-client/image-20250917193042591.png)
+![d3f985e3411b96abafb88306b200595b](/img/aro-client/d3f985e3411b96abafb88306b200595b.png)
 
-- **Interface type**: Bridge to LAN.
-- **Source**: The `bridge0` network interface created earlier.
+`Interface Type` options:
 
-![image-20250917193141774](/img/aro-client/image-20250917193141774.png)
+-  `Virtual Network`:
+	- Choose this type if you have **PPPoE dial-up on the physical machine (that runs ARO Client)** and **ONT set to Bridge Mode**.
+	- Select`default` in the `source` field.
+	- Configure `iptables.rules` for parsing traffic from ONT to the virtual client. Check tutorials in Section 2.5.2.2 below. 
+-  `Bridge to LAN`:
+	- Choose this type if you have **PPPoE dial-up on the ONT** and **physical machine directly connected to the ONT**.
+	- No need to set `iptables.rules` (You can skip 2.5.2.2)
 
-Verify the updated interface type.
+##### 2.5.2.2 Configure `iptables.rules` 
 
-![image-20250917193411375](/img/aro-client/image-20250917193411375.png)
+**1. Back up `iptables.rules`:**
+
+```
+iptables-save > ~/iptables.rules
+```
+
+**Set `iptables.rules`:**
+
++ Replace the VM_IP with the actual local IP of your PCDN Worker client on VM.
++ Confirm that the network card for dial-up is `ppp0`. If not, change to the name of the actual one. 
+
+Execute:
+
+```
+#!/bin/bash
+
+set -e
+
+VM_IP="192.168.122.164"
+WAN_IF="ppp0"
+LAN_IF="virbr0"
+
+sysctl -w net.ipv4.ip_forward=1
+
+iptables -t nat -F
+iptables -F FORWARD
+
+iptables -t nat -A POSTROUTING -s $VM_IP -o $WAN_IF -j MASQUERADE
+
+# 4. TCP DNAT：80,443,9500-9700
+iptables -t nat -A PREROUTING -i $WAN_IF -p tcp -m multiport --dports 80,443,9500:9700 -j DNAT --to-destination $VM_IP
+
+iptables -t nat -A PREROUTING -i $WAN_IF -p udp -j DNAT --to-destination $VM_IP
+
+iptables -I FORWARD 1 -i $WAN_IF -o $LAN_IF -d $VM_IP -p tcp -m multiport --dports 80,443,9500:9700 -j ACCEPT
+iptables -I FORWARD 1 -i $WAN_IF -o $LAN_IF -d $VM_IP -p udp -j ACCEPT
+
+iptables -I FORWARD 1 -o $WAN_IF -i $LAN_IF -s $VM_IP -p tcp -m multiport --sports 80,443,9500:9700 -j ACCEPT
+iptables -I FORWARD 1 -o $WAN_IF -i $LAN_IF -s $VM_IP -p udp -j ACCEPT
+
+```
+
+**Test if the settings come into effect:**
+
+Use another device and try visiting links below with a browser (Replace Your IP with the actual IP of your PCDN Worker client after successful dial-up):
+
++ `http://Your IP:40001`
++ `https://Your IP:9090`
+
+**Restore `iptables.rules`:**
+
+In case something is wrong, you can restore the `iptables.rules`. (Skip this process if you have successfully set up the `iptable.rules`)
+
+```
+ iptables -F
+ iptables -t nat -F
+ iptables -t mangle -F
+ iptables -X
+ iptables -t nat -X
+ iptables -t mangle -X
+ 
+ iptables-restore < ~/iptables.rules
+```
 
 #### 2.5.3 Install PCDN Worker
 
