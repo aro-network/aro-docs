@@ -10,11 +10,15 @@ import Link from '@docusaurus/Link';
 
 ## Part 1: ARO Client Deb Package Installation
 
-### 1. Installation Preparation
+### 1. Installation Preparation & Network Optimization
 
-- Install using the root user.
-- `Debian 11` or higher version of the Debian operating system.
-- A physical machine with `Debian` installed, not a virtual machine.
+- **A physical machine with `Debian` installed, not a virtual machine.**
+	- `Debian 11` or higher version of the Debian operating system. 
+	- Install using the root user.
+	- If you are not ready with `Debian` operating system, please refer to  <Link to="/node-operator-guide/aro-client/aro-client-debian">**Operating System Tutorial**</Link>
+- **Establish a network connection structure that helps improve node performance for your ARO Client.**
+	- This is a very important step before you start setting up an ARO Client node. An "undesirable" network connection setup may **significantly compromise your node's performance** and count against your mining rewards. 
+	- Refer to <Link to="/node-operator-guide/improve-performance/network-optimization">**Network Optimization Tutorial**</Link> for suggestions and best practices. 
 
 ### 2. Install the Deb Package
 
