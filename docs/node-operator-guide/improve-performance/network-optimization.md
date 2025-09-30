@@ -30,9 +30,9 @@ A simple principle is: **minimize the number of NAT layers between the device an
 2. The device behind a single NAT device (e.g., an optical network terminal / ONT) is suboptimal;
 3. Other scenarios, involving two or more NAT layers, are less ideal, as node performance will be significantly compromised or edge services may completely fail to operate.
 
-## Network Optimization Exercises
+## Network Optimization - Best Practices
 
-### Two Suggested Modes
+### Two Suggested Practices
 
 #### Mode 1 (optimal)
 ![mode 1](/img/node-operator-guide/optimize-mode1.png)
