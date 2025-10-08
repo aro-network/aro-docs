@@ -7,8 +7,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 # FAQ & Troubleshooting
-- **My Dashboard->Node Detail page shows error message: "Node key lost, press 'Restore' button to resume."**  
-  The issue stems from an accidentally omitted key on your node. Locate the 'Restore' button in the upper-right corner of the Node Detail page to reinstate the key. The ARO Pod will return to operational status shortly.
 
 - **My Dashboard->Node Detail page shows error message: "This Agent version is not supported." or "Outdated Agent version detected."**   
   The issue arises from an outdated version of the Agent software in your ARO Client. Ensure your node is connected to the internet and allow time for automatic updates. If the problem continue to exist, ask official channels for help. 
