@@ -4,8 +4,17 @@ title: "FAQ & Troubleshooting"
 sidebar_label: "FAQ & Troubleshooting"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 # FAQ & Troubleshooting
+- **My Dashboard->Node Detail page shows error message: "Node key lost, press 'Restore' button to resume."**  
+  The issue stems from an accidentally omitted key on your node. Locate the 'Restore' button in the upper-right corner of the Node Detail page to reinstate the key. The ARO Pod will return to operational status shortly.
+
+- **My Dashboard->Node Detail page shows error message: "This Agent version is not supported." or "Outdated Agent version detected."**   
+  The issue arises from an outdated version of the Agent software in your ARO Pod. Ensure your ARO Pod is connected to the internet and allow time for automatic updates. Restarting the ARO Pod may resolve the issue in some cases.
+
+- **My Dashboard->Node Detail page shows error message: "Restricted Region Detected!"**  
+  This is because we have detected that your node is operating in a restricted region, according to certain legal restrictions. This may result in the cancellation of your rewards. For more details on restricted regions, please refer to our <Link to="/appendix/terms-of-use">Terms of Use</Link>.
 
 - **What network ports should be open?**  
   To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
