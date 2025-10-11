@@ -287,3 +287,74 @@ The following steps demonstrate RAID 0 configuration on a Dell server. The proce
    > **Note**: For RAID 0, select a stripe size closest to the average file size to be stored on the RAID volume. If unknown, use the default stripe size of 128 KB.
 
    ![RAID Volume Created](https://supportkb.dell.com/img/ka0Do000000lvnEIAQ/ka0Do000000lvnEIAQ_zh_TW_10.jpeg)
+   
+ 
+## 5. Recommended Settings on Debian System 
+ 
+### 5.1 Auto-sleep, Auto-start and Power Mode Settings
+ 
+We strongly recommend disabling auto-sleep, setting `Power Mode` to `Performance`, and enabling the auto-start service on your Debian system. This ensures the ARO Client runs stably and operates for an extended period without interruptions from system sleep or suboptimal power settings.
+
+
+#### 5.1.1 For Debian Command Line Interface
+
+**Disable Auto-sleep:**
+
+```
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
+
+**Set Power Mode to 'Performance':**
+
+```
+sudo apt update
+sudo apt install linux-cpupower
+sudo cpupower frequency-set -g performance
+```
+
+**Configure Auto-start:**
+
+Create a file at `/etc/systemd/system/cpufreq-performance.service` with the following texts:
+
+```
+[Unit]
+Description=Set CPU governor to performance
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cpupower frequency-set -g performance
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+Execute the following commands after the file has been successfully created:
+
+```
+systemctl daemon-reload
+systemctl enable cpufreq-performance.service
+systemctl start cpufreq-performance.service
+```
+ 
+#### 5.1.2 For Debian Graphical User Interface
+
+If you are using a Graphical User Interface (GUI), e.g. GNOME, KDE, XFCE., for your Debian system, you can directly configure on the GUI:
+
+Step 1: 
+
+- Click Activities (top-left in GNOME) or your menu.
+- Go to Power SettingsFind and click `Power` in Settings.
+
+Step 2: 
+
+- Set `Power Mode` to `Performance`. Normally you just need to select `Performance` option from the three provided options (`Performance`, `Balanced`, `Power Saver`).
+
+Step 3: 
+
+- Find Power Saving Options on the Power setting card.
+- Set `Automatic Suspend` to `Off`.
+
+ 
