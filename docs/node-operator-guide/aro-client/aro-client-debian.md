@@ -295,8 +295,16 @@ The following steps demonstrate RAID 0 configuration on a Dell server. The proce
  
 We strongly recommend disabling auto-sleep, setting `Power Mode` to `Performance`, and enabling the auto-start service on your Debian system. This ensures the ARO Client runs stably and operates for an extended period without interruptions from system sleep or suboptimal power settings.
 
+You can choose to configure the power settings from either **Graphical User Interface (GUI)** or **Command Line Interface (CLI)** on your Debian system:  
 
-#### 5.1.1 For Debian Command Line Interface
+#### 5.1.1 For Debian Graphical User Interface (GUI)
+
+Find `Power` in Settings. Set `Power Mode` to `Performance`, and Set `Automatic Suspend` to `Off`.
+
+![debian-gui-power](/img/aro-client/debian-gui-power.png)
+![debian-settings-power](/img/aro-client/debian-settings-power.png)
+
+#### 5.1.2 For Debian Command Line Interface (CLI)
 
 **Disable Auto-sleep:**
 
@@ -339,22 +347,6 @@ systemctl enable cpufreq-performance.service
 systemctl start cpufreq-performance.service
 ```
  
-#### 5.1.2 For Debian Graphical User Interface
 
-If you are using a Graphical User Interface (GUI), e.g. GNOME, KDE, XFCE., for your Debian system, you can directly configure on the GUI:
-
-Step 1: 
-
-- Click Activities (top-left in GNOME) or your menu.
-- Go to Power SettingsFind and click `Power` in Settings.
-
-Step 2: 
-
-- Set `Power Mode` to `Performance`. Normally you just need to select `Performance` option from the three provided options (`Performance`, `Balanced`, `Power Saver`).
-
-Step 3: 
-
-- Find Power Saving Options on the Power setting card.
-- Set `Automatic Suspend` to `Off`.
 
  

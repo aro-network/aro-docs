@@ -16,6 +16,9 @@ import Link from '@docusaurus/Link';
   
 - **My Dashboard->Node Detail page shows error message: "PCDN Client program not found."**  
   You need to install a PCDN Worker client to run PCDN services on your ARO Client. See <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker">PCDN Worker tutorials</Link> for more information.
+  
+- **My ARO Client goes offline when the Debian system turns to auto sleep.**  
+  This could happen if you have not appropriately configure the power settings on your Debian system. Refer to the <Link to="/node-operator-guide/aro-client/aro-client-debian/#5-recommended-settings-on-debian-system">recommended Debian settings</Link> for tutorials. 
 
 - **What network ports should be open?**  
   To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
