@@ -30,11 +30,15 @@ Here is a simple guide to quickly locate the best node type for you:
 - Optimized for high uptime and rewards
 - For residential bandwidth / < 100 Mbps upstream bandwidth
 
+> Quick Start - Get your ARO Pod and see tutorials <Link to="/node-operator-guide/aro-pod/get-aro-pod">**here**</Link>.
+
 **ARO Lite**
 
 - Lightweight browser extension
 - Join with minimal cost and effort
 - Very limited impact on your internet experiences
+
+> Quick Start - Get your ARO Lite and see tutorials <Link to="/node-operator-guide/aro-lite/get-aro-lite">**here**</Link>.
 
 **ARO Client**
 
@@ -42,6 +46,8 @@ Here is a simple guide to quickly locate the best node type for you:
 
 - Runs on `Debian` with your machines/servers (takes some efforts to install and run)
 - Unlock higher rewards with > 100 Mbps upstream bandwidth
+
+> Quick Start - Get your ARO Lite and see tutorials <Link to="/node-operator-guide/aro-client/aro-client-introduction">**here**</Link>.
 
 **ARO Link (Coming Soon)**
 
