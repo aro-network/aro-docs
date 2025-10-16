@@ -20,6 +20,9 @@ import Link from '@docusaurus/Link';
 - **My ARO Client goes offline when the Debian system turns to auto sleep.**  
   This could happen if you have not appropriately configure the power settings on your Debian system. Refer to the <Link to="/node-operator-guide/aro-client/aro-client-debian/#5-recommended-settings-on-debian-system">recommended Debian settings</Link> for tutorials. 
 
+- **My Dashboard->Node Detail page shows error message: "Agent internal error".**  
+  There is an internal error in the node agent. Please provide your node's Serial Number and consult the technical support team from community channels (e.g. Official Discord).
+
 - **What network ports should be open?**  
   To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
 

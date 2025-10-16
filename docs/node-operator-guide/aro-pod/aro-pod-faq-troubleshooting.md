@@ -15,6 +15,9 @@ import Link from '@docusaurus/Link';
 
 - **My Dashboard->Node Detail page shows error message: "Restricted Region Detected!"**  
   This is because we have detected that your node is operating in a restricted region, according to certain legal restrictions. This may result in the cancellation of your rewards. For more details on restricted regions, please refer to our <Link to="/appendix/terms-of-use">Terms of Use</Link>.
+  
+- **My Dashboard->Node Detail page shows error message: "Agent internal error".**  
+  There is an internal error in the node agent. Please provide your node's Serial Number and consult the technical support team from community channels (e.g. Official Discord).
 
 - **What network ports should be open?**  
   To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
