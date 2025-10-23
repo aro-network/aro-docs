@@ -212,7 +212,7 @@ Before start, make sure you have:
 
 Open the virtual machine management interface: `https://{your ARO Client's LAN IP}:9090` and log in with username `client` and password `123456`.
 
-[image-20251016100329108](/img/aro-client/image-20251016100329108.png)
+![image-20251016100329108](/img/aro-client/image-20251016100329108.png)
 
 Enable Admin Mode.
 
