@@ -28,7 +28,7 @@ The ARO Network is a decentralized Edge Cloud, and the final goal of the Testnet
 
 The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance. 
 
-> See <Link to="/user-guides/dashboard">**this guide**</Link> for general principles and detail rules on how Jade rewards are quantified for ARO nodes. 
+> See <Link to="/node-operator-guide/improve-performance/node-quantification">**this guide**</Link> for general principles and detail rules on how Jade rewards are quantified for ARO nodes. 
 
 The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which emits `90000000` Jades daily. Meanwhile, all `Checker Nodes` (`ARO Lite`) share a separate rewards pool, representing `10000000` Jades daily emission.
 
