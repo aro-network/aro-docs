@@ -193,7 +193,7 @@ Once the installation is complete, shut down the `PCDN Worker` client and eject 
 
 At this point, the PCDN Client installation is complete.
 
-## 4. Appendix - Dialing on the PCDN Worker Client
+## 4. Appendix - Dialing Configurations on the PCDN Worker Client
 
 ### 4.1 Preparation
 
@@ -293,7 +293,7 @@ If there are multiple dialing accounts, you can add multiple accounts, and the n
 
 - Account/Password, VLAN Port, Network Card Name are **required**, Multi-dial times, Dialing MAC address are **optional**;
 
-- If there is no VLAN port, fill `0` for VLAN port; The VLAN here refer to the VLAN to which the switch port planning belongs, not the VLAN of the corresponding ONT device**</span>;
+- If there is no VLAN port, fill `0` for VLAN port; The VLAN here refer to the VLAN to which the switch port planning belongs, not the VLAN of the corresponding ONT device;
 
 - Multi-dial times can only be filled with numbers (default is `1`), If the region supports single-line multi-dial, fill in the corresponding multi-dial times, such as `3`;
 
