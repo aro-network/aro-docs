@@ -82,7 +82,7 @@ module.exports = {
           collapsible: true,
           collapsed: true,
           items: [
-            'node-operator-guide/improve-performance/node-quantification'
+            'node-operator-guide/improve-performance/node-quantification',
             'node-operator-guide/improve-performance/network-optimization',
           ],
         },
