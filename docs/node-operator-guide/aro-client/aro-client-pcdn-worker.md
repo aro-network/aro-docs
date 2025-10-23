@@ -143,8 +143,6 @@ Set the vCPUs to 80% of the available CPU cores.
 
 ### 3.2 Configure Network Interface
 
-#### 3.2.1 Choose Your Network Interface Type
-
 Click on `edit` button for the `Network interfaces` settings:  
 ![image-20250917193042591](/img/aro-client/image-20250917193042591.png)
 ![image-20250917193141774](/img/aro-client/image-20250917193141774.png)
