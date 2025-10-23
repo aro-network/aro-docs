@@ -153,7 +153,7 @@ Click on `edit` button for the `Network interfaces` settings:
 
 **Step 3.** Save and return
 
-> Under `Bridge to LAN` type, you can either PPPoE dial-up on the ONT device, or PPPoE dial-up on the VM.
+> Under `Bridge to LAN` type, you can either PPPoE dial-up on the ONT device, or PPPoE dial-up on the VM side (i.e. the PCDN Worker client). Please refer to the Part #4 on this page for the tutorial of PPPoE dialing on the VM side. 
 
 ### 3.3 Complete Image Installation
 
@@ -193,3 +193,118 @@ Once the installation is complete, shut down the `PCDN Worker` client and eject 
 
 At this point, the PCDN Client installation is complete.
 
+## 4. Appendix - Dialing on the PCDN Worker Client
+
+### 4.1 Preparation
+
+This tutorial is for PPPoE dialing on the PCDN Worker Client. 
+
+In practice, you can choose to do PPPoE dialing either on the ONT device or on the PCDN Worker Client (more recommended). 
+
+> Note: PPPoE Dialing on the physical machine (the host machine) is **NOT** supported. 
+
+Before start, make sure you have:  
+
+- installed **ARO Client** and **PCDN Worker client**. 
+- 2 physical network cards running on the host machine. 
+
+### 4.2 Network Card Configurations
+
+Open the virtual machine management interface: `https://{your ARO Client's LAN IP}:9090` and log in with username `client` and password `123456`.
+
+[image-20251016100329108](/img/aro-client/image-20251016100329108.png)
+
+Enable Admin Mode.
+
+![image-20251016100425859](/img/aro-client/image-20251016100425859.png)
+
+![image-20251016100456321](/img/aro-client/image-20251016100456321.png)
+
+Open Network --> Add bridge, add two Bridge network cards.
+
+> `bridge0` - Represents the traffic network card, used for dialing, associated with the host's 10G traffic network card (assuming `enp8s0`)
+
+![image-20251020100340373](/img/aro-client/image-20251020100340373.png)
+
+![image-20251020132824351](/img/aro-client/image-20251020132824351.png)
+
+> `bridge1` - Represents the management network card, used to connect to the internal network card for remote management, associated with the host's management network card (assuming enp9s0)
+
+![image-20251020132857405](/img/aro-client/image-20251020132857405.png)
+
+View Network Cards:
+
+![image-20251020112838254](/img/aro-client/image-20251020112838254.png)
+
+Shut down the virtual machine aro-pcdn-client-1, set the virtual machine network cards:
+
+![image-20251020100855208](/img/aro-client/image-20251020100855208.png)
+
+![image-20251020120938667](/img/aro-client/image-20251020120938667.png)
+
+![image-20251020121113756](/img/aro-client/image-20251020121113756.png)
+
+`bridge0` network card settings (traffic network card):
+
+![image-20251020101142277](/img/aro-client/image-20251020101142277.png)
+
+`bridge1` network card settings (management network card):
+
+![image-20251020113043746](/img/aro-client/image-20251020113043746.png)
+
+After settings are complete, view network cards:
+
+![image-20251020113156405](/img/aro-client/image-20251020113156405.png)
+
+After successful setup, start `aro-pcdn-client`, activate Port `8080` of `aro-pcdn-client-1`:
+
+![image-20251016100832510](/img/aro-client/image-20251016100832510.png)
+
+![image-20251016101034315](/img/aro-client/image-20251016101034315.png)
+
+### 4.3 Dialing Configurations
+
+View the **IP address and network card name** of `aro-pcdn-client-1` (used in later dialing settings)
+
+![image-20251016101444781](/img/aro-client/image-20251016101444781.png)
+
+![image-20251020113308281](/img/aro-client/image-20251020113308281.png)
+
+Here, taking the above figure as an example, the network card names and IP addresses are as follows:
+
+| Network Card Name | IP          | Description                |
+| ----------------- | ----------- | -------------------------- |
+| eth0              | 192.168.5.6 | Traffic network card, dialing network card |
+| eth1              | 192.168.5.9 | Management network card    |
+
+Management network card IP: 192.168.5.9, access http://192.168.5.9:8080 in the browser to open the `aro-pcdn-client-1` management interface:
+
+![image-20251016102850890](/img/aro-client/image-20251016102850890.png)
+
+> The PCDN Worker is provided by third-party edge service and the interface may not support English. Please follow strictly this tutorial to fill out the required fields.  
+
+Enter the network card name (The network card name corresponds to the traffic network card eth0 set in bridge0 in the virtual machine), dialing account and password. Here, take testuser and testpass as examples, replace with actual dialing account and password. 
+
+If there are multiple dialing accounts, you can add multiple accounts, and the network card names corresponding to `bridge0`.
+
+![image-20251016104506285](/img/aro-client/image-20251016104506285.png)
+
+**Special Notes**:
+
+- Account/Password, VLAN Port, Network Card Name are **required**, Multi-dial times, Dialing MAC address are **optional**;
+
+- If there is no VLAN port, fill `0` for VLAN port; The VLAN here refer to the VLAN to which the switch port planning belongs, not the VLAN of the corresponding ONT device**</span>;
+
+- Multi-dial times can only be filled with numbers (default is `1`), If the region supports single-line multi-dial, fill in the corresponding multi-dial times, such as `3`;
+
+- It is recommended to limit the lines per device within `60` (maximum not exceeding `100`). Too many lines may lead to load or line failure issues, please allocate reasonably;
+
+- Leave the dialing MAC address blank, fill it only if required by specific dialing environment, format being: `00:11:22:33:44:55`.
+
+After filling all the required fields, view network configuration:
+
+![image-20251020104849910](/img/aro-client/image-20251020104849910.png)
+
+View network status, if the status is showing “Connected”, the dialing is successful.
+
+![image-20251020103232347](/img/aro-client/image-20251020103232347.png)
