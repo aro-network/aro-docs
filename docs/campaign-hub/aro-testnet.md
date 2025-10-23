@@ -26,7 +26,9 @@ The ARO Testnet introduces two parallel incentive systems—the **Jade System** 
 
 The ARO Network is a decentralized Edge Cloud, and the final goal of the Testnet is to onboard as many edge resources (such as unused internet bandwidth) as possible to validate the business model. During the Testnet, `Jade` serves as the primary quantifiable reward for running ARO Nodes of any type and contributing edge resources.
 
-The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance.
+The ARO Network measures the internet bandwidth and data traffic of active nodes, awarding `Jade` points based on each node’s quantifiable workload and network performance. 
+
+> See <Link to="/user-guides/dashboard">**this guide**</Link> for general principles and detail rules on how Jade rewards are quantified for ARO nodes. 
 
 The Testnet is a true "Mining Competition" for earning Jade rewards. All `Edge Nodes` (`ARO Pod`, `ARO Client`, `ARO Link`) compete for a major Jade rewards pool, which emits `90000000` Jades daily. Meanwhile, all `Checker Nodes` (`ARO Lite`) share a separate rewards pool, representing `10000000` Jades daily emission.
 
@@ -58,38 +60,6 @@ For users who joined the ARO Network during the Previewnet phase: your user acco
 Jades earned in the Previewnet will be migrated to the Testnet, with an amplification factor applied as a special bonus for early adopters. All Jades emitted in the Previewnet will be migrate to the Testnet, including `Jade in Lock`.
 
 For `Jade in Lock` carried over from the Previewnet: Unlock these by running any type of ARO Node in the Testnet for approximately 90 days. For example, if you earned `Jade in Lock` by ordering ARO Pods in the Previewnet, running an ARO Pod for about 90 days will unlock all those Jades. When the Referees unlock their `Jade in Lock`, the corresponding Referral Bonus (`15%` for direct referrals and `2%` for 2-tier referrals) will be released to the Referrer. 
-
-## How Nodes Are Quantified for Mining Rewards
-
-### For Edge Nodes (ARO Pod, ARO Link, ARO Client):
-
-**The Principle:** Edge Nodes are evaluated primarily by the traffic allocated to them, reflecting their edge resources contribution to Edge Services on ARO Network.
-
-**Traffic Scheduling Mechanism:** Edge Services are in strong favor of Edge Nodes that display **substantial bandwidth** (for strong content delivery capability), **favorable NAT configurations** (for high-quality internet access), and **consistent performance** (for stable & reliable service). These factors determine the traffic schedules by Edge Service Schedulers, directly affecting node rewards.
-
-**Goal of "Sprint 1" (the first stage of Testnet):** We focus on recruiting edge resources globally (for real-world edge service readiness). We prioritize **Bandwidth**, **NAT types**, and **Performance Consistency** as key metrics in this stage for traffic scheduling and reward determination.
-
-`traffic_scheduling_rate` = `max_bandwidth` * `NAT_type_factor` * `consistency_factor` * `edge_service_factor`
-
-- `traffic_scheduling_rate`: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.
-- `max_bandwidth`: The maximum of bandwidth available provided by the Edge Node, based on the time-averaged measurements during a certain period of time.
-- `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor. 
-	- Factor range: `1~2`. 
-- `consistency_factor`: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.
-- `edge_service_factor`: A factor determined by the actual business demand from Edge Services on your Edge Node. This factor may vary from regions to regions. This factor may change dynamically based on the real-world demand change. Generally, if you are running Edge Nodes in the region that has higher business demand for Edge Services, you enjoy a higher factor accordingly.   
-	- For the Testnet Sprint 1 (as we focus on recruiting edge resources for real-world business readiness), the `edge_service_factor` is set to `0.1`.
-	- In the future, real-world edge services apply higher `edge_service_factor`.
-
-
-> For more details on Edge Node performance improvement, please refer to  <Link to="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</Link>.
-
-
-### For ARO Lites:
-
-ARO Lites operate distinctly from Edge Nodes and do not compete directly with Edge Nodes. Their rewards are based on factors such as `uptime`, network stability (measured by metrics like `latency` and `packet loss rate`), and exclusivity of their `IP address` resources. 
-
-In the future, ARO Lites are expected to take on expanded roles beyond Checker Nodes, complementing Edge Nodes and uniquely contributing to the maintenance and growth of the ARO Network’s edge infrastructure.
-
 
 
 ## Things You Can Do in the Testnet
