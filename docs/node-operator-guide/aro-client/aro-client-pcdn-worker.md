@@ -150,7 +150,7 @@ Fill in the virtual machine information with the following key details:
 - **Volume**: Select the **System Disk Volume** created in the previous step within the pool.
 - **Memory**: Set to 80% of the available memory capacity.
 
-![image-20250917195828403](/img/aro-client/image-20250917195828403.png)
+![image-20251024140222737](/img/aro-client/image-20251024140222737.png)
 
 After filling in the details, select **Create and edit** to enter the detailed configuration page.
 
