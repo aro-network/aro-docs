@@ -11,7 +11,7 @@ import Link from '@docusaurus/Link';
 ## About PCDN Worker 
 
 
-A **Peer-to-Peer Content Delivery Network** (P2P CDN or PCDN) is a decentralized content delivery system that uses the collective bandwidth and storage of user devices to distribute content, unlike traditional CDNs that rely on centralized servers. 
+A **Peer-to-Peer Content Delivery Network** (P2P CDN or PCDN) is a decentralized content delivery system that uses the collective bandwidth and storage of user devices to distribute content, unlike traditional CDNs that rely on centralized servers.  
 
 By enabling peers to act as both clients and servers, PCDNs distribute the content delivery load across a network of users, which can improve efficiency and scalability, especially for bandwidth-intensive applications like live streaming and software updates. 
 
