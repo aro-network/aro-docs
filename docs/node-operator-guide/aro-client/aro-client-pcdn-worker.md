@@ -76,6 +76,8 @@ After adding, verify the bridge configuration.
 
 ### 2.3 Configure Storage Pool
 
+#### 2.3.1 Create a Storage Pool
+
 ![image-20250917180355060](/img/aro-client/image-20250917180355060.png)
 
 ![image-20250917180448264](/img/aro-client/image-20250917180448264.png)
@@ -92,13 +94,32 @@ Select **aro-pcdn-pools** -> **Storage volumes**, then click **Create volume**.
 
 ![image-20250917183755248](/img/aro-client/image-20250917183755248.png)
 
-For multi-disk systems, set the volume size to 80% of the `/data` directory capacity. For single-disk systems, set it to (disk capacity - 100GB) * 80%.
+#### 2.3.2 Create System Disk Volume 
 
-![image-20250917182540163](/img/aro-client/image-20250917182540163.png)
+For any bandwidth level, we recommend to allocate more than `200 GB` SSD for **System Disk**.
 
-Verify the created volume.
+![image-20251024134036349](/img/aro-client/image-20251024134036349.png)
 
-![image-20250917184100355](/img/aro-client/image-20250917184100355.png)
+#### 2.3.3 Create Data Disk Volume
+
+Please refer to the table below for recommended **Data Disk** allocation. 
+
+| Bandwidth | CPU threads | RAM      | Data Disk    | Network Card |
+| --------- | ----------- | -------- | ------------ | ------------ |
+| 100Mbps   | ≥ 4         | ≥ 4 GB   | ≥ 200 GB SSD | 100Mbps      |
+| 500Mbps   | ≥ 8         | ≥ 12 GB  | ≥ 500 GB SSD | 1 Gbps       |
+| 1Gbps     | ≥ 16        | ≥ 16 GB  | ≥ 1 TB SSD   | 10 Gbps      |
+| 5Gbps     | ≥ 48        | ≥ 64 GB  | ≥ 5 TB SSD   | 10 Gbps      |
+| 10Gbps    | ≥ 96        | ≥ 128 GB | ≥ 10 TB SSD  | 10 Gbps      |
+| 20Gbps    | ≥ 192       | ≥ 256 GB | ≥ 20 TB SSD  | 10 Gbps * 2  |
+
+![image-20251024135437077](/img/aro-client/image-20251024135437077.png)
+
+#### 2.3.4 View The Created Volumes
+
+You can view the Volumes in the Storage Pool to make sure they are successfully created. 
+
+![image-20251024135611670](/img/aro-client/image-20251024135611670.png)
 
 ### 2.4 Download the PCDN Worker Software Image
 
@@ -125,8 +146,8 @@ Fill in the virtual machine information with the following key details:
 - **Name**: Must be `aro-pcdn-client-1`
 - **Installation type**: Local Install media
 - **Installation source**: `/var/lib/libvirt/images/aro-pcdn-client-latest.iso`.
-- **Storage**: Select the pool created in the previous step.
-- **Volume**: Select the volume created in the previous step within the pool.
+- **Storage**: Select the **Storage Pool** created in the previous step.
+- **Volume**: Select the **System Disk Volume** created in the previous step within the pool.
 - **Memory**: Set to 80% of the available memory capacity.
 
 ![image-20250917195828403](/img/aro-client/image-20250917195828403.png)
@@ -155,7 +176,21 @@ Click on `edit` button for the `Network interfaces` settings:
 
 > Under `Bridge to LAN` type, you can either PPPoE dial-up on the ONT device, or PPPoE dial-up on the VM side (i.e. the PCDN Worker client). Please refer to the Part #4 on this page for the tutorial of PPPoE dialing on the VM side. 
 
-### 3.3 Complete Image Installation
+### 3.3 Configure Data Disk
+
+Configure **Data Disks**:
+
+![image-20251024140546617](/img/aro-client/image-20251024140546617.png)
+
+Set **Pool** and **Volume** that you have created:
+
+![image-20251024140711092](/img/aro-client/image-20251024140711092.png)
+
+View the disks configuration:
+
+![image-20251024140923949](/img/aro-client/image-20251024140923949.png)
+
+### 3.4 Complete Image Installation
 
 ![image-20250917193337924](/img/aro-client/image-20250917193337924.png)
 
@@ -165,15 +200,16 @@ The system enters the installation phase.
 
 ![image-20250917195431015](/img/aro-client/image-20250917195431015.png)
 
-Select the system disk.
-> In the screenshot, the console prompts the user to select the system disk. Button on the left side: **Comfirm**. Buttom on the right side: **Cancel**.  
-![image-20250917200118418](/img/aro-client/image-20250917200118418.png)
+Select the System Disk (the smaller one).
+![image-20251024141106496](/img/aro-client/image-20251024141106496.png)
 
 After installation completes, enter the console and press Enter.
 
 ![image-20250917200710931](/img/aro-client/image-20250917200710931.png)
 
-![image-20250917200842449](/img/aro-client/image-20250917200842449.png)
+Make sure the you have one **Data Disk**.
+
+![image-20251024141542903](/img/aro-client/image-20251024141542903.png)
 
 Once the installation is complete, shut down the `PCDN Worker` client and eject the CDROM.
 
