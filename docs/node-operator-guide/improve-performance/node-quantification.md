@@ -50,7 +50,7 @@ All these factors determine how ARO Network quantifies an Edge Node’s workload
 - `max_bandwidth`: The maximum bandwidth available provided by the Edge Node, based on time-averaged measurements during a certain period of time.
 	- Each Edge Node will be assigned a `cap`, expressed as a bandwidth value. The cap places an upper limit on the maximum traffic that an Edge Node can process, based on the computational capability (which is essential for processing and uploading traffic) of the Edge Node. 
 	- A special testing mechanism is applied to Edge Nodes for continuous  detecting and validating of Edge Node's computational capability. 
-	- By default, each `ARO Pod` will be assigned a `100 Mbps` cap, and each `ARO Client` a `500 Mbps` cap, as a starting point. 
+	- By default, each `ARO Pod` will be assigned a `100 Mbps` cap, and each `ARO Client` a `1 Gbps` cap, as a starting point. 
 	- If multiple Edge Node sharing the same network environment is detected, the Scheduler will allocate traffic to these nodes based on their respective caps. 
 - `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
   - Factor range: from `1.0` to `2.5`.
