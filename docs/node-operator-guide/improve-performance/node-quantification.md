@@ -48,10 +48,6 @@ All these factors determine how ARO Network quantifies an Edge Node’s workload
 
 - `traffic_scheduling_rate`: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.
 - `max_bandwidth`: The maximum bandwidth available provided by the Edge Node, based on time-averaged measurements during a certain period of time.
-	- Each Edge Node will be assigned a `cap`, expressed as a bandwidth value. The cap places an upper limit on the maximum traffic that an Edge Node can process, based on the computational capability (which is essential for processing and uploading traffic) of the Edge Node. 
-	- A special testing mechanism is applied to Edge Nodes for continuous  detecting and validating of Edge Node's computational capability. 
-	- By default, each `ARO Pod` will be assigned a `100 Mbps` cap, and each `ARO Client` a `1 Gbps` cap, as a starting point. 
-	- If multiple Edge Node sharing the same network environment is detected, the Scheduler will allocate traffic to these nodes based on their respective caps. 
 - `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
   - Factor range: from `1.0` to `2.5`.
   - NAT type detection and detail rules are coming soon.
@@ -63,6 +59,15 @@ All these factors determine how ARO Network quantifies an Edge Node’s workload
   - For example, if you have 1 Gbps of bandwidth, your node will process and upload traffic allocated by the Scheduler at a rate of approximately 100Mbps. At this point, you do not need to reduce the node’s bandwidth resources—doing so would also decrease the traffic allocated to the node, thereby reducing your rewards.
  
 > For more details on NAT types and Edge Node performance improvement, please refer to <Link to="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</Link>.
+
+**Cap Mechanism:**
+
+A special mechanism `cap` is applied to Edge Nodes in specific scenarios. Explanations:  
+
+- `Cap` refers to an upper limit, expressed as a bandwidth value, representing the maximum traffic an Edge Node can process based on its hardware capabilities.
+- Under typical network conditions, cap remains inactive and does not affect Edge Node operations.
+- In certain cases, cap may be triggered if the system detects that you are running an excessive number of Edge Nodes relative to your network environment. This assessment considers factors such as bandwidth, IP address, NAT quality, and other parameters. Common scenarios include running multiple ARO Client nodes under the same IP address, operating with severely limited bandwidth, running nodes without a PCDN Worker installed, or using a substandard NAT configuration.
+- When a cap is applied, the Scheduler distributes network traffic to the affected Edge Nodes in a way that effectively "dilutes" the traffic.
 
 
 ## Quantification Rules For ARO Lite Nodes
