@@ -34,6 +34,12 @@ import Link from '@docusaurus/Link';
   
 - **My Dashboard->Node Detail page shows error message: "PCDN Worker is not activated. "**  
   This is an `Err_PCDNClientNotActivated` error which indicates that your PCDN Worker client is not activated for serving the edge cloud. If your ARO Client has been successfully activated (which means you can find your ARO Client node on the ARO Dashboard) but this error still exists, you can try reinstalling the PCDN Worker, or ask for technical support from official channels. 
+  
+- **My Dashboard->Node Detail page shows error message: "Disk configuration is invalid."**  
+  Something is wrong with your disk configuration on the PCDN Worker-- normally caused by invalid setting of the System Disk and the Data Disks. You are required to separate the System Disk and the Data Disks when you are setting up the PCDN Worker. If you do not meet the requirements, please follow <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker">PCDN Installation Tutorial</Link> and update the disk configuration.
+  
+- **My Dashboard->Node Detail page shows error message: "Insufficient disk space for PCDN Worker."**  
+  This error is caused by not allocating enough disk space to the PCDN Worker. If you are running a node with more than 1 Gbps bandwidth, you need to configurate at least 200 GB for the System Disk, and 1 TB for the Data Disk(s). If you do not meet the requirements, please follow <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker">PCDN Installation Tutorial</Link> and update the disk configuration.
 
 - **What network ports should be open?**  
   To ensure proper connectivity and performance, please configure your firewall to allow the following inbound and outbound ports:
