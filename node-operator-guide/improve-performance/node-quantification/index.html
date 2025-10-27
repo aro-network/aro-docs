@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">Node Quantification | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Node Quantification | ARO Network Docs"><meta data-rh="true" name="description" content="General Introduction"><meta data-rh="true" property="og:description" content="General Introduction"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.5d34b2fc.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.7a0f3b43.js" defer="defer"></script>
 <script src="/assets/js/main.45a2e85d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -40,7 +40,7 @@
 <ul>
 <li>Each Edge Node will be assigned a <code>cap</code>, expressed as a bandwidth value. The cap places an upper limit on the maximum traffic that an Edge Node can process, based on the computational capability (which is essential for processing and uploading traffic) of the Edge Node.</li>
 <li>A special testing mechanism is applied to Edge Nodes for continuous  detecting and validating of Edge Node&#x27;s computational capability.</li>
-<li>By default, each <code>ARO Pod</code> will be assigned a <code>100 Mbps</code> cap, and each <code>ARO Client</code> a <code>500 Mbps</code> cap, as a starting point.</li>
+<li>By default, each <code>ARO Pod</code> will be assigned a <code>100 Mbps</code> cap, and each <code>ARO Client</code> a <code>1 Gbps</code> cap, as a starting point.</li>
 <li>If multiple Edge Node sharing the same network environment is detected, the Scheduler will allocate traffic to these nodes based on their respective caps.</li>
 </ul>
 </li>
