@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">Node Quantification | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Node Quantification | ARO Network Docs"><meta data-rh="true" name="description" content="General Introduction"><meta data-rh="true" property="og:description" content="General Introduction"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.4caf4ab8.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2152c651.js" defer="defer"></script>
 <script src="/assets/js/main.45a2e85d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,14 +36,7 @@
 <p><code>traffic_scheduling_rate</code> = <code>max_bandwidth</code> * <code>NAT_type_factor</code> * <code>consistency_factor</code> * <code>edge_service_factor</code></p>
 <ul>
 <li><code>traffic_scheduling_rate</code>: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.</li>
-<li><code>max_bandwidth</code>: The maximum bandwidth available provided by the Edge Node, based on time-averaged measurements during a certain period of time.<!-- -->
-<ul>
-<li>Each Edge Node will be assigned a <code>cap</code>, expressed as a bandwidth value. The cap places an upper limit on the maximum traffic that an Edge Node can process, based on the computational capability (which is essential for processing and uploading traffic) of the Edge Node.</li>
-<li>A special testing mechanism is applied to Edge Nodes for continuous  detecting and validating of Edge Node&#x27;s computational capability.</li>
-<li>By default, each <code>ARO Pod</code> will be assigned a <code>100 Mbps</code> cap, and each <code>ARO Client</code> a <code>1 Gbps</code> cap, as a starting point.</li>
-<li>If multiple Edge Node sharing the same network environment is detected, the Scheduler will allocate traffic to these nodes based on their respective caps.</li>
-</ul>
-</li>
+<li><code>max_bandwidth</code>: The maximum bandwidth available provided by the Edge Node, based on time-averaged measurements during a certain period of time.</li>
 <li><code>NAT_type_factor</code>: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.<!-- -->
 <ul>
 <li>Factor range: from <code>1.0</code> to <code>2.5</code>.</li>
@@ -63,6 +56,14 @@
 <blockquote>
 <p>For more details on NAT types and Edge Node performance improvement, please refer to <a href="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</a>.</p>
 </blockquote>
+<p><strong>Cap Mechanism:</strong></p>
+<p>A special mechanism <code>cap</code> is applied to Edge Nodes in specific scenarios. Explanations:</p>
+<ul>
+<li><code>Cap</code> refers to an upper limit, expressed as a bandwidth value, representing the maximum traffic an Edge Node can process based on its hardware capabilities.</li>
+<li>Under typical network conditions, cap remains inactive and does not affect Edge Node operations.</li>
+<li>In certain cases, cap may be triggered if the system detects that you are running an excessive number of Edge Nodes relative to your network environment. This assessment considers factors such as bandwidth, IP address, NAT quality, and other parameters. Common scenarios include running multiple ARO Client nodes under the same IP address, operating with severely limited bandwidth, running nodes without a PCDN Worker installed, or using a substandard NAT configuration.</li>
+<li>When a cap is applied, the Scheduler distributes network traffic to the affected Edge Nodes in a way that effectively &quot;dilutes&quot; the traffic.</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="quantification-rules-for-aro-lite-nodes">Quantification Rules For ARO Lite Nodes<a href="#quantification-rules-for-aro-lite-nodes" class="hash-link" aria-label="Direct link to Quantification Rules For ARO Lite Nodes" title="Direct link to Quantification Rules For ARO Lite Nodes">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="whats-special-about-aro-lite">What&#x27;s Special About ARO Lite<a href="#whats-special-about-aro-lite" class="hash-link" aria-label="Direct link to What&#x27;s Special About ARO Lite" title="Direct link to What&#x27;s Special About ARO Lite">​</a></h3>
 <p><code>ARO Lites</code> operate distinctly from Edge Nodes and do not compete directly with Edge Nodes.</p>
