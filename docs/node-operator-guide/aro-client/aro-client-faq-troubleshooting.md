@@ -21,13 +21,16 @@ import Link from '@docusaurus/Link';
   This could happen if you have not appropriately configure the power settings on your Debian system. Refer to the <Link to="/node-operator-guide/aro-client/aro-client-debian/#5-recommended-settings-on-debian-system">recommended Debian settings</Link> for tutorials. 
 
 - **My Dashboard->Node Detail page shows error message: "Agent internal error".**  
-  There is an internal error in the node agent. Please provide your node's Serial Number and consult the technical support team from community channels (e.g. Official Discord).
+  There is an internal error in the node agent. Please provide your node's Serial Number and ask for technical support from community channels (e.g. Official Discord).
+  
+- **My Dashboard->Node Detail page shows error message: "PCDN Worker launch failed."**  
+  Try restart the ARO Client node and check if the error still exists. Ask for technical support if the error still exists.
 
 - **My Dashboard->Node Detail page shows error message: "Management Port is not open."**  
   This is because your PCDN Worker requires Port `8080` (the "management port") to be open while running. Please refer to <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#42-network-card-configurations">PCDN Worker Installation Tutorial -> Part 4.2</Link> for configuring network card on PCDN Worker client and enable Port `8080`.
 
 - **My Dashboard->Node Detail page shows error message: "Invalid CPU config for PCDN Worker."**  
-  This is an `Err_PCDNClientCPUConfigInvalid` error which indicates invalid CPU config (usually because of excessive CPU cores are allocated for your PCDN Worker client in the VM, if your bandwidth is less than 1 Gbps). You can edit the CPU cores allocated to the PCDN Worker client in the <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#31-configure-basic-information">VM basic info configurations -> edit vCPU</Link>. 
+  This is an `Err_PCDNClientCPUConfigInvalid` error which indicates invalid CPU config (usually because of excessive CPU cores are allocated for your PCDN Worker client in the VM, if your bandwidth is less than 1 Gbps). In this case, allocate less than 7 CPU cores for your PCDN Worker. You can edit the CPU cores allocated to the PCDN Worker client in the <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#31-configure-basic-information">VM basic info configurations -> edit vCPU</Link>. After configuration has been done, kindly wait for about 10 minutes and check if the error still exists.  
 
 - **My Dashboard->Node Detail page shows error message: "PCDN Worker is not connected."**  
   This is an `Err_PCDNClientNetworkDisconnected` error which indicates that your PCDN Worker client is not connected (while your ARO Client or your host machine is connected to ARO Network). Usually this is because you have not correctly configured the network connection for your PCDN Worker client. Please strictly follow the <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#32-configure-network-interface">tutorial - network configuration for PCDN Worker</Link> and check if the error still exists.   
