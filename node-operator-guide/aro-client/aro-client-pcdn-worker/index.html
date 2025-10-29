@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">PCDN Worker | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PCDN Worker | ARO Network Docs"><meta data-rh="true" name="description" content="About PCDN Worker"><meta data-rh="true" property="og:description" content="About PCDN Worker"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.d1554094.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e10e91ec.js" defer="defer"></script>
 <script src="/assets/js/main.45a2e85d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -93,7 +93,12 @@
 <p><strong>Step 2.</strong> Select the Bridge that you have set up in the Step #2.2</p>
 <p><strong>Step 3.</strong> Save and return</p>
 <blockquote>
-<p>Under <code>Bridge to LAN</code> type, you can either PPPoE dial-up on the ONT device, or PPPoE dial-up on the VM side (i.e. the PCDN Worker client). Please refer to the Part #4 on this page for the tutorial of PPPoE dialing on the VM side.</p>
+<p>Important Note: make sure you are running your node with the valid PPPoE Dialing method:</p>
+<ul>
+<li><strong>PPPoE Dialing on your ONT (Optical Network Terminal) or Router device, and enable UPnP.</strong> This is the default way. If you don&#x27;t know how to enable UPnP, here is a <a href="/node-operator-guide/improve-performance/network-optimization#tutorial---how-to-set-upnp-on-an-ont--router">tutorial</a></li>
+<li>Do <strong>NOT</strong> dial on your bare-metal machine (the host machine that runs Debian system).</li>
+<li>PPPoE Dial on your PCDN Worker VM environment is an alternative way for &quot;Pro users&quot; that provides improved stability and performance. Contact technical support if you are interested.</li>
+</ul>
 </blockquote>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-configure-data-disk">3.3 Configure Data Disk<a href="#33-configure-data-disk" class="hash-link" aria-label="Direct link to 3.3 Configure Data Disk" title="Direct link to 3.3 Configure Data Disk">​</a></h3>
 <p>Configure <strong>Data Disks</strong>:</p>
