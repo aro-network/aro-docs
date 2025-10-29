@@ -174,7 +174,12 @@ Click on `edit` button for the `Network interfaces` settings:
 
 **Step 3.** Save and return
 
-> Under `Bridge to LAN` type, you can either PPPoE dial-up on the ONT device, or PPPoE dial-up on the VM side (i.e. the PCDN Worker client). Please refer to the Part #4 on this page for the tutorial of PPPoE dialing on the VM side. 
+> Important Note: make sure you are running your node with the valid PPPoE Dialing method: 
+> 
+> - **PPPoE Dialing on your ONT (Optical Network Terminal) or Router device, and enable UPnP.** This is the default way. If you don't know how to enable UPnP, here is a <Link to="/node-operator-guide/improve-performance/network-optimization#tutorial---how-to-set-upnp-on-an-ont--router">tutorial</Link>    
+> - Do **NOT** dial on your bare-metal machine (the host machine that runs Debian system).
+> - PPPoE Dial on your PCDN Worker VM environment is an alternative way for "Pro users" that provides improved stability and performance. Contact technical support if you are interested.
+
 
 ### 3.3 Configure Data Disk
 
