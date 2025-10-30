@@ -33,12 +33,13 @@ import Link from '@docusaurus/Link';
   
   To check if a local `arp` (address resolution protocol) table exist on your host machine:  
   
-  bash```
+  ```
   arp -a
   ```
+  
   There should be a cached table that map IP addresses to MAC addresses and network cards. If `arp` does not exists, try install:
   
-  bash```
+  ```
   sudo apt update
   sudo apt install net-tools
   ``` 
