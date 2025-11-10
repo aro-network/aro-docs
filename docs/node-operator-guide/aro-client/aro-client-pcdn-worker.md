@@ -234,3 +234,14 @@ Once the installation is complete, shut down the `PCDN Worker` client and eject 
 
 At this point, the PCDN Worker client installation is complete.
 
+### 3.5 Enable Port 8080
+
+PCDN Worker requires the Port `8080` (the management port) to be open and exposed while running. 
+
+Go to the console menu page and execute command `8` to enable Port `8080`:
+
+![image-20251016100832510](/img/aro-client/image-20251016100832510.png)
+
+After enabled, a success message should be displayed:
+
+![image-202510161010343150](/img/aro-client/image-20251016101034315.png)
