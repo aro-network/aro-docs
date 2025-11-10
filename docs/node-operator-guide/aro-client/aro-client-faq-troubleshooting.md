@@ -29,22 +29,7 @@ import Link from '@docusaurus/Link';
 ### **My Dashboard->Node Detail page shows error message: "Management Port is not open."**  
   This is because your PCDN Worker requires Port `8080` (the "management port") to be open and exposed while running.  
    
-  Normally this issue is caused by incorrect configurations of the network cards, or adsence of local `arp` table in your host machine.   
-  
-  To check if a local `arp` (address resolution protocol) table exist on your host machine:  
-  
-  ```
-  arp -a
-  ```
-  
-  There should be a cached table that map IP addresses to MAC addresses and network cards. If `arp` does not exists, try install:
-  
-  ```
-  sudo apt update
-  sudo apt install net-tools
-  ``` 
-
-  If network card `eth0` does not exist, please refer to <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#42-network-card-configurations">PCDN Worker Installation Tutorial -> Part 4.2</Link> for configuring network card on PCDN Worker client and enable Port `8080`.
+   To enable Port `8080`, Please refer to <Link to="https://docs.aro.network/node-operator-guide/aro-client/aro-client-pcdn-worker#35-enable-port-8080">PCDN Worker Installation Tutorial -> Part 3.5</Link> and follow instructions.
 
 ### **My Dashboard->Node Detail page shows error message: "Invalid CPU config for PCDN Worker."**  
   This is an `Err_PCDNClientCPUConfigInvalid` error which indicates invalid CPU config (usually because of excessive CPU cores are allocated for your PCDN Worker client in the VM, if your bandwidth is less than 1 Gbps). In this case, allocate less than 7 CPU cores for your PCDN Worker. 
