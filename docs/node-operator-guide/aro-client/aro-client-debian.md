@@ -185,74 +185,110 @@ After rebooting, the system will display the login screen.
 
 ## 4. Multiple Data Disk Configuration
 
-> Note: You can choose either the LVM approach or the Raid approach. 
+> **Important Note: Choose either the LVM approach or the Raid approach. You don't need to complete both approaches. **
 
 ### 4.1 Approach 1 - LVM Configuration
 
-Log in using the created user, switch to the root user in the terminal, and run the following command to view the disk list:
+Log in using the created user, switch to the root user in the terminal, and run the following command to view the data disk list:
 
-![Disk List](/img/aro-client/image-20250926133225601.png)
+> Do make sure you are viewing the data disk, not the system disk. 
 
-As shown above, there may be multiple data disks. This example uses the data disk `/dev/nvme0n1`.
-
-Edit the apt source file `/etc/apt/sources.list` (you can choose other Debian apt sources):
-
-```bash
-#deb cdrom:[Debian GNU/Linux 12.11.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20250517-09:52]/ bookworm contrib main non-free-firmware
-deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+```
+fdisk -l
 ```
 
-After configuring the sources, execute the following commands:
+![image-20251111172821224](/img/aro-client/image-20251111172821224.png)
 
-```bash
-export PATH=$PATH:/sbin:/usr/sbin
-apt update
-apt install lvm2 -y
-mkdir /data
+As shown in this example, you have `/dev/nvme0n1`, `/dev/nvme1n1` and `/dev/nvme2n1`.
+
+If disk partition exists (as shown below) in your data disks, you need to remove the existing partition.
+
+![image-20251111164442633](/img/aro-client/image-20251111164442633.png)
+
+Execute `wipefs` command to remove the partition. If you don't have existing partition, your may directly go to the next step.  
+
+```
+wipefs -a /dev/nvme1n1
 ```
 
-Create a physical volume:
+![image-20251111164603025](/img/aro-client/image-20251111164603025.png)
 
-```bash
-# Create physical volume
-sudo pvcreate /dev/nvme0n1
+In this example we are using three data disks `/dev/nvme0n1`, `/dev/nvme1n1` and `/dev/nvme2n1`. When you are operating on your machine, please follow the actual data disk configurations on your machine. 
+
+**Create physical volume (pv):**
+
+```
+pvcreate /dev/nvme0n1 /dev/nvme1n1 /dev/nvme2n1
+pvs
 ```
 
-![Physical Volume](/img/aro-client/image-20250926135921271.png)
+![image-20251111164803478](/img/aro-client/image-20251111164803478.png)
 
-Create a volume group:
+**Create Volume Group (vg):**
 
-```bash
-vgcreate vg0 /dev/nvme0n1
+```
+vgcreate vg_data /dev/nvme0n1 /dev/nvme1n1 /dev/nvme2n1
+vgs
 ```
 
-![Volume Group](/img/aro-client/image-20250926140015730.png)
+![image-20251111164712538](/img/aro-client/image-20251111164712538.png)
 
-Create a logical volume:
+**Create Logical Volume (lv):**
 
-```bash
-lvcreate -l 100%FREE -n lv_data vg0
+```
+lvcreate -l 100%FREE -n lv_data vg_data
+lvdisplay
 ```
 
-![Logical Volume](/img/aro-client/image-20250926140104695.png)
+![image-20251111170942827](/img/aro-client/image-20251111170942827.png)
 
-Format the logical volume and add it to `/etc/fstab`:
+**Format Logical Volume:**
 
-```bash
-mkfs.ext4 /dev/vg0/lv_data
-UUID=$(blkid -s UUID -o value /dev/vg0/lv_data)
-echo "UUID=$UUID  /data  ext4  defaults  0 2" | sudo tee -a /etc/fstab
+```
+mkfs.ext4 /dev/vg_data/lv_data
+```
+
+![image-20251111164931998](/img/aro-client/image-20251111164931998.png)
+
+**View lv_data UUID and copy UUID:**
+
+```
+blkid
+```
+
+![image-20251111165353896](/img/aro-client/image-20251111165353896.png)
+
+**Edit `/etc/fstab`:**
+
+**Replace** the UUID in the example (`600c4ed8-a42d-4767-a0f9-54e3d596acca`) below with the UUID that you have just copied from the previous step. 
+
+> Please do make sure you have replaced the UUID with the UUID on your disk!
+
+```
+echo "UUID=600c4ed8-a42d-4767-a0f9-54e3d596acca /data ext4 defaults  0       0" >> /etc/fstab
+```
+
+**View `/etc/fstab`:**
+
+Check if you have successfully add the data disk config in `fstab`:
+
+```
+cat /etc/fstab
+```
+
+![image-20251111171641520](/img/aro-client/image-20251111171641520.png)
+
+**Mount the Data Disks:**
+
+```
 systemctl daemon-reload
-mount -a
+mount -a 
+df -hl 
 ```
 
-![Format Logical Volume](/img/aro-client/image-20250926140324707.png)
+![image-20251111165503569](/img/aro-client/image-20251111165503569.png)
 
-![Mount Data Disk](/img/aro-client/image-20250926135747675.png)
-
-As shown above, the data disk is successfully managed with LVM and mounted to the `/data` directory.
+As shown above, we have successfully mounted the data disks `lv_data` under `/data`. Now we have already completed the LVM configurations. 
 
 ### 4.2 Approach 2 - RAID Configuration
 
