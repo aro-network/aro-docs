@@ -185,7 +185,7 @@ After rebooting, the system will display the login screen.
 
 ## 4. Multiple Data Disk Configuration
 
-> **Important Note: Choose either the LVM approach or the Raid approach. You don't need to complete both approaches. **
+> Important Note: Choose either the LVM approach or the Raid approach. You don't need to complete both approaches. 
 
 ### 4.1 Approach 1 - LVM Configuration
 
