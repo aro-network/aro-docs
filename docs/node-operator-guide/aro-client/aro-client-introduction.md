@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
 
 The ARO Network is a permissionless Edge Cloud designed to leverage diverse resources. To support this, ARO provides a **software image** (the **ARO Client**) that can be installed on various devices.
 
-Note that the ARO Client is geared toward **advanced users**, requiring greater technical expertise from both the device and the operator. 
+Note that the ARO Client is geared toward **advanced users**, requiring greater technical expertise from the operator. 
 
 ### Recommended Requirements for Software Clients (ARO Client)
 
@@ -20,7 +20,6 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 - **Static IP & Public IP**
 - NAT Type: `Full Cone NAT` or higher (e.g., `NAT0`, `DMZ NAT1`, `UPnP NAT1`)
-- Do **NOT** install software image in VM
 - CPU Clock Speed: ≥ 2 GHz
 - Disk:
 	- SSD with `NVMe` protocol
@@ -36,9 +35,12 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 | Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |  Network Card |
 |------------|----------|--------------|------------------|------------------|---------------|
+| Entry-level Node with < 1 Gbps bandwitdh: |
 | 100 Mbps   | ≥ 4      | ≥ 4 GB         | ≥ 200 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
-| 500 Mbps   | ≥ 8     | ≥ 12 GB         | ≥ 200 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
-| 1 Gbps     | ≥ 16     | ≥ 16 GB      | ≥ 200 GB SSD     | ≥ 1 TB SSD       |   10 Gbps   |
+| 500 Mbps   | ≥ 6     | ≥ 12 GB         | ≥ 200 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
+| 800 Mbps   | ≥ 8     | ≥ 16 GB         | ≥ 200 GB SSD     | ≥ 800 GB SSD     |   2.5 Gbps    |
+| Pro-level Node with > 1 Gbps bandwitdh: |  
+| 2 Gbps     | ≥ 32     | ≥ 32 GB      | ≥ 200 GB SSD     | ≥ 2 TB SSD       |   10 Gbps   |
 | 5 Gbps     | ≥ 48     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
 | 10 Gbps    | ≥ 96     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
 | 20 Gbps    | ≥ 192     | ≥ 256 GB     | ≥ 200 GB SSD     | ≥ 20 TB SSD      | 10 Gbps * 2   |
