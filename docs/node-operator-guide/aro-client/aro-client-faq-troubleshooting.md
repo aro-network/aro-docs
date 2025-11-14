@@ -23,6 +23,9 @@ import Link from '@docusaurus/Link';
 ### **My Dashboard->Node Detail page shows error message: "Agent internal error".**  
   There is an internal error in the node agent. Please provide your node's Serial Number and ask for technical support from community channels (e.g. Official Discord).
   
+### **My Dashboard->Node Detail page shows error message: "Incorrect PCDN Worker Network Mode".**  
+  This is because your PCDN Worker client is running in incorrect Network Mode. To resolve this problem, please follow <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#22-configure-bridge">PCDN Worker Tutorial - 2.2 Configure Bridge</Link>, and then follow <Link to="/node-operator-guide/aro-client/aro-client-pcdn-worker#32-configure-network-interface">PCDN Worker Tutorial - 3.2 Configure Network Interface</Link> to make sure you have correctly configured your network bridge and set network mode. 
+  
 ### **My Dashboard->Node Detail page shows error message: "PCDN Worker launch failed."**  
   Try restart the ARO Client node and check if the error still exists. Ask for technical support if the error still exists.
 
