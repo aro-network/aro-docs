@@ -104,14 +104,15 @@ For any bandwidth level, we recommend to allocate more than `200 GB` SSD for **S
 
 Please refer to the table below for recommended **Data Disk** allocation. 
 
-| Bandwidth | CPU threads | RAM      | Data Disk    | Network Card |
-| --------- | ----------- | -------- | ------------ | ------------ |
-| 100Mbps   | ≥ 4         | ≥ 4 GB   | ≥ 200 GB SSD | 100Mbps      |
-| 500Mbps   | ≥ 8         | ≥ 12 GB  | ≥ 500 GB SSD | 1 Gbps       |
-| 1Gbps     | ≥ 16        | ≥ 16 GB  | ≥ 1 TB SSD   | 10 Gbps      |
-| 5Gbps     | ≥ 48        | ≥ 64 GB  | ≥ 5 TB SSD   | 10 Gbps      |
-| 10Gbps    | ≥ 96        | ≥ 128 GB | ≥ 10 TB SSD  | 10 Gbps      |
-| 20Gbps    | ≥ 192       | ≥ 256 GB | ≥ 20 TB SSD  | 10 Gbps * 2  |
+| Bandwidth | CPU threads | RAM      | Data Disk    |
+| --------- | ----------- | -------- | ------------ |
+| 100 Mbps   | 4         | 4 GB   | **≥ 200 GB SSD** |
+| 500 Mbps   | 6         | 12 GB  | **≥ 500 GB SSD** |
+| 800 Mbps   | 7         | 16 GB  | **≥ 1 TB SSD**   |
+| 2 Gbps     | 32        | 32 GB  | **≥ 2 TB SSD**   |
+| 5 Gbps     | 48        | 64 GB  | **≥ 5 TB SSD**   |
+| 10 Gbps    | 96        | 128 GB | **≥ 10 TB SSD**  |
+| 20 Gbps    | 192       | 256 GB | **≥ 20 TB SSD**  |
 
 ![image-20251024135437077](/img/aro-client/image-20251024135437077.png)
 
@@ -160,7 +161,20 @@ Enable **Autostart** and edit the **vCPUs**.
 
 ![image-20250917192852631](/img/aro-client/image-20250917192852631.png)
 
-Set the vCPUs to 80% of the available CPU cores.
+Set the vCPUs and RAM according to your bandwidth level. Reference:
+
+| Bandwidth | CPU threads | RAM      | 
+| --------- | ----------- | -------- | 
+| 100 Mbps   | 4         | 4 GB   | 
+| 500 Mbps   | 6         | 12 GB  | 
+| 800 Mbps   | 7         | 16 GB  | 
+| 2 Gbps     | 32        | 32 GB  | 
+| 5 Gbps     | 48        | 64 GB  | 
+| 10 Gbps    | 96        | 128 GB | 
+| 20 Gbps    | 192       | 256 GB |  
+
+
+> Please pay extra attention to the CPU threads (vCPU) allocated to the VM. If you are running a node with < 1 Gbps bandwidth, allocate no more than 7 CPU threads to your VM. If you are running a node with > 1 Gbps bandwidth, allocate at least 32 CPU threads to your VM. This is due to the difference in the scheduling strategy for the entry-level nodes (< 1 Gbps) and professional-level nodes (> 1 Gbps). 
 
 ### 3.2 Configure Network Interface
 
