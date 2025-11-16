@@ -1,45 +1,43 @@
 ---
 id: aro-overview
-title: "ARO: Redefining the Edge"
-sidebar_label: "Redefining the Edge"
+title: "What Is ARO Network"
+sidebar_label: "What Is ARO Network"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# ARO Network: Redefining the Edge
+# ARO Network - A Hyperscale Edge for the AI-First Internet
 
-### Edge Cloud: A Closer Cloud
+### From the Human-First Internet to the AI-First Internet
 
-The concept of Edge Cloud is simple: **bring cloud servers physically closer to users**.
+**Agentic AI** is reshaping the internet. We're on the cusp of an **AI-First Internet**.
 
-In computer science, physical proximity matters. Running a program closer to the request’s origin—at the **network edge**—delivers faster responses for end users. This is the essence of Edge Cloud and where it gets its name.
+In the past, **humans** were the primary users of the internet. Core function of the **Human-First Internet**: delivering data to devices for human consumption. (Picture someone streaming a YouTube video.)
 
-### You Use Edge Cloud Every Day
+In the future, **AI Agents** will dominate as the primary users of the Internet. The new challenge of the **AI-First Internet**: How will data flow and exchange between AI Agents?
 
-Edge Cloud is a critical part of modern digital infrastructure, seamlessly supporting services used by billions daily.
+Human users won't vanish—but AI Agents will overwhelm them in sheer volume, processing power, and data throughput. This will transform everything.
 
-For example, YouTube doesn’t always serve videos directly from centralized data centers. Instead, it caches high-demand content on regional edge servers closer to users, enhancing speed and reliability. **Edge Cloud powers today’s content-rich internet**.
+### Today's Edge Cloud Is Unprepared
 
-### Why Edge Cloud Changes Everything
+**"Edge"** refers to the network's periphery, closest to end-users.
 
-Unlike traditional cloud computing, which relies on large centralized data centers, edge cloud shifts processing to the “edges” of the network — closer to the users, and closer to the action.
+**Edge Cloud** is the backbone of today's internet. Daily, it handles petabytes of data, enabling the vibrant experiences humans now enjoy. No Edge Cloud, no seamless web.
 
-Why this matters:
+Yet, alarmingly, current Edge Cloud is ill-equipped for an AI-First Internet. Why? Two seismic shifts render it obsolete.
 
-- **Lower Latency**: Data doesn’t have to travel back and forth to distant servers, enabling real-time responsiveness — critical for video, gaming, and AI applications.
-- **Reduced Bandwidth Strain**: Processing happens locally, so less data is sent across the network, which improves efficiency and reduces cost.
-- **Improved Privacy & Resilience**: Local processing means sensitive data doesn’t need to leave the device or region, enhancing privacy and security.
+First: **Recipients evolve from humans to AI Agents.** We need a new protocol for data exchange—one where Agents aren't passive consumers but active entities, verifying data, executing payments, and asserting agency.
 
-Edge computing is not just a trend — it’s the architectural shift required to power the next generation of internet experiences, especially as AI, real-time personalization, and immersive content become the new standard.
+Second: In an AI-First Internet, edges have to **manage bidirectional flows—delivering inference outputs to users while ingesting contextual inputs**. As AI inference migrates to edges and devices, these flows grow exponentially complex, shattering the unidirectional distribution model Edge Cloud was built for.
 
-### What ARO Adds: AI and Programmable Edge 
+### ARO Network: A Hyperscale Edge for the AI-First Internet
 
-At ARO, we’re building more than a PCDN. We’re creating the world’s first intelligent edge cloud — optimized for real-time content delivery and AI transformation.
+ARO Network—**Autonomous Resources Orchestrator (A-R-O)**—is engineered to conquer content delivery in the AI-First era.
 
-Here’s what sets ARO apart:
+It's a **decentralized** network where anyone can contribute edge resources: bandwidth, compute, storage.
 
-- **Content isn’t just delivered** — it’s transformed in real time with AI
-- **Developers can deploy custom AI transformers** for subtitles, dubbing, personalization, and more
-- **Edge nodes don’t just cache** — they compute, transform, and adapt dynamically
-- **The network is fully incentivized** — contributors earn $ARO tokens for powering the system
+**Hyperscale** by design, it delivers instant content and AI services with 100x scale, 10x reliability, 1/3 latency, and 1/2 cost.
+
+Most importantly, **ARO Network is the first network born for AI Agents as sovereign users on its content delivery and AI Services.** It pioneers a new "AI-First" edge paradigm where Agents request data, transfer data, and verify data. 
+
 
 
