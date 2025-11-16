@@ -11,7 +11,6 @@ import CardGroup from '../../src/components/CardGroup';
 
 ![Landing](/img/introduction/docs-landing.png)
 
-**ARO Network** is building a decentralized, hyperscale edge network for the AI-first Internet.
 
 ## Getting Started
 
