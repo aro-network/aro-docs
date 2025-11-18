@@ -50,11 +50,11 @@ Suggestions and notes on the hardware specifications:
 
 - The ARO Client has two operating strategies: running as an **Entry-level node** or a **Pro-level node**. This distinction is determined by the characteristics of the PCDN services: PCDN requires large professional nodes to provide stable, high-performance service capabilities, while also needing numerous small, low-cost nodes to offer more geographically distributed locations and enhance overall network availability.
 
-- **Entry-level nodes** are primarily designed for small household bandwidth scenarios (<1 Gbps) and have relatively low hardware requirements.
+- **Entry-level nodes** are primarily designed for small household bandwidth scenarios (< 1 Gbps) and have relatively low hardware requirements.
 
-- **Pro-level nodes** are aimed at large commercial-grade bandwidth scenarios (>1 Gbps) and have very high hardware requirements, which are generally not achievable in typical home environments.
+- **Pro-level nodes** are aimed at large commercial-grade bandwidth scenarios (> 1 Gbps) and have very high hardware requirements, which are generally not achievable in typical home environments.
 
-- We recommend that when preparing to deploy an ARO Client node, you clearly choose one of these two strategies based on your actual situation. At the same time, try to avoid being "in between" — for example, pairing 1 Gbps bandwidth with only a 16-thread CPU.
+- We recommend that when preparing to deploy an ARO Client node, you clearly choose one of these two strategies based on your actual situation. At the same time, try to avoid being "in between" — for example, pairing 1 Gbps bandwidth with a 16-thread CPU.
 
 - Additionally, please note that the specifications mentioned here apply only to the hardware configuration of the host machine. For the virtual machine resources used by the PCDN Worker, please refer to the relevant PCDN Worker tutorials.
 
