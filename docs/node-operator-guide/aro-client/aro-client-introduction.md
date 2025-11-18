@@ -58,6 +58,7 @@ Suggestions and notes on the hardware specifications:
 
 - Additionally, please note that the specifications mentioned here apply only to the hardware configuration of the host machine. For the virtual machine resources used by the PCDN Worker, please refer to the relevant PCDN Worker tutorials.
 
+
 ### ARO Client Installation - General Guide & Important Notes
 
 <p style={{color: 'red'}}>**IMPORTANT - Read Before Install:**</p>
