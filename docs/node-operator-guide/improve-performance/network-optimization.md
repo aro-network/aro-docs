@@ -22,6 +22,19 @@ Network optimization for Edge Nodes aims to improve how data travels between the
 
 The key principle here is achieving a **NAT type that is friendlier to Edge Services**. NAT types determine how easily external connections can reach your node. Less restrictive types enable smoother communication, which is advantageous for tasks like data sharing or cloud operations. By adjusting your network setup, you can influence the NAT type to be more open and efficient while maintaining necessary security.
 
+### Test Your NAT Type
+
+The **NAT type** of your ARO node is automatically tested periodically, with the latest result displayed in the Key Metrics section on the Node Details page. You can also trigger a new test manually by clicking the Refresh button.
+
+![NAT1](/img/node-operator-guide/NAT1.png)
+
+NAT types are classified into three categories:
+
+- `Class A` (Optimal): The best possible rating, ideal for all types of edge services. Your ARO node is operating in an excellent network environment.
+- `Class B` (Suboptimal): A moderate rating with some connectivity limitations. It is generally sufficient for most edge services (such as PCDN), but upgrading to Class A will help you earn higher rewards.
+- `Class C` (Poor): Unsuitable for many typical edge services due to significant network restrictions and limited node accessibility. We strongly recommend improving your network setup to achieve a higher NAT rating.
+
+
 ### How To Achieve Better NAT Types
 
 A simple principle is: **minimize the number of NAT layers between the device and the public network** to make it easier for the public network to access your device.
