@@ -14,7 +14,7 @@ Optimizing the network for Edge Nodes (`ARO Pod`, `ARO Link`, and `ARO Client`) 
 
 > For performance optimization for `ARO Lite`, refer to <Link to="/node-operator-guide/aro-lite/aro-lite-faq-troubleshooting">this page</Link> 
 
-## Basic Principles of Network Optimization for Edge Nodes
+## NAT
 
 ### What is NAT?
 
