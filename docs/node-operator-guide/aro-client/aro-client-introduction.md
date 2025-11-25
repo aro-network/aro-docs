@@ -35,11 +35,11 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 | Bandwidth  | CPU threads | RAM       | System Disk      | Data Disk        |  Network Card |
 |------------|----------|--------------|------------------|------------------|---------------|
-| Entry-level Node with < 1 Gbps bandwitdh: |
+| **Basic Mode** with < 1 Gbps bandwitdh: |
 | 100 Mbps   | ≥ 4      | ≥ 4 GB         | ≥ 200 GB SSD      | ≥ 200 GB SSD      |  100 Mbps     |
 | 500 Mbps   | ≥ 6     | ≥ 12 GB         | ≥ 200 GB SSD     | ≥ 500 GB SSD     |   1 Gbps    |
 | 800 Mbps   | ≥ 8     | ≥ 16 GB         | ≥ 200 GB SSD     | ≥ 800 GB SSD     |   2.5 Gbps    |
-| Pro-level Node with > 1 Gbps bandwitdh: |  
+| **Professional Mode** with > 1 Gbps bandwitdh: |  
 | 2 Gbps     | ≥ 32     | ≥ 32 GB      | ≥ 200 GB SSD     | ≥ 2 TB SSD       |   10 Gbps   |
 | 5 Gbps     | ≥ 48     | ≥ 64 GB      | ≥ 200 GB SSD     | ≥ 5 TB SSD       |   10 Gbps   |
 | 10 Gbps    | ≥ 96     | ≥ 128 GB     | ≥ 200 GB SSD     | ≥ 10 TB SSD      |   10 Gbps   |
@@ -48,13 +48,15 @@ Note that the ARO Client is geared toward **advanced users**, requiring greater 
 
 Suggestions and notes on the hardware specifications:
 
-- The ARO Client has two operating strategies: running as an **Entry-level node** or a **Pro-level node**. This distinction is determined by the characteristics of the PCDN services: PCDN requires large professional nodes to provide stable, high-performance service capabilities, while also needing numerous small, low-cost nodes to offer more geographically distributed locations and enhance overall network availability.
+- The ARO Client has two operating strategies: running in **Basic Mode** or  **Professional Mode**. This distinction is determined by the characteristics of the PCDN services: PCDN requires large professional nodes to provide stable, high-performance service capabilities, while also needing numerous small, low-cost nodes to offer more geographically distributed locations and enhance overall network availability.
 
-- **Entry-level nodes** are primarily designed for small household bandwidth scenarios (< 1 Gbps) and have relatively low hardware requirements.
+- **Basic Mode** are primarily designed for small household bandwidth scenarios (< 1 Gbps) and have relatively low hardware requirements.
 
-- **Pro-level nodes** are aimed at large commercial-grade bandwidth scenarios (> 1 Gbps) and have very high hardware requirements, which are generally not achievable in typical home environments.
+- **Professional Mode** are aimed at large commercial-grade bandwidth scenarios (> 1 Gbps) and have very high hardware requirements, which are generally not achievable in typical home environments.
 
-- We recommend that when preparing to deploy an ARO Client node, you clearly choose one of these two strategies based on your actual situation. At the same time, try to avoid being "in between" — for example, pairing 1 Gbps bandwidth with a 16-thread CPU.
+- We recommend that when preparing to deploy an ARO Client node, you clearly choose one of these two running modes based on your actual situation. At the same time, try to avoid being "in between" — for example, pairing 1 Gbps bandwidth with a 16-thread CPU. 
+
+- When adding new node to your Dashboard, you will be asked to choose the preferred mode (**Basic Mode** or **Professional Mode**). 
 
 - Additionally, please note that the specifications mentioned here apply only to the hardware configuration of the host machine. For the virtual machine resources used by the PCDN Worker, please refer to the relevant PCDN Worker tutorials.
 
