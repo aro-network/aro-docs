@@ -34,3 +34,16 @@ Monitor network status in this tab.
 Restart your device directly in this tab.
 ![Device Restart](/img/node-operator-guide/console_4.png)
 
+### Configure Network Interface Card in Web Console
+
+Web Console supports configuring **NIC** (Network Interface Card) directly on the webpage for your ARO Client.  
+
+In the **Network Settings** tab, you can choose to insert/add a new configuration record (if empty), or edit in an existing record. 
+
+![NIC1](/img/node-operator-guide/20251125183612.png)
+
+![NIC2](/img/node-operator-guide/20251125183613.png)
+
+In the example above, if you set `enp8s0` in the NIC field, `enp8s0` will be the NIC for PCDN workload. 
+
+> Make sure you have correctly configured the Subnet Mask and IPv4 Gateway fields, or the NIC may fail to operate. 
