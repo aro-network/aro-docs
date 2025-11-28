@@ -126,7 +126,7 @@ You can view the Volumes in the Storage Pool to make sure they are successfully 
 
 ![image-20250917214313755](/img/aro-client/image-20250917214313755.png)
 
-After downloading the file, execute the following commands in the terminal:
+Downloading the ISO file and execute the following commands in the terminal:
 
 ```bash
 wget https://download.aro.network/files/images/aro-pcdn-client-latest.iso
