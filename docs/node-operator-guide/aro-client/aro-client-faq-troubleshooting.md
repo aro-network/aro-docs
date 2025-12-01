@@ -48,6 +48,9 @@ import Link from '@docusaurus/Link';
   
 ### **My Dashboard->Node Detail page shows error message: "PCDN Worker is not activated. "**  
   This is an `Err_PCDNClientNotActivated` error which indicates that your PCDN Worker client is not activated for serving the edge cloud. If your ARO Client has been successfully activated (which means you can find your ARO Client node on the ARO Dashboard) but this error still exists, you can try reinstalling the PCDN Worker, or ask for technical support from official channels. 
+
+### **My Dashboard->Node Detail page shows error message: "Auto-sleep detected on host machine."**  
+  We have detected that your host machine is set to auto-sleep when idle. This may lead to disconnection of your node. Follow the <Link to="/node-operator-guide/aro-client/aro-client-debian#51-auto-sleep-auto-start-and-power-mode-settings">Auto-sleep settings tutorial</Link> and update your settings.
   
 ### **My Dashboard->Node Detail page shows error message: "Disk configuration is invalid."**  
   Something is wrong with your disk configuration on the PCDN Worker-- normally caused by invalid setting of the System Disk and the Data Disks. You are required to separate the System Disk and the Data Disks when you are setting up the PCDN Worker. 
