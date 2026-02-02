@@ -31,12 +31,12 @@ Below is a breakdown of reward types and their explanations:
 - **ARO Client**: Mining rewards earned by operating ARO Clients in the Testnet.
 - **ARO Lite**: Mining rewards earned by operating ARO Lite nodes in the Testnet.
 - **Referral Bonus**: Commission earned from your 1-tier and 2-tier referees.
-- **Campaign**: Jade earned through campaigns, such as the Previewnet Referral Sprint.
-- **Campaign (Locked)**: Jade earned from campaigns but currently in `locked` status.
+- **Campaign**: Jade earned through campaigns and already have been unlocked from Jade-in-lock status. 
+- **Campaign (Locked)**: Jade earned from campaigns but currently in `locked` status. (see explanations below)
 
 ### Jade in Locked Status
 
-Locked Jade (also referred to as "Jade in Lock") represents Jade rewards that are currently in `locked` status. You may earn locked Jade through specific community campaigns or by completing designated tasks. 
+Locked Jade (also referred to as "Jade in Lock") represents Jade rewards that are currently in `locked` status. Normally, Jade earned through regular community campaigns or through completing designated tasks on the Dashboard will be locked when they are distributed to the users. 
 
 The amount of locked Jade will be displayed in the Jade Rewards Breakdown Chart.
 
