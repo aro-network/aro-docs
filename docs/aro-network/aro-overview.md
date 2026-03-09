@@ -1,43 +1,32 @@
 ---
 id: aro-overview
-title: "What Is ARO Network"
-sidebar_label: "What Is ARO Network"
+title: "ARO Network -- The Agentic Edge"
+sidebar_label: "ARO Overview"
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# ARO Network - A Hyperscale Edge for the AI-First Internet
+# ARO Network -- The Agentic Edge
 
-### From the Human-First Internet to the AI-First Internet
+Welcome to ARO.
 
-**Agentic AI** is reshaping the internet. We're on the cusp of an **AI-First Internet**.
+ARO Network is an **agentic edge network** natively built for the agentic AI era. It is a decentralized and shared system that brings the **"Let AI Work for You"** vision to life. Here, AI agents operate right in your residence and on your devices: they stay local, private, and under your control.
 
-In the past, **humans** were the primary users of the internet. Core function of the **Human-First Internet**: delivering data to devices for human consumption. (Picture someone streaming a YouTube video.)
+## The Agentic Era Is Coming
 
-In the future, **AI Agents** will dominate as the primary users of the Internet. The new challenge of the **AI-First Internet**: How will data flow and exchange between AI Agents?
+AI agents are becoming essential and deeply personal. ARO Network envisions a world where AI agents will be as fundamental as the web today. We make that vision real, secure, and affordable to everyone.
 
-Human users won't vanish—but AI Agents will overwhelm them in sheer volume, processing power, and data throughput. This will transform everything.
+## Agents Live in Your Place
 
-### Today's Edge Cloud Is Unprepared
+ARO Network puts agents **in your residence**. With your permission, they use **your real local resources** – residential IP, bandwidth, devices, accounts – and become your personal digital extension.
 
-**"Edge"** refers to the network's periphery, closest to end-users.
+## Agents Work For You & Earn You Money
 
-**Edge Cloud** is the backbone of today's internet. Daily, it handles petabytes of data, enabling the vibrant experiences humans now enjoy. No Edge Cloud, no seamless web.
+The very first thing your agent does is **to EARN for you**. ARO orchestrates a shared network of agents across the edge. When you contribute your idle resources, your agent helps power others in the network, and you receive rewards continuously.
 
-Yet, alarmingly, current Edge Cloud is ill-equipped for an AI-First Internet. Why? Two seismic shifts render it obsolete.
+## ARO Turns "Let AI Work for You" Into Reality
 
-First: **Recipients evolve from humans to AI Agents.** We need a new protocol for data exchange—one where Agents aren't passive consumers but active entities, verifying data, executing payments, and asserting agency.
+- **Simple**: one-click installation of your own agent.
+- **Secure**: local execution, user-controlled permissions, strong privacy protection, censorship resistance.
+- **Affordable**: earn passive income by sharing idle capacity; collective token incentives make personal agents accessible to everyone.
 
-Second: In an AI-First Internet, edges have to **manage bidirectional flows—delivering inference outputs to users while ingesting contextual inputs**. As AI inference migrates to edges and devices, these flows grow exponentially complex, shattering the unidirectional distribution model Edge Cloud was built for.
-
-### ARO Network: A Hyperscale Edge for the AI-First Internet
-
-ARO Network—**Autonomous Resources Orchestrator (A-R-O)**—is engineered to conquer content delivery in the AI-First era.
-
-It's a **decentralized** network where anyone can contribute edge resources: bandwidth, compute, storage.
-
-**Hyperscale** by design, it delivers instant content and AI services with 100x scale, 10x reliability, 1/3 latency, and 1/2 cost.
-
-Most importantly, **ARO Network is the first network born for AI Agents as sovereign users on its content delivery and AI Services.** It pioneers a new "AI-First" edge paradigm where Agents request data, transfer data, and verify data. 
-
-
-
+**Your residence. Your agent. Your rewards.** Welcome to ARO.
