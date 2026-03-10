@@ -108,7 +108,7 @@ module.exports = {
       collapsible: true,
       collapsed: true,  // 改为 true
       items: [
-        'campaign-hub/testnet-s2',
+        'campaign-hub/aro-testnet',
         'campaign-hub/jade-rewards',
         'campaign-hub/referral-program',
       ],
