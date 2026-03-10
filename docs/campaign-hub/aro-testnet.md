@@ -34,7 +34,7 @@ During S2, a total of **100,000,000 Jade points** will be released daily for dis
 - **5,000,000 Jade points** are specifically allocated to operators running ARO Lite.
 - The remaining **95,000,000 Jade points** are distributed to operators of standard ARO nodes (including ARO Desktop, ARO Mobile, ARO Pod, and ARO Client).
 
-To understand exactly how Jade points are quantified and calculated, please refer to [**this guide**](https://docs.aro.network/node-operator-guide/improve-performance/node-quantification).
+To understand exactly how Jade points are quantified and calculated, please refer to [**this guide**](../node-operator-guide/improve-performance/node-quantification.md).
 
 The Testnet also features a **Badge System**, which awards `Badges` to users who contribute to the network, community, and broader ARO ecosystem. Eligible contributions for earning Badges are diverse, ensuring that exceptional efforts are recognized and rewarded.
 
@@ -70,4 +70,4 @@ Boost your Jade and Badge rewards through engaging activities:
 ### How To Get Started
 
 - [**Sign Up for an ARO Account**](https://dashboard.aro.network/) is all you need to get started.
-- [Learn about **ARO Node types and choose which type is best for you**](https://docs.aro.network/node-operator-guide/become-operator/choose-node)
+- [Learn about **ARO Node types and choose which type is best for you**](../node-operator-guide/become-operator/choose-node.md)
