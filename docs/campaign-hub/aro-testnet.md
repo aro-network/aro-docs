@@ -1,5 +1,5 @@
 ---
-id: testnet-s2
+id: campaign-hub/testnet-s2
 title: "ARO Testnet"
 sidebar_label: "ARO Testnet"
 ---
