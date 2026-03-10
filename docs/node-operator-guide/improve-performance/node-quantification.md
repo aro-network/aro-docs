@@ -3,89 +3,109 @@ id: node-quantification
 title: "Node Quantification"
 sidebar_label: "How Node Rewards Are Quantified"
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import Link from '@docusaurus/Link';
 
-# How Nodes Are Quantified For Mining Rewards: Principles & Rules
 
-## General Introduction
-In the ARO Network, different node types provide various resources to ARO’s Edge Network. Ultimately, these resources can generate commercial profits and are distributed to **Node Operators** in a blockchain-based manner.
+# Node Quantification
 
-During the current Testnet phase, node Operators earn <Link to="/campaign-hub/jade-rewards">**Jade**</Link> as a form of reward.
+### Introduction
 
-For clarity, we categorize current ARO nodes into **Edge Nodes** (including `ARO Pod`, `ARO Client`, `ARO Link`) and **Lite Nodes** (`ARO Lite`). These two types of nodes are evaluated differently for their contributions and corresponding rewards. This document focuses on how their workloads are quantified.
+This article explains how contributions from ARO nodes are evaluated and quantified. The resources and work a node provides to the network can be exchanged for network incentives. During the Testnet phase, these incentives are represented as **Jade points**.
 
-> For the allocation rules for Jade and other rewards during the Testnet phase, please refer to the <Link to="/campaign-hub/aro-testnet">Testnet Campaign documentation</Link> for details.
+When a large number of nodes are active on the network, rewards for each scoring period are distributed proportionally based on each node's **Contribution Score** (which serves as its weight in the allocation).
 
-## Quantification Rules For Edge Nodes
+All node types—including ARO Desktop, ARO Mobile, ARO Pod, and ARO Client—follow the same standardized quantification and scoring criteria.
 
-### What Are Edge Nodes
+### General Rules
 
-**Edge Nodes** refer to nodes that provide edge-side resources in ARO’s edge network, specifically including `ARO Pod`, `ARO Client`, and `ARO Link`.
+In the ARO Network, we introduce the concept of **scoring periods**.
 
-These nodes provide resources such as bandwidth, computation, and storage to users in close proximity at the edge, serving as the smallest yet most critical units of ARO’s “decentralized edge cloud.”
+At the end of each period, the entire network performs data statistics for the preceding cycle.
 
-### Basic Principles
+The primary goal of this data collection is to verify and quantify each node's resource contributions to the network during that period. These contributions are translated into a specific numerical value known as the **Contribution Score**.
 
-Generally, **bandwidth** is the most critical resource to an Edge Cloud. However, this does not mean that hardware configuration or computational capabilities are unimportant—they collectively determine an Edge Node’s comprehensive capability to deliver edge services. For example, if an Edge Node has significant bandwidth (e.g., 5Gbps) but poor hardware configuration, it cannot fully convert its bandwidth into actual edge traffic, as it lacks the capacity to process such high traffic in real time.
+When distributing the final rewards for the period (e.g., represented as **Jade points** during the Testnet phase), the total allocation is divided proportionally according to each node's **Contribution Score**, which serves as its weighting factor.
 
-In single words: Edge Nodes are evaluated primarily by the **traffic** allocated to them, reflecting their actual edge resources contribution to ARO Network's edge services.
+**Contribution Score = `ResourceRating` × `Uptime` × `AdjustmentFactors`**
 
-To elaborate further: An Edge Node’s most significant and measurable contribution to the edge network is the volume of network traffic it handles. But what enables an Edge Node to process more traffic? It requires: 
+Where:
 
-- **substantial bandwidth** for robust content delivery, 
-- **favorable NAT configurations** for high-quality internet access, 
-- **consistent performance** for stable and reliable service, 
-- and, crucially, **business demand** for edge services in its nearby regions. 
+- **`ResourceRating`** represents ARO's quantitative assessment of the value of the resources provided by the node.
+- **`Uptime`** measures the duration for which the node was effectively operational and online.
+- **`AdjustmentFactors`** encompass all additional elements that influence the overall contribution evaluation (such as network quality, bandwidth, NAT type, and other performance modifiers).
 
-All these factors determine how ARO Network quantifies an Edge Node’s workload and determines its mining rewards in practice. The Edge Service's **Scheduler** adjusts the traffic allocated to Edge Nodes based on these factors. Meanwhile, **Keeper Nodes** monitor and verify the performance of nearby Edge Nodes, detect and address cheating behaviors, and process on-chain ledger activities.
+These three components work together to produce the final, comprehensive contribution assessment.
 
-### Quantification Rules
+### Resource Rating
 
-**The formula that describes how traffic is scheduled to an Edge Node:**
+**`ResourceRating`** represents ARO's quantitative evaluation of the value of the resources provided by the node.
 
-`traffic_scheduling_rate` = `max_bandwidth` * `NAT_type_factor` * `consistency_factor` * `edge_service_factor`
+ARO considers the core resources contributed by nodes to be genuine **residential resources** from the network edge. Therefore, the IP address serves as the primary and most important evaluation factor.
 
-- `traffic_scheduling_rate`: The rate of traffic scheduled to the Edge Node from the Edge Service Schedulers.
-- `max_bandwidth`: The maximum bandwidth available provided by the Edge Node, based on time-averaged measurements during a certain period of time.
-- `NAT_type_factor`: A factor determined by the detected NAT Type of the Edge Node. Better NAT Types enjoy higher factor.
-  - Factor range: from `1.0` to `2.5`.
-  - NAT type detection and detail rules are coming soon.
-- `consistency_factor`: A factor determined by the performance consistency, based on multiple metrics such as bandwidth, uptime, etc., during a considerably long period of time for the Edge Node.
-- `edge_service_factor`: A factor determined by the actual business demand from Edge Services on your Edge Node. This factor may vary from region to region. This factor may change dynamically based on real-world demand changes. Generally, if you are running Edge Nodes in a region with higher business demand for Edge Services, you enjoy a higher factor accordingly.
-  - For the Testnet Sprint 1, the `edge_service_factor` is set to `0.1`.
-  - In the future, real-world edge services (e.g., PCDN) apply higher `edge_service_factor`.  
-  - Why is the `edge_service_factor` set to `0.1` for the current stage? This is because we are focusing on recruiting edge resources for real-world business readiness in the Testnet Sprint 1 stage. Therefore, we assume that all Edge Nodes do not "have to" fully utilize their maximum available bandwidth.
-  - For example, if you have 1 Gbps of bandwidth, your node will process and upload traffic allocated by the Scheduler at a rate of approximately 100Mbps. At this point, you do not need to reduce the node’s bandwidth resources—doing so would also decrease the traffic allocated to the node, thereby reducing your rewards.
+**`ResourceRating`** = `IPScore` × `IPQualityFactor` + `OtherResourceRatingItems`
+
+Where:
+
+- **`IPScore`** is an assessment of the inherent nature and quality of the IP resource itself, based on factors such as IP type and geographic location (with potential future adjustments).
+ - **Datacenter-class**: 20 points
+ - **ISP-class**: 30 points
+ - **Residential-class**: 50 points
+ - **Mobile-class**: 60 points
+ - In the future, `IPScore` may be adjusted based on **geographic location** or other factors. This will depend on whether the ARO Network considers certain IPs to be “more valuable,” leading to preferential weighting in the evaluation.
+- **`IPQualityFactor`** is a multiplier that adjusts for IP quality, primarily accounting for special cases such as IPs with a history of negative records or regulation issues.
+- **`OtherResourceRatingItems`** includes any additional factors that may significantly impact the evaluation of core resources. No specific items are currently defined or active in this category.
+
+### Uptime
+
+If we view the entire ARO Network as an edge cloud infrastructure, then **Uptime** effectively quantifies the duration each node contributes to the network. Overall, we measure a node's total contribution over a period using the intuitive and reasonable logic of **“Resources × Duration.”**
+
+**Uptime** = `BaseUptime` × `UptimeStabilityFactor`
+
+Where:
+
+- **`BaseUptime`** represents the actual effective online duration of the node.
  
-> For more details on NAT types and Edge Node performance improvement, please refer to <Link to="/node-operator-guide/improve-performance/network-optimization">Edge Node Optimization Guide</Link>.
+ For example, in a 4-hour scoring period, if your node is effectively online for 3 hours in total, then `BaseUptime` = 3 hours (i.e., 75% of the period).
+ 
+ - It is important to note that ARO does not measure uptime simply by checking “whether the node stays online.” ARO adopts a **task-based approach**: Checker Nodes in the network periodically and randomly send specific tasks to each node at unpredictable but frequent intervals. Only successful completion of these tasks counts as “effectively online” and providing resources to the ARO Network during that time slot. These tasks are generally not complex, but they require the node to maintain basic connectivity, a stable network, and prompt responses. Due to their strong randomness and unpredictability, they are extremely difficult to fake, making cheating significantly harder.
+- **`UptimeStabilityFactor`** is a stability bonus multiplier that rewards nodes with consistently long-term stable performance.
+ - If a node misses fewer than 2 tasks in a scoring period (i.e., 0 or 1 miss), its performance in that period is considered “excellent.”
+ - If the node achieves “excellent” performance in the most recent **6 consecutive** scoring periods (including the current one), then `UptimeStabilityFactor` = **1.2**.
+ - If the node achieves “excellent” performance in the most recent **24 consecutive** scoring periods (including the current one), then `UptimeStabilityFactor` = **1.5**.
+ - By default, this factor is **1.0**.
 
-**Cap Mechanism:**
+### Adjustment Factors
 
-A special mechanism `cap` is applied to Edge Nodes in specific scenarios. Explanations:  
+The **Adjustment Factors** are far from being minor or insignificant tweaks; on the contrary, they can have a substantial impact on your final score. Improving each individual factor can lead to meaningful increases in your node's rewards.
 
-- `Cap` refers to an upper limit, expressed as a bandwidth value, representing the maximum traffic an Edge Node can process based on its hardware capabilities.
-- Under typical network conditions, cap remains inactive and does not affect Edge Node operations.
-- In certain cases, cap may be triggered if the system detects that you are running an excessive number of Edge Nodes relative to your network environment. This assessment considers factors such as bandwidth, IP address, NAT quality, and other parameters. Common scenarios include running multiple ARO Client nodes under the same IP address, operating with severely limited bandwidth, running nodes without a PCDN Worker installed, or using a substandard NAT configuration.
-- When a cap is applied, the Scheduler distributes network traffic to the affected Edge Nodes in a way that effectively "dilutes" the traffic.
+Specifically, we have defined several adjustment factors, and more may be introduced in the future based on actual network needs and observations. These factors are applied multiplicatively. For example, if we have Factor A, Factor B, Factor C, etc., their combined effect on the score is:
 
+Factor A × Factor B × Factor C × …
 
-## Quantification Rules For ARO Lite Nodes
+- **Factor A: Bandwidth Factor (`BandwidthFactor`)**
+ - **Meaning**: Assigns a multiplier based on the measured upload bandwidth of the user's node.
+ - **Rules**:
+ - 0–5 Mbps upload: `0` (effectively unusable)
+ - 5–50 Mbps upload: `1` (baseline usable)
+ - 50 Mbps upload: `1.3` (premium tier)
+ - **Explanation**: Below 5 Mbps, the node is considered unable to provide meaningful edge service, so no rewards are earned. 5–50 Mbps is sufficient for most common crawling or web access tasks. Above 50 Mbps enables higher-bandwidth tasks (e.g., video scraping or streaming-related workloads), justifying an additional reward boost.
+- **Factor B: Hardware Capability Factor (`HardwareFactor`)**
+ - **Meaning**: Differentiates nodes based on their hardware capabilities and potential task execution performance.
+ - **Rules**: Currently, no differentiation is applied. All nodes receive `HardwareFactor = 1.0` (no impact on rewards at this stage).
+- **Factor C: IP Exclusivity Factor (`ExclusivityFactor`)**
+ - **Meaning**: When multiple nodes are detected sharing the same IP address within a scoring period, the value of that IP resource is considered diluted, and each node's contribution score is adjusted downward accordingly.
+ - **Rules**: If N nodes are identified as using the same IP in a given period, each of those nodes' final scores is divided by N.
+ - **Purpose**: This implements a strict “no-arbitrage” principle to prevent users from multiplying rewards simply by running many nodes behind the same residential IP.
+- **Factor D: NAT Type Factor (`NATFactor`)**
+ - **Meaning**: The NAT type of a user's connection directly affects its ability to provide certain services (e.g., static IP forwarding, PCDN relay, etc.). Better NAT types receive an incentive.
+ - **Rules**:
+ - Public / full-cone NAT (capable of providing static IP services): `1.5`
+ - All other NAT types: `1.0`
+- **Factor E: Service / Business Factor (`ServiceFactor`)**
+ - **Meaning**: Allows for targeted incentives or disincentives for specific nodes or resource types based on real business or network requirements.
+ - **Rules**: Currently, no differentiated incentives or penalties are applied. This factor defaults to `1.0`.
 
-### What's Special About ARO Lite
+### **About ARO Lite**
 
-`ARO Lites` operate distinctly from Edge Nodes and do not compete directly with Edge Nodes.
+Since **ARO Lite** is no longer provided or actively distributed to new users, but there are still existing ARO Lite nodes operating within the network, we continue to apply the original evaluation logic to them for fairness.
 
-Firstly, ARO Lite may function as a special type of **Checker Node** in the network topology of ARO Network. They flexibly and randomly “test” the behavior and resource capabilities of surrounding Edge Nodes, providing highly valuable assistance to large monitoring nodes and forming an organic complement in the network topology.
-
-Secondly, due to the technical limitations of lightweight browser nodes, ARO Lite cannot provide commercial-grade edge resources like Edge Nodes do, particularly bandwidth-centric PCDN business capabilities. However, a large number of ARO Lite nodes can provide edge services that do not require high bandwidth or performance.
-
-In the future, ARO Lites are expected to take on expanded roles beyond Checker Nodes, complementing Edge Nodes and uniquely contributing to the maintenance and growth of the ARO Network’s edge infrastructure.
-
-### Quantification Rules
-
-Technically, ARO Lite’s rewards are based on factors such as `uptime`, network stability (measured by metrics like `latency` and `packet loss rate`), and exclusivity of their `IP address` resources.
-
-Keeper Nodes evaluate ARO Lite’s performance over a period of time based on `uptime`, `latency`, and `packet loss rate` as basic **“network quality”** factors, weighted equally.
-
-Notably, **IP resources** are critical for ARO Lite. If multiple ARO Lite nodes operate under the same IP address, their scores will be diluted—because, from the perspective of the entire network, this behavior merely “replicates” limited network resources without genuinely enhancing their ability to provide actual edge services.
+You can think of ARO Lite as a special “exception” case in the current system.
