@@ -4,25 +4,36 @@ title: "Choose Your ARO Node"
 sidebar_label: "Choose Your ARO Node"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import Link from '@docusaurus/Link';
 
 # Choose Your Node
 
-### Things To Know Before You Start
+### **Things To Know Before You Start Running ARO Node**
 
 Here are key points to understand before running an Edge Node on the ARO Network:
 
-1. ARO is a **permissionless** network, meaning no prior permission or qualification is required to join.
-2. A stable internet connection is essential. Higher bandwidth and connection stability significantly increase your rewards from running an Edge Node.
-3. The **region** where you run your Edge Node matters. Being closer to end users enhances their access to internet content, resulting in higher rewards.
-4. You can exit the network and claim your rewards at any time.
-5. Edge Nodes primarily utilize your **idle internet resources** to serve the ARO Edge Network, with minimal impact on your regular internet experience. The choice is always yours.
-6. You can run either a **Hardware Node** or a **Software Node** (software solutions will be available soon). Refer to the next section for guidance on choosing the best option.
+- ARO is a permissionless network, which means no prior approval or special qualifications are required to participate.
+- By running an ARO node, you can contribute your residential resources — such as your residential IP address, bandwidth, and hardware capacity — to power both the overall agents network and your own agents.
+- You earn rewards for running an ARO node and contributing your idle resources (token incentives during the mainnet phase, or Jade points during the testnet phase).
+- You are free to exit the network and claim your rewards at any time.
+- Edge Nodes primarily make use of your idle resources to support the ARO Network, with minimal impact on your everyday internet experience. The choice is always yours.
+- We offer several node types to suit different needs: ARO Desktop, ARO Mobile, ARO Pod, and ARO Client. Refer to the next section for guidance on selecting the best option for you.
+- ARO Lite is a super-lightweight Chrome extension node. ARO Lite is no longer actively provided (we recommend using ARO Desktop on macOS, Windows, or Linux instead). Running ARO Lite can continue earning Jade rewards during Testnet S2, but the reward allocation will gradually decrease over time and eventually reach zero.
 
-### Which Type of ARO Node Is Right For Me?
+### Which Type of Node Should I Choose
 
 Here is a simple guide to quickly locate the best node type for you:
+
+**ARO Desktop**
+
+- A lightweight Desktop app
+- One click setup and forget it
+- Available on macOS, Windows, or Linux
+
+**ARO Mobile**
+
+- A mobile app, just like any other app on your phone
+- Earn wherever your go
+- Available on Android, iOS (iOS is coming soon)
 
 **ARO Pod**
 
@@ -30,40 +41,14 @@ Here is a simple guide to quickly locate the best node type for you:
 - Optimized for high uptime and rewards
 - For residential bandwidth / < 100 Mbps upstream bandwidth
 
-> Quick Start - Get your ARO Pod and see tutorials <Link to="/node-operator-guide/aro-pod/get-aro-pod">**here**</Link>.
-
-**ARO Lite**
-
-- Lightweight browser extension
-- Join with minimal cost and effort
-- Very limited impact on your internet experiences
-
-> Quick Start - Get your ARO Lite and see tutorials <Link to="/node-operator-guide/aro-lite/get-aro-lite">**here**</Link>.
-
 **ARO Client**
 
-- Install on your own device, flexible, cross-platform
+- A professional software image run on workstations
+- Specially for pro-level users (not for home-held users!)
+- Support Debian / Ubuntu OS
 
-- Runs on `Debian` with your machines/servers (takes some efforts to install and run)
-- Unlock higher rewards with > 100 Mbps upstream bandwidth
+### **How Do I Manage My ARO Nodes?**
 
-> Quick Start - Get your ARO Lite and see tutorials <Link to="/node-operator-guide/aro-client/aro-client-introduction">**here**</Link>.
-
-**ARO Link (Coming Soon)**
-
-- WiFi router with built-in ARO node
-- The choice for business scenarios
-
-### How Do I Manage My ARO Nodes?
-
-The [Dashboard](https://dashboard.ARO.network) (currently for Previewnet phase) is your all-in-one platform for managing Edge Nodes and tracking rewards.
+The [Dashboard](https://dashboard.aro.network/) is your all-in-one platform for managing ARO Nodes and tracking rewards.
 
 By creating an **ARO Account**, you can log in anytime, anywhere to manage your Edge Nodes and rewards.
-
-For detailed instructions, refer to the **Dashboard User Guide** on <Link to="/node-operator-guide/become-operator/aro-dashboard">this page</Link>, which covers:
-
-- Accessing the Dashboard
-- Creating an ARO Account
-- Referring friends to join ARO
-- Managing Edge Nodes in the Dashboard
-- Claiming your rewards
