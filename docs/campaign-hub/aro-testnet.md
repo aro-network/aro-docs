@@ -1,5 +1,5 @@
 ---
-id: aro-testnet
+id: testnet-s2
 title: "ARO Testnet"
 sidebar_label: "ARO Testnet"
 ---
