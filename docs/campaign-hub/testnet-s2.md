@@ -1,5 +1,5 @@
 ---
-id: testnet-s2
+id: campaign-hub/testnet-s2
 title: "Testnet S2"
 sidebar_label: "Testnet S2"
 ---
