@@ -100,7 +100,7 @@ module.exports = {
       label: 'Edge Cloud Solutions',
       collapsible: true,
       collapsed: true,  // 改为 true
-      items: ['edge-cloud-guide/edge-cloud-solutions'],
+      items: ['edge-cloud-solutions/ip-proxy-services'],
     },
     {
       type: 'category',
