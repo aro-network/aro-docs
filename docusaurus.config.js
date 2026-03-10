@@ -105,7 +105,7 @@ const config = {
               },
               {
                 label: 'Guides for ARO Testnet',
-                to: '/campaign-hub/aro-testnet',  
+                to: '/campaign-hub/testnet-s2',  
               },
             ],
           },
