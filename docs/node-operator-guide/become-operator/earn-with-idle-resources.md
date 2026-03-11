@@ -1,5 +1,5 @@
 ---
-id: idle-bandwidth
+id: earn-with-idle-resources
 title: "Earn With Your Idle Resources"
 sidebar_label: "Earn With Your Idle Resources"
 ---

@@ -101,7 +101,7 @@ const config = {
               },
               {
                 label: 'Guides for Node Operators',
-                to: '/node-operator-guide/become-operator/idle-bandwidth',  
+                to: '/node-operator-guide/become-operator/earn-with-idle-resources',  
               },
               {
                 label: 'Guides for ARO Testnet',

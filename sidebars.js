@@ -33,7 +33,7 @@ module.exports = {
           collapsible: true,
           collapsed: true,  // 子类别保持 true
           items: [
-            'node-operator-guide/become-operator/idle-bandwidth',
+            'node-operator-guide/become-operator/earn-with-idle-resources',
             'node-operator-guide/become-operator/get-account',
             'node-operator-guide/become-operator/choose-node',
             'node-operator-guide/become-operator/aro-dashboard',
