@@ -51,7 +51,6 @@ module.exports = {
             'node-operator-guide/aro-pod/aro-pod-faq-troubleshooting',
           ],
         },
-        'node-operator-guide/aro-link',
         {
           type: 'category',
           label: 'ARO Client',
@@ -63,17 +62,6 @@ module.exports = {
             'node-operator-guide/aro-client/aro-client-installation',
 	    'node-operator-guide/aro-client/aro-client-pcdn-worker',
             'node-operator-guide/aro-client/aro-client-faq-troubleshooting',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'ARO Lite',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            'node-operator-guide/aro-lite/get-aro-lite',
-            'node-operator-guide/aro-lite/aro-lite-installation-guide',
-            'node-operator-guide/aro-lite/aro-lite-faq-troubleshooting',
           ],
         },
         {

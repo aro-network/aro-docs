@@ -17,7 +17,7 @@ const CardList = [
   {
     title: 'Campaigns',
     description: 'Be an ARONAUT and join exciting community initiatives.',
-    to: '/campaign-hub/aro-testnet',
+    to: '/campaign-hub/testnet-s2',
   },
   {
     title: 'Useful Links',

@@ -16,7 +16,7 @@ During the **Previewnet** and **Testnet** phases, **`Jade`** serves as your prim
 
 ### How to Earn Jade During the Testnet Stage?
 
-During the Testnet stage, you can earn Jade by **operating ARO nodes** and **competing with other node operators to provide bandwidth resources at the edge**. For more details, visit <Link to="/campaign-hub/aro-testnet">ARO Testnet Campaign page</Link>
+During the Testnet stage, you can earn Jade by **operating ARO nodes** and **competing with other node operators to provide bandwidth resources at the edge**. For more details, visit <Link to="/campaign-hub/testnet-s2">ARO Testnet Campaign page</Link>
 
 Additionally, you can earn a **Referral Bonus** by inviting friends to participate. Learn more on the <Link to="/campaign-hub/referral-program">Referral Program page</Link>.
 

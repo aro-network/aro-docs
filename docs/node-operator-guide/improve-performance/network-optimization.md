@@ -10,9 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## General Introduction
 
-Optimizing the network for Edge Nodes (`ARO Pod`, `ARO Link`, and `ARO Client`) can greatly enhance performance and rewards. This tutorial explains the fundamental principles and concepts of network optimization, with suggested approaches of constructing your network connection for your Edge Nodes. 
-
-> For performance optimization for `ARO Lite`, refer to <Link to="/node-operator-guide/aro-lite/aro-lite-faq-troubleshooting">this page</Link> 
+Optimizing the network for Edge Nodes (`ARO Pod`, `ARO Link`, and `ARO Client`) can greatly enhance performance and rewards. This tutorial explains the fundamental principles and concepts of network optimization, with suggested approaches of constructing your network connection for your Edge Nodes.
 
 ## NAT
 

@@ -7,7 +7,7 @@ slug: /
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import CardGroup from '../../src/components/CardGroup';
 
-# ARO Network - A Hyperscale Edge for the AI-First Internet
+# ARO Network - The Agentic Edge
 
 ![Landing](/img/introduction/docs-landing.png)
 
