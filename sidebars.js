@@ -42,6 +42,28 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'ARO Desktop',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'node-operator-guide/aro-desktop/get-aro-desktop',
+            'node-operator-guide/aro-desktop/aro-desktop-installation-guide',
+            'node-operator-guide/aro-desktop/aro-desktop-faq-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ARO Mobile',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'node-operator-guide/aro-mobile/get-aro-mobile',
+            'node-operator-guide/aro-mobile/aro-mobile-installation-guide',
+            'node-operator-guide/aro-mobile/aro-mobile-faq-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
           label: 'ARO Pod',
           collapsible: true,
           collapsed: true,
