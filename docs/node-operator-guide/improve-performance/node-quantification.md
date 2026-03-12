@@ -1,4 +1,12 @@
-### Introduction
+---
+id: node-quantification
+title: "How Node Performance Are Quantified?"
+sidebar_label: "Node Quantification"
+---
+
+# How Node Performance Are Quantified?
+
+## Introduction
 
 This article explains how contributions from ARO nodes are evaluated and quantified. The resources and work a node provides to the network can be exchanged for network incentives. During the Testnet phase, these incentives are represented as **Jade points**.
 
@@ -6,7 +14,7 @@ When a large number of nodes are active on the network, rewards for each scoring
 
 All node types—including ARO Desktop, ARO Mobile, ARO Pod, and ARO Client—follow the same standardized quantification and scoring criteria.
 
-### General Rules
+## General Rules
 
 In the ARO Network, we introduce the concept of **scoring periods**.
 
@@ -26,7 +34,7 @@ Where:
 
 These three components work together to produce the final, comprehensive contribution assessment.
 
-### Resource Rating
+## Resource Rating
 
 **`ResourceRating`** represents ARO's quantitative evaluation of the value of the resources provided by the node.
 
@@ -45,7 +53,7 @@ Where:
 - **`IPQualityFactor`** is a multiplier that adjusts for IP quality, primarily accounting for special cases such as IPs with a history of negative records or regulation issues.
 - **`OtherResourceRatingItems`** includes any additional factors that may significantly impact the evaluation of core resources. No specific items are currently defined or active in this category.
 
-### Uptime
+## Uptime
 
 If we view the entire ARO Network as an edge cloud infrastructure, then **Uptime** effectively quantifies the duration each node contributes to the network. Overall, we measure a node's total contribution over a period using the intuitive and reasonable logic of **“Resources × Duration.”**
 
@@ -64,7 +72,7 @@ Where:
     - If the node achieves “excellent” performance in the most recent **24 consecutive** scoring periods (including the current one), then `UptimeStabilityFactor` = **1.5**.
     - By default, this factor is **1.0**.
 
-### Adjustment Factors
+## Adjustment Factors
 
 The **Adjustment Factors** are far from being minor or insignificant tweaks; on the contrary, they can have a substantial impact on your final score. Improving each individual factor can lead to meaningful increases in your node's rewards.
 
@@ -95,7 +103,7 @@ Factor A × Factor B × Factor C × …
     - **Meaning**: Allows for targeted incentives or disincentives for specific nodes or resource types based on real business or network requirements.
     - **Rules**: Currently, no differentiated incentives or penalties are applied. This factor defaults to `1.0`.
 
-### **About ARO Lite**
+## **About ARO Lite**
 
 Since **ARO Lite** is no longer provided or actively distributed to new users, but there are still existing ARO Lite nodes operating within the network, we continue to apply the original evaluation logic to them for fairness.
 
