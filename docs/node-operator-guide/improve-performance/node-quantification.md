@@ -83,7 +83,7 @@ Factor A × Factor B × Factor C × …
 - **Factor A: Bandwidth Factor (`BandwidthFactor`)**
     - **Meaning**: Assigns a multiplier based on the measured upload bandwidth of the user's node.
     - **Rules**:
-        - 0–5 Mbps upload: `0` (effectively unusable)
+        - 0–5 Mbps upload: `0.05` (effectively unusable)
         - 5–50 Mbps upload: `1` (baseline usable)
         - 50 Mbps upload: `1.3` (premium tier)
     - **Explanation**: Below 5 Mbps, the node is considered unable to provide meaningful edge service, so no rewards are earned. 5–50 Mbps is sufficient for most common crawling or web access tasks. Above 50 Mbps enables higher-bandwidth tasks (e.g., video scraping or streaming-related workloads), justifying an additional reward boost.
