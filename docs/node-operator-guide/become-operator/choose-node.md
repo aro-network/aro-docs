@@ -16,7 +16,7 @@ Here are key points to understand before running an Edge Node on the ARO Network
 - You earn rewards for running an ARO node and contributing your idle resources (token incentives during the mainnet phase, or Jade points during the testnet phase).
 - You are free to exit the network and claim your rewards at any time.
 - Edge Nodes primarily make use of your idle resources to support the ARO Network, with minimal impact on your everyday internet experience. The choice is always yours.
-- We offer several node types to suit different needs: ARO Desktop, ARO Mobile, ARO Pod, and ARO Client. Refer to the next section for guidance on selecting the best option for you.
+- We offer several node types to suit different needs: ARO Desktop, ARO Mobile, ARO Pod, and ARO Server. Refer to the next section for guidance on selecting the best option for you.
 - ARO Lite is a super-lightweight Chrome extension node. ARO Lite is no longer actively provided (we recommend using ARO Desktop on macOS, Windows, or Linux instead). Running ARO Lite can continue earning Jade rewards during Testnet S2, but the reward allocation will gradually decrease over time and eventually reach zero.
 
 ### Which Type of Node Should I Choose
@@ -41,11 +41,11 @@ Here is a simple guide to quickly locate the best node type for you:
 - Optimized for high uptime and rewards
 - For residential bandwidth / < 100 Mbps upstream bandwidth
 
-**ARO Client**
+**ARO Server**
 
-- A professional software image run on workstations
-- Specially for pro-level users (not for home-held users!)
-- Support Debian / Ubuntu OS
+- A professional software image for servers or workstations
+- Suitable for pro-level users with advanced deployment needs
+- Supports flexible deployment in bare-metal or VM environments
 
 ### **How Do I Manage My ARO Nodes?**
 
