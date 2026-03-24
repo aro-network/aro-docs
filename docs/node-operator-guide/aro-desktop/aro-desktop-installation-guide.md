@@ -67,4 +67,122 @@ This section is reserved and will be added soon.
 
 ## Linux Installation Guide
 
-This section is reserved and will be added soon.
+ARO Desktop on Linux can be installed through different package formats depending on your distro version.
+
+- For older systems (for example Debian 11, Ubuntu 20, CentOS 8/9), use the **Flatpak** package.
+- For newer CentOS/RHEL-like environments (for example CentOS 10), use the **RPM** package.
+
+### Option A: Install with Flatpak (Recommended for older Linux versions)
+
+#### Step 1: Install Flatpak (if not installed)
+
+```bash
+sudo apt-get install flatpak
+```
+
+#### Step 2: Add Flathub remote (if not added)
+
+```bash
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+#### Step 3: Install ARO Desktop Flatpak package
+
+```bash
+flatpak install --user ./aro-desktop.flatpak
+```
+
+#### Step 4: Run ARO Desktop
+
+```bash
+flatpak run com.aro.ARONetwork
+```
+
+#### Step 5: Create a desktop launcher icon (optional)
+
+Run the following in a **non-root** user session:
+
+```bash
+cp ~/.local/share/flatpak/exports/share/applications/com.aro.ARONetwork.desktop ~/Desktop/
+chmod +x ~/Desktop/com.aro.ARONetwork.desktop
+```
+
+### Option B: Install with RPM (CentOS 10 / newer RHEL-like systems)
+
+#### Step 1: Enable EPEL and CRB
+
+```bash
+sudo dnf install -y epel-release
+sudo dnf config-manager --set-enabled crb
+```
+
+#### Step 2: Install ARO Desktop RPM
+
+```bash
+sudo dnf install -y ./ARO_Desktop-0.1.0-1.x86_64.rpm
+```
+
+### Run and Bind Your Node
+
+1. Start ARO Desktop.
+2. Click **Start** and get your node **Serial Number (SN)**.
+3. Go to **Dashboard -> Add New Node**.
+4. Enter the SN and finish the binding flow.
+
+### Uninstall
+
+#### Flatpak uninstall
+
+```bash
+flatpak uninstall com.aro.ARONetwork
+flatpak uninstall --delete-data com.aro.ARONetwork
+```
+
+#### RPM uninstall
+
+```bash
+sudo dnf remove aro-desktop
+```
+
+### Troubleshooting
+
+#### Ubuntu 20: runtime missing error
+
+If Flatpak reports missing runtime:
+
+```bash
+flatpak install org.gnome.Platform//47
+```
+
+If the system Flatpak version is too old, upgrade Flatpak first:
+
+```bash
+sudo add-apt-repository ppa:alexlarsson/flatpak
+sudo apt update
+sudo apt install --only-upgrade flatpak
+```
+
+#### Kill ARO Desktop process (if needed)
+
+```bash
+pkill -f aro-desktop
+```
+
+#### High-version systems: package left in half-installed state
+
+If uninstall or reinstall is blocked and dpkg status shows `install reinstreq half-installed`:
+
+1. Edit dpkg status file:
+
+```bash
+sudo nano /var/lib/dpkg/status
+```
+
+2. Search `aro-desktop` and remove the whole broken `Package: aro-desktop` block.
+3. Save and exit, then repair packages:
+
+```bash
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+sudo update-desktop-database
+```
