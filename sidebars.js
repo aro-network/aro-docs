@@ -75,15 +75,13 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'ARO Client',
+          label: 'ARO Server',
           collapsible: true,
           collapsed: true,
           items: [
-            'node-operator-guide/aro-client/aro-client-introduction',
-            'node-operator-guide/aro-client/aro-client-debian',
-            'node-operator-guide/aro-client/aro-client-installation',
-	    'node-operator-guide/aro-client/aro-client-pcdn-worker',
-            'node-operator-guide/aro-client/aro-client-faq-troubleshooting',
+            'node-operator-guide/aro-server/get-aro-server',
+            'node-operator-guide/aro-server/aro-server-installation-guide',
+            'node-operator-guide/aro-server/aro-server-faq-troubleshooting',
           ],
         },
         {
