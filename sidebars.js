@@ -86,6 +86,17 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'ARO Lite',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'node-operator-guide/aro-lite/get-aro-lite',
+            'node-operator-guide/aro-lite/aro-lite-installation-guide',
+            'node-operator-guide/aro-lite/aro-lite-faq-troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Node Performance',
           collapsible: true,
           collapsed: true,
