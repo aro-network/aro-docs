@@ -128,7 +128,6 @@ module.exports = {
       collapsed: true,  // 改为 true
       items: [
         'campaign-hub/testnet-s2',
-        'campaign-hub/jade-rewards',
         'campaign-hub/referral-program',
       ],
     },
