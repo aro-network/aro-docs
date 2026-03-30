@@ -113,39 +113,114 @@ This is expected in some environments because the app can be recognized as comin
 
 ## Linux Installation Guide
 
-ARO Desktop on Linux currently supports RPM-based installation for CentOS/RHEL-like systems.
+ARO Desktop supports both Debian/Ubuntu-based and RPM-based (CentOS/RHEL) Linux systems.
 
-### Install with RPM (CentOS 10 / newer RHEL-like systems)
+---
 
-#### Step 1: Enable EPEL and CRB
+### Debian / Ubuntu
+
+#### Step 1: Download the Linux Package from Dashboard
+
+1. Go to **Dashboard -> Add New Node**.
+2. Choose **Linux** as your system.
+3. Download the `.deb` installer.
+
+#### Step 2: Install ARO Desktop
+
+```bash
+sudo apt install ./ARO_Desktop_<version>_amd64.deb
+```
+
+Replace `<version>` with the actual filename you downloaded.
+
+#### Step 3: Start ARO Desktop and Bind Your Node
+
+1. Launch **ARO Desktop**.
+2. Click **Start** to run the node.
+3. The app will generate a **Serial Number (SN)**.
+4. Go to **Dashboard -> Add New Node**.
+5. Enter the SN and complete the binding flow.
+
+#### Uninstall (Debian / Ubuntu)
+
+```bash
+sudo apt purge aro-desktop
+```
+
+---
+
+### CentOS
+
+#### Step 1: Download the Linux Package from Dashboard
+
+1. Go to **Dashboard -> Add New Node**.
+2. Choose **Linux** as your system.
+3. Download the `.rpm` installer.
+
+#### Step 2: Install ARO Desktop
+
+```bash
+sudo dnf install -y ./ARO_Desktop-<version>-1.x86_64.rpm
+```
+
+Replace `<version>` with the actual filename you downloaded.
+
+:::tip Missing dependencies?
+If the installation fails due to missing packages (e.g. `webkit2gtk4.1`), enable EPEL and CRB first, then retry:
 
 ```bash
 sudo dnf install -y epel-release
 sudo dnf config-manager --set-enabled crb
+sudo dnf install -y ./ARO_Desktop-<version>-1.x86_64.rpm
 ```
+:::
 
-#### Step 2: Install ARO Desktop RPM
+#### Step 3: Start ARO Desktop and Bind Your Node
 
-```bash
-sudo dnf install -y ./ARO_Desktop-0.1.0-1.x86_64.rpm
-```
+1. Launch **ARO Desktop**.
+2. Click **Start** to run the node.
+3. The app will generate a **Serial Number (SN)**.
+4. Go to **Dashboard -> Add New Node**.
+5. Enter the SN and complete the binding flow.
 
-### Run and Bind Your Node
-
-1. Start ARO Desktop.
-2. Click **Start** and get your node **Serial Number (SN)**.
-3. Go to **Dashboard -> Add New Node**.
-4. Enter the SN and finish the binding flow.
-
-### Uninstall
-
-#### RPM uninstall
+#### Uninstall (CentOS)
 
 ```bash
 sudo dnf remove aro-desktop
 ```
 
+---
+
 ### Troubleshooting
+
+#### Incomplete uninstall on Debian / Ubuntu
+
+If `apt purge` leaves residual package state, manually clean the dpkg status entry:
+
+1. Open the dpkg status file:
+
+```bash
+sudo nano /var/lib/dpkg/status
+```
+
+2. Search for the `aro-desktop` block: press `Ctrl + W`, type `aro-desktop`, then press `Enter`.
+
+3. Delete the entire block starting from `Package: aro-desktop` through the end of that entry.
+
+4. Save and exit: `Ctrl + O` → `Enter` → `Ctrl + X`.
+
+5. Repair dpkg and fix broken packages:
+
+```bash
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+```
+
+6. Refresh the desktop application database:
+
+```bash
+sudo update-desktop-database
+```
 
 #### Kill ARO Desktop process (if needed)
 
