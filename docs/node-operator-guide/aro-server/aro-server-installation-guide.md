@@ -51,7 +51,39 @@ Installing the `deb` package on a virtual machine will result in an error and ex
 
 ![Debian Version Error](/img/aro-client/image-20250926175229993.png)
 
-### 4. Uninstall the Package
+## Part 2: ARO Server Node Initialization
+
+This section explains how to register, configure, and complete the initial setup required to bring your ARO Server node into a functional state.
+
+Make sure you have already completed the installation steps above.
+
+1. Get your ARO Server Serial Number in the Web Console.
+   Open the ARO Server Web Console at `[Your IP:40001]`.
+   For example, if your IP is `17.12.205.193`, go to `17.12.205.193:40001` to access the Web Console.
+   Find the 19-digit Serial Number (SN) in the top area of the Web Console.
+
+   ![ARO Server Web Console Serial Number](/img/aro-client/aro-client-webconsole-01.png)
+
+2. Configure your network.
+   You can adjust the network connection settings in the Web Console if needed.
+
+   ![ARO Server Web Console Network Settings](/img/aro-client/aro-client-webconsole-02.png)
+
+   ![ARO Server Web Console Network Configuration](/img/aro-client/aro-client-webconsole-03.png)
+
+3. Initialize the activation process.
+   Open the [ARO Dashboard](https://dashboard.aro.network), go to ARO Nodes > Add an ARO Server, then follow the steps and enter the 19-digit Serial Number found in your Web Console.
+
+   ![Device Recognition](/img/node-operator-guide/cmd_finddevice.png)
+
+   The dashboard will recognize the software image instance and display its information. Confirm to continue.
+
+   > Important: Ensure your ARO Server is online during activation. If it is offline, the process may fail.
+
+4. Complete setup.
+   You will be guided through several simple steps to finish the initial configuration. Once the congratulations page appears, your ARO Server setup is complete.
+
+## Part 3: Uninstall the Package
 
 Execute the following command:
 
