@@ -88,6 +88,18 @@ This is expected in some environments because the app can be recognized as comin
 
 3. Once the installation is complete, ARO Desktop will be ready to use.
 
+:::tip Missing VCRUNTIME140_1.dll?
+If you encounter an error message about `VCRUNTIME140_1.dll not found` during installation or when launching ARO Desktop, this indicates that your Windows system is missing a required C++ runtime dependency. 
+
+To resolve this issue:
+
+1. Visit the [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) download page.
+2. Download the appropriate version for your system (x86 or x64).
+3. Install the downloaded Visual C++ Redistributable package.
+4. Restart your computer.
+5. Return to step 1 and re-run the ARO Desktop installer.
+:::
+
 ### Step 3: Start ARO Desktop and Get Node SN
 
 1. Launch **ARO Desktop** from your Start Menu or desktop shortcut.
