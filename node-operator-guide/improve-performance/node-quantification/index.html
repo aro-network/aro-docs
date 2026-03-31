@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">How Node Performance Are Quantified? | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="How Node Performance Are Quantified? | ARO Network Docs"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/improve-performance/node-quantification" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.1f09f124.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2f2a908e.js" defer="defer"></script>
 <script src="/assets/js/main.2856b93d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,7 +32,8 @@
 <p><strong><code>ResourceRating</code></strong> = <code>IPScore</code> × <code>IPQualityFactor</code> + <code>OtherResourceRatingItems</code></p>
 <p>Where:</p>
 <ul>
-<li><strong><code>IPScore</code></strong> is an assessment of the inherent nature and quality of the IP resource itself, based on factors such as IP type and geographic location (with potential future adjustments).<!-- -->
+<li>
+<p><strong><code>IPScore</code></strong> is an assessment of the inherent nature and quality of the IP resource itself, based on factors such as IP type and geographic location (with potential future adjustments).</p>
 <ul>
 <li><strong>Datacenter-class</strong>: 20 points</li>
 <li><strong>ISP-class</strong>: 30 points</li>
@@ -41,8 +42,19 @@
 <li>In the future, <code>IPScore</code> may be adjusted based on <strong>geographic location</strong> or other factors. This will depend on whether the ARO Network considers certain IPs to be “more valuable,” leading to preferential weighting in the evaluation.</li>
 </ul>
 </li>
-<li><strong><code>IPQualityFactor</code></strong> is a multiplier that adjusts for IP quality, primarily accounting for special cases such as IPs with a history of negative records or regulation issues.</li>
-<li><strong><code>OtherResourceRatingItems</code></strong> includes any additional factors that may significantly impact the evaluation of core resources. No specific items are currently defined or active in this category.</li>
+<li>
+<p><strong><code>IPQualityFactor</code></strong> is a multiplier that adjusts for IP quality. When factors such as frequent IP changes, IP blacklisting, or the use of proxies/VPNs cause a node&#x27;s IP to change repeatedly within a scoring period — leading ARO to determine that the IP is an <strong>unavailable or invalid resource</strong> — this factor is set to a value less than <code>1.0</code>. In such cases, the node is considered to have failed to provide stable and effective IP resources, and its score is reduced accordingly.</p>
+<p>The factor is determined by the number of IP changes recorded for the same node within the most recent 24 hours:</p>
+<ul>
+<li>Fewer than 2 IP changes: <code>1.0</code> (default — no penalty)</li>
+<li>2 to 3 IP changes [2, 4): <code>0.8</code></li>
+<li>4 to 7 IP changes [4, 8): <code>0.4</code></li>
+<li>8 or more IP changes: <code>0.1</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>OtherResourceRatingItems</code></strong> includes any additional factors that may significantly impact the evaluation of core resources. No specific items are currently defined or active in this category.</p>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="uptime">Uptime<a href="#uptime" class="hash-link" aria-label="Direct link to Uptime" title="Direct link to Uptime">​</a></h2>
 <p>If we view the entire ARO Network as an edge cloud infrastructure, then <strong>Uptime</strong> effectively quantifies the duration each node contributes to the network. Overall, we measure a node&#x27;s total contribution over a period using the intuitive and reasonable logic of <strong>“Resources × Duration.”</strong></p>
