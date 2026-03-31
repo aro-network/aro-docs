@@ -50,7 +50,15 @@ Where:
     - **Residential-class**: 50 points
     - **Mobile-class**: 60 points
     - In the future, `IPScore` may be adjusted based on **geographic location** or other factors. This will depend on whether the ARO Network considers certain IPs to be “more valuable,” leading to preferential weighting in the evaluation.
-- **`IPQualityFactor`** is a multiplier that adjusts for IP quality, primarily accounting for special cases such as IPs with a history of negative records or regulation issues.
+- **`IPQualityFactor`** is a multiplier that adjusts for IP quality. When factors such as frequent IP changes, IP blacklisting, or the use of proxies/VPNs cause a node's IP to change repeatedly within a scoring period — leading ARO to determine that the IP is an **unavailable or invalid resource** — this factor is set to a value less than `1.0`. In such cases, the node is considered to have failed to provide stable and effective IP resources, and its score is reduced accordingly.
+
+    The factor is determined by the number of IP changes recorded for the same node within the most recent 24 hours:
+
+    - Fewer than 2 IP changes: `1.0` (default — no penalty)
+    - 2 to 3 IP changes \[2, 4\): `0.8`
+    - 4 to 7 IP changes \[4, 8\): `0.4`
+    - 8 or more IP changes: `0.1`
+
 - **`OtherResourceRatingItems`** includes any additional factors that may significantly impact the evaluation of core resources. No specific items are currently defined or active in this category.
 
 ## Uptime
