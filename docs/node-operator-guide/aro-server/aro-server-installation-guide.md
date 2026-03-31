@@ -41,13 +41,7 @@ Installing with a non-root user will result in an error and exit the installatio
 
 ![Non-Root Error](/img/aro-client/image-20250926165247978.png)
 
-#### 3.2 Virtual Machine Installation
-
-Installing the `deb` package on a virtual machine will result in an error and exit the installation.
-
-![Virtual Machine Error](/img/aro-client/image-20250926174642843.png)
-
-#### 3.3 Installation on Debian Versions Below 11
+#### 3.2 Installation on Debian Versions Below 11
 
 ![Debian Version Error](/img/aro-client/image-20250926175229993.png)
 
